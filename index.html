@@ -364,6 +364,8 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  nav.top ul{display:none}.menu{display:inline-flex}nav.top .r .lnk,nav.top .r .btn{display:none}
  .hero-in{grid-template-columns:1fr;padding-top:104px;gap:28px;min-height:0}
  .orbit{width:min(100%,560px)}
+ .is-open .stage{order:-1}
+ .is-open .hero-in{padding-top:88px}
  .panel{max-height:none}
  .hint{bottom:-7%}
  .nums{grid-template-columns:1fr 1fr;row-gap:28px}
@@ -649,7 +651,7 @@ const field = { warp: .12, ox: .7, oy: .5, mx: 0, my: 0 };
   const make = () => ({ x: Math.random() * 2 - 1, y: Math.random() * 2 - 1, z: Math.random() * .9 + .1, a: Math.random() < .14 });
   function size() {
     const d = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * d; cv.height = H * d; cx.setTransform(d, 0, 0, d, 0, 0);
-    const n = W < 700 ? 120 : 260; stars = Array.from({ length: n }, make);
+    const n = W < 700 ? 220 : 320; stars = Array.from({ length: n }, make);
     const c = $('#coinwrap').getBoundingClientRect(), h = $('#top').getBoundingClientRect();
     field.ox = (c.left + c.width / 2 - h.left) / W; field.oy = (c.top + c.height / 2 - h.top) / H;
   }
@@ -661,7 +663,7 @@ const field = { warp: .12, ox: .7, oy: .5, mx: 0, my: 0 };
       if (s.z <= .03) { Object.assign(s, make(), { z: 1 }); continue; }
       const x = ox + s.x / s.z * sc, y = oy + s.y / s.z * sc;
       if (x < -50 || x > W + 50 || y < -50 || y > H + 50) { Object.assign(s, make(), { z: 1 }); continue; }
-      const al = Math.min(1, (1 - s.z) * 1.3), r = (1 - s.z) * 1.7 + .25;
+      const al = Math.min(1, (1 - s.z) * 1.5 + .1), r = (1 - s.z) * (W < 700 ? 2.3 : 1.9) + .35;
       cx.strokeStyle = cx.fillStyle = s.a ? `rgba(140,170,255,${al})` : `rgba(225,232,255,${al * .85})`;
       if (wp > 1.2) { const px = ox + s.x / pz * sc, py = oy + s.y / pz * sc; cx.lineWidth = r; cx.beginPath(); cx.moveTo(px, py); cx.lineTo(x, y); cx.stroke(); }
       else { cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
@@ -941,7 +943,9 @@ if (anim) {
     .from('#h1 .wi', { yPercent: 115, duration: 1.2, stagger: .07 }, .15)
     .from('#copy .sub, #copy .cta', { y: 24, autoAlpha: 0, duration: 1, stagger: .1 }, .5)
     .from(coinwrap, { autoAlpha: 0, rotationY: -540, scale: .4, duration: 2, ease: 'expo.out' }, .1)
-    .from('#hint', { autoAlpha: 0, y: 10, duration: .8 }, 1.4);
+    .from('#hint', { autoAlpha: 0, y: 10, duration: .8 }, 1.4)
+    /* the universe unfolds on its own if the visitor is still on the hero */
+    .call(() => setTimeout(() => { if (!isOpen && scrollY < 120 && !svx.classList.contains('on')) openUni(); }, 1400), null, 2.2);
 
   $$('.split').forEach(el => { if (el.id === 'h1') return; splitWords(el); gsap.from($$('.wi', el), { yPercent: 115, duration: 1.1, stagger: .06, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%' } }); });
   ScrollTrigger.batch('.rv', { start: 'top 90%', once: true, onEnter: els => gsap.from(els, { y: 36, autoAlpha: 0, duration: 1, stagger: .08, ease: 'expo.out', overwrite: true }) });
