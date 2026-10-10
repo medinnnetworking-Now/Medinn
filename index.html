@@ -10,13 +10,15 @@
 <meta name="description" content="Medinn is the practice of Dr. Sidharth Narayanan. Edtech growth and MedTech ecosystem building across Malabar, from medical colleges to startups.">
 <meta property="og:title" content="Medinn | Dr. Sidharth Narayanan">
 <meta property="og:description" content="Medicine meets MedTech. Edtech growth and MedTech ecosystem building across Malabar.">
-<meta property="og:image" content="https://medinn-sandy.vercel.app/sidharth-pro.jpg">
+<meta property="og:image" content="https://medinn-sandy.vercel.app/sidharth-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="medinn-logo.png">
 <link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dr. Sidharth Narayanan","jobTitle":"Edtech and MedTech ecosystem builder","email":"medinnnetworking@gmail.com","url":"https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8","image":"https://medinn-sandy.vercel.app/sidharth-pro.jpg","worksFor":{"@type":"Organization","name":"Medinn"},"alumniOf":"Government Medical College, Kozhikode"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dr. Sidharth Narayanan","jobTitle":"Edtech and MedTech ecosystem builder","email":"medinnnetworking@gmail.com","url":"https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8","image":"https://medinn-sandy.vercel.app/sidharth-2026.jpg","worksFor":{"@type":"Organization","name":"Medinn"},"alumniOf":"Government Medical College, Kozhikode"}</script>
 <style>
 /* Design read: cinematic practitioner portfolio for edtech and MedTech partners. A dark "universe" language
    (the brief asks for cinematic, so the page commits to one dark theme), GSAP choreography, canvas starfield.
@@ -466,7 +468,7 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
     <i class="shock" id="shock"></i>
     <div class="coinwrap" id="coinwrap">
      <i class="halo"></i><i class="comet"></i><i class="comet c2"></i>
-     <button class="coin" id="coin" aria-label="Open the Medinn universe" aria-expanded="false" aria-controls="panel"><span class="flip" id="flip"><span class="face f1"><img src="medinn-logo.png" alt="Medinn"></span><span class="face f2"><img src="sidharth-headshot.jpg" alt="Dr. Sidharth Narayanan"></span></span></button>
+     <button class="coin" id="coin" aria-label="Open the Medinn universe" aria-expanded="false" aria-controls="panel"><span class="flip" id="flip"><span class="face f1"><img src="medinn-logo.png" alt="Medinn"></span><span class="face f2"><img src="sidharth-face.jpg" alt="Dr. Sidharth Narayanan"></span></span></button>
     </div>
     <p class="hint" id="hint"><i class="ph ph-tap" aria-hidden="true"></i> Tap the coin</p>
    </div>
@@ -594,7 +596,7 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
     <p class="l2 rv">Tell me what you are launching, running or scaling, and I will say whether Medinn is the right fit.</p>
     <div class="acts rv"><a class="mail" href="mailto:medinnnetworking@gmail.com">medinnnetworking@gmail.com</a><a class="lnk" href="https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8"><i class="ph ph-linkedin" aria-hidden="true"></i> LinkedIn</a></div>
    </div>
-   <img class="face-img rv" src="sidharth-headshot.jpg" alt="Dr. Sidharth Narayanan" loading="lazy" width="520" height="520">
+   <img class="face-img rv" src="sidharth-face.jpg" alt="Dr. Sidharth Narayanan" loading="lazy" width="800" height="800">
   </div>
   <footer>
    <p>Medinn is the independent consulting practice of Dr. Sidharth Narayanan. His clinical training and Medinn's commercial work are kept separate, and Medinn does not offer medical advice.</p>
@@ -983,7 +985,8 @@ if (anim) {
     .call(() => setTimeout(() => { if (!isOpen && scrollY < 120 && !svx.classList.contains('on')) openUni(); }, 1400), null, 2.2);
 
   $$('.split').forEach(el => { if (el.id === 'h1') return; splitWords(el); gsap.from($$('.wi', el), { yPercent: 115, duration: 1.1, stagger: .06, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%' } }); });
-  ScrollTrigger.batch('.rv', { start: 'top 90%', once: true, onEnter: els => gsap.from(els, { y: 36, autoAlpha: 0, duration: 1, stagger: .08, ease: 'expo.out', overwrite: true }) });
+  /* only items actually on screen animate; anything skipped past (a nav jump) just stays visible */
+  ScrollTrigger.batch('.rv', { start: 'top 90%', once: true, onEnter: els => { const vis = els.filter(e => { const r = e.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; }); if (vis.length) gsap.from(vis, { y: 36, autoAlpha: 0, duration: 1, stagger: { each: .08, amount: Math.min(.5, vis.length * .08) }, ease: 'expo.out', overwrite: true }); } });
 
   /* numbers count up when they arrive */
   $$('[data-count]').forEach(b => { const n = +b.dataset.count, pre = b.dataset.pre || '', suf = b.dataset.suf || '', o = { v: 0 };
