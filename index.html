@@ -389,7 +389,88 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
 .lb .nv.l{left:12px}.lb .nv.r{right:12px}
 .lb .x:hover,.lb .nv:hover{background:var(--tx);color:var(--bg)}
 
+
+/* repair café: the landmark event */
+.rc-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:center}
+.rc-top h2{font-size:clamp(46px,6.4vw,104px);letter-spacing:-.055em;line-height:.92}
+.rc-top .lede{max-width:32em}
+.rc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:34px}
+.rc-stats>div{padding:20px 22px}
+.rc-stats b{display:block;font-family:var(--hd);font-size:clamp(40px,4vw,60px);font-weight:600;letter-spacing:-.045em;line-height:1;background:linear-gradient(180deg,var(--tx),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rc-stats span{display:block;margin-top:8px;font-size:14.5px;color:var(--mut)}
+.wins{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.wins span{font-size:14px;font-weight:500;padding:7px 14px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.03)}
+.wins span:nth-child(1){background:var(--acc);color:var(--acc-tx);border-color:var(--acc)}
+.rc-links{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin-top:30px}
+.rc-vid{position:relative;justify-self:center;width:min(100%,380px);aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);box-shadow:var(--shadow),0 0 80px rgba(110,149,255,.18);cursor:pointer;background:var(--surf2)}
+.rc-vid video{width:100%;height:100%;object-fit:cover;display:block}
+.rc-vid .snd{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);border:1px solid var(--line2);border-radius:999px;padding:8px 14px}
+.rc-vid .tag{position:absolute;left:14px;top:14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);border-radius:999px;padding:6px 12px}
+.rc-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-top:64px}
+.rc-case{grid-column:span 4;padding:0;display:flex;flex-direction:column;text-align:left;cursor:zoom-in}
+.rc-case .fr{height:300px;--bgimg:none;background:#EDEBE6}
+.rc-case .fr::before{display:none}
+.rc-case .c{padding:20px 22px 24px}
+.rc-case .k{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.rc-case h3{font-size:22px;letter-spacing:-.02em;margin-top:8px;line-height:1.12}
+.rc-case p{color:var(--mut);font-size:15px;margin-top:8px}
+.rc-learn{grid-column:span 4;padding:26px 26px 28px}
+.rc-learn h3{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--acc2);margin-bottom:18px}
+.rc-learn dl{margin:0;display:grid;gap:16px}
+.rc-learn dt{font-family:var(--hd);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.rc-learn dd{margin:3px 0 0;color:var(--mut);font-size:14.5px;line-height:1.45}
+.rc-quote{grid-column:span 12;padding:clamp(28px,4vw,52px);background:linear-gradient(135deg,#1C3B9A,#0F1E52);border-color:transparent;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center}
+.rc-quote blockquote{margin:0;font-family:var(--hd);font-weight:600;font-size:clamp(26px,3.2vw,46px);letter-spacing:-.035em;line-height:1.08;max-width:22em}
+.rc-quote cite{display:block;margin-top:14px;font-family:var(--bd);font-style:normal;font-size:14.5px;font-weight:400;letter-spacing:0;color:rgba(237,241,250,.7)}
+.rc-press{grid-column:span 7;padding:0;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);text-align:left}
+.rc-press .clip{position:relative;background:#F4F1E6;cursor:zoom-in;min-height:100%}
+.rc-press .clip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+.rc-press .c{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px}
+.rc-press .k{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.rc-press h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em;line-height:1.1}
+.rc-press blockquote{margin:6px 0 0;padding-left:16px;border-left:2px solid var(--acc);font-size:15.5px;line-height:1.5;opacity:.92}
+.rc-press cite{display:block;margin-top:8px;font-style:normal;font-size:13.5px;color:var(--mut)}
+.rc-press .note{font-size:12.5px;color:var(--mut);margin-top:auto}
+.rc-photo{grid-column:span 5;padding:0;cursor:zoom-in;min-height:420px}
+.rc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.rc-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 22px 18px;background:linear-gradient(transparent,rgba(5,7,13,.85));font-size:14.5px}
+
+/* vision: a medical incubator for Kozhikode */
+.vis{position:relative;overflow:hidden}
+.vis::before{content:"";position:absolute;right:-12%;top:-10%;width:min(70vw,900px);aspect-ratio:1;border-radius:50%;border:1px dashed rgba(190,210,255,.12);box-shadow:0 0 0 90px rgba(190,210,255,.025),0 0 0 200px rgba(190,210,255,.018);pointer-events:none}
+.vis h2{font-size:clamp(44px,6.2vw,100px);letter-spacing:-.055em;line-height:.92;max-width:11em}
+.vis .lede{max-width:38em}
+.flow{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:64px;counter-reset:st}
+.flow::before{content:"";position:absolute;left:28px;right:28px;top:28px;height:2px;background:linear-gradient(90deg,var(--acc),var(--acc2));transform-origin:0 50%;transform:scaleX(var(--prog,1))}
+.st{position:relative;padding-top:80px}
+.st .n{position:absolute;top:0;left:0;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:2px solid var(--acc);font-family:var(--hd);font-weight:600;font-size:20px;color:var(--acc2);box-shadow:0 0 0 6px var(--bg)}
+.st h3{font-size:clamp(20px,1.7vw,24px);letter-spacing:-.02em;line-height:1.1}
+.st p{margin-top:10px;color:var(--mut);font-size:15px;line-height:1.5}
+.motion-h{margin-top:72px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.inmo{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:16px}
+.inmo>div{padding:18px 20px}
+.inmo b{display:block;font-family:var(--hd);font-size:18px;letter-spacing:-.01em;line-height:1.15}
+.inmo span{display:block;margin-top:6px;font-size:13.5px;color:var(--mut)}
+.inmo i.s{display:inline-block;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-bottom:10px;background:var(--acc-soft);color:var(--acc2)}
+.inmo i.s.next{background:rgba(255,255,255,.06);color:var(--mut)}
+.vis .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:44px}
+
+/* hero news link */
+.news{display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;padding:7px 14px 7px 8px;border-radius:999px;border:1px solid var(--line2);background:rgba(13,18,32,.6);backdrop-filter:blur(8px);text-decoration:none;font-size:14px;font-weight:500;transition:border-color .3s,background .3s}
+.news:hover{border-color:var(--acc);background:var(--acc-soft)}
+.news .nw{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--acc);color:var(--acc-tx);border-radius:999px;padding:4px 9px}
+.news .ph{color:var(--acc2);transition:transform .3s var(--ease)}
+.news:hover .ph{transform:translateX(3px)}
+
 @media (max-width:1023px){
+ .rc-top{grid-template-columns:1fr}
+ .rc-vid{width:min(100%,340px)}
+ .rc-case,.rc-learn,.rc-press,.rc-photo{grid-column:span 12}
+ .rc-case .fr{height:260px}
+ .flow{grid-template-columns:1fr;gap:0}
+ .flow::before{left:27px;right:auto;top:28px;bottom:28px;width:2px;height:auto;transform-origin:50% 0;transform:scaleY(var(--prog,1))}
+ .st{padding:0 0 30px 80px;min-height:86px}
+ .inmo{grid-template-columns:1fr 1fr}
  nav.top ul{display:none}.menu{display:inline-flex}nav.top .r .lnk,nav.top .r .btn{display:none}
  .hero-in{grid-template-columns:1fr;padding-top:104px;gap:28px;min-height:0}
  .orbit{width:min(100%,560px)}
@@ -414,6 +495,10 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  .ct{grid-template-columns:1fr}.ct .face-img{order:-1;width:170px}
 }
 @media (max-width:767px){
+ .rc-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}.rc-stats>div{padding:14px}.rc-stats b{font-size:32px}.rc-stats span{font-size:12.5px}
+ .rc-press{grid-template-columns:1fr}.rc-press .clip{min-height:340px}
+ .rc-quote{grid-template-columns:1fr}
+ .inmo{grid-template-columns:1fr}
  body{font-size:16px}
  .copy h1{font-size:clamp(46px,13vw,64px)}
  .copy .sub{margin-top:20px}.copy .cta{margin-top:28px}
@@ -440,12 +525,12 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
 <nav class="top" aria-label="Primary">
  <div class="bar">
   <a class="logo" href="#top" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn" width="1200" height="755"></a>
-  <ul><li><a href="#top">Universe</a></li><li><a href="#handover">Handover</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li></ul>
+  <ul><li><a href="#top">Universe</a></li><li><a href="#repaircafe">Repair Caf&eacute;</a></li><li><a href="#vision">Vision</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li></ul>
   <div class="r"><a class="lnk" href="#contact">Contact</a><button class="btn sm acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
   <button class="menu" id="menu" aria-expanded="false" aria-controls="sheet"><i class="ph ph-list" aria-hidden="true"></i><span>Menu</span></button>
  </div>
 </nav>
-<div class="sheet" id="sheet"><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
+<div class="sheet" id="sheet"><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#repaircafe">Repair Caf&eacute;</a><a href="#vision">Vision</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
 
 <main id="main">
 <section class="hero" id="top" aria-label="The Medinn universe">
@@ -453,6 +538,7 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  <div class="wrap hero-in" id="heroIn">
   <div class="left">
    <div class="copy" id="copy">
+    <a class="news" href="#repaircafe"><span class="nw">New</span>India's first medical Repair Caf&eacute; <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
     <h1 class="split" id="h1">Medicine meets <em>MedTech.</em></h1>
     <p class="sub">Medinn is the practice of Dr. Sidharth Narayanan, building edtech growth and MedTech ecosystems across Malabar.</p>
     <div class="cta"><button class="btn mag" id="openBtn"><i class="ph ph-planet" aria-hidden="true"></i> Open the universe</button><button class="btn ghost mag" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
@@ -533,6 +619,62 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
     </div>
    </div>
   </div>
+ </div>
+</section>
+
+<section class="sec alt" id="repaircafe">
+ <div class="wrap">
+  <div class="rc-top">
+   <div>
+    <p class="eyebrow">Landmark &middot; 18 October 2026</p>
+    <h2 class="split">India's first medical Repair Caf&eacute;.</h2>
+    <p class="lede rv">Medical students, engineers and makers opened up condemned devices from Government Medical College, Kozhikode, on one bench, and brought five of them back. Medinn conceived and led it with IEDC GMC Kozhikode and TinkerSpace Calicut.</p>
+    <div class="rc-stats"><div class="spot rv"><b data-count="5">5</b><span>devices repaired</span></div><div class="spot rv"><b data-count="6">6</b><span>devices opened and studied</span></div><div class="spot rv"><b data-count="4">4</b><span>disciplines on one bench</span></div></div>
+    <div class="wins rv"><span>Patient monitor revived</span><span>Nebuliser fixed</span><span>BP cuff glued back</span><span>NIV filters cleaned</span><span>Ventilator deconstructed &amp; documented</span><span>Pulse-ox sensor studied</span></div>
+    <div class="rc-links rv"><a class="btn acc" href="repair-cafe-report.pdf" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> Read the full report</a><a class="lnk" href="https://www.linkedin.com/posts/dr-sidharth-narayanan-7013281b8_tinkerspace-activity-7510251401655103488-5Lbz">LinkedIn post <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></div>
+   </div>
+   <button class="rc-vid rv" data-gsrc="rc-talk.mp4" aria-label="Play the Repair Caf&eacute; video with sound"><video src="rc-talk.mp4" poster="rc-talk.jpg" muted loop playsinline preload="metadata"></video><span class="tag">Repair Caf&eacute;</span><span class="snd">&#9654; Tap for sound</span></button>
+  </div>
+
+  <div class="rc-grid">
+   <button class="rc-case spot rv" data-gsrc="rc-case-monitor.jpg"><div class="fr"><img src="rc-case-monitor.jpg" alt="Case 01: BPL patient monitor before and after" loading="lazy"></div><div class="c"><p class="k">Case 01 &middot; BPL patient monitor</p><h3>Stuck on the boot screen. Back to showing vitals.</h3><p>Suspected micro-cracks in the solder joints from pump vibration and cuff stress. Flux, a hot-air reflow and a capacitor check later, it booted to live vitals.</p></div></button>
+   <button class="rc-case spot rv" data-gsrc="rc-case-ventilator.jpg"><div class="fr"><img src="rc-case-ventilator.jpg" alt="Case 02: Mindray SV300 ventilator faults" loading="lazy"></div><div class="c"><p class="k">Case 02 &middot; Mindray SV300 ventilator</p><h3>Two faults found: the display and a gas-supply motor.</h3><p>Opened up and documented, with a dust-laden intake filter and a hand-marked battery along the way.</p></div></button>
+   <div class="rc-learn spot rv"><h3>What we learned</h3><dl>
+    <div><dt>No paper trail</dt><dd>Many devices had no record of maintenance contracts, servicing or routine care.</dd></div>
+    <div><dt>Donated, then lost</dt><dd>Donated devices often never get registered with the biomedical team, so they fall outside maintenance and warranty.</dd></div>
+    <div><dt>Care nobody taught</dt><dd>Basic care like filter changes is not something most healthcare workers are trained in.</dd></div>
+    <div><dt>Calibration</dt><dd>It is costly. How much of it actually happens?</dd></div>
+   </dl></div>
+   <div class="rc-quote spot rv"><blockquote>&ldquo;We look after our phones and computers better than the devices patients depend on.&rdquo;<cite>From the Repair Caf&eacute; report</cite></blockquote><a class="btn" href="#vision"><i class="ph ph-arrow-right" aria-hidden="true"></i> What comes next</a></div>
+   <div class="rc-press spot rv"><button class="clip" data-gsrc="rc-press.jpg" aria-label="Read the Malayala Manorama article"><img src="rc-press.jpg" alt="Malayala Manorama article on the Repair Caf&eacute;" loading="lazy"></button>
+    <div class="c"><p class="k">In the press</p><h3>&ldquo;When needed, the stethoscope and the spanner too.&rdquo;</h3><p class="mut" style="font-size:15px">Malayala Manorama, Kozhikode City, 19 October 2026, page 4. The report names Medinn's Dr. Sidharth Narayanan as Student Nodal Officer among those who led the day.</p>
+     <blockquote>&ldquo;Healthcare workers can offer ideas for new technology in healthcare; engineering's technical strength is what brings them into practice. Medical and engineering students working together here is a model initiative.&rdquo;<cite>Dr. M. P. Sreejayan, Superintendent, Government Medical College Hospital, Kozhikode</cite></blockquote>
+     <p class="note">Translated from Malayalam.</p></div></div>
+   <button class="rc-photo spot rv" data-gsrc="rc-team.jpg"><img src="rc-team.jpg" alt="Dr. Sidharth Narayanan with TinkerHub makers and a ResMed device at the Repair Caf&eacute;" loading="lazy"><figcaption>On the bench with TinkerHub makers</figcaption></button>
+  </div>
+ </div>
+</section>
+
+<section class="sec vis" id="vision">
+ <div class="wrap">
+  <h2 class="split">A medical incubator for Kozhikode.</h2>
+  <p class="lede rv">From one bench to an ecosystem. The vision is a place in Kozhikode where problems from the ward become products: built by clinicians, engineers and makers together, tested where care actually happens, and launched from Malabar.</p>
+  <div class="flow" id="flow">
+   <div class="st rv"><span class="n">1</span><h3>Problems from the ward</h3><p>A clinical problem bank fed by doctors, nurses and biomedical teams at Government Medical College, Kozhikode.</p></div>
+   <div class="st rv"><span class="n">2</span><h3>Learn from what breaks</h3><p>Repair caf&eacute;s and deconstruction labs that turn condemned devices into lessons in how equipment ages and fails.</p></div>
+   <div class="st rv"><span class="n">3</span><h3>Build mixed teams</h3><p>Clinicians with engineers from NIT Calicut, makers from TinkerHub and TinkerSpace, and designers.</p></div>
+   <div class="st rv"><span class="n">4</span><h3>Validate and pilot</h3><p>Clinical input, ethics and pilots in real wards before anything scales.</p></div>
+   <div class="st rv"><span class="n">5</span><h3>Launch from Malabar</h3><p>Links to Kerala Startup Mission, iHub and investors for devices that are cheaper, local and built to last.</p></div>
+  </div>
+  <p class="motion-h rv">Already in motion</p>
+  <div class="inmo">
+   <div class="spot rv"><i class="s">Launched</i><b>IEDC GMC Kozhikode</b><span>Innovation cell at the medical college, May 2026</span></div>
+   <div class="spot rv"><i class="s">Done</i><b>Medical Repair Caf&eacute;</b><span>India's first, October 2026</span></div>
+   <div class="spot rv"><i class="s">Done</i><b>Medical hackathons</b><span>Cochin 2025, Kozhikode 2026</span></div>
+   <div class="spot rv"><i class="s">Ongoing</i><b>NIT Calicut &times; Calicut Medical College</b><span>Interdisciplinary projects</span></div>
+   <div class="spot rv"><i class="s next">Next</i><b>Device maintenance tracker</b><span>Model, faults, service history and spare-part costs for every device</span></div>
+  </div>
+  <div class="acts rv"><a class="btn acc mag" href="mailto:medinnnetworking@gmail.com?subject=Medical%20incubator%2C%20Kozhikode"><i class="ph ph-envelope" aria-hidden="true"></i> Partner on the incubator</a><button class="btn ghost mag" data-svx="5"><i class="ph ph-buildings" aria-hidden="true"></i> Ecosystems for institutes</button></div>
  </div>
 </section>
 
@@ -912,7 +1054,7 @@ function renderPrev(w) {
 renderWork();
 
 /* ---------- timeline ---------- */
-const YEARNOTE = { 'Before 2024': 'Content, quizzes and the first edtech roles', '2024': 'Medinn begins, first stages and summits', '2025': 'Conferences, expos and hackathons', '2026': 'IEDC launch, The Handover, current roles' };
+const YEARNOTE = { 'Before 2024': 'Content, quizzes and the first edtech roles', '2024': 'Medinn begins, first stages and summits', '2025': 'Conferences, expos and hackathons', '2026': 'IEDC launch, The Handover, the Repair Café' };
 $('#track').innerHTML = D.events.map(g => `<div class="yr"><b>${esc(g.year === 'Before 2024' ? '2020' : g.year)}</b><span>${esc(YEARNOTE[g.year] || '')}</span></div>` + g.items.map(e => `<article class="ev spot ${e.img ? '' : 'noimg'}">${frame(e.img)}<div class="c"><span class="w">${esc(e.when)}</span><h3>${esc(e.title)}</h3><p>${esc(e.role)}</p>${e.url ? `<a class="lnk" href="${esc(e.url)}">${esc(e.linkLabel || 'Open')} ${ARROW}</a>` : ''}</div></article>`).join('')).join('');
 const sc = $('#tlScroll'), prevB = $('#tlPrev'), nextB = $('#tlNext');
 const step = () => Math.min(sc.clientWidth * .8, 720);
@@ -951,10 +1093,15 @@ document.addEventListener('keydown', e => { if (!lb.classList.contains('on')) re
 let tx0 = null; lb.addEventListener('touchstart', e => { tx0 = e.touches[0].clientX; }, { passive: true });
 lb.addEventListener('touchend', e => { if (tx0 === null) return; const d = e.changedTouches[0].clientX - tx0; if (Math.abs(d) > 50) lbStep(d < 0 ? 1 : -1); tx0 = null; });
 
+
+/* repair café media open in the same viewer as the gallery */
+$$('[data-gsrc]').forEach(el => el.addEventListener('click', () => { const i = GALLERY.findIndex(g => g.src === el.dataset.gsrc); if (i > -1) lbOpen(i); }));
+$$('.rc-vid video').forEach(v => vio.observe(v));
+
 /* ---------- nav state ---------- */
 const navLinks = $$('nav.top ul a');
 const navIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('cur', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
-['top', 'moat', 'handover', 'tl', 'gallery', 'work', 'services', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
+['top', 'moat', 'handover', 'repaircafe', 'vision', 'tl', 'gallery', 'work', 'services', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
 
 /* ---------- spotlight borders and magnetic buttons (pointer feedback) ---------- */
 document.addEventListener('pointermove', e => { const s = e.target.closest && e.target.closest('.spot'); if (!s) return; const r = s.getBoundingClientRect(); s.style.setProperty('--mx', (e.clientX - r.left) + 'px'); s.style.setProperty('--my', (e.clientY - r.top) + 'px'); }, { passive: true });
@@ -999,6 +1146,9 @@ if (anim) {
   /* flagship banner opens like a curtain */
   gsap.fromTo('#hoBan', { clipPath: 'inset(0 14% 0 14% round 22px)' }, { clipPath: 'inset(0 0% 0 0% round 22px)', ease: 'none', scrollTrigger: { trigger: '#hoBan', start: 'top 95%', end: 'center 50%', scrub: true } });
   gsap.fromTo('#hoBan img', { scale: 1.25 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: '#hoBan', start: 'top bottom', end: 'bottom top', scrub: true } });
+
+  /* the incubator pipeline draws itself in order */
+  gsap.fromTo('#flow', { '--prog': 0 }, { '--prog': 1, ease: 'none', scrollTrigger: { trigger: '#flow', start: 'top 80%', end: 'bottom 55%', scrub: true } });
 
   /* hero parallax on the way out */
   gsap.to('#heroIn', { yPercent: 12, autoAlpha: .35, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true } });

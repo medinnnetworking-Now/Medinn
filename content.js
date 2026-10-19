@@ -9,6 +9,12 @@
    Link:   { "type": "link", "src": "cover.jpg", "url": "https://www.instagram.com/reel/...", "caption": "Watch the reel" },
 */
 const GALLERY = [
+ {"type":"video","src":"rc-talk.mp4","poster":"rc-talk.jpg","caption":"Repair Café, 18 October 2026: opening the session at TinkerSpace"},
+ {"type":"image","src":"rc-team.jpg","caption":"On the bench with TinkerHub makers and a ResMed device"},
+ {"type":"image","src":"rc-press.jpg","caption":"Malayala Manorama, Kozhikode City, 19 October 2026"},
+ {"type":"image","src":"rc-poster.jpg","caption":"Repair Café: wins on the bench"},
+ {"type":"image","src":"rc-case-monitor.jpg","caption":"Case 01: BPL patient monitor, back to showing vitals"},
+ {"type":"image","src":"rc-case-ventilator.jpg","caption":"Case 02: Mindray SV300 ventilator, two faults found"},
  {
   "type": "image",
   "src": "p-handover1.jpg",
@@ -102,7 +108,7 @@ const SERVICES = [
    text: 'Interdisciplinary hackathons, medical-college innovation cells and medicine × engineering partnerships that connect clinicians with engineers, makers, startups and state innovation bodies, to grow Malabar\'s biomedical startup ecosystem.',
    get: ['Innovation and entrepreneurship cell setup', 'Medicine × engineering partnerships', 'Hackathons and device deconstruction labs', 'Links to state innovation bodies'],
    for: 'Medical colleges, engineering institutes and hospitals',
-   proof: ['IEDC GMC Kozhikode', 'NIT Calicut × Calicut Medical College', 'TinkerHub & TinkerSpace', 'Repair Café × device lab', 'Kerala Startup Mission'] },
+   proof: ['IEDC GMC Kozhikode', 'NIT Calicut × Calicut Medical College', 'TinkerHub & TinkerSpace', 'Medical Repair Café (India\'s first)', 'Kerala Startup Mission'] },
  { id: 'events', icon: 'calendar', title: 'Events, summits & hackathons', tag: 'Concept to on-the-day operations.',
    text: 'End-to-end delivery of conferences, bootcamps, webinars and hackathons: concept, speakers, marketing, design, outreach and on-the-day operations.',
    get: ['Concept, programme and speakers', 'Marketing, design and outreach', 'On-the-day operations', 'Bootcamps, webinars and hackathons'],
@@ -419,7 +425,7 @@ const D = {
    "name": "TinkerHub & TinkerSpace",
    "tag": "Ecosystem",
    "role": "Hackathons and Repair Café · 2025 to present",
-   "text": "Co-organized the surgical hackathon at TinkerHub Cochin (2025) and the overnight Medical & Surgical Intervention Hackathon at TinkerSpace Calicut (5-6 September 2026, 40+ participants). A Repair Café follows this month.",
+   "text": "Co-organized the surgical hackathon at TinkerHub Cochin (2025) and the overnight Medical & Surgical Intervention Hackathon at TinkerSpace Calicut (5-6 September 2026, 40+ participants). Together they ran India's first medical Repair Café at Government Medical College, Kozhikode, on 18 October 2026.",
    "links": [
     {
      "label": "Hackathon post",
@@ -746,11 +752,11 @@ const D = {
   },
   {
    "cat": "Ecosystems",
-   "title": "Repair Café × Medical Device Deconstruction Lab",
-   "role": "IEDC GMC Kozhikode with TinkerSpace Kozhikode · October 2026",
-   "text": "Exploring, understanding and reimagining medical devices at Government Medical College Kozhikode, with follow-up discussions and a workshop to come.",
-   "result": "Upcoming",
-   "img": "p-repair.jpg",
+   "title": "Medical Repair Café, Government Medical College Kozhikode",
+   "role": "Conceived and led, with IEDC GMC Kozhikode and TinkerSpace Calicut · 18 October 2026",
+   "text": "India's first medical Repair Café. Medical students, computer science and electrical engineers, TinkerHub makers and iHub biomedical engineers opened up condemned hospital devices on one bench: a BPL patient monitor stuck on its boot screen was reflowed back to live vitals, a Mindray SV300 ventilator was taken apart and documented, and a nebuliser, a BP cuff and NIV filters were brought back. Covered by Malayala Manorama.",
+   "result": "5 devices repaired · Featured in Malayala Manorama",
+   "img": "rc-team.jpg",
    "links": [
     {
      "label": "LinkedIn post",
@@ -1086,10 +1092,10 @@ const D = {
      "linkLabel": ""
     },
     {
-     "when": "October 2026",
-     "title": "Repair Café × Medical Device Deconstruction Lab",
-     "role": "IEDC GMC Kozhikode with TinkerSpace Kozhikode",
-     "img": "p-repair.jpg",
+     "when": "18 October 2026",
+     "title": "India's first medical Repair Café",
+     "role": "Government Medical College, Kozhikode, with IEDC GMC Kozhikode and TinkerSpace Calicut. 5 condemned devices repaired, featured in Malayala Manorama",
+     "img": "rc-team.jpg",
      "imgMax": "440px",
      "url": "https://www.linkedin.com/posts/dr-sidharth-narayanan-7013281b8_tinkerspace-activity-7510251401655103488-5Lbz",
      "linkLabel": "LinkedIn post"
@@ -1145,7 +1151,7 @@ const D = {
     "Interdisciplinary hackathons",
     "NIT Calicut × Calicut Medical College",
     "TinkerHub & TinkerSpace",
-    "Repair Café × device lab",
+    "Medical Repair Café (India's first)",
     "Kerala Startup Mission"
    ]
   },
