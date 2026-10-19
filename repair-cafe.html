@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<title>India's First Medical Repair Café | Kozhikode | Medinn</title>
+<meta name="description" content="On 18 October 2026, medical students, engineers and makers opened up condemned devices from Government Medical College, Kozhikode, and brought five of them back. Led by Medinn with IEDC GMC Kozhikode and TinkerSpace Calicut.">
+<meta property="og:title" content="India's first medical Repair Café, Kozhikode">
+<meta property="og:description" content="Condemned hospital devices, one bench, four disciplines. Five devices repaired, featured in Malayala Manorama.">
+<meta property="og:image" content="https://medinn-sandy.vercel.app/rc-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="medinn-logo.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="story.css">
+<style>
+/* Repair Café story: shares story.css with /bmh and /incubator; only the event-specific pieces live here. */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:44px;max-width:760px}
+.stats .card{padding:22px 22px 24px}
+.stats b{display:block;font-family:var(--hd);font-size:clamp(44px,5vw,72px);font-weight:600;letter-spacing:-.05em;line-height:1;background:linear-gradient(180deg,var(--tx),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stats span{display:block;margin-top:8px;font-size:14.5px;color:var(--mut)}
+.wins{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;max-width:860px}
+.wins span{font-size:14.5px;font-weight:500;padding:8px 14px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.03)}
+.wins span:first-child{background:var(--acc);color:var(--acc-tx);border-color:var(--acc)}
+.day{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,4vw,56px);margin-top:56px;align-items:start}
+.vid{position:relative;width:100%;max-width:400px;aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);box-shadow:var(--shadow),0 0 80px rgba(110,149,255,.18);background:var(--surf2);justify-self:center}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.vid .snd{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);border:1px solid var(--line2);border-radius:999px;padding:8px 14px}
+.photo{border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.photo img{width:100%;height:auto}
+.photo figcaption{padding:12px 16px;font-size:14px;color:var(--mut);background:var(--surf)}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.who span{padding:14px 16px;border-radius:var(--r2);border:1px solid var(--line2);font-family:var(--hd);font-weight:600;font-size:17px;background:var(--surf)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:52px}
+.case{overflow:hidden;display:flex;flex-direction:column}
+.case .img{background:#EDEBE6;display:grid;place-items:center;padding:12px}
+.case .img img{max-height:520px;width:auto}
+.case .c{padding:22px 24px 26px}
+.case h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em;margin-top:8px}
+.case ol{margin:14px 0 0;padding-left:20px;display:grid;gap:8px;color:var(--mut);font-size:15.5px;line-height:1.5}
+.case ol li::marker{color:var(--acc2);font-weight:600}
+.next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:52px}
+.next .card{padding:26px}
+.next .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--acc-tx);font-family:var(--hd);font-weight:700}
+.next h3{font-size:21px;letter-spacing:-.02em;margin-top:16px}
+.next p{color:var(--mut);font-size:15.5px;margin-top:8px;line-height:1.5}
+.pressbig{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;margin-top:52px;overflow:hidden}
+.pressbig img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pressbig .c{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:14px}
+.pressbig h3{font-size:clamp(26px,2.8vw,40px);letter-spacing:-.035em;line-height:1.05}
+.pressbig blockquote{margin:8px 0 0;padding-left:18px;border-left:2px solid var(--acc);font-size:17px;line-height:1.55}
+.pressbig cite{display:block;margin-top:10px;font-style:normal;font-size:14px;color:var(--mut)}
+@media (max-width:1023px){.day,.cases,.next{grid-template-columns:1fr}}
+@media (max-width:767px){.stats{grid-template-columns:repeat(3,1fr);gap:8px}.stats .card{padding:14px}.stats b{font-size:36px}.stats span{font-size:12.5px}.pressbig{grid-template-columns:1fr}.pressbig img{height:420px}.who{grid-template-columns:1fr}.case .img img{max-height:420px}}
+@media print{.vid{display:none}.stats b{-webkit-text-fill-color:#1D4FC4;background:none}}
+</style>
+</head>
+<body data-story>
+<script>document.documentElement.classList.add('js');</script>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; Medical Repair Caf&eacute;</span></a>
+ <div class="r"><button class="btn ghost" data-share="/repair-cafe" data-title="India's first medical Repair Café, Kozhikode"><i class="ph ph-share" aria-hidden="true"></i> Share</button><a class="btn" href="/incubator">What comes next</a></div>
+</header>
+
+<main>
+<section class="cover" id="top">
+ <div class="bgimg"><img src="rc-team.jpg" alt="Dr. Sidharth Narayanan with TinkerHub makers and a ResMed device at the Repair Caf&eacute;" fetchpriority="high"></div>
+ <div class="wrap">
+  <p class="to rv">18 October 2026 &middot; Government Medical College, Kozhikode</p>
+  <h1 class="rv">India's first medical Repair Caf&eacute;.</h1>
+  <p class="sub rv">Medical students, engineers and makers opened up condemned hospital devices on one bench, and brought five of them back.</p>
+  <div class="from rv"><img src="sidharth-face.jpg" alt=""><p><b>Led by Medinn</b>with IEDC GMC Kozhikode and TinkerSpace Calicut</p></div>
+  <div class="acts rv"><a class="btn" href="#day"><i class="ph ph-arrow-right" aria-hidden="true"></i> See what happened</a><a class="btn ghost" href="repair-cafe-report.pdf" target="_blank" rel="noopener">Read the report (PDF)</a></div>
+ </div>
+</section>
+
+<section class="ch" id="day">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="1">The day</p><h2 class="rv">One bench. Two disciplines. Devices back to life.</h2>
+   <p class="lede rv">Devices that had been condemned or left idle at Government Medical College, Kozhikode, were brought to TinkerSpace's bench. Clinicians explained how they are used and how they fail; engineers and makers opened them up, diagnosed and repaired.</p></div>
+  <div class="stats"><div class="card rv"><b>5</b><span>devices repaired</span></div><div class="card rv"><b>6</b><span>devices opened and studied</span></div><div class="card rv"><b>4</b><span>disciplines on one bench</span></div></div>
+  <div class="wins rv"><span>Patient monitor revived</span><span>Nebuliser fixed</span><span>BP cuff glued back</span><span>NIV filters cleaned</span><span>Ventilator deconstructed &amp; documented</span><span>Pulse-ox sensor studied</span></div>
+  <div class="day">
+   <div>
+    <figure class="photo rv" style="margin:0"><img src="rc-team.jpg" alt="On the bench with TinkerHub makers" loading="lazy"><figcaption>On the bench with TinkerHub makers and a ResMed device.</figcaption></figure>
+    <p class="k rv" style="margin-top:32px">Built together by</p>
+    <div class="who rv"><span>Medical students</span><span>CS &amp; electrical engineers</span><span>TinkerHub makers</span><span>iHub biomedical engineers</span></div>
+   </div>
+   <button class="vid rv" id="vid" aria-label="Play the video with sound"><video src="rc-talk.mp4" poster="rc-talk.jpg" muted loop playsinline preload="metadata" autoplay></video><span class="snd" id="snd">&#9654; Tap for sound</span></button>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="cases">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="2">On the bench</p><h2 class="rv">Two devices, two stories.</h2></div>
+  <div class="cases">
+   <article class="card case rv"><div class="img"><img src="rc-case-monitor.jpg" alt="BPL patient monitor before and after the repair" loading="lazy"></div><div class="c"><p class="k">Case 01 &middot; BPL patient monitor</p><h3>Stuck on the boot screen. Back to showing vitals.</h3><ol><li>It powered on, showed the brand logo, and went no further.</li><li>The team suspected invisible micro-cracks in the solder joints, the kind pump vibration and cuff stress can cause over time.</li><li>They applied flux, reflowed it with a hot-air rework station, and rechecked the capacitors with a multimeter.</li><li>Switched back on, it booted past the logo to live vitals.</li></ol></div></article>
+   <article class="card case rv"><div class="img"><img src="rc-case-ventilator.jpg" alt="Mindray SV300 ventilator opened up, with its faults labelled" loading="lazy"></div><div class="c"><p class="k">Case 02 &middot; Mindray SV300 ventilator</p><h3>Two faults found: the display and a motor in the gas-supply unit.</h3><ol><li>Opened up and documented component by component.</li><li>Display: fault.</li><li>Gas-supply motor: fault.</li><li>Along the way: a dust-laden intake filter and a hand-marked battery.</li></ol></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="ch" id="learned">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="3">What we learned</p><h2 class="rv">The devices told us more than their faults.</h2></div>
+  <div class="evid" style="margin-top:48px">
+   <div class="card rv"><dl style="margin-top:0">
+    <div><dt>No paper trail</dt><dd>Many devices had no record of maintenance contracts, servicing or routine care.</dd></div>
+    <div><dt>Donated, then lost</dt><dd>Donated devices often never get registered with the biomedical team, so they fall outside maintenance and warranty.</dd></div>
+    <div><dt>Care nobody taught</dt><dd>Basic care like filter changes is not something most healthcare workers are trained in.</dd></div>
+    <div><dt>Calibration</dt><dd>It is costly. How much of it actually happens?</dd></div>
+   </dl></div>
+   <div class="card q rv"><blockquote>&ldquo;We look after our phones and computers better than the devices patients depend on.&rdquo;<cite>From the Repair Caf&eacute; report</cite></blockquote><a class="lnk" href="repair-cafe-report.pdf" target="_blank" rel="noopener">Read the full report <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="press">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="4">In the press</p><h2 class="rv">Malayala Manorama, the next morning.</h2></div>
+  <div class="card pressbig rv"><img src="rc-press.jpg" alt="Malayala Manorama article on the Repair Caf&eacute;, Kozhikode City, 19 October 2026" loading="lazy">
+   <div class="c"><p class="k">Kozhikode City &middot; 19 October 2026 &middot; page 4</p><h3>&ldquo;Medical devices, treated and repaired. When needed, the stethoscope and the spanner too.&rdquo;</h3>
+    <p class="mut">The report covers the medical and engineering students' collective that brought condemned devices at Government Medical College back to use, and names Dr. Sidharth Narayanan as Student Nodal Officer among those who led the day.</p>
+    <blockquote>&ldquo;Healthcare workers can offer ideas for new technology in healthcare; engineering's technical strength is what brings them into practice. Medical and engineering students working together here is a model initiative.&rdquo;<cite>Dr. M. P. Sreejayan, Superintendent, Government Medical College Hospital, Kozhikode</cite></blockquote>
+    <p class="note" style="margin-top:auto">Headline and quote translated from Malayalam.</p></div></div>
+ </div>
+</section>
+
+<section class="ch" id="next">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="5">What's next</p><h2 class="rv">From one bench to an ecosystem.</h2></div>
+  <div class="next">
+   <div class="card rv"><span class="n">1</span><h3>A low-cost maintenance tracker</h3><p>Log each device's model, faults, photos, service history, spare-part costs and repair status, so recurring faults stop hiding.</p></div>
+   <div class="card rv"><span class="n">2</span><h3>More repair caf&eacute;s and deconstruction labs</h3><p>Every condemned device is a lesson in how real equipment ages and fails.</p></div>
+   <div class="card rv"><span class="n">3</span><h3>A biomedical ecosystem for Malabar</h3><p>Clinicians, engineers and makers building devices that are cheaper, local and built to last.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="talk">
+ <div class="wrap">
+  <div class="close">
+   <img class="rv" src="sidharth-face.jpg" alt="Dr. Sidharth Narayanan" loading="lazy">
+   <div>
+    <h2 class="rv">Bring a Repair Caf&eacute; to your hospital or college.</h2>
+    <p class="contact rv">Dr. Sidharth Narayanan, Medinn<br><a href="mailto:medinnnetworking@gmail.com">medinnnetworking@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8">LinkedIn</a></p>
+    <div class="acts rv"><a class="btn" href="mailto:medinnnetworking@gmail.com?subject=Repair%20Caf%C3%A9"><i class="ph ph-envelope" aria-hidden="true"></i> Get in touch</a><a class="btn ghost" href="/incubator">The incubator vision</a><button class="btn ghost" data-share="/repair-cafe" data-title="India's first medical Repair Café, Kozhikode"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><p>Medinn is the independent consulting practice of Dr. Sidharth Narayanan. Repair Caf&eacute; by IEDC GMC Kozhikode &times; TinkerSpace Calicut, led by Medinn.</p><a href="/">medinn-sandy.vercel.app</a></div></footer>
+<script src="story.js"></script>
+<script>
+/* the clip plays silently; a tap unmutes it */
+(() => { const b = document.getElementById('vid'), v = b.querySelector('video'), s = document.getElementById('snd');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) v.removeAttribute('autoplay'), v.pause();
+  b.addEventListener('click', () => { v.muted = !v.muted; if (v.paused) v.play().catch(() => {}); s.innerHTML = v.muted ? '&#9654; Tap for sound' : 'Sound on'; }); })();
+</script>
+</body>
+</html>

@@ -57,3 +57,27 @@ Leave `"img"` as `""` if there is no photo. Put a LinkedIn or Instagram link in 
 ## Seeing your change
 
 After committing, wait a minute, then open the site in a Private tab in Safari, or pull down to refresh. Safari keeps old copies for a while.
+
+## Links you can send
+
+Each of these opens straight to that page or section. The standalone pages have their own WhatsApp and LinkedIn preview; the `#` links show the homepage preview.
+
+| Send this | Opens |
+|---|---|
+| https://medinn-sandy.vercel.app/repair-cafe | The Repair Café story (standalone page) |
+| https://medinn-sandy.vercel.app/incubator | The medical incubator pitch, for anyone (standalone page) |
+| https://medinn-sandy.vercel.app/bmh | The incubator proposal addressed to Baby Memorial Hospital |
+| https://medinn-sandy.vercel.app/repair-cafe-report.pdf | The 7-slide Repair Café report |
+| https://medinn-sandy.vercel.app/#repaircafe | The Repair Café section of the homepage |
+| https://medinn-sandy.vercel.app/#vision | The incubator vision section of the homepage |
+| https://medinn-sandy.vercel.app/#handover | The Handover |
+| https://medinn-sandy.vercel.app/#tl | The timeline |
+| https://medinn-sandy.vercel.app/#gallery | The gallery |
+| https://medinn-sandy.vercel.app/#work | Selected work |
+| https://medinn-sandy.vercel.app/#services | Services |
+| https://medinn-sandy.vercel.app/#research | Research and credentials |
+| https://medinn-sandy.vercel.app/#contact | Contact |
+
+The Share buttons on these pages open the phone's share sheet, or copy the link on a computer.
+
+To make a copy of the incubator pitch for another organization (for example `/mims`), duplicate `bmh.html`, rename it, and change the organization's name in the text, or ask Claude to do it.
