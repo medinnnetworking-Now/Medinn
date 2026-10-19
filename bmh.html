@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<meta name="robots" content="noindex">
+<title>A Medical Incubator for Kozhikode | A proposal for Baby Memorial Hospital | Medinn</title>
+<meta name="description" content="A proposal from Dr. Sidharth Narayanan, Medinn, to Baby Memorial Hospital: a medical incubator in Kozhikode that turns problems from the ward into products, built on two years of work across Malabar.">
+<meta property="og:title" content="A medical incubator for Kozhikode: a proposal for Baby Memorial Hospital">
+<meta property="og:description" content="From the Repair Café to an incubator. What has happened so far, and what we propose to build together.">
+<meta property="og:image" content="https://medinn-sandy.vercel.app/bmh-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="medinn-logo.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Design read: a pitch document for a hospital leadership team, read first on a phone from a WhatsApp link.
+   Same Medinn cinematic system as the homepage, calmer: one accent, reading-width columns, motion only to reveal
+   sequence (the timeline fills as you read, chapters rise in). Prints cleanly to PDF. */
+@font-face{font-family:'Bricolage';src:url(bricolage.woff2) format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:'Geist';src:url(geist.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Geist Mono';src:url(geist-mono.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Phosphor';src:url(phosphor.woff2) format('woff2');font-display:block}
+:root{
+ color-scheme:dark;
+ --r:22px;--r2:14px;--pad:clamp(20px,5vw,72px);--max:1180px;--read:44rem;
+ --hd:'Bricolage','Helvetica Neue',Arial,sans-serif;--bd:'Geist','Helvetica Neue',Arial,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;
+ --ease:cubic-bezier(.16,1,.3,1);
+ --bg:#05070D;--bg2:#080B14;--surf:#0D1220;--surf2:#141B2C;--line:rgba(190,210,255,.10);--line2:rgba(190,210,255,.2);
+ --tx:#EDF1FA;--mut:#8E9AB3;--acc:#6E95FF;--acc2:#B4C8FF;--acc-tx:#05070D;--acc-soft:rgba(110,149,255,.13);
+ --shadow:0 40px 80px -30px rgba(0,0,0,.85),0 10px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:80px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--bd);font-size:17.5px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.04;mix-blend-mode:screen;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--hd);font-weight:600;letter-spacing:-.03em;line-height:1.02;margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.ph{font-family:'Phosphor'!important;font-style:normal;font-weight:normal;line-height:1;display:inline-block}
+.ph-arrow-right::before{content:"\e06c"}.ph-arrow-up-right::before{content:"\e092"}.ph-envelope::before{content:"\e218"}.ph-arrow-left::before{content:"\e058"}
+.ph-flask::before{content:"\e79e"}.ph-buildings::before{content:"\e102"}.ph-seal::before{content:"\e606"}.ph-steth::before{content:"\e7ea"}.ph-gear::before{content:"\e272"}.ph-cap::before{content:"\e62c"}.ph-sparkle::before{content:"\e6a2"}.ph-calendar::before{content:"\e8b2"}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.mut{color:var(--mut)}
+.k{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.btn{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;background:var(--acc);color:var(--acc-tx);transition:transform .3s var(--ease),box-shadow .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -16px rgba(110,149,255,.65)}
+.btn.ghost{background:transparent;color:var(--tx);box-shadow:inset 0 0 0 1px var(--line2)}
+.btn.ghost:hover{background:var(--acc-soft)}
+.lnk{display:inline-flex;align-items:center;gap:6px;color:var(--acc2);text-decoration:none;font-weight:500}
+.lnk:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* top bar with reading progress */
+.bar{position:fixed;inset:0 0 auto 0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--pad);background:rgba(5,7,13,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.bar .id{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--mut);text-decoration:none}
+.bar .id img{height:30px;background:#fff;border-radius:999px;padding:3px 8px}
+.bar .id b{color:var(--tx);font-weight:500}
+.bar .r{display:flex;gap:8px}
+.bar .btn{min-height:40px;padding:0 16px;font-size:14px}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));transform-origin:0 50%;transform:scaleX(0);display:none}
+
+/* cover */
+.cover{position:relative;min-height:100dvh;display:flex;align-items:flex-end;padding:120px 0 64px;overflow:hidden}
+.cover .bgimg{position:absolute;inset:0 0 0 34%;z-index:0}
+.cover .bgimg img{width:100%;height:100%;object-fit:cover;object-position:52% 26%;filter:saturate(.9)}
+.cover .bgimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(5,7,13,.75) 22%,rgba(5,7,13,.1) 55%,rgba(5,7,13,.25) 100%),linear-gradient(180deg,rgba(5,7,13,.5) 0%,transparent 25%,transparent 70%,var(--bg) 100%)}
+.cover .wrap{position:relative;z-index:1;width:100%}
+.cover .to{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);border:1px solid var(--line2);font-size:14px;margin-bottom:24px}
+.cover h1{font-size:clamp(46px,6.6vw,100px);letter-spacing:-.055em;line-height:.92;max-width:7.6em}
+.cover .sub{margin-top:24px;font-size:clamp(18px,1.6vw,22px);color:rgba(237,241,250,.82);max-width:27em;line-height:1.5}
+.cover .from{margin-top:34px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.cover .from img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.7)}
+.cover .from p{font-size:15px;line-height:1.4}
+.cover .from b{display:block;font-size:16px}
+.cover .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+/* chapters */
+.ch{padding:clamp(90px,11vw,150px) 0;position:relative}
+.ch.alt{background:var(--bg2)}
+.ch-h{max-width:var(--read)}
+.ch-h .k{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.ch-h .k::before{content:attr(data-n);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--acc);color:var(--acc2);font-size:12px;letter-spacing:0}
+.ch h2{font-size:clamp(36px,5vw,70px);letter-spacing:-.05em;line-height:.96}
+.ch .lede{margin-top:22px;font-size:clamp(17.5px,1.4vw,19.5px);color:var(--mut);max-width:var(--read)}
+.prose{max-width:var(--read);margin-top:22px;display:grid;gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r)}
+
+/* why: the gap */
+.gap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:48px}
+.gap .card{padding:24px 24px 26px}
+.gap .card .ph{font-size:26px;color:var(--acc2)}
+.gap h3{font-size:22px;letter-spacing:-.02em;margin-top:14px}
+.gap p{margin-top:8px;color:var(--mut);font-size:15.5px;line-height:1.5}
+.gap .card.miss{border-style:dashed;border-color:rgba(110,149,255,.5);background:var(--acc-soft)}
+.evid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:14px}
+.evid .card{padding:24px}
+.evid dl{margin:14px 0 0;display:grid;gap:14px}
+.evid dt{font-family:var(--hd);font-weight:600;font-size:18px}
+.evid dd{margin:2px 0 0;color:var(--mut);font-size:15px;line-height:1.45}
+.evid blockquote{margin:0;font-family:var(--hd);font-weight:600;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.03em;line-height:1.12}
+.evid cite{display:block;margin-top:12px;font-family:var(--bd);font-style:normal;font-weight:400;font-size:14px;color:var(--mut)}
+.evid .q{background:linear-gradient(140deg,#1C3B9A,#0F1E52);border-color:transparent;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+
+/* track record: vertical timeline that fills while reading */
+.tl{position:relative;margin-top:56px;padding-left:44px;max-width:860px}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line2)}
+.tl .fill{position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--acc),var(--acc2));transform-origin:50% 0}
+/* scroll-driven, no scroll listeners: reading progress, and the timeline line fills as you read */
+@supports (animation-timeline:scroll()){@media (prefers-reduced-motion:no-preference){
+ .prog{display:block;animation:grow linear both;animation-timeline:scroll(root)}
+ .tl .fill{animation:growY linear both;animation-timeline:view();animation-range:entry 30% exit 30%}
+ @keyframes grow{to{transform:scaleX(1)}}
+ @keyframes growY{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+}}
+.yr{position:relative;font-family:var(--hd);font-weight:700;font-size:clamp(40px,5vw,64px);letter-spacing:-.05em;line-height:1;color:transparent;-webkit-text-stroke:1.2px var(--acc2);margin:44px 0 18px}
+.yr:first-child{margin-top:0}
+.m{position:relative;padding:0 0 26px}
+.m::before{content:"";position:absolute;left:-39px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--acc2)}
+.m .w{font-family:var(--mono);font-size:12.5px;color:var(--acc)}
+.m h3{font-size:clamp(19px,1.7vw,22px);letter-spacing:-.015em;line-height:1.15;margin-top:4px}
+.m p{color:var(--mut);font-size:15.5px;line-height:1.5;margin-top:4px;max-width:40em}
+.m.big{padding-bottom:34px}
+.m.big .card{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:0;overflow:hidden;margin-top:10px}
+.m.big .card .c{padding:20px 22px}
+.m.big .card img{width:100%;height:100%;object-fit:cover;min-height:170px}
+.m.big::before{width:18px;height:18px;left:-42px;top:4px;background:var(--acc);border-color:var(--acc);box-shadow:0 0 0 5px rgba(110,149,255,.2)}
+.m.bmh .card{border-color:rgba(110,149,255,.55);box-shadow:0 0 0 1px rgba(110,149,255,.25),0 0 60px rgba(110,149,255,.15)}
+.m .badge{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--acc);color:var(--acc-tx)}
+.press{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);margin-top:10px;overflow:hidden}
+.press img{width:100%;height:100%;object-fit:cover;object-position:top}
+.press .c{padding:20px 22px}
+.press blockquote{margin:10px 0 0;padding-left:14px;border-left:2px solid var(--acc);font-size:15px;line-height:1.5}
+.press cite{display:block;margin-top:6px;font-style:normal;font-size:13px;color:var(--mut)}
+
+/* the model */
+.pipe{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:52px}
+.pipe .card{padding:22px 20px 24px;position:relative}
+.pipe .n{font-family:var(--hd);font-weight:700;font-size:38px;letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1.2px var(--acc2)}
+.pipe h3{font-size:19px;letter-spacing:-.015em;margin-top:14px;line-height:1.12}
+.pipe p{color:var(--mut);font-size:14.5px;line-height:1.45;margin-top:8px}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:52px}
+.phase{padding:26px 26px 28px;display:flex;flex-direction:column}
+.phase .when{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc)}
+.phase h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em;margin-top:10px}
+.phase ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;font-size:15.5px}
+.phase li{display:flex;gap:10px;line-height:1.45}
+.phase li::before{content:"";flex:0 0 6px;height:6px;margin-top:9px;border-radius:50%;background:var(--acc2)}
+.phase .out{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mut)}
+.phase .out b{color:var(--tx);font-weight:600}
+.note{margin-top:18px;font-size:14px;color:var(--mut);max-width:var(--read)}
+
+/* why bmh and what bmh gains */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:52px}
+.two .card{padding:28px}
+.two h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em}
+.two ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.two li b{display:block;font-family:var(--hd);font-weight:600;font-size:17.5px;letter-spacing:-.01em}
+.two li span{display:block;color:var(--mut);font-size:15px;line-height:1.45;margin-top:2px}
+.two .card.hl{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
+.two .card.hl li span{color:rgba(237,241,250,.75)}
+
+/* asks */
+.asks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:52px}
+.ask{padding:28px 26px}
+.ask .n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--acc);color:var(--acc-tx);font-family:var(--hd);font-weight:700;font-size:18px}
+.ask h3{font-size:22px;letter-spacing:-.02em;margin-top:18px}
+.ask p{color:var(--mut);font-size:15.5px;margin-top:8px;line-height:1.5}
+
+/* partners */
+.partners{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.partners span{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:var(--surf);border:1px solid var(--line);font-size:14.5px}
+.partners img{width:30px;height:30px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+
+/* close */
+.close{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.close img{width:clamp(140px,16vw,200px);aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 0 0 8px var(--surf),0 0 0 9px var(--line2),0 0 80px rgba(110,149,255,.3)}
+.close h2{font-size:clamp(34px,4.6vw,64px)}
+.close .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.close .contact{margin-top:22px;font-size:15.5px;color:var(--mut)}
+.close .contact a{color:var(--tx)}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--mut);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+footer a{color:var(--tx);text-decoration:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1023px){
+ .pipe{grid-template-columns:1fr 1fr}.pipe .card:last-child{grid-column:1/-1}
+ .phases,.asks{grid-template-columns:1fr}
+ .gap{grid-template-columns:1fr}
+}
+@media (max-width:767px){
+ body{font-size:16.5px}
+ .cover{flex-direction:column;justify-content:flex-end;padding-top:0;min-height:0}
+ .cover .bgimg{position:relative;inset:auto;width:100%;height:52dvh;margin-bottom:-90px}
+ .cover .bgimg img{object-position:56% 22%}
+ .cover .bgimg::after{background:linear-gradient(180deg,rgba(5,7,13,.45) 0%,transparent 20%,transparent 55%,var(--bg) 100%)}
+ .cover h1{max-width:none}
+ .bar .id span{display:none}.bar .ghost{display:none}
+ .evid,.two{grid-template-columns:1fr}
+ .m.big .card,.press{grid-template-columns:1fr}
+ .m.big .card img{height:190px;min-height:0}
+ .press img{height:260px}
+ .pipe{grid-template-columns:1fr}
+ .tl{padding-left:34px}.tl::before,.tl .fill{left:6px}.m::before{left:-33px}.m.big::before{left:-36px}
+ .close{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
+
+/* print: a clean light document */
+@media print{
+ :root{--bg:#fff;--bg2:#fff;--surf:#fff;--surf2:#f4f5f8;--tx:#0b1220;--mut:#4b556b;--line:#d9dee8;--line2:#c3cad8;--acc:#1D4FC4;--acc2:#1D4FC4;--acc-tx:#fff;--acc-soft:#eef2fc}
+ body{font-size:11.5pt;background:#fff;color:#0b1220}
+ body::after,.bar,.cover .acts,.close .acts,.no-print{display:none!important}
+ .cover{min-height:0;padding:0 0 24pt}.cover .bgimg{display:none}
+ .cover .sub,.cover .from p{color:#0b1220}
+ .ch{padding:28pt 0;break-inside:auto}.ch.alt{background:#fff}
+ .card,.m,.phase,.ask,.pipe .card,.gap .card{break-inside:avoid}
+ .evid .q,.two .card.hl{background:#eef2fc!important;color:#0b1220}.two .card.hl li span{color:#4b556b}
+ .js .rv{opacity:1!important;transform:none!important}.tl .fill,.prog{animation:none!important;transform:none!important}
+ .yr,.pipe .n{-webkit-text-stroke:0;color:#1D4FC4}
+ a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &times; Baby Memorial Hospital</span></a>
+ <div class="r"><button class="btn ghost" onclick="window.print()">Save as PDF</button><a class="btn" href="#talk">Let's talk</a></div>
+ <i class="prog" id="prog" aria-hidden="true"></i>
+</header>
+
+<main>
+<section class="cover" id="top">
+ <div class="bgimg"><img src="rc-team.jpg" alt="Dr. Sidharth Narayanan at the Medical Repair Café with TinkerHub makers" fetchpriority="high"></div>
+ <div class="wrap">
+  <p class="to rv">A proposal for Baby Memorial Hospital</p>
+  <h1 class="rv">A medical incubator for Kozhikode.</h1>
+  <p class="sub rv">Turning problems from the ward into products, built by clinicians, engineers and makers together, tested where care happens, and launched from Malabar.</p>
+  <div class="from rv"><img src="sidharth-face.jpg" alt=""><p><b>Dr. Sidharth Narayanan</b>Medinn, Kozhikode &middot; October 2026</p></div>
+  <div class="acts rv"><a class="btn" href="#proposal"><i class="ph ph-arrow-right" aria-hidden="true"></i> Read the proposal</a><a class="btn ghost" href="#record">What has happened so far</a></div>
+ </div>
+</section>
+
+<section class="ch" id="why">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="1">Why now</p><h2 class="rv">Malabar has the clinicians and the engineers. It is missing the bench between them.</h2>
+   <p class="lede rv">Kozhikode trains doctors at scale and sits next to NIT Calicut and a growing maker community. Yet clinical problems rarely reach the people who can build solutions, and devices that fail in our wards are rarely studied, repaired or improved locally.</p></div>
+  <div class="gap">
+   <div class="card rv"><i class="ph ph-steth" aria-hidden="true"></i><h3>Clinicians</h3><p>See the problems every day, but have no structured route to turn them into projects.</p></div>
+   <div class="card miss rv"><i class="ph ph-sparkle" aria-hidden="true"></i><h3>The missing bench</h3><p>A shared place, process and mentorship where clinical problems become built, tested solutions.</p></div>
+   <div class="card rv"><i class="ph ph-gear" aria-hidden="true"></i><h3>Engineers and makers</h3><p>Can build, but rarely get clinical context, real devices or access to a ward to test in.</p></div>
+  </div>
+  <div class="evid">
+   <div class="card rv"><p class="k">Evidence from the Repair Caf&eacute;, 18 October 2026</p><dl>
+    <div><dt>No paper trail</dt><dd>Many devices had no record of maintenance contracts, servicing or routine care.</dd></div>
+    <div><dt>Donated, then lost</dt><dd>Donated devices often never get registered with the biomedical team, so they fall outside maintenance and warranty.</dd></div>
+    <div><dt>Care nobody taught</dt><dd>Basic care like filter changes is not something most healthcare workers are trained in.</dd></div>
+    <div><dt>Calibration</dt><dd>It is costly. How much of it actually happens?</dd></div>
+   </dl></div>
+   <div class="card q rv"><blockquote>&ldquo;We look after our phones and computers better than the devices patients depend on.&rdquo;<cite>From the Repair Caf&eacute; report</cite></blockquote><a class="lnk no-print" href="repair-cafe-report.pdf" target="_blank" rel="noopener">Read the full report <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="record">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="2">What has happened so far</p><h2 class="rv">Two years of building the pieces, one after another.</h2>
+   <p class="lede rv">Each step below is done and public. Together they are the groundwork for an incubator: a community, partners, events that ran, and a first hands-on proof on real hospital devices.</p></div>
+  <div class="tl" id="tl"><i class="fill" id="tlFill" aria-hidden="true"></i>
+   <p class="yr rv">2021&ndash;23</p>
+   <div class="m rv"><p class="w">Oct-Nov 2021</p><h3>Medicine Magnum</h3><p>An all-India medicine quiz for undergraduates and interns, organized with Doc Tutorials and the College Union at Calicut Medical College.</p></div>
+   <div class="m rv"><p class="w">2022 onwards</p><h3>Cytokine Lectures, Head of Operations, later COO</h3><p>A clinician-led edtech grown across 50+ medical college communities, with close to &#8377;50L in lifetime revenue that Medinn helped build.</p></div>
+
+   <p class="yr rv">2024</p>
+   <div class="m rv"><p class="w">2024</p><h3>Medinn begins</h3><p>Started as Medinn Networking, connecting healthcare innovators, students and doctors.</p></div>
+   <div class="m rv"><p class="w">19 Oct 2024</p><h3>Panelist, IEDC Summit at NIT Calicut</h3><p>HealthTech track with Dr. Moopen's iNEST: why healthcare needs engineers.</p></div>
+   <div class="m rv"><p class="w">Oct-Dec 2024</p><h3>Doctors AI</h3><p>Organizing committee for the global summit, an AI in Healthcare workshop, and a speaker at the Virtual Global Summit.</p></div>
+
+   <p class="yr rv">2025</p>
+   <div class="m rv"><p class="w">April 2025</p><h3>Oncoscope 2025, Organizing Head</h3><p>An all-India undergraduate oncology conference at Government Medical College, Calicut.</p></div>
+   <div class="m rv"><p class="w">2025</p><h3>AI in Healthcare Conclave at Hospex, Kochi</h3><p>Startup outreach, organized and marketed the conclave, and co-presented CureKart.</p></div>
+   <div class="m rv"><p class="w">2025</p><h3>Surgical Hackathon, TinkerHub Cochin</h3><p>Co-organizer: clinicians, designers and engineers around surgical problems.</p></div>
+   <div class="m rv"><p class="w">Oct 2025</p><h3>Bio-entrepreneurship Advanced Certification</h3><p>Residential course with IIT Palakkad Technology I-Hub Foundation and the Kerala Biotechnology Commission.</p></div>
+
+   <p class="yr rv">2026</p>
+   <div class="m big rv"><p class="w">16 May 2026</p><h3>IEDC launched at Government Medical College, Kozhikode</h3><div class="card"><div class="c"><p>An innovation and entrepreneurship cell at the medical college, pushed for as Student Lead, now building a workflow with NIT Calicut, the Kerala Startup Mission, TinkerHub and TinkerSpace.</p></div><img src="p-nitvisit.jpg" alt="At NIT Calicut's Centre for Innovation, Entrepreneurship and Incubation" loading="lazy"></div></div>
+   <div class="m rv"><p class="w">5-6 Sept 2026</p><h3>Medical &amp; Surgical Intervention Hackathon</h3><p>Overnight at TinkerSpace Calicut with IEDC CMC: 40+ participants building for medical and surgical challenges. The first medical hackathon at the college.</p></div>
+   <div class="m big bmh rv"><p class="w">20-21 Sept 2026</p><h3>The Handover, with Baby Memorial Hospital</h3><div class="card"><div class="c"><p>A two-day internship bootcamp for new doctors across Kerala, conceptualized, run, marketed and executed by Medinn for Cytokine Lectures, in partnership with the Baby Memorial Hospital group. 100+ attendees from 15+ colleges across Medicine, Emergency Medicine, Surgery and Orthopaedics.</p><span class="badge">Already a BMH partnership</span></div><img src="p-handoverday.jpg" alt="The Handover in session" loading="lazy" style="object-position:78% 40%"></div></div>
+   <div class="m rv"><p class="w">4 Oct 2026</p><h3>Claude Hackathon, second prize</h3><p>Team Cosense, 48 hours at TinkerSpace Calicut: a wearable safety band concept for patients prone to wandering.</p></div>
+   <div class="m big rv"><p class="w">18 Oct 2026</p><h3>India's first medical Repair Caf&eacute;</h3><div class="card"><div class="c"><p>Medical students, engineers, TinkerHub makers and iHub biomedical engineers opened up condemned devices from Government Medical College, Kozhikode. A BPL patient monitor was reflowed back to live vitals, a Mindray SV300 ventilator was documented, and 5 devices were repaired.</p></div><img src="rc-case-monitor.jpg" alt="Case study: BPL patient monitor before and after" loading="lazy" style="object-fit:cover;object-position:top"></div></div>
+   <div class="m rv"><p class="w">19 Oct 2026</p><h3>In the press: Malayala Manorama</h3>
+    <div class="card press"><img src="rc-press.jpg" alt="Malayala Manorama article on the Repair Caf&eacute;" loading="lazy"><div class="c"><p class="k">Kozhikode City &middot; page 4</p><p style="margin-top:8px;font-family:var(--hd);font-weight:600;font-size:19px;line-height:1.2">&ldquo;When needed, the stethoscope and the spanner too.&rdquo;</p>
+     <blockquote>&ldquo;Healthcare workers can offer ideas for new technology in healthcare; engineering's technical strength is what brings them into practice. Medical and engineering students working together here is a model initiative.&rdquo;<cite>Dr. M. P. Sreejayan, Superintendent, Government Medical College Hospital, Kozhikode (translated from Malayalam)</cite></blockquote></div></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch" id="proposal">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="3">The proposal</p><h2 class="rv">An incubator that starts in the ward.</h2>
+   <p class="lede rv">A Kozhikode medical incubator works on healthcare projects in their medical context, from the first problem statement to a pilot in a real ward. Five stages, each one already tested in a smaller form.</p></div>
+  <div class="pipe">
+   <div class="card rv"><p class="n">01</p><h3>Problems from the ward</h3><p>A clinical problem bank fed by doctors, nurses and the biomedical team.</p></div>
+   <div class="card rv"><p class="n">02</p><h3>Learn from what breaks</h3><p>Repair caf&eacute;s and deconstruction labs that turn failed devices into lessons.</p></div>
+   <div class="card rv"><p class="n">03</p><h3>Build mixed teams</h3><p>Clinicians with engineers from NIT Calicut, makers from TinkerHub and TinkerSpace.</p></div>
+   <div class="card rv"><p class="n">04</p><h3>Validate and pilot</h3><p>Clinical mentors, ethics and pilots in real wards before anything scales.</p></div>
+   <div class="card rv"><p class="n">05</p><h3>Launch from Malabar</h3><p>Links to Kerala Startup Mission, iHub and investors for devices that are cheaper, local and built to last.</p></div>
+  </div>
+
+  <div class="ch-h" style="margin-top:96px"><h2 class="rv" style="font-size:clamp(30px,3.8vw,52px)">A first year, built around BMH.</h2>
+   <p class="lede rv">A proposed sequence, to be shaped together. Each phase is small, visible and useful to the hospital on its own.</p></div>
+  <div class="phases">
+   <div class="card phase rv"><p class="when">Months 1&ndash;3 &middot; Listen</p><h3>A problem bank and a BMH Repair Caf&eacute;</h3><ul><li>Collect clinical and operational problem statements from BMH departments.</li><li>Run a Repair Caf&eacute; with the BMH biomedical team on condemned or idle devices.</li><li>Pilot the low-cost device maintenance tracker on a set of BMH devices.</li></ul><p class="out"><b>Outcome:</b> a documented problem bank and a picture of device health.</p></div>
+   <div class="card phase rv"><p class="when">Months 4&ndash;6 &middot; Build</p><h3>Build sprints on BMH problems</h3><ul><li>A hackathon on the top problem statements, with NIT Calicut engineers and TinkerSpace makers.</li><li>BMH clinicians as mentors and judges.</li><li>Shortlist the most promising teams for incubation.</li></ul><p class="out"><b>Outcome:</b> working prototypes against real BMH needs.</p></div>
+   <div class="card phase rv"><p class="when">Months 7&ndash;12 &middot; Pilot</p><h3>Pilots in BMH wards</h3><ul><li>Validate one or two solutions with clinical input and ethics in place.</li><li>Connect teams to Kerala Startup Mission and iHub support.</li><li>Share results publicly as a BMH-led innovation story.</li></ul><p class="out"><b>Outcome:</b> tested solutions and the first incubated teams.</p></div>
+  </div>
+  <p class="note rv">This is a proposal for discussion, not an agreed plan. Scope, timelines and roles are open to BMH's priorities.</p>
+ </div>
+</section>
+
+<section class="ch alt" id="bmh">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="4">Why Baby Memorial Hospital</p><h2 class="rv">The anchor hospital the incubator needs.</h2>
+   <p class="lede rv">An incubator in a medical context is only as good as its access to clinical reality. BMH has the depth, the departments and the reach across Malabar, and we have already worked together on The Handover.</p></div>
+  <div class="two">
+   <div class="card rv"><h3>What BMH brings</h3><ul>
+    <li><b>Clinical problems</b><span>Real needs from departments, wards and operations.</span></li>
+    <li><b>Clinical mentors</b><span>Doctors and nurses who guide teams on what actually helps.</span></li>
+    <li><b>A biomedical team</b><span>Expertise in how devices are bought, maintained and fail.</span></li>
+    <li><b>A place to pilot</b><span>Ward settings to validate solutions safely.</span></li>
+   </ul></div>
+   <div class="card hl rv"><h3>What BMH gains</h3><ul>
+    <li><b>First look at local solutions</b><span>Low-cost tools and devices shaped around BMH's own problems.</span></li>
+    <li><b>Visibility into device health</b><span>Repair caf&eacute;s and a maintenance tracker that surface idle and failing equipment.</span></li>
+    <li><b>Innovation leadership in Malabar</b><span>A visible role as the hospital that backs healthcare innovation in the region.</span></li>
+    <li><b>A talent pipeline</b><span>Early access to clinicians and engineers who can build.</span></li>
+   </ul></div>
+  </div>
+  <div class="partners rv"><span><img src="logo-iedc.png" alt="">IEDC GMC Kozhikode</span><span><img src="logo-tinkerspace.png" alt="">TinkerSpace Calicut</span><span><img src="logo-tinkerhub.png" alt="">TinkerHub</span><span><img src="logo-nitc.png" alt="">NIT Calicut</span><span><img src="logo-ksum.png" alt="">Kerala Startup Mission</span></div>
+  <p class="note rv">Organizations Medinn has already worked with or alongside.</p>
+ </div>
+</section>
+
+<section class="ch" id="asks">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="5">What we are asking for</p><h2 class="rv">Three small steps to begin.</h2></div>
+  <div class="asks">
+   <div class="card ask rv"><span class="n">1</span><h3>A conversation</h3><p>Thirty minutes with BMH leadership to shape the idea around the hospital's priorities.</p></div>
+   <div class="card ask rv"><span class="n">2</span><h3>A clinical champion</h3><p>One named doctor or department head to guide the problem bank and mentor teams.</p></div>
+   <div class="card ask rv"><span class="n">3</span><h3>A first Repair Caf&eacute; at BMH</h3><p>One day with the biomedical team on idle or condemned devices, to start with something concrete.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="talk">
+ <div class="wrap">
+  <div class="close">
+   <img class="rv" src="sidharth-face.jpg" alt="Dr. Sidharth Narayanan" loading="lazy">
+   <div>
+    <h2 class="rv">Let's build Malabar's medical incubator together.</h2>
+    <p class="contact rv">Dr. Sidharth Narayanan, Medinn<br><a href="mailto:medinnnetworking@gmail.com">medinnnetworking@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8">LinkedIn</a></p>
+    <div class="acts rv"><a class="btn" href="mailto:medinnnetworking@gmail.com?subject=Medical%20incubator%20for%20Kozhikode%3A%20BMH"><i class="ph ph-envelope" aria-hidden="true"></i> Reply by email</a><a class="btn ghost" href="/">Visit the full Medinn site</a><button class="btn ghost" onclick="window.print()">Save as PDF</button></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><p>Medinn is the independent consulting practice of Dr. Sidharth Narayanan. Prepared for Baby Memorial Hospital, October 2026.</p><a href="/">medinn-sandy.vercel.app</a></div></footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* reveals; anything already passed or on screen at load is shown at once */
+  const els = [...document.querySelectorAll('.rv')];
+  if (reduce || !('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -6% 0px' });
+  els.forEach(e => { if (e.getBoundingClientRect().top < innerHeight) e.classList.add('in'); else io.observe(e); });
+  addEventListener('beforeprint', () => els.forEach(e => e.classList.add('in')));
+})();
+</script>
+</body>
+</html>
