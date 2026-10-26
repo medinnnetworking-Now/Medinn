@@ -65,10 +65,10 @@ Each of these opens straight to that page or section. The standalone pages have 
 | Send this | Opens |
 |---|---|
 | https://medinn-sandy.vercel.app/repair-cafe | The Repair Café story (standalone page) |
-| https://medinn-sandy.vercel.app/incubator | The biomedical innovation ecosystem proposal: an anchor hospital, ideation, prototyping, repair cafés and biomedical training, new innovation (standalone page). /bmh redirects here. |
+| https://medinn-sandy.vercel.app/medtech-malabar | MedTech Malabar: the ongoing project (vision, pipeline, where it stands, how to be part of it). /incubator and /bmh redirect here. |
 | https://medinn-sandy.vercel.app/repair-cafe-report.pdf | The 7-slide Repair Café report |
 | https://medinn-sandy.vercel.app/#repaircafe | The Repair Café section of the homepage |
-| https://medinn-sandy.vercel.app/#vision | The incubator vision section of the homepage |
+| https://medinn-sandy.vercel.app/#vision | The MedTech Malabar section of the homepage |
 | https://medinn-sandy.vercel.app/#handover | The Handover |
 | https://medinn-sandy.vercel.app/#tl | The timeline |
 | https://medinn-sandy.vercel.app/#gallery | The gallery |
@@ -79,4 +79,4 @@ Each of these opens straight to that page or section. The standalone pages have 
 
 The Share buttons on these pages open the phone's share sheet, or copy the link on a computer.
 
-The proposal at /incubator deliberately names no hospital, so the same link works for any hospital you approach.
+The /medtech-malabar page names no hospital, so the same link works for any hospital you approach.
