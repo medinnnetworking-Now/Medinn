@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<title>Medinn Blogs | MedTech, Devices and Public Healthcare</title>
+<meta name="description" content="Notes from Malabar on MedTech, medical devices, public healthcare and building medical innovation, by Dr. Sidharth Narayanan.">
+<meta property="og:title" content="Medinn Blogs">
+<meta property="og:description" content="Notes from Malabar on MedTech, devices and public healthcare.">
+<meta property="og:image" content="https://medinn-sandy.vercel.app/blog-medinn-story-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/medinn-logo.png">
+<link rel="preload" href="/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/story.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="/medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; Blogs</span></a>
+ <div class="r"><button class="btn ghost" data-share="/blogs" data-title="Medinn Blogs"><i class="ph ph-share" aria-hidden="true"></i> Share</button><a class="btn" href="/">Medinn home</a></div>
+</header>
+<main class="blist">
+ <p class="k">The Medinn newsletter</p>
+ <h1>Medinn Blogs.</h1>
+ <p class="lede">Notes from Malabar on MedTech, medical devices, public healthcare, biomedical maintenance and building medical innovation, by Dr. Sidharth Narayanan.</p>
+ <div class="bsub"><a class="btn" href="https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8"><i class="ph ph-linkedin" aria-hidden="true"></i> Follow on LinkedIn</a><a class="btn ghost" href="/medtech-malabar">About MedTech Malabar</a></div>
+ <div class="bgrid" id="bgrid"></div>
+</main>
+<footer><div class="wrap"><p>Medinn Blogs is written by Dr. Sidharth Narayanan, founder of Medinn.</p><a href="/">medinn-sandy.vercel.app</a></div></footer>
+<script src="/content.js"></script>
+<script src="/story.js"></script>
+<script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById('bgrid').innerHTML = BLOGS.map(b => `<a class="bcard" href="/blogs/${esc(b.slug)}"><img src="/${esc(b.image)}" alt="" loading="lazy"><div class="c"><p class="w">${esc(b.date)} &middot; ${b.minutes} min read</p><h3>${esc(b.title)}</h3><p>${esc(b.summary)}</p><span class="go">Read the post &rarr;</span></div></a>`).join('');
+</script>
+</body>
+</html>

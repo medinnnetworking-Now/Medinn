@@ -217,3 +217,51 @@ footer a{color:var(--tx);text-decoration:none}
 .ph-share::before{content:"\e408"}.ph-link::before{content:"\e2e2"}.ph-check::before{content:"\e182"}
 .toast{position:fixed;left:50%;bottom:28px;z-index:95;translate:-50% 20px;opacity:0;pointer-events:none;background:var(--tx);color:var(--bg);font-size:14.5px;font-weight:500;padding:12px 18px;border-radius:999px;box-shadow:var(--shadow);transition:opacity .3s,translate .4s var(--ease);display:inline-flex;align-items:center;gap:8px}
 .toast.on{opacity:1;translate:-50% 0}
+
+
+/* Medinn Blogs: article pages and the index */
+.art{max-width:46rem;margin:0 auto;padding:116px var(--pad) 40px}
+.art-h .k{margin-bottom:18px}
+.art-h h1{font-size:clamp(40px,6.2vw,80px);letter-spacing:-.05em;line-height:.96}
+.art-h .deck{margin-top:20px;font-size:clamp(19px,1.8vw,23px);color:var(--mut);line-height:1.45}
+.byline{display:flex;align-items:center;gap:14px;margin-top:28px}
+.byline img{width:52px;height:52px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--line2)}
+.byline b{display:block;font-weight:600;font-size:16px}
+.byline span{display:block;font-size:14px;color:var(--mut);margin-top:2px}
+.hero-img{margin:40px calc(var(--pad) * -1) 0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.hero-img img{width:100%;height:clamp(260px,46vw,520px);object-fit:cover;object-position:50% 30%}
+.prose{margin-top:44px}
+.prose p{font-size:clamp(17.5px,1.5vw,19.5px);line-height:1.72;margin:0 0 1.15em;color:rgba(237,241,250,.92);max-width:none}
+.prose a{color:var(--acc2);text-underline-offset:3px}
+.prose h2{font-size:clamp(28px,3.4vw,40px);letter-spacing:-.035em;line-height:1.05;margin:2.1em 0 .7em}
+.prose figure{margin:2em calc(var(--pad) * -.5)}
+.prose figure img{width:100%;height:auto;border-radius:var(--r2);border:1px solid var(--line)}
+.prose figure.gfx img{border-radius:var(--r2)}
+.prose figcaption{margin-top:10px;font-size:14px;color:var(--mut);line-height:1.45;padding:0 calc(var(--pad) * .5)}
+.pull{margin:1.6em 0;padding:6px 0 6px 22px;border-left:3px solid var(--acc);font-family:var(--hd);font-weight:600;font-size:clamp(28px,3.6vw,44px);letter-spacing:-.035em;line-height:1.1}
+.sig{margin-top:2em!important;font-size:16px!important;color:var(--mut)!important}
+.sig b{color:var(--tx);font-size:18px}
+.endcard{margin-top:56px;padding:clamp(24px,3vw,36px);border-radius:var(--r);background:linear-gradient(150deg,#1C3B9A,#0F1E52)}
+.endcard .k{color:var(--acc2)}
+.endcard h2{font-size:clamp(30px,3.6vw,44px);letter-spacing:-.04em;margin-top:8px}
+.endcard p{margin-top:12px;color:rgba(237,241,250,.82);font-size:16.5px;max-width:34em}
+.endcard .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.endcard .btn{background:#fff;color:#14286E}
+.endcard .btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.blist{max-width:var(--max);margin:0 auto;padding:130px var(--pad) 60px}
+.blist h1{font-size:clamp(46px,7vw,100px);letter-spacing:-.055em;line-height:.94}
+.blist .lede{margin-top:20px;color:var(--mut);font-size:clamp(17.5px,1.4vw,19.5px);max-width:36em}
+.bgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:52px}
+.bcard{display:flex;flex-direction:column;text-decoration:none;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.bcard:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line2)}
+.bcard img{width:100%;aspect-ratio:1200/630;object-fit:cover}
+.bcard .c{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.bcard .w{font-family:var(--mono);font-size:12.5px;color:var(--acc)}
+.bcard h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em;line-height:1.1}
+.bcard p{color:var(--mut);font-size:15.5px;line-height:1.5}
+.bcard .go{margin-top:auto;padding-top:10px;color:var(--acc2);font-weight:500;font-size:15px}
+.bsub{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+@media (max-width:1023px){.bgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:767px){.bgrid{grid-template-columns:1fr}.prose figure{margin-left:0;margin-right:0}.prose figcaption{padding:0}.hero-img{margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1);border-radius:0;border-left:0;border-right:0}}
+
+.ph-linkedin::before{content:"\e2ee"}.ph-briefcase::before{content:"\e0ee"}

@@ -77,6 +77,12 @@ const GALLERY = [
  }
 ];
 
+/* BLOGS: the Medinn Blogs posts, newest first. Each post is a page in the blogs folder (blogs/<slug>.html).
+   After adding a post page, add one entry here and it appears on the homepage and on /blogs. */
+const BLOGS = [
+ { "slug": "the-medinn-story", "title": "The Medinn story, so far", "summary": "From a way of meeting people to the road to MedTech Malabar.", "date": "27 October 2026", "minutes": 3, "image": "blog-medinn-story-og.jpg" }
+];
+
 /* SERVICES: the seven services in the Explore services overlay and the Services section. */
 const SERVICES = [
  { id: 'brand', icon: 'palette', title: 'Brand & positioning', tag: 'Identity and voice for doctor-led ventures.',

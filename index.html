@@ -95,6 +95,7 @@ nav.top .r .lnk{padding:0 12px;color:var(--tx)}
 .sheet a{font-family:var(--hd);font-size:40px;font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:6px 0}
 .sheet .btn{margin-top:28px;align-self:flex-start;font-family:var(--bd);font-size:16px}
 
+@media (min-width:1024px) and (max-width:1199px){nav.top ul a{padding:8px 9px;font-size:14.5px}nav.top .r .lnk{padding:0 8px}nav.top .bar{gap:10px}}
 /* hero universe */
 .hero{position:relative;min-height:100dvh;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 72% 50%,rgba(40,70,160,.28),transparent 70%),var(--bg)}
 #stars{position:absolute;inset:0;width:100%;height:100%;display:block}
@@ -462,6 +463,19 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
 .news .ph{color:var(--acc2);transition:transform .3s var(--ease)}
 .news:hover .ph{transform:translateX(3px)}
 
+/* homepage blog cards */
+.bgrid2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:48px}
+.bcard2{display:flex;flex-direction:column;text-decoration:none;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.bcard2:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line2)}
+.bcard2 img{width:100%;aspect-ratio:1200/630;object-fit:cover}
+.bcard2 .c{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.bcard2 .w{font-family:var(--mono);font-size:12.5px;color:var(--acc)}
+.bcard2 h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.025em;line-height:1.1}
+.bcard2 p{color:var(--mut);font-size:15.5px;line-height:1.5}
+.bcard2 .go{margin-top:auto;padding-top:10px;color:var(--acc2);font-weight:500;font-size:15px}
+@media (max-width:1023px){.bgrid2{grid-template-columns:1fr 1fr}}
+@media (max-width:767px){.bgrid2{grid-template-columns:1fr}}
+
 /* share confirmation */
 .toast{position:fixed;left:50%;bottom:28px;z-index:95;translate:-50% 20px;opacity:0;pointer-events:none;background:var(--tx);color:var(--bg);font-size:14.5px;font-weight:500;padding:12px 18px;border-radius:999px;box-shadow:var(--shadow);transition:opacity .3s,translate .4s var(--ease);display:inline-flex;align-items:center;gap:8px}
 .toast.on{opacity:1;translate:-50% 0}
@@ -531,12 +545,12 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
 <nav class="top" aria-label="Primary">
  <div class="bar">
   <a class="logo" href="#top" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn" width="1200" height="755"></a>
-  <ul><li><a href="#top">Universe</a></li><li><a href="#repaircafe">Repair Caf&eacute;</a></li><li><a href="#vision">MedTech Malabar</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li></ul>
+  <ul><li><a href="#top">Universe</a></li><li><a href="#repaircafe">Repair Caf&eacute;</a></li><li><a href="#vision">MedTech Malabar</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="/blogs">Blogs</a></li></ul>
   <div class="r"><a class="lnk" href="#contact">Contact</a><button class="btn sm acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
   <button class="menu" id="menu" aria-expanded="false" aria-controls="sheet"><i class="ph ph-list" aria-hidden="true"></i><span>Menu</span></button>
  </div>
 </nav>
-<div class="sheet" id="sheet"><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#repaircafe">Repair Caf&eacute;</a><a href="#vision">MedTech Malabar</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
+<div class="sheet" id="sheet"><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#repaircafe">Repair Caf&eacute;</a><a href="#vision">MedTech Malabar</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="/blogs">Blogs</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
 
 <main id="main">
 <section class="hero" id="top" aria-label="The Medinn universe">
@@ -717,6 +731,16 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
    <button class="btn acc mag rv" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button>
   </div>
   <div class="svc-list" id="svcList"></div>
+ </div>
+</section>
+
+<section class="sec alt" id="blogs">
+ <div class="wrap">
+  <div class="svc-head">
+   <div><h2 class="big split">Medinn Blogs.</h2><p class="lede rv">Notes from Malabar on MedTech, devices and public healthcare. The Medinn newsletter, written by Dr. Sidharth Narayanan.</p></div>
+   <a class="btn acc mag rv" href="/blogs"><i class="ph ph-arrow-right" aria-hidden="true"></i> All posts</a>
+  </div>
+  <div class="bgrid2" id="blogGrid"></div>
  </div>
 </section>
 
@@ -1104,10 +1128,13 @@ lb.addEventListener('touchend', e => { if (tx0 === null) return; const d = e.cha
 $$('[data-gsrc]').forEach(el => el.addEventListener('click', () => { const i = GALLERY.findIndex(g => g.src === el.dataset.gsrc); if (i > -1) lbOpen(i); }));
 $$('.rc-vid video').forEach(v => vio.observe(v));
 
+/* ---------- blogs ---------- */
+$('#blogGrid').innerHTML = BLOGS.slice(0, 3).map(b => `<a class="bcard2 rv" href="/blogs/${esc(b.slug)}"><img src="${esc(b.image)}" alt="" loading="lazy"><div class="c"><p class="w">${esc(b.date)} &middot; ${b.minutes} min read</p><h3>${esc(b.title)}</h3><p>${esc(b.summary)}</p><span class="go">Read the post &rarr;</span></div></a>`).join('');
+
 /* ---------- nav state ---------- */
 const navLinks = $$('nav.top ul a');
 const navIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('cur', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
-['top', 'moat', 'handover', 'repaircafe', 'vision', 'tl', 'gallery', 'work', 'services', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
+['top', 'moat', 'handover', 'repaircafe', 'vision', 'tl', 'gallery', 'work', 'services', 'blogs', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
 
 /* ---------- spotlight borders and magnetic buttons (pointer feedback) ---------- */
 document.addEventListener('pointermove', e => { const s = e.target.closest && e.target.closest('.spot'); if (!s) return; const r = s.getBoundingClientRect(); s.style.setProperty('--mx', (e.clientX - r.left) + 'px'); s.style.setProperty('--my', (e.clientY - r.top) + 'px'); }, { passive: true });

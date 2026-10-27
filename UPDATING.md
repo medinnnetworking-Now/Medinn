@@ -66,6 +66,8 @@ Each of these opens straight to that page or section. The standalone pages have 
 |---|---|
 | https://medinn-sandy.vercel.app/repair-cafe | The Repair Café story (standalone page) |
 | https://medinn-sandy.vercel.app/medtech-malabar | MedTech Malabar: the ongoing project (vision, pipeline, where it stands, how to be part of it). /incubator and /bmh redirect here. |
+| https://medinn-sandy.vercel.app/blogs | Medinn Blogs: every newsletter post |
+| https://medinn-sandy.vercel.app/blogs/the-medinn-story | The first post: The Medinn story, so far |
 | https://medinn-sandy.vercel.app/repair-cafe-report.pdf | The 7-slide Repair Café report |
 | https://medinn-sandy.vercel.app/#repaircafe | The Repair Café section of the homepage |
 | https://medinn-sandy.vercel.app/#vision | The MedTech Malabar section of the homepage |
@@ -80,3 +82,9 @@ Each of these opens straight to that page or section. The standalone pages have 
 The Share buttons on these pages open the phone's share sheet, or copy the link on a computer.
 
 The /medtech-malabar page names no hospital, so the same link works for any hospital you approach.
+
+## Adding a Medinn Blogs post
+
+1. Publish the issue in your LinkedIn newsletter first.
+2. Send it to Claude with the title, a one-line summary and any pictures. Claude builds the page at `/blogs/<title>` with its own link preview.
+3. The post appears on the homepage and on `/blogs` once its entry is added to `BLOGS` in `content.js`.
