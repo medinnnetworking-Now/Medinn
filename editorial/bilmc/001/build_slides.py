@@ -1,12 +1,12 @@
 # Builds slides.html for Article 001 from the Ledger system. Edit copy here, then run render.js.
 URL = 'medinn.in/bilmc/more-than-a-training-ground'
 def run(tag, label): return f'<div class="run"><span>Before I Leave Medical College · 001</span><span class="tag {tag}">{label}</span></div>'
-def foot(n): return f'<div class="foot"><div><b>Dr. Sidharth Narayanan</b> <span>· House Surgeon, GMC Kozhikode</span></div><div class="n">{n:02d} / 12</div></div>'
+def foot(n): return '<div class="foot"><div><b>Dr. Sidharth Narayanan</b> <span>· House Surgeon, GMC Kozhikode</span></div><div class="n">@@N@@</div></div>'
 def hatch(i): return f'<defs><pattern id="h{i}" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="currentColor" stroke-width="2.5"/></pattern></defs>'
 S = []
 # 01 COVER
 S.append(f'''<section class="slide" id="s01">{run("insight","Article 001")}
-<h1 class="h" style="font-size:118px;margin-top:6px">Medical college is more than a <span class="r">training ground</span> for doctors.</h1>
+<h1 class="h" style="font-size:118px;margin-top:6px">Medical college is more than a training ground for doctors.</h1>
 <div style="margin-top:auto;margin-bottom:100px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
  <div style="max-width:480px">
   <p class="lab" style="margin-bottom:14px">How to read this series</p>
@@ -16,10 +16,23 @@ S.append(f'''<section class="slide" id="s01">{run("insight","Article 001")}
  <div style="position:relative"><img class="portrait" src="../../assets/medx-speaker.jpg" alt="Dr. Sidharth Narayanan speaking at MedX Talks" style="width:360px;height:450px;border-radius:180px 180px 0 0;border:4px solid var(--black)">
   <div class="lab" style="position:absolute;left:-4px;right:-4px;bottom:-4px;background:var(--blue);color:var(--white);padding:10px 14px;font-size:18px">MedX Talks · 25 Oct 2026</div></div>
 </div>{foot(1)}</section>''')
+# 01b THE PREMISE (new): states the stance before anything else
+S.append(f'''<section class="slide" id="s01b">{run("insight","The premise")}
+<h2 class="h" style="margin-top:6px;font-size:90px">The MBBS is the foundation of every doctor. Right now, it is <span class="r">undervalued.</span></h2>
+<p class="sub" style="font-size:38px">This series starts there: bringing value back to undergraduate medical education.</p>
+<div class="art"><svg viewBox="0 0 904 420">{hatch(1)}
+ <g stroke="currentColor" stroke-width="3.5">
+  <rect x="2" y="120" width="330" height="170" fill="url(#h1)"/><rect x="346" y="120" width="170" height="170" fill="#fff"/><rect x="530" y="120" width="180" height="170" fill="#fff"/><rect x="724" y="120" width="178" height="170" fill="#fff"/></g>
+ <g class="mo" font-size="21" font-weight="700" fill="currentColor" text-anchor="middle"><rect x="42" y="168" width="250" height="74" fill="#fff" stroke="currentColor" stroke-width="3"/><text class="mo" x="167" y="212">CLINICAL PRACTICE</text>
+  <text class="mo" x="431" y="200">RESEARCH</text><text class="mo" x="620" y="200">TECHNOLOGY</text><text class="mo" x="813" y="196">ENTREPRE-</text><text class="mo" x="813" y="222">NEURSHIP</text></g>
+ <rect x="2" y="300" width="900" height="112" fill="currentColor"/>
+ <text class="se" x="40" y="368" font-size="46" font-weight="600" fill="#fff">MBBS</text><text class="mo" x="190" y="364" font-size="22" fill="#fff">THE FOUNDATION OF EVERY DOCTOR</text>
+ <rect x="690" y="318" width="190" height="42" fill="var(--red)"/><text class="mo" x="785" y="346" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">UNDERVALUED</text></svg>
+<p class="cap">Fig. 0 — Clinical practice rests on it, and so does everything else a doctor may choose to build.</p></div>{foot(0)}</section>''')
 # 02 QUESTION
 S.append(f'''<section class="slide" id="s02">{run("question","The question")}
 <div style="position:absolute;right:30px;top:210px;font-family:var(--serif);font-style:italic;font-weight:300;font-size:760px;line-height:1;color:var(--red);opacity:.16">?</div>
-<h2 class="h" style="position:relative;margin-top:30px;font-size:108px">We train doctors. But is that <span class="r">all</span> a medical college should aspire to do?</h2>
+<h2 class="h" style="position:relative;margin-top:30px;font-size:108px">We train doctors. But is that all a medical college should aspire to do?</h2>
 <p class="cap" style="margin-top:auto;margin-bottom:100px;font-size:26px;color:var(--black);position:relative">A reflection from within medical education.</p>{foot(2)}</section>''')
 # 03 TIMETABLE
 rows=['L L P L T','L P L L T','T T E L P','L P T E Q']
@@ -135,11 +148,15 @@ S.append(f'''<section class="slide t-black" id="s11">{run("insight","The bigger 
  <div style="display:flex;gap:40px;align-items:baseline;padding:46px 0;border-top:3px solid #fff;border-bottom:3px solid #fff"><span style="font-family:var(--serif);font-style:italic;font-size:150px;line-height:.8">2</span><p style="font-family:var(--serif);font-size:70px;line-height:1.05;font-weight:600">Expand what medical education can enable.</p></div></div>{foot(11)}</section>''')
 # 12 CLOSING (black)
 S.append(f'''<section class="slide t-black" id="s12">{run("insight","Article 001")}
-<p style="font-family:var(--serif);font-weight:600;font-size:74px;line-height:1.06;margin-top:10px">A medical college should be more than a place where we <span style="color:var(--red-on-black)">learn medicine.</span> It should be a place where we learn what we can do with it.</p>
+<p style="font-family:var(--serif);font-weight:600;font-size:74px;line-height:1.06;margin-top:10px">A medical college should be more than a place where we learn medicine. It should be a place where we learn <u style="text-decoration-thickness:5px;text-underline-offset:9px">what we can do with it.</u></p>
 <div style="margin-top:auto;display:flex;align-items:center;gap:30px"><img class="portrait" src="../../assets/author-portrait.jpg" alt="Dr. Sidharth Narayanan" style="width:150px;height:150px;border-radius:50%;border:4px solid #fff">
  <div><p style="font-family:var(--serif);font-size:42px;font-weight:600">Dr. Sidharth Narayanan</p><p class="cap" style="margin-top:8px;color:#fff;opacity:.85">House Surgeon, GMC Kozhikode<br>290+ days into internship</p></div></div>
 <div style="margin:34px 0 100px;background:#fff;color:var(--black);padding:30px 36px"><p class="lab" style="color:var(--grey)">Read the full article</p><p style="font-family:var(--mono);font-size:30px;font-weight:700;margin-top:10px;color:var(--blue);white-space:nowrap">{URL}</p></div>{foot(12)}</section>''')
 css='''.c1,.c2{padding:24px 26px;font-family:var(--serif);font-size:34px;line-height:1.15;font-weight:600;margin-bottom:14px;min-height:104px;display:flex;align-items:center}
 .c1{border:3px solid var(--black)} .c2{background:var(--black);color:#fff}'''
-open('slides.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BILMC 001 carousel</title><link rel="stylesheet" href="../../system/ledger.css"><style>{css}</style></head><body>\n'+'\n'.join(S)+'\n</body></html>')
+body='\n'.join(S); import re as _re
+parts=body.split('@@N@@'); total=len(parts)-1
+body=''.join(p+(f'{i+1:02d} / {total:02d}' if i<total else '') for i,p in enumerate(parts))
+open('slides.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BILMC 001 carousel</title><link rel="stylesheet" href="../../system/ledger.css"><style>{css}</style></head><body>\n'+body+'\n</body></html>')
 print(len(S),'slides')
+

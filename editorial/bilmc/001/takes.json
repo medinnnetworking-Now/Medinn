@@ -2,13 +2,68 @@
  "article": "001",
  "url": "medinn.in/bilmc/more-than-a-training-ground",
  "takes": [
-  {"id":"stepping-stone","type":"critique","headline":"For many students, MBBS feels like a stage to be completed before NEET-PG.","support":"The undergraduate degree risks becoming a stepping stone rather than an experience students fully value in itself.","ask":"Did your MBBS feel like an experience, or a stage? Tell me honestly."},
-  {"id":"unexplored","type":"critique","headline":"How often does a student who spots a clinical problem get to investigate it, build a prototype, or test if it could become a product?","support":"Students see where workflows break down and where patients struggle. These observations are valuable. But what happens to them?","ask":"Have you ever noticed a problem in a ward and had nowhere to take it?"},
-  {"id":"discover","type":"critique","headline":"Students should not have to leave their medical college to discover that such opportunities exist.","support":"They should not have to navigate the whole journey alone.","ask":"Where did you first hear that research or innovation was an option for you?"},
-  {"id":"not-distractions","type":"insight","headline":"Research and entrepreneurship are not distractions from becoming a doctor.","support":"They are legitimate avenues through which medical knowledge can be applied.","ask":"Should these paths be recognised inside a medical college? What would that look like?"},
-  {"id":"capabilities","type":"insight","headline":"Medical students already work under pressure, decide with incomplete information and manage with limited resources.","support":"These capabilities are not only for the clinic. They matter in research, product development, operations and entrepreneurship.","ask":"Which skill from your training do you think is most underused outside the clinic?"},
-  {"id":"environment","type":"insight","headline":"We don’t need another compulsory subject. We need a change in the environment.","support":"Room for students to explore research, innovation and entrepreneurship, just as there is room for arts and sports.","ask":"What one thing would make your college a better place to explore?"},
-  {"id":"bridges","type":"question","headline":"If technology institutions are building bridges towards medicine, why aren’t medical colleges doing more to build bridges towards technology?","support":"","ask":"Has your college ever worked with an engineering institute? What came of it?"},
-  {"id":"closing","type":"insight","headline":"A medical college should be more than a place where we learn medicine. It should be a place where we learn what we can do with it.","support":"","ask":"What should a medical college really prepare us for?"}
+  {
+   "id": "premise",
+   "type": "critique",
+   "headline": "The MBBS is the foundation of every doctor. Right now, it is undervalued.",
+   "support": "This series is about bringing value back to undergraduate medical education.",
+   "ask": "Does your MBBS feel valued? By your college, by your peers, by you?"
+  },
+  {
+   "id": "stepping-stone",
+   "type": "critique",
+   "headline": "For many students, MBBS feels like a stage to be completed before NEET-PG.",
+   "support": "The undergraduate degree risks becoming a stepping stone rather than an experience students fully value in itself.",
+   "ask": "Did your MBBS feel like an experience, or a stage? Tell me honestly."
+  },
+  {
+   "id": "unexplored",
+   "type": "critique",
+   "headline": "How often does a student who spots a clinical problem get to investigate it, build a prototype, or test if it could become a product?",
+   "support": "Students see where workflows break down and where patients struggle. These observations are valuable. But what happens to them?",
+   "ask": "Have you ever noticed a problem in a ward and had nowhere to take it?"
+  },
+  {
+   "id": "discover",
+   "type": "critique",
+   "headline": "Students should not have to leave their medical college to discover that such opportunities exist.",
+   "support": "They should not have to navigate the whole journey alone.",
+   "ask": "Where did you first hear that research or innovation was an option for you?"
+  },
+  {
+   "id": "not-distractions",
+   "type": "insight",
+   "headline": "Research and entrepreneurship are not distractions from becoming a doctor.",
+   "support": "They are legitimate avenues through which medical knowledge can be applied.",
+   "ask": "Should these paths be recognised inside a medical college? What would that look like?"
+  },
+  {
+   "id": "capabilities",
+   "type": "insight",
+   "headline": "Medical students already work under pressure, decide with incomplete information and manage with limited resources.",
+   "support": "These capabilities are not only for the clinic. They matter in research, product development, operations and entrepreneurship.",
+   "ask": "Which skill from your training do you think is most underused outside the clinic?"
+  },
+  {
+   "id": "environment",
+   "type": "insight",
+   "headline": "We don’t need another compulsory subject. We need a change in the environment.",
+   "support": "Room for students to explore research, innovation and entrepreneurship, just as there is room for arts and sports.",
+   "ask": "What one thing would make your college a better place to explore?"
+  },
+  {
+   "id": "bridges",
+   "type": "question",
+   "headline": "If technology institutions are building bridges towards medicine, why aren’t medical colleges doing more to build bridges towards technology?",
+   "support": "",
+   "ask": "Has your college ever worked with an engineering institute? What came of it?"
+  },
+  {
+   "id": "closing",
+   "type": "insight",
+   "headline": "A medical college should be more than a place where we learn medicine. It should be a place where we learn what we can do with it.",
+   "support": "",
+   "ask": "What should a medical college really prepare us for?"
+  }
  ]
 }

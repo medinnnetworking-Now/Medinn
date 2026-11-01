@@ -1,10 +1,11 @@
 // cd editorial/bilmc/001 && python3 build_slides.py && python3 build_posters.py && NODE_PATH=$(npm root -g) node render.js
 const { chromium } = require('playwright'); const path=require('path'), fs=require('fs');
-(async()=>{const b=await chromium.launch();const out=path.join(__dirname,'export');fs.mkdirSync(path.join(out,'posters'),{recursive:true});
+(async()=>{const b=await chromium.launch();const out=path.join(__dirname,'export');for(const f of fs.existsSync(out)?fs.readdirSync(out):[]) if(/^bilmc-001-slide-\d+\.png$/.test(f)) fs.unlinkSync(path.join(out,f));fs.mkdirSync(path.join(out,'posters'),{recursive:true});
  const pad=n=>String(n).padStart(2,'0');
  let p=await b.newPage({viewport:{width:1080,height:1350}});
  await p.goto('file://'+path.join(__dirname,'slides.html'));await p.evaluate(()=>document.fonts.ready);
- for(let i=1;i<=12;i++) await (await p.$('#s'+pad(i))).screenshot({path:path.join(out,`bilmc-001-slide-${pad(i)}.png`)});
+  const secs=await p.$$('section.slide');for(let i=0;i<secs.length;i++) await secs[i].screenshot({path:path.join(out,`bilmc-001-slide-${pad(i+1)}.png`)});
+ console.log(secs.length,'slides exported');
  await p.pdf({path:path.join(out,'bilmc-001-carousel.pdf'),width:'1080px',height:'1350px',printBackground:true});
  p=await b.newPage({viewport:{width:1080,height:1350}});
  await p.goto('file://'+path.join(__dirname,'posters.html'));await p.evaluate(()=>document.fonts.ready);

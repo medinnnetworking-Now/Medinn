@@ -1,57 +1,55 @@
-# Article 001: post kit (copy and paste)
+# Article 001: post kit (copy and paste). Tone guide: ../TONE.md
 
 Article: https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
 Short link: https://medinn.in/bilmc/more-than-a-training-ground
 WhatsApp channel: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
-## LinkedIn: carousel post (attach export/bilmc-001-carousel.pdf as a document)
-Medical students are expected to have it all figured out.
+## LinkedIn: carousel post (attach export/bilmc-001-carousel.pdf as a document, 13 slides)
+The MBBS is the foundation of every doctor. Right now, it feels undervalued.
 
-On 25 October, at MedX Talks (the IMA MSN All Kerala event at GMC Kozhikode), I spoke about that pressure. It's also part of why I'm starting a series.
+For many students, it has started to feel like a stage to complete before NEET-PG. I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and before I leave medical college I'm writing a series, from a student's lens, on bringing value back to undergraduate medical education.
 
-I'm 290+ days into my internship as a house surgeon at GMC Kozhikode. Before I leave medical college, I want to ask, from a student's lens:
+Article 001 makes two points, together:
 
-What should a medical college really prepare us for?
+1. Strengthen the core. Improve the education we already provide: how we learn, and the gaps that remain between one stage of training and the next.
 
-Article 001 of "Before I Leave Medical College" is out. The slides above are the short version.
+2. Then expand what it can enable. For students who want it, room to explore research, technology and entrepreneurship. Not another compulsory subject, and never at the cost of clinical training.
 
-In red, the critique: MBBS risks becoming a stepping stone to NEET-PG, and students rarely get a place to take the clinical problems they see every day.
-
-In black, the idea: not another compulsory subject, but an environment where students who want to can explore research, technology and entrepreneurship.
+Clinical practice is a demanding and deeply valuable profession. This series is about giving the degree behind it the value it deserves.
 
 Full article, with sources, in the first comment.
 
-What should a medical college enable beyond clinical training? I'd like to hear from students, interns, doctors and educators.
+How valued did your MBBS feel? Students, interns, doctors and educators, I'd like to hear from you.
 
-#MedicalEducation #MBBS #MedicalStudents #HealthcareInnovation #BeforeILeaveMedicalCollege
+#MedicalEducation #MBBS #MedicalStudents #BeforeILeaveMedicalCollege
 
-## LinkedIn: first comment (post it right after publishing)
+## LinkedIn: first comment (post right after publishing)
 Full article, with sources: https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
 
 Get each new article on WhatsApp: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
 ## LinkedIn: alternative, hook image + link post (attach export/bilmc-001-linkedin-hook-1080x1350.png)
-What should a medical college really prepare us for?
+The MBBS is the foundation of every doctor. Why does it feel undervalued?
 
-I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and before I leave I'm writing down my take, from a student's lens. Article 001 is out: Medical College Is More Than a Training Ground for Doctors.
+I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and before I leave I'm writing my take on bringing value back to undergraduate medical education. Article 001 is out.
 
-Not another compulsory subject. An environment where curious students can explore research, technology and entrepreneurship.
+First, strengthen what we teach. Then, for students who want it, expand what it can enable. Clinical training stays the core.
 
-Link in the first comment. What would you change about your medical college experience?
+Link in the first comment. Did your MBBS feel valued?
 
 #MedicalEducation #MBBS #BeforeILeaveMedicalCollege
 
 ## WhatsApp channel post
 📘 *New article: Before I Leave Medical College, 001*
 
-*Medical College Is More Than a Training Ground for Doctors*
+*The MBBS is the foundation of every doctor. Right now, it feels undervalued.*
 
-We train doctors. But is that all a medical college should aspire to do?
+This series is about bringing value back to undergraduate medical education, from a house surgeon's lens.
 
-The short version:
-• MBBS risks becoming a stepping stone to NEET-PG
-• Students see clinical problems every day, with few places to take them
-• Not another compulsory subject: an environment to explore research, technology and entrepreneurship
+Article 001: *Medical College Is More Than a Training Ground for Doctors*
+• Strengthen the core: improve the education we already provide
+• Then expand what it can enable: room for students who want to explore research, technology and entrepreneurship
+• Clinical training stays the core
 
 Read it (7 min, with sources):
 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
@@ -63,31 +61,33 @@ Tell me your take: https://wa.me/919400513128
 Dr. Sidharth Narayanan, House Surgeon, GMC Kozhikode
 
 ## WhatsApp: personal message for friends and groups
-Hey! I've started writing a series on medical education, from a house surgeon's lens: Before I Leave Medical College. Article 001 is out: "Medical College Is More Than a Training Ground for Doctors". It's a 7-minute read, and I'd really like your honest take, especially if you're an MBBS student or intern:
+Hey! I've started a series on medical education, from a house surgeon's lens: Before I Leave Medical College. The premise: the MBBS is the foundation of every doctor, and right now it feels undervalued. Article 001 is out ("Medical College Is More Than a Training Ground for Doctors"), a 7-minute read. I'd really like your honest take, especially if you're an MBBS student or intern:
 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
 
 You can also get each new article on WhatsApp: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
-## Instagram caption (post the 12 slides as a carousel)
-On 25 October I spoke at MedX Talks (IMA MSN All Kerala, GMC Kozhikode) about the pressure to have it all figured out as an MBBS student. Here is the bigger question underneath it: is a medical college only meant to train doctors?
+## Instagram caption (post the 13 slides as a carousel)
+The MBBS is the foundation of every doctor. Right now, it feels undervalued.
 
-Swipe for Article 001 of Before I Leave Medical College. In red, what I think is missing. In black, what I think we could do about it. In blue, the evidence.
+Swipe for Article 001 of Before I Leave Medical College: my take, from a house surgeon's lens, on bringing value back to undergraduate medical education. In red, what's missing. In black, what we could do about it. In blue, the evidence.
 
-Not another compulsory subject. An environment where curious students can explore.
+First, strengthen the education we provide. Then, for students who want it, expand what it can enable. Clinical training stays the core.
+
+Cover photo: speaking at MedX Talks on 25 October (IMA MSN All Kerala, GMC Kozhikode), on the pressure to have it all figured out as an MBBS student.
 
 Full article: link in bio, or medinn.in/bilmc/more-than-a-training-ground
 Get each new article on WhatsApp: link in bio.
 
-What would you change about your medical college experience? Tell me below.
+How valued did your MBBS feel? Tell me below.
 
 #MedicalEducation #MBBS #NEETPG #MedStudents #HouseSurgeon #BeforeILeaveMedicalCollege
 
 ## Order of posting
-1. Publish on LinkedIn (carousel), first comment with the links.
-2. Post the Instagram carousel the same day; put the link in your bio.
-3. Post to the WhatsApp channel; then send the personal message to your groups.
-4. Over the next 8 days: one poster a day from export/posters/, each ends with its own question (see captions.md).
+1. LinkedIn carousel, then the first comment straight away.
+2. Instagram carousel the same day; link in bio goes to the series page.
+3. WhatsApp channel post; then the personal message to your groups.
+4. Next 9 days: one poster a day from export/posters/ (poster 01 is the premise). Each ends with its own question, in captions.md.
 
 ## Before you post
-- Update "290+ days" to your current count in every block above.
-- LinkedIn documents must be PDF: use bilmc-001-carousel.pdf.
+- Update "290+ days" in every block.
+- Run the checklist in ../TONE.md.
