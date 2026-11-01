@@ -1,6 +1,6 @@
 # Updating the Medinn site
 
-Every change committed to the `main` branch goes live on https://medinn-sandy.vercel.app in about a minute. Vercel builds it automatically.
+Every change committed to the `main` branch goes live on https://medinn.in in about a minute. Vercel builds it automatically.
 
 ## Where things live
 
@@ -64,20 +64,20 @@ Each of these opens straight to that page or section. The standalone pages have 
 
 | Send this | Opens |
 |---|---|
-| https://medinn-sandy.vercel.app/repair-cafe | The Repair Café story (standalone page) |
-| https://medinn-sandy.vercel.app/medtech-malabar | MedTech Malabar: the ongoing project (vision, pipeline, where it stands, how to be part of it). /incubator and /bmh redirect here. |
-| https://medinn-sandy.vercel.app/blogs | Medinn Blogs: every newsletter post |
-| https://medinn-sandy.vercel.app/blogs/the-medinn-story | The first post: The Medinn story, so far |
-| https://medinn-sandy.vercel.app/repair-cafe-report.pdf | The 7-slide Repair Café report |
-| https://medinn-sandy.vercel.app/#repaircafe | The Repair Café section of the homepage |
-| https://medinn-sandy.vercel.app/#vision | The MedTech Malabar section of the homepage |
-| https://medinn-sandy.vercel.app/#handover | The Handover |
-| https://medinn-sandy.vercel.app/#tl | The timeline |
-| https://medinn-sandy.vercel.app/#gallery | The gallery |
-| https://medinn-sandy.vercel.app/#work | Selected work |
-| https://medinn-sandy.vercel.app/#services | Services |
-| https://medinn-sandy.vercel.app/#research | Research and credentials |
-| https://medinn-sandy.vercel.app/#contact | Contact |
+| https://medinn.in/repair-cafe | The Repair Café story (standalone page) |
+| https://medinn.in/medtech-malabar | MedTech Malabar: the ongoing project (vision, pipeline, where it stands, how to be part of it). /incubator and /bmh redirect here. |
+| https://medinn.in/blogs | Medinn Blogs: every newsletter post |
+| https://medinn.in/blogs/the-medinn-story | The first post: The Medinn story, so far |
+| https://medinn.in/repair-cafe-report.pdf | The 7-slide Repair Café report |
+| https://medinn.in/#repaircafe | The Repair Café section of the homepage |
+| https://medinn.in/#vision | The MedTech Malabar section of the homepage |
+| https://medinn.in/#handover | The Handover |
+| https://medinn.in/#tl | The timeline |
+| https://medinn.in/#gallery | The gallery |
+| https://medinn.in/#work | Selected work |
+| https://medinn.in/#services | Services |
+| https://medinn.in/#research | Research and credentials |
+| https://medinn.in/#contact | Contact |
 
 The Share buttons on these pages open the phone's share sheet, or copy the link on a computer.
 
