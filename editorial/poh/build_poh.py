@@ -1,0 +1,67 @@
+# People of Healthcare: launch carousel (Medinn look: dark, blue). Edit copy here, then: NODE_PATH=$(npm root -g) node render.js
+N=7
+def foot(n): return f'<div class="foot"><span>People of Healthcare · A Medinn initiative</span><span>medinn.in/people-of-healthcare</span></div>'
+def top(n): return f'<div class="top"><img class="mk" src="../../poh-mark.png" alt=""><span class="pg">{n:02d} / {N:02d}</span></div>'
+S=[]
+S.append(f'''<section class="s" id="s01"><div class="glow"></div>
+<div class="top"><img class="lg" src="../../medinn-logo.png" alt="Medinn"><span class="pg">A Medinn initiative</span></div>
+<div style="margin:auto 0 0;position:relative"><img src="../../poh-mark.png" alt="People of Healthcare" style="width:250px;height:250px;border-radius:50%;box-shadow:0 0 120px rgba(43,114,214,.6);display:block"></div>
+<h1 class="h" style="margin-top:44px;font-size:100px">50 MVPs of healthcare &amp; <em>MedTech</em> in Kerala.</h1>
+<p class="sub">A challenge I’m giving myself: find them, meet them, and map the ecosystem they are building.</p>
+<p class="by" style="margin-bottom:96px">Dr. Sidharth Narayanan</p>{foot(1)}</section>''')
+chips=['Hospital groups','Medical device makers','Diagnostics','Healthcare founders','Biotech ventures','Technology developers','Clinicians building services','Distributors','Researchers','Investors','Institutional leaders']
+S.append(f'''<section class="s" id="s02">{top(2)}<p class="k">The ecosystem</p>
+<h2 class="h">Healthcare is much bigger than hospitals.</h2>
+<p class="sub">Yet we explore these worlds separately. How well do we know who is building what, right here?</p>
+<div class="chips">{''.join(f'<span>{c}</span>' for c in chips)}<span class="hl">Clinicians</span></div>{foot(2)}</section>''')
+S.append(f'''<section class="s" id="s03">{top(3)}<p class="k">The challenge</p>
+<div class="big">50</div>
+<h2 class="h" style="font-size:78px">conversations with the people building Kerala’s healthcare.</h2>
+<p class="sub">Founders, CEOs, key opinion leaders, hospital leaders, manufacturers, diagnostics leaders, researchers and investors.</p>{foot(3)}</section>''')
+L=[('01','People','Who is shaping healthcare in Kerala, and what have they built?'),('02','Production','What can Kerala develop and manufacture locally? Where do we depend on others?'),('03','Talent','What skills exist, what is missing, and how do we build it?'),('04','Innovation','What does the road from a clinical problem to a product involve?'),('05','Pipelines','What funding, mentorship, partnerships and approvals does it take to execute?')]
+S.append(f'''<section class="s" id="s04">{top(4)}<p class="k">What I want to understand</p>
+<h2 class="h" style="font-size:80px">Five lenses on one ecosystem.</h2>
+<div class="lens">{''.join(f'<div><span>{a}</span><b>{b}</b><p>{c}</p></div>' for a,b,c in L)}</div>{foot(4)}</section>''')
+S.append(f'''<section class="s" id="s05">{top(5)}<p class="k">Why it matters for doctors</p>
+<h2 class="h">Doctors can be builders too.</h2>
+<p class="sub">Clinicians are often seen only as end users. They can also be collaborators, product developers, researchers and advisors.</p>
+<p class="sub" style="margin-top:22px;color:#EDF1FA">To take part, they need to know the industry, the people in it, and how ideas become healthcare products.</p>
+<div class="card"><b>People of Healthcare</b> exists to make that knowledge accessible to clinicians and medical students.</div>{foot(5)}</section>''')
+S.append(f'''<section class="s" id="s06">{top(6)}<p class="k">Help me find them</p>
+<h2 class="h">Know an MVP of healthcare or MedTech in Kerala?</h2>
+<p class="sub">Nominate them, or introduce yourself. Three ways:</p>
+<div class="ways"><div><span>WhatsApp</span><b>+91 94005 13128</b></div><div><span>Email</span><b>medinnnetworking@gmail.com</b></div><div class="hl"><span>The discovery page</span><b>medinn.in/people-of-healthcare</b></div></div>{foot(6)}</section>''')
+S.append(f'''<section class="s" id="s07"><div class="glow"></div>
+<div class="top"><img class="lg" src="../../medinn-logo.png" alt="Medinn"><span class="pg">07 / 07</span></div>
+<div style="margin:auto 0 0;position:relative;text-align:left"><img src="../../poh-mark.png" alt="" style="width:240px;height:240px;border-radius:50%;box-shadow:0 0 110px rgba(43,114,214,.55)"></div>
+<h2 class="h" style="margin-top:44px;font-size:104px">People of Healthcare.</h2>
+<p class="sub" style="color:#EDF1FA">Meeting the MVPs of healthcare and MedTech in Kerala.</p>
+<div class="cta">medinn.in/people-of-healthcare</div>{foot(7)}</section>''')
+css='''@font-face{font-family:B;src:url(../../bricolage.woff2);font-weight:200 800}
+@font-face{font-family:G;src:url(../../geist.woff2);font-weight:100 900}
+@font-face{font-family:GM;src:url(../../geist-mono.woff2);font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#222;font-family:G,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:#05070D;color:#EDF1FA;padding:88px;display:flex;flex-direction:column;page-break-after:always}
+.glow{position:absolute;right:-260px;top:-260px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(66,110,230,.32),transparent 66%)}
+.top{display:flex;justify-content:space-between;align-items:center;position:relative}
+.top .mk{width:76px;height:76px;border-radius:50%}.top .lg{height:56px;background:#fff;border-radius:999px;padding:5px 14px}
+.pg{font-family:GM;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#8E9AB3}
+.k{font-family:GM;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#6E95FF;margin-top:64px;position:relative}
+.h{font-family:B;font-weight:600;font-size:96px;line-height:.96;letter-spacing:-.05em;margin-top:26px;position:relative}.h em{font-style:normal;color:#6E95FF}
+.sub{font-size:38px;line-height:1.35;color:#B4BFD6;margin-top:30px;max-width:900px;position:relative}
+.by{font-family:GM;font-size:24px;letter-spacing:.08em;text-transform:uppercase;color:#8E9AB3;margin-top:36px;position:relative}
+.chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:auto;margin-bottom:110px;position:relative}
+.chips span{font-size:30px;font-weight:600;padding:14px 24px;border-radius:999px;background:#0D1220;border:1px solid rgba(190,210,255,.22)}
+.chips .hl{background:#6E95FF;color:#05070D;border-color:transparent}
+.big{font-family:B;font-weight:800;font-size:380px;line-height:.82;letter-spacing:-.07em;color:#6E95FF;margin-top:50px;position:relative}
+.lens{display:grid;gap:14px;margin-top:auto;margin-bottom:110px;position:relative}
+.lens div{display:grid;grid-template-columns:70px 250px 1fr;align-items:center;gap:20px;background:#0D1220;border:1px solid rgba(190,210,255,.16);border-radius:22px;padding:22px 28px}
+.lens span{font-family:GM;font-size:22px;color:#6E95FF}.lens b{font-family:B;font-size:40px;letter-spacing:-.03em}.lens p{font-size:25px;line-height:1.3;color:#B4BFD6}
+.card{margin-top:auto;margin-bottom:110px;padding:36px 40px;border-radius:26px;background:linear-gradient(150deg,#1C3B9A,#0F1E52);font-size:36px;line-height:1.35;position:relative}
+.ways{display:grid;gap:16px;margin-top:auto;margin-bottom:110px;position:relative}
+.ways div{background:#0D1220;border:1px solid rgba(190,210,255,.2);border-radius:24px;padding:30px 36px}.ways span{display:block;font-family:GM;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#8E9AB3}.ways b{display:block;font-family:B;font-size:44px;letter-spacing:-.03em;margin-top:8px}
+.ways .hl{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}.ways .hl span{color:rgba(237,241,250,.75)}
+.cta{margin-top:auto;margin-bottom:110px;align-self:flex-start;background:#6E95FF;color:#05070D;font-family:B;font-weight:700;font-size:40px;letter-spacing:-.02em;padding:26px 38px;border-radius:999px;position:relative}
+.foot{position:absolute;left:88px;right:88px;bottom:50px;display:flex;justify-content:space-between;font-family:GM;font-size:19px;letter-spacing:.04em;white-space:nowrap;color:#8E9AB3;border-top:1px solid rgba(190,210,255,.18);padding-top:18px}'''
+open('slides.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>PoH launch carousel</title><style>{css}</style></head><body>\n'+'\n'.join(S)+'\n</body></html>')
+print(N,'slides')

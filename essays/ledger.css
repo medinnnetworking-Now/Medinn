@@ -68,3 +68,14 @@ figure.fig figcaption b{color:var(--black)}figure.fig.critique figcaption b,figu
 .art-card:hover h3{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:4px}
 .soon{padding:24px 0;font-family:var(--mono);font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--grey)}
 @media (min-width:760px){.art-card{grid-template-columns:260px 1fr}.art-card img{align-self:start}}
+
+/* article header: the photos that open the piece (blue = evidence) */
+.hero{margin:34px -8px 0;border:3px solid var(--blue);padding:14px 14px 12px;background:#fff}
+.hero .hg{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px;align-items:stretch}
+.hero img{display:block;width:100%;height:100%;object-fit:cover}
+.hero .h1{aspect-ratio:3/2;object-position:55% 40%}
+.hero .h2{aspect-ratio:auto;object-position:50% 35%}
+.hero figcaption{font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;line-height:1.55;color:var(--grey);margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.hero figcaption b{display:block;color:var(--blue);margin-bottom:2px;text-transform:uppercase;letter-spacing:.06em}
+.hero figcaption .r{color:var(--red);font-weight:700}
+@media (max-width:640px){.hero{margin:30px -8px 0}.hero .hg{grid-template-columns:1fr}.hero .h1{aspect-ratio:3/2}.hero .h2{aspect-ratio:3/2;object-position:50% 38%}}

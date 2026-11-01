@@ -5,7 +5,7 @@ Article: https://medinn.in/bilmc/more-than-a-training-ground  (canonical: https:
 
 ## Instagram carousel caption (12 slides)
 
-A medical college is built to train doctors. Is that all it should be?
+On 25 October I spoke at MedX Talks (IMA MSN All Kerala, GMC Kozhikode) about the pressure to have it all figured out as an MBBS student. Here is the bigger question underneath it: is a medical college only meant to train doctors?
 
 I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and I'm starting a series on medical education from a student's lens: Before I Leave Medical College.
 

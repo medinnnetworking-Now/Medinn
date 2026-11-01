@@ -13,8 +13,8 @@ S.append(f'''<section class="slide" id="s01">{run("insight","Article 001")}
   <div class="lab" style="display:grid;gap:10px;font-size:21px"><span><b style="color:var(--red)">■ Red</b> a critique</span><span><b>■ Black</b> an insight</span><span><b style="color:var(--blue)">■ Blue</b> the evidence</span></div>
   <p style="font-family:var(--serif);font-size:38px;line-height:1.2;margin-top:34px">On medical education, from a house surgeon’s lens.</p>
  </div>
- <div style="position:relative"><img class="portrait" src="../../assets/author-portrait.jpg" alt="Dr. Sidharth Narayanan" style="width:360px;height:450px;border-radius:180px 180px 0 0;border:4px solid var(--black)">
-  <div class="lab" style="position:absolute;left:-4px;right:-4px;bottom:-4px;background:var(--black);color:var(--white);padding:10px 14px;font-size:19px">Dr. Sidharth Narayanan</div></div>
+ <div style="position:relative"><img class="portrait" src="../../assets/medx-speaker.jpg" alt="Dr. Sidharth Narayanan speaking at MedX Talks" style="width:360px;height:450px;border-radius:180px 180px 0 0;border:4px solid var(--black)">
+  <div class="lab" style="position:absolute;left:-4px;right:-4px;bottom:-4px;background:var(--blue);color:var(--white);padding:10px 14px;font-size:18px">MedX Talks · 25 Oct 2026</div></div>
 </div>{foot(1)}</section>''')
 # 02 QUESTION
 S.append(f'''<section class="slide" id="s02">{run("question","The question")}
