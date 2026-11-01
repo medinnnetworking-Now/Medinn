@@ -1,0 +1,43 @@
+/* BEFORE I LEAVE MEDICAL COLLEGE: "The Ledger" design language v1
+   White, black, red, blue. The colours carry meaning:
+     RED   = critique: what is broken, missing or unanswered
+     BLACK on WHITE = understanding: an insight, a proposal, a reframe
+     BLUE  = evidence: sources, institutions, real events, links
+   Inverse (white on black) is for covers, closers and the one big reframe.
+   A red slide is for a critique and nothing else.  1080 x 1350 (4:5). */
+@import url("../fonts/fonts.css");
+:root{
+  --white:#FFFFFF; --black:#0B0B0B; --red:#E10600; --red-on-black:#FF4A3D; --blue:#0A47C2; --blue-on-black:#7FA6FF;
+  --grey:#6B6B6B; --line:#E6E6E6; --m:88px;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",Helvetica,Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#9a9a9a;font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;padding:var(--m);padding-top:150px;display:flex;flex-direction:column;background:var(--white);color:var(--black);page-break-after:always}
+.t-black{background:var(--black);color:var(--white)}
+.t-red{background:var(--red);color:var(--white)}
+/* running header: series name + the kind of slide this is */
+.run{position:absolute;left:var(--m);right:var(--m);top:56px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:21px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding-bottom:18px;border-bottom:3px solid currentColor}
+.tag{font-weight:700;padding:5px 12px;border:2.5px solid currentColor}
+.tag.critique{color:var(--red)} .tag.insight{color:var(--black)} .tag.evidence{color:var(--blue)} .tag.question{color:var(--black);background:var(--black);color:var(--white)}
+.t-black .tag.critique{color:var(--red-on-black)} .t-black .tag.insight{color:var(--white)} .t-black .tag.evidence{color:var(--blue-on-black)}
+.t-red .tag{color:var(--white)}
+/* type */
+.h{font-family:var(--serif);font-weight:600;font-size:96px;line-height:1.0;letter-spacing:-.008em;font-variation-settings:"opsz" 72}
+.h .r{color:var(--red)} .t-black .h .r{color:var(--red-on-black)} .h .b{color:var(--blue)}
+.t-red .h .r{color:var(--black)}
+.sub{font-family:var(--serif);font-size:42px;line-height:1.25;margin-top:30px;max-width:880px}
+.sub .r{color:var(--red)} .t-black .sub .r{color:var(--red-on-black)}
+.lab{font-family:var(--mono);font-size:22px;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+.src{font-family:var(--mono);font-size:20px;letter-spacing:.03em;line-height:1.45;color:var(--blue);margin-top:16px}
+.t-black .src{color:var(--blue-on-black)}
+.cap{font-family:var(--mono);font-size:21px;letter-spacing:.04em;margin-top:16px;line-height:1.45;color:var(--grey)}
+.t-black .cap,.t-red .cap{color:inherit;opacity:.75}
+.art{margin-top:auto;margin-bottom:100px}
+.art svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans)} svg .mo{font-family:var(--mono)} svg .se{font-family:var(--serif)}
+/* footer: the author, always */
+.foot{position:absolute;left:var(--m);right:var(--m);bottom:48px;display:flex;justify-content:space-between;align-items:baseline;font-size:22px;font-weight:500;border-top:3px solid currentColor;padding-top:18px}
+.foot b{font-weight:700}.foot span{opacity:.7}.foot .n{font-family:var(--mono);opacity:1}
+.portrait{object-fit:cover;object-position:50% 20%;display:block}
+.photo{display:block;width:100%;object-fit:cover}
