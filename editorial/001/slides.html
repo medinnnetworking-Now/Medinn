@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Medinn Editorial 001: carousel source</title>
+<link rel="stylesheet" href="../system/medinn-editorial.css">
+<style>
+/* slide-specific layout only; all tokens live in the system stylesheet */
+.cover .top{display:flex;justify-content:space-between;align-items:center}
+.cover .top img{width:300px;display:block}
+.cover .no{font-size:24px;font-weight:700;letter-spacing:.16em;color:var(--blue);border:3px solid var(--blue);border-radius:999px;padding:12px 26px}
+.cover .disc{position:absolute;right:-300px;bottom:-330px;width:900px;height:900px;border-radius:50%;background:var(--pale)}
+.cover .disc2{position:absolute;right:-120px;bottom:-150px;width:540px;height:540px;border-radius:50%;background:var(--blue-soft);opacity:.7}
+.cover .main{position:relative;margin-top:150px}
+.cover .h1{font-size:112px;line-height:1.0}
+.cover .by{position:absolute;left:var(--m);bottom:88px;display:flex;align-items:center;gap:26px}
+.cover .by img{width:132px;height:132px;border-radius:50%;object-position:50% 22%;border:5px solid #fff;box-shadow:0 0 0 3px var(--blue)}
+.cover .by b{display:block;font-size:34px;color:var(--navy);letter-spacing:-.01em}
+.cover .by span{display:block;font-size:24px;margin-top:6px;font-weight:500}
+.q2 .me{display:flex;align-items:center;gap:30px;margin-top:auto;margin-bottom:96px}
+.q2 .me img{width:250px;height:250px;border-radius:36px;object-position:50% 18%;box-shadow:0 0 0 4px #fff,0 0 0 8px var(--blue)}
+.q2 .me p{font-size:38px;line-height:1.25;font-weight:600;color:var(--navy);letter-spacing:-.015em}
+.q2 .me p i{display:block;font-style:normal;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-top:14px}
+.big-q{position:absolute;right:56px;top:40px;font-size:620px;font-weight:800;color:var(--blue-soft);line-height:1;letter-spacing:-.05em;z-index:0;opacity:.8}
+.q2 .kicker,.q2 .h1{position:relative;z-index:1}
+.list4{display:grid;gap:14px}
+.list4 div{display:flex;align-items:center;gap:26px;background:var(--pale);border-radius:24px;padding:0 34px;height:108px;font-size:38px;font-weight:600;color:var(--navy);letter-spacing:-.015em}
+.list4 div b{flex:0 0 52px;height:52px;border-radius:50%;background:var(--blue);color:#fff;font-size:24px;display:grid;place-items:center}
+.list4 div.dash{background:transparent;border:3px dashed var(--blue);color:var(--blue)}
+.list4 div.dash b{background:#fff;color:var(--blue);border:3px dashed var(--blue)}
+.cap{display:grid;grid-template-columns:1fr 90px 1fr;align-items:stretch;gap:0}
+.cap .col{display:grid;gap:16px;align-content:start}
+.cap .col h4{font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:6px}
+.cap .col div.c{background:#fff;border-radius:24px;padding:26px 28px;font-size:32px;line-height:1.2;font-weight:600;color:var(--navy);letter-spacing:-.015em;min-height:128px;display:flex;align-items:center}
+.cap .col.r div.c{background:var(--blue);color:#fff}
+.cap .mid{display:flex;align-items:center;justify-content:center}
+.two{display:grid;gap:22px}
+.two .box{border-radius:32px;padding:56px 54px}
+.two .a{border:3px solid rgba(255,255,255,.35)}
+.two .b{background:var(--blue);color:#fff}
+.two .box small{display:block;font-size:24px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#8DB4EC;margin-bottom:14px}
+.two .b small{color:#BBD2F3}
+.two .box p{font-size:68px;line-height:1.06;letter-spacing:-.03em;font-weight:700;color:#fff}
+.close .top{display:flex;justify-content:space-between;align-items:center}
+.close .top img{width:240px}
+.close .quote{margin-top:78px;font-size:70px;line-height:1.1;letter-spacing:-.035em;font-weight:700;color:var(--navy)}
+.close .quote em{font-style:normal;color:var(--blue)}
+.close .auth{display:flex;align-items:center;gap:28px;margin-top:auto}
+.close .auth img{width:150px;height:150px;border-radius:50%;object-position:50% 22%;box-shadow:0 0 0 4px #fff,0 0 0 8px var(--blue)}
+.close .auth b{display:block;font-size:38px;color:var(--navy);letter-spacing:-.015em}
+.close .auth span{display:block;font-size:25px;margin-top:6px;font-weight:500;line-height:1.35}
+.close .cta{margin:34px 0 100px;background:var(--blue);color:#fff;border-radius:28px;padding:34px 40px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.close .cta small{display:block;font-size:22px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#BBD2F3}
+.close .cta b{display:block;font-size:31px;white-space:nowrap;letter-spacing:-.02em;margin-top:8px}
+.close .cta svg{flex:0 0 64px}
+</style></head>
+<body>
+
+<!-- 01 COVER -->
+<section class="slide t-white cover" id="s01">
+  <div class="disc"></div><div class="disc2"></div>
+  <div class="top"><img src="../assets/medinn-logo.png" alt="Medinn"><span class="no">ARTICLE 001</span></div>
+  <div class="main">
+    <p class="kicker">Before I Leave Medical College</p>
+    <h1 class="h1">Medical College Is <em>More Than</em> a Training Ground for Doctors</h1>
+  </div>
+  <div class="by"><img class="portrait" src="../assets/author-portrait.jpg" alt="Dr. Sidharth Narayanan"><div><b>Dr. Sidharth Narayanan</b><span>Medinn · Healthcare Intelligence &amp; Media</span></div></div>
+</section>
+
+<!-- 02 THE QUESTION -->
+<section class="slide t-pale q2" id="s02">
+  <div class="big-q">?</div>
+  <p class="kicker">The question</p>
+  <h2 class="h1">We train doctors. But is that <em>all</em> a medical college should aspire to do?</h2>
+  <div class="me"><img class="portrait" src="../assets/author-portrait.jpg" alt="Dr. Sidharth Narayanan"><p>A reflection from within medical education.<i>Dr. Sidharth Narayanan</i></p></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>02</b> / 12</div></div>
+</section>
+
+<!-- 03 THE EXPERIENCE -->
+<section class="slide t-white" id="s03">
+  <p class="kicker">The undergraduate experience</p>
+  <h2 class="h2">Are we getting the most out of undergraduate medical education?</h2>
+  <div class="art"><div class="list4">
+    <div><b>1</b>Lectures</div><div><b>2</b>Practical examinations</div><div><b>3</b>University examinations</div><div><b>4</b>Clinical postings</div>
+    <div class="dash"><b>?</b>What are we missing?</div></div></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>03</b> / 12</div></div>
+</section>
+
+<!-- 04 THE PERCEPTION -->
+<section class="slide t-navy" id="s04">
+  <p class="kicker">The perception</p>
+  <h2 class="h2">Has MBBS become a <em>stepping stone</em> to NEET-PG?</h2>
+  <p class="sub">…rather than an experience students fully value in itself?</p>
+  <div class="art"><svg viewBox="0 0 904 440" role="img" aria-label="Stairs: MBBS as a step towards NEET-PG">
+    <rect x="0" y="330" width="260" height="110" rx="14" fill="#1B3D6B"/>
+        <rect x="600" y="90" width="304" height="350" rx="14" fill="#0750AE"/>
+    <text x="130" y="397" text-anchor="middle" font-size="46" font-weight="700" fill="#fff">MBBS</text>
+    <text x="752" y="282" text-anchor="middle" font-size="46" font-weight="700" fill="#fff">NEET-PG</text>
+    <path d="M80 290 C 180 170, 330 150, 450 150 S 620 60, 690 50" fill="none" stroke="#8DB4EC" stroke-width="5" stroke-dasharray="4 16" stroke-linecap="round"/>
+    <path d="M668 34 L700 50 L672 72" fill="none" stroke="#8DB4EC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="400" cy="120" r="40" fill="#fff"/><text x="400" y="136" text-anchor="middle" font-size="40" font-weight="800" fill="#0750AE">?</text>
+  </svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>04</b> / 12</div></div>
+</section>
+
+<!-- 05 THE UNTAPPED OPPORTUNITY -->
+<section class="slide t-white" id="s05">
+  <p class="kicker">The untapped opportunity</p>
+  <h2 class="h2">Students see clinical problems every day. What happens to the <em>solutions</em> they imagine?</h2>
+  <div class="art"><svg viewBox="0 0 904 400" role="img" aria-label="Pathway: clinical observation, idea, prototype, validation. The last two steps are uncertain.">
+    <line x1="110" y1="100" x2="346" y2="100" stroke="#0750AE" stroke-width="6"/>
+    <line x1="346" y1="100" x2="574" y2="100" stroke="#0750AE" stroke-width="5" stroke-dasharray="3 16" stroke-linecap="round" opacity=".6"/>
+    <line x1="590" y1="100" x2="800" y2="100" stroke="#0750AE" stroke-width="5" stroke-dasharray="3 16" stroke-linecap="round" opacity=".35"/>
+    <circle cx="110" cy="100" r="68" fill="#0750AE"/><text x="110" y="117" text-anchor="middle" font-size="50" font-weight="700" fill="#fff">1</text>
+    <circle cx="346" cy="100" r="68" fill="#0750AE"/><text x="346" y="117" text-anchor="middle" font-size="50" font-weight="700" fill="#fff">2</text>
+    <circle cx="582" cy="100" r="68" fill="#fff" stroke="#0750AE" stroke-width="5" stroke-dasharray="3 14" stroke-linecap="round" opacity=".75"/><text x="582" y="117" text-anchor="middle" font-size="50" font-weight="700" fill="#0750AE" opacity=".75">3</text>
+    <circle cx="818" cy="100" r="68" fill="#fff" stroke="#0750AE" stroke-width="5" stroke-dasharray="3 14" stroke-linecap="round" opacity=".45"/><text x="818" y="117" text-anchor="middle" font-size="50" font-weight="700" fill="#0750AE" opacity=".45">4</text>
+    <g font-size="32" font-weight="700" fill="#102B50" text-anchor="middle">
+      <text x="110" y="226">Clinical</text><text x="110" y="266">observation</text>
+      <text x="346" y="246">Idea</text>
+      <text x="582" y="246" opacity=".7">Prototype</text>
+      <text x="818" y="246" opacity=".5">Validation</text></g>
+    <rect x="0" y="312" width="904" height="88" rx="24" fill="#EFF4FC"/>
+    <text x="452" y="368" text-anchor="middle" font-size="34" font-weight="700" fill="#0750AE">The pathway exists. The support often doesn’t.</text>
+  </svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>05</b> / 12</div></div>
+</section>
+
+<!-- 06 THE MISSING BRIDGE -->
+<section class="slide t-pale" id="s06">
+  <p class="kicker">The missing bridge</p>
+  <h2 class="h2">Clinical understanding needs to meet <em>engineering expertise.</em></h2>
+  <div class="art"><svg viewBox="0 0 904 640" role="img" aria-label="Clinical understanding, engineering expertise and research overlap to create healthcare innovation">
+    <g fill="#0750AE" fill-opacity=".16" stroke="#0750AE" stroke-width="4">
+      <circle cx="452" cy="210" r="200"/><circle cx="318" cy="418" r="200"/><circle cx="586" cy="418" r="200"/></g>
+    <g font-size="30" font-weight="700" fill="#102B50" text-anchor="middle">
+      <text x="452" y="110">Clinical</text><text x="452" y="148">understanding</text>
+      <text x="246" y="492" font-size="28">Engineering</text><text x="246" y="526" font-size="28">expertise</text>
+      <text x="658" y="492" font-size="28">Research &amp;</text><text x="658" y="526" font-size="28">collaboration</text></g>
+    <rect x="352" y="318" width="200" height="104" rx="52" fill="#0750AE"/>
+    <text x="452" y="361" text-anchor="middle" font-size="27" font-weight="700" fill="#fff">Healthcare</text>
+    <text x="452" y="394" text-anchor="middle" font-size="27" font-weight="700" fill="#fff">innovation</text>
+  </svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>06</b> / 12</div></div>
+</section>
+
+<!-- 07 THE REVERSE TREND -->
+<section class="slide t-white" id="s07">
+  <p class="kicker">The reverse trend</p>
+  <h2 class="h2" style="font-size:76px">Technology institutions are building bridges towards medicine. <em>What about the other direction?</em></h2>
+  <div class="art"><svg viewBox="0 0 904 470" role="img" aria-label="A bridge from technology institutions towards medicine is built; the bridge from medical colleges towards technology is not yet complete">
+    <path d="M0 410 q38 -18 76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0" fill="none" stroke="#D6E3F6" stroke-width="6"/>
+    <path d="M0 444 q38 -18 76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0 t76 0" fill="none" stroke="#EFF4FC" stroke-width="6"/>
+    <rect x="0" y="170" width="250" height="250" rx="14" fill="#102B50"/>
+    <rect x="654" y="170" width="250" height="250" rx="14" fill="#0750AE"/>
+    <g font-size="31" font-weight="700" fill="#fff" text-anchor="middle">
+      <text x="125" y="282">Technology</text><text x="125" y="320">institutions</text>
+      <text x="779" y="282">Medical</text><text x="779" y="320">colleges</text></g>
+    <rect x="250" y="164" width="268" height="16" rx="6" fill="#102B50"/>
+    <g stroke="#102B50" stroke-width="10"><line x1="300" y1="180" x2="300" y2="420"/><line x1="400" y1="180" x2="400" y2="420"/><line x1="500" y1="180" x2="500" y2="420"/></g>
+    <line x1="524" y1="172" x2="654" y2="172" stroke="#0750AE" stroke-width="8" stroke-dasharray="3 18" stroke-linecap="round"/>
+    <circle cx="588" cy="86" r="40" fill="#EFF4FC" stroke="#0750AE" stroke-width="4"/><text x="588" y="101" text-anchor="middle" font-size="46" font-weight="800" fill="#0750AE">?</text>
+                  </svg>
+  <p class="small" style="margin-top:22px;font-size:28px">Initiatives at IIT Madras, IIT Kharagpur and IIT Kanpur are bringing medical sciences and technology closer together.</p></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>07</b> / 12</div></div>
+</section>
+
+<!-- 08 NOT ANOTHER COMPULSORY SUBJECT -->
+<section class="slide t-blue" id="s08">
+  <p class="kicker">What we need</p>
+  <h2 class="h1" style="font-size:104px">Not another <em>compulsory subject.</em></h2>
+  <p class="sub">An environment that makes research and innovation possible, for students who want to explore.</p>
+  <div class="art"><svg viewBox="0 0 904 300" role="img" aria-label="Not another compulsory subject, but an environment that supports exploration">
+    <rect x="0" y="40" width="380" height="220" rx="28" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="4"/>
+    <line x1="26" y1="246" x2="354" y2="54" stroke="#fff" stroke-opacity=".55" stroke-width="6" stroke-linecap="round"/>
+    <text x="190" y="140" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Another</text>
+    <text x="190" y="184" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">compulsory subject</text>
+    <path d="M430 150 H500 M476 124 L504 150 L476 176" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="738" cy="150" r="150" fill="#fff"/>
+    <text x="738" y="124" text-anchor="middle" font-size="32" font-weight="800" fill="#0750AE">An environment</text>
+    <text x="738" y="168" text-anchor="middle" font-size="30" font-weight="600" fill="#102B50">that supports</text>
+    <text x="738" y="206" text-anchor="middle" font-size="30" font-weight="600" fill="#102B50">exploration</text>
+  </svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>08</b> / 12</div></div>
+</section>
+
+<!-- 09 WHAT THAT ENVIRONMENT COULD LOOK LIKE -->
+<section class="slide t-white" id="s09">
+  <p class="kicker">What it could look like</p>
+  <h2 class="h2">A medical student with the <em>people and tools</em> to try.</h2>
+  <div class="art"><svg viewBox="0 0 904 600" role="img" aria-label="Five supports around a medical student: mentorship, research, prototyping, engineering partnerships, clinical innovation challenges">
+    <g stroke="#0750AE" stroke-width="4" stroke-opacity=".35">
+      <line x1="452" y1="290" x2="452" y2="68"/><line x1="452" y1="290" x2="738" y2="212"/><line x1="452" y1="290" x2="634" y2="504"/><line x1="452" y1="290" x2="270" y2="504"/><line x1="452" y1="290" x2="166" y2="212"/></g>
+    <circle cx="452" cy="290" r="104" fill="#0750AE"/>
+    <text x="452" y="284" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Medical</text><text x="452" y="324" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">student</text>
+    <g fill="#EFF4FC" stroke="#0750AE" stroke-width="3">
+      <rect x="312" y="20" width="280" height="92" rx="46"/><rect x="588" y="160" width="300" height="104" rx="52"/><rect x="474" y="452" width="320" height="104" rx="52"/><rect x="110" y="452" width="320" height="104" rx="52"/><rect x="4" y="160" width="324" height="104" rx="52"/></g>
+    <g font-size="31" font-weight="700" fill="#102B50" text-anchor="middle">
+      <text x="452" y="78">Mentorship</text>
+      <text x="738" y="222">Research</text>
+      <text x="634" y="516">Prototyping</text>
+      <text x="270" y="498">Engineering</text><text x="270" y="534">partnerships</text>
+      <text x="166" y="206" font-size="29">Clinical innovation</text><text x="166" y="242" font-size="29">challenges</text></g>
+  </svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>09</b> / 12</div></div>
+</section>
+
+<!-- 10 CAPABILITIES BEYOND CLINICAL PRACTICE -->
+<section class="slide t-pale" id="s10">
+  <p class="kicker">Capabilities beyond clinical practice</p>
+  <h2 class="h2">What medical college builds can be applied <em>far beyond</em> the clinic.</h2>
+  <div class="art"><div class="cap">
+    <div class="col"><h4>What training builds</h4>
+      <div class="c">Working under pressure</div><div class="c">Deciding with incomplete information</div><div class="c">Managing competing responsibilities</div><div class="c">Working within resource limits</div></div>
+    <div class="mid"><svg width="58" height="58" viewBox="0 0 58 58"><path d="M8 29 H48 M32 12 L50 29 L32 46" fill="none" stroke="#0750AE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="col r"><h4>Where it can apply</h4>
+      <div class="c">Healthcare research</div><div class="c">Product development</div><div class="c">Entrepreneurship</div><div class="c">Healthcare operations</div></div>
+  </div></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>10</b> / 12</div></div>
+</section>
+
+<!-- 11 THE BIGGER VISION -->
+<section class="slide t-navy" id="s11">
+  <p class="kicker">The bigger vision</p>
+  <h2 class="h2">Two things, <em>together.</em></h2>
+  <div class="art"><div class="two">
+    <div class="box a"><small>First</small><p>Improve the education we provide.</p></div>
+    <div class="box b"><small>Second</small><p>Expand what medical education can enable.</p></div>
+  </div></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>11</b> / 12</div></div>
+</section>
+
+<!-- 12 CLOSING -->
+<section class="slide t-white close" id="s12">
+  <div class="top"><img src="../assets/medinn-logo.png" alt="Medinn"><span class="kicker">Article 001</span></div>
+  <p class="quote">A medical college should be more than a place where we <em>learn medicine.</em> It should be a place where we learn <em>what we can do with it.</em></p>
+  <div class="auth"><img class="portrait" src="../assets/author-portrait.jpg" alt="Dr. Sidharth Narayanan"><div><b>Dr. Sidharth Narayanan</b><span>Before I Leave Medical College<br>Medinn · Healthcare Intelligence &amp; Media</span></div></div>
+  <div class="cta"><div><small>Read the full article</small><b>medinn.in/blogs/more-than-a-training-ground</b></div>
+    <svg width="64" height="64" viewBox="0 0 64 64"><path d="M10 32 H52 M34 14 L52 32 L34 50" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="foot"><div class="l"><img src="../assets/medinn-mark.png" alt="Medinn"><span>Before I Leave Medical College · 001</span></div><div class="n"><b>12</b> / 12</div></div>
+</section>
+</body></html>
