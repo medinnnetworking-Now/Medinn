@@ -59,21 +59,13 @@
 .conv{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px;margin-top:44px}
 .conv span.s{font-family:var(--hd);font-weight:600;font-size:clamp(16px,1.6vw,20px);padding:11px 18px;border-radius:999px;border:1px solid var(--acc);background:var(--acc-soft)}
 .conv span.a{color:var(--acc2)}
-.two2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:40px}
-.two2 .card{padding:26px 28px}
-.two2 .k{margin-bottom:10px}
-.two2 h3{font-size:clamp(21px,2vw,26px);letter-spacing:-.025em;line-height:1.12}
-.two2 p{margin-top:10px;color:var(--mut);font-size:15.5px;line-height:1.55}
-.two2 .card.hl{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
-.two2 .card.hl p{color:rgba(237,241,250,.78)} .two2 .card.hl .k{color:rgba(237,241,250,.7)}
 .note{margin-top:28px;max-width:var(--read);color:var(--mut);font-size:16px;line-height:1.55}
 .join{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:48px}
 .join .card{padding:24px 22px 26px}
 .join .ph{font-size:26px;color:var(--acc2)}
 .join h3{font-size:20px;letter-spacing:-.02em;margin-top:14px}
 .join p{margin-top:8px;color:var(--mut);font-size:15px;line-height:1.5}
-@media (max-width:1023px){.qs{grid-template-columns:1fr 1fr}.lens{grid-template-columns:1fr 1fr}.who,.two2{grid-template-columns:1fr}.join{grid-template-columns:1fr 1fr}}
-@media (max-width:767px){.qs,.lens,.join{grid-template-columns:1fr}.cover h1{font-size:clamp(40px,11vw,52px)}.conv span.a{display:none}}
+@media (max-width:1023px){.qs{grid-template-columns:1fr 1fr}.lens{grid-template-columns:1fr 1fr}.who,@media (max-width:767px){.qs,.lens,.join{grid-template-columns:1fr}.cover h1{font-size:clamp(40px,11vw,52px)}.conv span.a{display:none}}
 </style>
 </head>
 <body data-story>
@@ -164,12 +156,8 @@
 
 <section class="ch alt" id="together">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="6">Two initiatives, one ecosystem</p><h2 class="rv">From knowledge to opportunity.</h2>
-   <p class="lede rv">Medinn begins with two initiatives, because there are two sides to understanding healthcare: the people who will shape its future, and the people already building it.</p></div>
-  <div class="two2">
-   <div class="card rv"><p class="k">Initiative 01</p><h3>Before I Leave Medical College</h3><p>A personal editorial series on medical education and what it could enable, from the perspective of a student about to leave it. It surfaces the gaps and the unmet needs students and doctors see.</p></div>
-   <div class="card hl rv"><p class="k">Initiative 02</p><h3>People of Healthcare</h3><p>The industry side: the people, organisations, capabilities and pathways that could help clinicians and students turn problems into research, products and ventures.</p></div>
-  </div>
+  <div class="ch-h"><p class="k" data-n="6">Why it matters</p><h2 class="rv">From knowledge to opportunity.</h2>
+   <p class="lede rv">Knowing who is building what is the first step. When knowledge about an ecosystem becomes accessible, its people can find one another: a medical student can discover a manufacturer, a founder can reach clinical insight, and a hospital can meet the people working on its problems.</p></div>
   <div class="conv rv" aria-label="Observation, knowledge, awareness, connection, collaboration, opportunity">
    <span class="s">Observation</span><span class="a">&rarr;</span><span class="s">Knowledge</span><span class="a">&rarr;</span><span class="s">Awareness</span><span class="a">&rarr;</span><span class="s">Connection</span><span class="a">&rarr;</span><span class="s">Collaboration</span><span class="a">&rarr;</span><span class="s">Opportunity</span>
   </div>
