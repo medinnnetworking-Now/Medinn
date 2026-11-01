@@ -99,7 +99,7 @@
   <h1 class="rv">People of Healthcare.</h1>
   <p class="sub rv" style="font-size:clamp(22px,2.4vw,32px);color:var(--tx);max-width:17em;line-height:1.25;font-family:var(--hd);font-weight:500;letter-spacing:-.02em">Meeting the MVPs of healthcare and MedTech in Kerala.</p>
   <p class="sub rv" style="margin-top:14px">50 conversations with the founders, leaders and builders already shaping Kerala&rsquo;s healthcare ecosystem.</p>
-  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" href="#form">Nominate someone</a></div>
+  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" id="nomlink" href="#join">Nominate someone</a></div>
  </div>
 </section>
 
@@ -191,11 +191,11 @@
    <div class="card rv"><i class="ph ph-steth" aria-hidden="true"></i><h3>Clinicians and students</h3><p>Follow along to learn the industry and the people in it, and to find ways to contribute.</p></div>
    <div class="card rv"><i class="ph ph-flask" aria-hidden="true"></i><h3>Partners and institutions</h3><p>Hospitals, institutes and organisations that want to help map and strengthen the ecosystem.</p></div>
   </div>
-  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px"><a class="btn" href="#form"><i class="ph ph-arrow-right" aria-hidden="true"></i> Fill the discovery form</a><a class="btn ghost" href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare%3A%20nomination&body=Hi%20Sidharth%2C%0A%0AI%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhat%20they%20have%20built%20or%20lead%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0AHow%20to%20reach%20them%20%28optional%29%3A%0A%0AMy%20name%20and%20contact%3A%0A"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate by email</a><a class="btn ghost" href="https://wa.me/919400513128?text=Hi%20Sidharth%2C%20I%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0A%0AMy%20name%3A" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> Nominate on WhatsApp</a><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
+  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px"><a class="btn" id="formbtn" href="#form" style="display:none"><i class="ph ph-arrow-right" aria-hidden="true"></i> Fill the discovery form</a><a class="btn ghost" href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare%3A%20nomination&body=Hi%20Sidharth%2C%0A%0AI%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhat%20they%20have%20built%20or%20lead%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0AHow%20to%20reach%20them%20%28optional%29%3A%0A%0AMy%20name%20and%20contact%3A%0A"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate by email</a><a class="btn ghost" href="https://wa.me/919400513128?text=Hi%20Sidharth%2C%20I%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0A%0AMy%20name%3A" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> Nominate on WhatsApp</a><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
  </div>
 </section>
 
-<section class="ch alt" id="form">
+<section class="ch alt" id="form" style="display:none">
  <div class="wrap">
   <div class="ch-h"><p class="k" data-n="8">Discovery form</p><h2 class="rv">Tell us who we should meet.</h2>
    <p class="lede rv">Nominate someone, or introduce yourself. It takes two minutes, and every entry is read by Dr. Sidharth Narayanan.</p></div>
@@ -239,7 +239,8 @@
 </main>
 <footer><div class="wrap"><p>People of Healthcare is an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
 <script>
-(function(){var f=document.getElementById('pohform');if(!f)return;var m=document.getElementById('pohmsg'),b=document.getElementById('pohsubmit');
+(function(){var f=document.getElementById('pohform');if(!f)return;
+fetch('/api/nominate',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){if(j&&j.configured){document.getElementById('form').style.display='';document.getElementById('formbtn').style.display='';document.getElementById('nomlink').setAttribute('href','#form')}}).catch(function(){});var m=document.getElementById('pohmsg'),b=document.getElementById('pohsubmit');
 f.addEventListener('submit',function(e){e.preventDefault();m.className='msg';m.textContent='';
  var d={};new FormData(f).forEach(function(v,k){d[k]=v});
  if(!d.nominee.trim()||!d.by.trim()||!d.byContact.trim()){m.className='msg err';m.textContent='Please fill the name of the person, your name and how to reach you.';return}

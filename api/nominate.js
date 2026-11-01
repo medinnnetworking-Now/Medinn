@@ -10,7 +10,11 @@ const clean = (v, max) => String(v == null ? '' : v).replace(/\r/g, '').trim().s
 const text = (v) => ({ rich_text: v ? [{ type: 'text', text: { content: v } }] : [] });
 
 module.exports = async (req, res) => {
-  if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'method_not_allowed' }); }
+  if (req.method === 'GET') { // the page asks this to decide whether to show the form
+    res.setHeader('Cache-Control', 'no-store');
+    return res.status(200).json({ configured: !!(process.env.NOTION_TOKEN && process.env.NOTION_NOMINATIONS_DB) });
+  }
+  if (req.method !== 'POST') { res.setHeader('Allow', 'GET, POST'); return res.status(405).json({ error: 'method_not_allowed' }); }
   let b = req.body;
   if (typeof b === 'string') { try { b = JSON.parse(b); } catch (e) { b = {}; } }
   b = b || {};
