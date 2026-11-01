@@ -79,3 +79,11 @@ figure.fig figcaption b{color:var(--black)}figure.fig.critique figcaption b,figu
 .hero figcaption b{display:block;color:var(--blue);margin-bottom:2px;text-transform:uppercase;letter-spacing:.06em}
 .hero figcaption .r{color:var(--red);font-weight:700}
 @media (max-width:640px){.hero{margin:30px -8px 0}.hero .hg{grid-template-columns:1fr}.hero .h1{aspect-ratio:3/2}.hero .h2{aspect-ratio:3/2;object-position:50% 38%}}
+
+/* subscribe (WhatsApp channel); slots stay empty until the link is set in config.js */
+.sub-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin:30px 0 0;padding:16px 0;border-top:3px solid var(--black);border-bottom:1px solid var(--black)}
+.sub-bar p{margin:0;font-family:var(--serif);font-size:18px;line-height:1.4;max-width:30em}
+.sub-bar p b{font-weight:700}
+.sub-btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;background:var(--black);color:#fff;padding:13px 18px;border:2px solid var(--black)}
+.sub-btn:hover{background:var(--red);border-color:var(--red)}
+.end .sub-btn{background:var(--red);border-color:var(--red);color:#fff}.end .sub-btn:hover{background:#fff;color:var(--black);border-color:#fff}
