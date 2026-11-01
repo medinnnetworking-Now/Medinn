@@ -17,4 +17,6 @@ const { chromium } = require('playwright'); const path=require('path'), fs=requi
  const fd=path.join(__dirname,'..','..','..','essays','img');fs.mkdirSync(fd,{recursive:true});
  for(const [id,name] of [['s03','fig-1-timetable'],['s04','fig-2-stepping-stone'],['s05','fig-3-pathway'],['s06','fig-4-overlap'],['s07','fig-5-bridge'],['s09','fig-6-ecosystem'],['s10','fig-7-capabilities']]){
   const el=await p.$(`#${id} .art svg`)||await p.$(`#${id} .art`);await el.screenshot({path:path.join(fd,name+'.png')});}
+ const hk=await b.newPage({viewport:{width:1080,height:1350}});await hk.goto('file://'+path.join(__dirname,'hook.html'));await hk.evaluate(()=>document.fonts.ready);
+ await (await hk.$('#hook')).screenshot({path:path.join(out,'bilmc-001-linkedin-hook-1080x1350.png')});
  await b.close();})();
