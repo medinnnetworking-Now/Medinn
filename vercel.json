@@ -1,7 +1,20 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/bmh", "destination": "/medtech-malabar", "permanent": false },
-    { "source": "/incubator", "destination": "/medtech-malabar", "permanent": false }
+    {
+      "source": "/bmh",
+      "destination": "/medtech-malabar",
+      "permanent": false
+    },
+    {
+      "source": "/incubator",
+      "destination": "/medtech-malabar",
+      "permanent": false
+    },
+    {
+      "source": "/internal/:path*",
+      "destination": "/",
+      "permanent": false
+    }
   ]
 }
