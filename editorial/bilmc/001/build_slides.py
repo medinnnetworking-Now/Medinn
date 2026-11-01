@@ -18,7 +18,7 @@ S.append(f'''<section class="slide" id="s01">{run("insight","Article 001")}
 </div>{foot(1)}</section>''')
 # 01b THE PREMISE (new): states the stance before anything else
 S.append(f'''<section class="slide" id="s01b">{run("insight","The premise")}
-<h2 class="h" style="margin-top:6px;font-size:90px">The MBBS is the foundation of every doctor. Right now, it is <span class="r">undervalued.</span></h2>
+<h2 class="h" style="margin-top:6px;font-size:90px">MBBS is the foundation of every doctor’s career. Right now, it feels <span class="r">undervalued.</span></h2>
 <p class="sub" style="font-size:38px">This series starts there: bringing value back to undergraduate medical education.</p>
 <div class="art"><svg viewBox="0 0 904 420">{hatch(1)}
  <g stroke="currentColor" stroke-width="3.5">
@@ -26,7 +26,7 @@ S.append(f'''<section class="slide" id="s01b">{run("insight","The premise")}
  <g class="mo" font-size="21" font-weight="700" fill="currentColor" text-anchor="middle"><rect x="42" y="168" width="250" height="74" fill="#fff" stroke="currentColor" stroke-width="3"/><text class="mo" x="167" y="212">CLINICAL PRACTICE</text>
   <text class="mo" x="431" y="200">RESEARCH</text><text class="mo" x="620" y="200">TECHNOLOGY</text><text class="mo" x="813" y="196">ENTREPRE-</text><text class="mo" x="813" y="222">NEURSHIP</text></g>
  <rect x="2" y="300" width="900" height="112" fill="currentColor"/>
- <text class="se" x="40" y="368" font-size="46" font-weight="600" fill="#fff">MBBS</text><text class="mo" x="190" y="364" font-size="22" fill="#fff">THE FOUNDATION OF EVERY DOCTOR</text>
+ <text class="se" x="40" y="368" font-size="46" font-weight="600" fill="#fff">MBBS</text><text class="mo" x="190" y="364" font-size="22" fill="#fff">FOUNDATION OF EVERY DOCTOR’S CAREER</text>
  <rect x="690" y="318" width="190" height="42" fill="var(--red)"/><text class="mo" x="785" y="346" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">UNDERVALUED</text></svg>
 <p class="cap">Fig. 0 — Clinical practice rests on it, and so does everything else a doctor may choose to build.</p></div>{foot(0)}</section>''')
 # 02 QUESTION

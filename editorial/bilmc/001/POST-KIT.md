@@ -5,7 +5,7 @@ Short link: https://medinn.in/bilmc/more-than-a-training-ground
 WhatsApp channel: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
 ## LinkedIn: carousel post (attach export/bilmc-001-carousel.pdf as a document, 13 slides)
-The MBBS is the foundation of every doctor. Right now, it feels undervalued.
+MBBS is the foundation of every doctor's career. Right now, it feels undervalued.
 
 For many students, it has started to feel like a stage to complete before NEET-PG. I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and before I leave medical college I'm writing a series, from a student's lens, on bringing value back to undergraduate medical education.
 
@@ -29,7 +29,7 @@ Full article, with sources: https://medinn.in/before-i-leave-medical-college/mor
 Get each new article on WhatsApp: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
 ## LinkedIn: alternative, hook image + link post (attach export/bilmc-001-linkedin-hook-1080x1350.png)
-The MBBS is the foundation of every doctor. Why does it feel undervalued?
+MBBS is the foundation of every doctor's career. Why does it feel undervalued?
 
 I'm 290+ days into my internship as a house surgeon at GMC Kozhikode, and before I leave I'm writing my take on bringing value back to undergraduate medical education. Article 001 is out.
 
@@ -42,7 +42,7 @@ Link in the first comment. Did your MBBS feel valued?
 ## WhatsApp channel post
 📘 *New article: Before I Leave Medical College, 001*
 
-*The MBBS is the foundation of every doctor. Right now, it feels undervalued.*
+*MBBS is the foundation of every doctor's career. Right now, it feels undervalued.*
 
 This series is about bringing value back to undergraduate medical education, from a house surgeon's lens.
 
@@ -61,13 +61,13 @@ Tell me your take: https://wa.me/919400513128
 Dr. Sidharth Narayanan, House Surgeon, GMC Kozhikode
 
 ## WhatsApp: personal message for friends and groups
-Hey! I've started a series on medical education, from a house surgeon's lens: Before I Leave Medical College. The premise: the MBBS is the foundation of every doctor, and right now it feels undervalued. Article 001 is out ("Medical College Is More Than a Training Ground for Doctors"), a 7-minute read. I'd really like your honest take, especially if you're an MBBS student or intern:
+Hey! I've started a series on medical education, from a house surgeon's lens: Before I Leave Medical College. The premise: MBBS is the foundation of every doctor's career, and right now it feels undervalued. Article 001 is out ("Medical College Is More Than a Training Ground for Doctors"), a 7-minute read. I'd really like your honest take, especially if you're an MBBS student or intern:
 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
 
 You can also get each new article on WhatsApp: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
 
 ## Instagram caption (post the 13 slides as a carousel)
-The MBBS is the foundation of every doctor. Right now, it feels undervalued.
+MBBS is the foundation of every doctor's career. Right now, it feels undervalued.
 
 Swipe for Article 001 of Before I Leave Medical College: my take, from a house surgeon's lens, on bringing value back to undergraduate medical education. In red, what's missing. In black, what we could do about it. In blue, the evidence.
 

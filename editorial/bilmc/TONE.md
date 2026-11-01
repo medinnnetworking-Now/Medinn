@@ -1,7 +1,7 @@
 # Before I Leave Medical College: tone guide (applies to every article, post, carousel and poster)
 
 ## The premise
-**The MBBS is the foundation of every doctor, and right now it is undervalued.**
+**MBBS is the foundation of every doctor's career, and right now it feels undervalued.**
 This series exists to bring value back to undergraduate medical education: what we teach, how we learn, and, for those who want it, what it can lead to.
 
 ## Rules
