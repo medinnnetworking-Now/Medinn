@@ -2,6 +2,8 @@
 
 A separate identity from Medinn's other work (People of Healthcare, the Medinn site). It lives on medinn.in but looks like its own publication.
 
+**Tone first:** read `bilmc/TONE.md` before writing or posting anything for this series. The premise: the MBBS is the foundation of every doctor, and it is undervalued.
+
 ## The colour code (this is the system)
 | Colour | Means | Used for |
 |---|---|---|
