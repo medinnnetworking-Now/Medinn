@@ -90,10 +90,10 @@ nav.top ul a.cur{color:var(--tx);background:var(--acc-soft)}
 nav.top .r{display:flex;align-items:center;gap:6px}
 nav.top .r .lnk{padding:0 12px;color:var(--tx)}
 .menu{display:none;align-items:center;gap:8px;font-weight:500;font-size:15px;min-height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--line2)}
-.sheet{position:fixed;inset:0;z-index:var(--z-sheet);background:var(--bg);padding:110px var(--pad) 40px;display:none;flex-direction:column;gap:4px}
+.sheet{position:fixed;inset:0;z-index:var(--z-sheet);background:var(--bg);padding:104px var(--pad) calc(40px + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:2px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .sheet.on{display:flex}
-.sheet a{font-family:var(--hd);font-size:40px;font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:6px 0}
-.sheet .btn{margin-top:28px;align-self:flex-start;font-family:var(--bd);font-size:16px}
+.sheet a{flex-shrink:0;line-height:1.15;font-family:var(--hd);font-size:clamp(26px,4.6svh,40px);font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:clamp(3px,.8svh,6px) 0}
+.sheet .btn{flex-shrink:0;margin-top:clamp(14px,2.4svh,28px);align-self:flex-start;font-family:var(--bd);font-size:16px}
 
 @media (min-width:1024px) and (max-width:1199px){nav.top ul a{padding:8px 9px;font-size:14.5px}nav.top .r .lnk{padding:0 8px}nav.top .bar{gap:10px}}
 /* hero universe */
