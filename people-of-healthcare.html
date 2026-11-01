@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<title>People of Healthcare | A Medinn Initiative</title>
+<meta name="description" content="People of Healthcare documents 50 people shaping Kerala's healthcare ecosystem: founders, CEOs, key opinion leaders, hospital leaders, manufacturers, diagnostics leaders, researchers and investors. A Medinn initiative.">
+<meta property="og:title" content="People of Healthcare: understanding the people building Kerala's healthcare ecosystem">
+<meta property="og:description" content="50 conversations with the founders, leaders and builders shaping healthcare in Kerala. A Medinn initiative.">
+<meta property="og:image" content="https://medinn.in/people-of-healthcare-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="medinn-logo.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="story.css">
+<style>
+/* People of Healthcare: shares story.css; chips, lens cards and the convergence flow live here. */
+.cover h1{font-size:clamp(46px,7vw,104px);max-width:8.5em}
+.cover .bgimg.orb{inset:0 0 0 38%;display:grid;place-items:center}
+.cover .bgimg.orb::after{display:none}
+.orb{position:absolute}.orb i{position:absolute;left:50%;top:46%;translate:-50% -50%;border-radius:50%;border:1px solid rgba(110,149,255,.45)}
+.orb .a{width:min(46vw,640px);aspect-ratio:1}.orb .b{width:min(33vw,460px);aspect-ratio:1;border-style:dashed}
+.orb .c{width:min(18vw,260px);aspect-ratio:1;border:0;background:radial-gradient(circle at 35% 30%,#8FB0FF,#2C55D8 60%,#14286E);box-shadow:0 0 90px rgba(110,149,255,.45)}
+.orb b{position:absolute;width:clamp(14px,1.8vw,26px);aspect-ratio:1;border-radius:50%;background:#6E95FF;translate:-50% -50%;box-shadow:0 0 24px rgba(110,149,255,.7)}
+@media (max-width:767px){.cover .bgimg.orb{inset:0;opacity:.35}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px;max-width:52rem}
+.chips span{font-size:clamp(14px,1.3vw,16px);font-weight:600;padding:10px 16px;border-radius:999px;background:var(--surf);border:1px solid var(--line2)}
+.chips span.hl{background:var(--acc);color:var(--acc-tx);border-color:transparent}
+.qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:48px}
+.qs .card{padding:24px 24px 26px}
+.qs .n{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--acc)}
+.qs p{margin-top:10px;font-family:var(--hd);font-weight:600;font-size:clamp(19px,1.8vw,23px);letter-spacing:-.02em;line-height:1.2}
+.qs .card.hl{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
+.qs .card.hl .n{color:rgba(237,241,250,.7)}
+.lens{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:48px}
+.lens .card{padding:24px 20px 26px;display:flex;flex-direction:column}
+.lens .n{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--acc)}
+.lens h3{font-size:clamp(22px,2vw,27px);letter-spacing:-.03em;margin-top:6px}
+.lens p{margin-top:12px;color:var(--mut);font-size:15px;line-height:1.5}
+.who{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:48px}
+.who ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.who li{display:flex;gap:12px;font-size:17px;line-height:1.45}
+.who li::before{content:"";flex:0 0 8px;height:8px;margin-top:9px;border-radius:50%;background:var(--acc)}
+.who .card{padding:clamp(24px,3vw,34px);background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
+.who .card h3{font-size:clamp(24px,2.6vw,34px);letter-spacing:-.03em;line-height:1.08}
+.who .card p{margin-top:14px;color:rgba(237,241,250,.82);font-size:16.5px;line-height:1.55}
+.conv{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px;margin-top:44px}
+.conv span.s{font-family:var(--hd);font-weight:600;font-size:clamp(16px,1.6vw,20px);padding:11px 18px;border-radius:999px;border:1px solid var(--acc);background:var(--acc-soft)}
+.conv span.a{color:var(--acc2)}
+.two2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:40px}
+.two2 .card{padding:26px 28px}
+.two2 .k{margin-bottom:10px}
+.two2 h3{font-size:clamp(21px,2vw,26px);letter-spacing:-.025em;line-height:1.12}
+.two2 p{margin-top:10px;color:var(--mut);font-size:15.5px;line-height:1.55}
+.two2 .card.hl{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
+.two2 .card.hl p{color:rgba(237,241,250,.78)} .two2 .card.hl .k{color:rgba(237,241,250,.7)}
+.note{margin-top:28px;max-width:var(--read);color:var(--mut);font-size:16px;line-height:1.55}
+.join{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:48px}
+.join .card{padding:24px 22px 26px}
+.join .ph{font-size:26px;color:var(--acc2)}
+.join h3{font-size:20px;letter-spacing:-.02em;margin-top:14px}
+.join p{margin-top:8px;color:var(--mut);font-size:15px;line-height:1.5}
+@media (max-width:1023px){.qs{grid-template-columns:1fr 1fr}.lens{grid-template-columns:1fr 1fr}.who,.two2{grid-template-columns:1fr}.join{grid-template-columns:1fr 1fr}}
+@media (max-width:767px){.qs,.lens,.join{grid-template-columns:1fr}.cover h1{font-size:clamp(40px,11vw,52px)}.conv span.a{display:none}}
+</style>
+</head>
+<body data-story>
+<script>document.documentElement.classList.add('js');</script>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; People of Healthcare</span></a>
+ <div class="r"><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button><a class="btn" href="#join">Take part</a></div>
+</header>
+
+<main>
+<section class="cover" id="top">
+ <div class="bgimg orb" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i><b style="left:50%;top:6%"></b><b style="left:93%;top:50%"></b><b style="left:18%;top:80%"></b><b style="left:8%;top:30%"></b><b style="left:72%;top:86%"></b></div>
+ <div class="wrap">
+  <p class="to rv">A Medinn initiative &middot; Kerala</p>
+  <h1 class="rv">People of Healthcare.</h1>
+  <p class="sub rv">Understanding the people building Kerala&rsquo;s healthcare ecosystem: 50 conversations with the founders, leaders and builders already shaping it.</p>
+  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" href="#join">Nominate someone</a></div>
+ </div>
+</section>
+
+<section class="ch" id="ecosystem">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="1">The ecosystem</p><h2 class="rv">Healthcare is much bigger than hospitals.</h2>
+   <p class="lede rv">Kerala&rsquo;s healthcare ecosystem is diverse, and each participant contributes a different capability. But these worlds are often explored independently. Clinicians are frequently seen only as end users, when they can also be collaborators, product developers, researchers, advisors and builders.</p></div>
+  <div class="chips rv" aria-label="Participants in Kerala's healthcare ecosystem">
+   <span>Hospital groups</span><span>Medical device manufacturers</span><span>Diagnostics companies</span><span>Healthcare entrepreneurs</span><span>Biotechnology ventures</span><span>Technology developers</span><span>Clinicians building services</span><span>Distributors</span><span>Researchers</span><span>Investors</span><span>Institutional leaders</span><span class="hl">Clinicians</span>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="questions">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="2">The questions</p><h2 class="rv">How well do we actually understand this ecosystem?</h2></div>
+  <div class="qs">
+   <div class="card rv"><span class="n">01</span><p>Who is manufacturing medical devices in Kerala?</p></div>
+   <div class="card rv"><span class="n">02</span><p>Which companies are developing healthcare technologies?</p></div>
+   <div class="card rv"><span class="n">03</span><p>What capabilities do our hospitals and manufacturers possess?</p></div>
+   <div class="card rv"><span class="n">04</span><p>Where are the opportunities for local production and manufacturing?</p></div>
+   <div class="card rv"><span class="n">05</span><p>What skills and talent are missing?</p></div>
+   <div class="card hl rv"><span class="n">06</span><p>What does it take to move from a clinical observation to research, prototyping, validation, regulatory approval, manufacturing and commercialisation? And how can clinicians take part?</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch" id="lenses">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="3">50 conversations, five lenses</p><h2 class="rv">More than founder profiles.</h2>
+   <p class="lede rv">Each conversation is a profile of one person. Together, the 50 are meant to build an understanding of the whole ecosystem: its people, capabilities, limitations, opportunities and potential.</p></div>
+  <div class="lens">
+   <div class="card rv"><span class="n">01</span><h3>People</h3><p>Who is shaping healthcare in Kerala, and what have they built?</p></div>
+   <div class="card rv"><span class="n">02</span><h3>Production</h3><p>What can Kerala develop, manufacture and produce locally? Where do we depend on external markets?</p></div>
+   <div class="card rv"><span class="n">03</span><h3>Talent</h3><p>What skills and expertise exist? What is missing, and how can we build it?</p></div>
+   <div class="card rv"><span class="n">04</span><h3>Innovation</h3><p>What does the journey from a problem to a commercial healthcare solution actually involve?</p></div>
+   <div class="card rv"><span class="n">05</span><h3>Pipelines</h3><p>What infrastructure, funding, mentorship, partnerships, distribution and regulatory pathways are needed to reach execution?</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="who">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="4">Who we will speak to</p><h2 class="rv">Not only MedTech founders.</h2></div>
+  <div class="who">
+   <ul class="rv">
+    <li><span>Entrepreneurs and CEOs</span></li>
+    <li><span>Key opinion leaders</span></li>
+    <li><span>Hospital founders and administrators</span></li>
+    <li><span>Medical device manufacturers</span></li>
+    <li><span>Diagnostics leaders</span></li>
+    <li><span>Researchers and investors</span></li>
+    <li><span>Others with an important stake in the industry</span></li>
+   </ul>
+   <div class="card rv"><h3>Knowledge that clinicians can use.</h3><p>For doctors to take part meaningfully, they need to understand the industry, know the people operating within it and appreciate how healthcare innovations are brought to life. People of Healthcare exists to make that knowledge accessible to clinicians and medical students.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="ch" id="together">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="5">Two initiatives, one ecosystem</p><h2 class="rv">From knowledge to opportunity.</h2>
+   <p class="lede rv">Medinn begins with two initiatives, because there are two sides to understanding healthcare: the people who will shape its future, and the people already building it.</p></div>
+  <div class="two2">
+   <div class="card rv"><p class="k">Initiative 01</p><h3>Before I Leave Medical College</h3><p>A personal editorial series on medical education and what it could enable, from the perspective of a student about to leave it. It surfaces the gaps and the unmet needs students and doctors see.</p></div>
+   <div class="card hl rv"><p class="k">Initiative 02</p><h3>People of Healthcare</h3><p>The industry side: the people, organisations, capabilities and pathways that could help clinicians and students turn problems into research, products and ventures.</p></div>
+  </div>
+  <div class="conv rv" aria-label="Observation, knowledge, awareness, connection, collaboration, opportunity">
+   <span class="s">Observation</span><span class="a">&rarr;</span><span class="s">Knowledge</span><span class="a">&rarr;</span><span class="s">Awareness</span><span class="a">&rarr;</span><span class="s">Connection</span><span class="a">&rarr;</span><span class="s">Collaboration</span><span class="a">&rarr;</span><span class="s">Opportunity</span>
+  </div>
+  <p class="note rv">This is not a promise that every conversation will lead to a business or a partnership. It is the possibility created when knowledge about an ecosystem becomes more accessible and its participants become better connected.</p>
+ </div>
+</section>
+
+<section class="ch alt" id="join">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="6">Take part</p><h2 class="rv">Know someone who should be among the 50?</h2>
+   <p class="lede rv">Healthcare becomes stronger when the people who understand its problems are connected to the people who have the capabilities to solve them.</p></div>
+  <div class="join">
+   <div class="card rv"><i class="ph ph-sparkle" aria-hidden="true"></i><h3>Nominate someone</h3><p>A founder, leader, manufacturer or clinician-builder in Kerala&rsquo;s healthcare ecosystem whose work deserves to be understood.</p></div>
+   <div class="card rv"><i class="ph ph-buildings" aria-hidden="true"></i><h3>Be part of the 50</h3><p>If you are building or leading in Kerala healthcare, we would like to hear your story.</p></div>
+   <div class="card rv"><i class="ph ph-steth" aria-hidden="true"></i><h3>Clinicians and students</h3><p>Follow along to learn the industry and the people in it, and to find ways to contribute.</p></div>
+   <div class="card rv"><i class="ph ph-flask" aria-hidden="true"></i><h3>Partners and institutions</h3><p>Hospitals, institutes and organisations that want to help map and strengthen the ecosystem.</p></div>
+  </div>
+  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px"><a class="btn" href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate or take part</a><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
+ </div>
+</section>
+
+<section class="ch" id="talk">
+ <div class="wrap">
+  <div class="close">
+   <img class="rv" src="sidharth-face.jpg" alt="Dr. Sidharth Narayanan" loading="lazy">
+   <div>
+    <p class="k rv" style="margin-bottom:16px">Medinn &middot; Healthcare Intelligence &amp; Media</p>
+    <h2 class="rv" style="font-size:clamp(30px,4vw,54px)">Understanding the people, ideas, businesses and technologies shaping healthcare.</h2>
+    <p class="contact rv" style="margin-top:20px">Dr. Sidharth Narayanan &middot; <a href="mailto:medinnnetworking@gmail.com">medinnnetworking@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8">LinkedIn</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><p>People of Healthcare is an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
+<script src="story.js"></script>
+</body>
+</html>
