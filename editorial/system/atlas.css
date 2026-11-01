@@ -1,0 +1,37 @@
+/* BEFORE I LEAVE MEDICAL COLLEGE: "The Atlas" design language v1
+   Paper, ink, one signal red. Serif headlines, mono figure labels, inked line plates.
+   Deliberately NOT the Medinn brand look. 1080 x 1350 (4:5). */
+@import url("../fonts/fonts.css");
+:root{
+  --paper:#F3EDE2; --paper2:#E8DFCE; --ink:#17140F; --ink2:#4B443A; --red:#D3401F; --red-lt:#F2714F;
+  --m:88px;
+  --serif:"Fraunces","Georgia",serif; --sans:"Inter",Helvetica,Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#bdb6a8;font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;padding:var(--m);padding-top:150px;display:flex;flex-direction:column;
+  background:var(--paper);color:var(--ink);page-break-after:always}
+.t-paper2{background:var(--paper2)}
+.t-ink{background:var(--ink);color:var(--paper)}
+.t-red{background:var(--red);color:var(--paper)}
+/* running header */
+.run{position:absolute;left:var(--m);right:var(--m);top:56px;display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:21px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  padding-bottom:18px;border-bottom:3px solid currentColor}
+.run .fig{color:var(--red)} .t-ink .run .fig{color:var(--red-lt)} .t-red .run .fig{color:var(--paper)}
+/* type */
+.h{font-family:var(--serif);font-weight:600;font-size:96px;line-height:1.0;letter-spacing:-.008em;font-variation-settings:"opsz" 72}
+.h i,.q i{font-style:italic;font-weight:500;color:var(--red)}
+.t-ink .h i,.t-ink .q i{color:var(--red-lt)} .t-red .h i{color:var(--ink)}
+.sub{font-family:var(--serif);font-size:42px;line-height:1.25;font-weight:400;margin-top:30px;max-width:880px;letter-spacing:-.01em}
+.lab{font-family:var(--mono);font-size:22px;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+.cap{font-family:var(--mono);font-size:21px;letter-spacing:.04em;margin-top:18px;line-height:1.45;color:var(--ink2)}
+.t-ink .cap,.t-red .cap{color:inherit;opacity:.8}
+.art{margin-top:auto;margin-bottom:100px}
+.art svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans)} svg .mo{font-family:var(--mono)} svg .se{font-family:var(--serif)}
+/* footer */
+.foot{position:absolute;left:var(--m);right:var(--m);bottom:48px;display:flex;justify-content:space-between;align-items:baseline;
+  font-size:22px;font-weight:500;border-top:3px solid currentColor;padding-top:18px}
+.foot b{font-weight:700} .foot span{opacity:.75} .foot .n{font-family:var(--mono);font-weight:500;opacity:1}
+.portrait{object-fit:cover;object-position:50% 20%;display:block}
