@@ -92,10 +92,12 @@ nav.top .r .lnk{padding:0 12px;color:var(--tx)}
 .menu{display:none;align-items:center;gap:8px;font-weight:500;font-size:15px;min-height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--line2)}
 .sheet{position:fixed;inset:0;z-index:var(--z-sheet);background:var(--bg);padding:104px var(--pad) calc(40px + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:2px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .sheet.on{display:flex}
-.sheet a{flex-shrink:0;line-height:1.15;font-family:var(--hd);font-size:clamp(26px,4.6svh,40px);font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:clamp(3px,.8svh,6px) 0}
+.sheet a{flex-shrink:0;line-height:1.15;font-family:var(--hd);font-size:clamp(20px,3.5svh,36px);font-weight:600;letter-spacing:-.02em;text-decoration:none;padding:clamp(2px,.6svh,6px) 0}
 .sheet .btn{flex-shrink:0;margin-top:clamp(14px,2.4svh,28px);align-self:flex-start;font-family:var(--bd);font-size:16px}
 
-@media (min-width:1024px) and (max-width:1199px){nav.top ul a{padding:8px 9px;font-size:14.5px}nav.top .r .lnk{padding:0 8px}nav.top .bar{gap:10px}}
+/* ten menu items need room: below 1400px use the compact Menu button, as on phones */
+@media (min-width:1024px) and (max-width:1399px){nav.top ul{display:none}.menu{display:inline-flex}nav.top .r .lnk,nav.top .r .btn{display:none}}
+nav.top .logo{flex-shrink:0}
 /* hero universe */
 .hero{position:relative;min-height:100dvh;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 72% 50%,rgba(40,70,160,.28),transparent 70%),var(--bg)}
 #stars{position:absolute;inset:0;width:100%;height:100%;display:block}
@@ -457,6 +459,12 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
 .vis .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:44px}
 
 /* hero news link */
+.newsrow{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:26px}
+.newsrow .news{margin-bottom:0}
+.news.red{border-color:rgba(255,74,61,.55);color:#FF6A5E}
+.news.red:hover{border-color:#FF4A3D;background:rgba(225,6,0,.14)}
+.news.red .nw{background:#E10600;color:#fff}
+.news.red .ph{color:#FF6A5E}
 .news{display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;padding:7px 14px 7px 8px;border-radius:999px;border:1px solid var(--line2);background:rgba(13,18,32,.6);backdrop-filter:blur(8px);text-decoration:none;font-size:14px;font-weight:500;transition:border-color .3s,background .3s}
 .news:hover{border-color:var(--acc);background:var(--acc-soft)}
 .news .nw{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--acc);color:var(--acc-tx);border-radius:999px;padding:4px 9px}
@@ -539,18 +547,31 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  .statement .sw{opacity:1}
 }
 </style>
+<link rel="stylesheet" href="/essays/series-card.css">
+<style>
+.poh .wrap .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,5vw,80px);align-items:center}
+.poh .mk{width:clamp(150px,22vw,300px);height:auto;border-radius:50%;box-shadow:0 0 110px rgba(43,114,214,.5)}
+.poh h2{font-size:clamp(44px,6.2vw,100px);letter-spacing:-.055em;line-height:.92;max-width:11em}
+.poh .lede{max-width:38em}
+.poh .tagline{font-family:var(--hd);font-weight:500;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;line-height:1.25;margin-top:22px;max-width:20em}
+.poh .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.poh .inmo{grid-template-columns:repeat(5,minmax(0,1fr))}
+.seriesrow{margin-top:48px}
+@media (max-width:1023px){.poh .inmo{grid-template-columns:1fr 1fr}.poh .wrap .row{grid-template-columns:1fr}.poh .mk{width:160px}}
+@media (max-width:640px){.poh .inmo{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <nav class="top" aria-label="Primary">
  <div class="bar">
   <a class="logo" href="#top" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn" width="1200" height="755"></a>
-  <ul><li><a href="#top">Universe</a></li><li><a href="#repaircafe">Repair Caf&eacute;</a></li><li><a href="#vision">MedTech Malabar</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="/blogs">Blogs</a></li></ul>
+  <ul><li><a href="#poh" title="People of Healthcare" aria-label="People of Healthcare">PoH</a></li><li><a href="#top">Universe</a></li><li><a href="#repaircafe">Repair Caf&eacute;</a></li><li><a href="#vision">MedTech Malabar</a></li><li><a href="#tl">Timeline</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="/blogs">Blogs</a></li></ul>
   <div class="r"><a class="lnk" href="#contact">Contact</a><button class="btn sm acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
   <button class="menu" id="menu" aria-expanded="false" aria-controls="sheet"><i class="ph ph-list" aria-hidden="true"></i><span>Menu</span></button>
  </div>
 </nav>
-<div class="sheet" id="sheet"><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#repaircafe">Repair Caf&eacute;</a><a href="#vision">MedTech Malabar</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="/blogs">Blogs</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
+<div class="sheet" id="sheet"><a href="#poh">People of Healthcare</a><a href="#top">Universe</a><a href="#handover">Handover</a><a href="#repaircafe">Repair Caf&eacute;</a><a href="#vision">MedTech Malabar</a><a href="#tl">Timeline</a><a href="#gallery">Gallery</a><a href="#work">Work</a><a href="#services">Services</a><a href="/blogs">Blogs</a><a href="#contact">Contact</a><button class="btn acc" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
 
 <main id="main">
 <section class="hero" id="top" aria-label="The Medinn universe">
@@ -558,7 +579,11 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  <div class="wrap hero-in" id="heroIn">
   <div class="left">
    <div class="copy" id="copy">
-    <a class="news" href="#repaircafe"><span class="nw">New</span>India's first medical Repair Caf&eacute; <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+    <div class="newsrow">
+     <a class="news" href="#repaircafe"><span class="nw">New</span>India's first medical Repair Caf&eacute; <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+     <a class="news" href="#poh"><span class="nw">Initiative</span>People of Healthcare <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+     <a class="news red" href="/before-i-leave-medical-college"><span class="nw">Series</span>Before I Leave Medical College <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+    </div>
     <h1 class="split" id="h1">Medicine meets <em>MedTech.</em></h1>
     <p class="sub">Medinn is the practice of Dr. Sidharth Narayanan, building edtech growth and MedTech ecosystems across Malabar.</p>
     <div class="cta"><button class="btn mag" id="openBtn"><i class="ph ph-planet" aria-hidden="true"></i> Open the universe</button><button class="btn ghost mag" data-svx="0"><i class="ph ph-compass" aria-hidden="true"></i> Explore services</button></div>
@@ -616,6 +641,29 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
     </dl>
    </div>
   </div>
+ </div>
+</section>
+
+<section class="sec poh" id="poh">
+ <div class="wrap">
+  <div class="row">
+   <div>
+    <p class="eyebrow">A Medinn initiative &middot; Kerala</p>
+    <h2 class="split">People of Healthcare.</h2>
+    <p class="tagline rv">Meeting the MVPs of healthcare and MedTech in Kerala.</p>
+    <p class="lede rv" style="margin-top:18px">50 conversations with the founders, CEOs, key opinion leaders, hospital leaders, manufacturers, researchers and investors already shaping Kerala&rsquo;s healthcare ecosystem, to understand what we can build, make and innovate here, and how clinicians can take part.</p>
+   </div>
+   <img class="mk rv" src="poh-mark.png" alt="People of Healthcare" width="512" height="512">
+  </div>
+  <p class="motion-h rv">Five lenses</p>
+  <div class="inmo">
+   <div class="spot rv"><i class="s">01</i><b>People</b><span>Who is shaping healthcare in Kerala, and what have they built?</span></div>
+   <div class="spot rv"><i class="s">02</i><b>Production</b><span>What can Kerala develop and manufacture locally?</span></div>
+   <div class="spot rv"><i class="s">03</i><b>Talent</b><span>What skills exist, and what is missing?</span></div>
+   <div class="spot rv"><i class="s">04</i><b>Innovation</b><span>What does the road from problem to product involve?</span></div>
+   <div class="spot rv"><i class="s">05</i><b>Pipelines</b><span>Funding, mentorship, partnerships and approvals needed to execute.</span></div>
+  </div>
+  <div class="acts rv"><a class="btn acc mag" href="/people-of-healthcare"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> See People of Healthcare</a><a class="btn ghost mag" href="/people-of-healthcare#join"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate someone</a><button class="shr" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
  </div>
 </section>
 
@@ -740,6 +788,8 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
    <div><h2 class="big split">Medinn Blogs.</h2><p class="lede rv">Notes from Malabar on MedTech, devices and public healthcare. The Medinn newsletter, written by Dr. Sidharth Narayanan.</p></div>
    <a class="btn acc mag rv" href="/blogs"><i class="ph ph-arrow-right" aria-hidden="true"></i> All posts</a>
   </div>
+  <a class="bilmc-card seriesrow rv" href="/before-i-leave-medical-college"><div class="t"><p class="k">Article series</p><h3>Before I leave <span>medical college.</span></h3><p class="d">Medical education from a student&rsquo;s lens, by Dr. Sidharth Narayanan, a house surgeon at GMC Kozhikode.</p><p class="key"><span class="r">Red a critique</span><span>Black an insight</span><span class="b">Blue the evidence</span></p><span class="go">Read the series &rarr;</span></div><div class="im"><img src="bilmc-001-og.jpg" alt="Before I Leave Medical College, Article 001" loading="lazy"></div></a>
+  <a class="poh-card" href="/people-of-healthcare"><img src="/poh-mark.png" alt="" width="512" height="512" loading="lazy"><div class="t"><p class="k">A Medinn initiative &middot; Kerala</p><h3>People of Healthcare</h3><p class="d">Meeting the MVPs of healthcare and MedTech in Kerala. 50 conversations with the founders, leaders and builders shaping the ecosystem.</p></div><span class="go">See the initiative &rarr;</span></a>
   <div class="bgrid2" id="blogGrid"></div>
  </div>
 </section>
@@ -1134,7 +1184,7 @@ $('#blogGrid').innerHTML = BLOGS.slice(0, 3).map(b => `<a class="bcard2 rv" href
 /* ---------- nav state ---------- */
 const navLinks = $$('nav.top ul a');
 const navIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('cur', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
-['top', 'moat', 'handover', 'repaircafe', 'vision', 'tl', 'gallery', 'work', 'services', 'blogs', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
+['top', 'poh', 'moat', 'handover', 'repaircafe', 'vision', 'tl', 'gallery', 'work', 'services', 'blogs', 'research', 'contact'].forEach(id => navIO.observe(document.getElementById(id)));
 
 /* ---------- spotlight borders and magnetic buttons (pointer feedback) ---------- */
 document.addEventListener('pointermove', e => { const s = e.target.closest && e.target.closest('.spot'); if (!s) return; const r = s.getBoundingClientRect(); s.style.setProperty('--mx', (e.clientX - r.left) + 'px'); s.style.setProperty('--my', (e.clientY - r.top) + 'px'); }, { passive: true });

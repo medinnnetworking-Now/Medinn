@@ -15,6 +15,16 @@
       "source": "/internal/:path*",
       "destination": "/",
       "permanent": false
+    },
+    {
+      "source": "/bilmc",
+      "destination": "/before-i-leave-medical-college",
+      "permanent": false
+    },
+    {
+      "source": "/bilmc/:slug",
+      "destination": "/before-i-leave-medical-college/:slug",
+      "permanent": false
     }
   ]
 }
