@@ -35,6 +35,22 @@
 .roots p{margin-top:10px;color:var(--mut);font-size:15.5px;line-height:1.5}
 .roots .status{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--acc-soft);color:var(--acc2);margin-bottom:10px}
 @media (max-width:767px){.roots{grid-template-columns:1fr}}
+.fm{max-width:46rem;margin-top:44px;display:grid;gap:18px}
+.fm .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fm label{display:grid;gap:8px;font-size:14px;font-weight:600;color:var(--tx)}
+.fm label small{font-weight:400;color:var(--mut)}
+.fm label>span{display:block}
+.fm input,.fm select,.fm textarea{width:100%;font:inherit;font-size:16px;font-weight:400;color:var(--tx);background:var(--surf);border:1px solid var(--line2);border-radius:14px;padding:14px 16px}
+.fm textarea{min-height:104px;resize:vertical;line-height:1.5}
+.fm input:focus,.fm select:focus,.fm textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.fm .seg{display:flex;flex-wrap:wrap;gap:10px}
+.fm .seg label{display:flex;align-items:center;gap:8px;font-weight:500;padding:11px 16px;border:1px solid var(--line2);border-radius:999px;background:var(--surf);cursor:pointer}
+.fm .seg input{width:auto;accent-color:#6E95FF}
+.fm .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.fm .msg{font-size:15.5px;line-height:1.5;padding:14px 16px;border-radius:14px;display:none}
+.fm .msg.ok{display:block;background:var(--acc-soft);color:var(--tx)}.fm .msg.err{display:block;background:rgba(255,120,100,.12);color:var(--tx)}
+.fm .msg a{color:var(--acc2)}
+@media (max-width:767px){.fm .row{grid-template-columns:1fr}}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px;max-width:52rem}
 .chips span{font-size:clamp(14px,1.3vw,16px);font-weight:600;padding:10px 16px;border-radius:999px;background:var(--surf);border:1px solid var(--line2)}
 .chips span.hl{background:var(--acc);color:var(--acc-tx);border-color:transparent}
@@ -91,7 +107,7 @@
   <h1 class="rv">People of Healthcare.</h1>
   <p class="sub rv" style="font-size:clamp(22px,2.4vw,32px);color:var(--tx);max-width:17em;line-height:1.25;font-family:var(--hd);font-weight:500;letter-spacing:-.02em">Meeting the MVPs of healthcare and MedTech in Kerala.</p>
   <p class="sub rv" style="margin-top:14px">50 conversations with the founders, leaders and builders already shaping Kerala&rsquo;s healthcare ecosystem.</p>
-  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" href="#join">Nominate someone</a></div>
+  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" href="#form">Nominate someone</a></div>
  </div>
 </section>
 
@@ -187,7 +203,36 @@
    <div class="card rv"><i class="ph ph-steth" aria-hidden="true"></i><h3>Clinicians and students</h3><p>Follow along to learn the industry and the people in it, and to find ways to contribute.</p></div>
    <div class="card rv"><i class="ph ph-flask" aria-hidden="true"></i><h3>Partners and institutions</h3><p>Hospitals, institutes and organisations that want to help map and strengthen the ecosystem.</p></div>
   </div>
-  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px"><a class="btn" href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare%3A%20nomination&body=Hi%20Sidharth%2C%0A%0AI%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhat%20they%20have%20built%20or%20lead%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0AHow%20to%20reach%20them%20%28optional%29%3A%0A%0AMy%20name%20and%20contact%3A%0A"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate by email</a><a class="btn ghost" href="https://wa.me/919400513128?text=Hi%20Sidharth%2C%20I%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0A%0AMy%20name%3A" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> Nominate on WhatsApp</a><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
+  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px"><a class="btn" href="#form"><i class="ph ph-arrow-right" aria-hidden="true"></i> Fill the discovery form</a><a class="btn ghost" href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare%3A%20nomination&body=Hi%20Sidharth%2C%0A%0AI%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhat%20they%20have%20built%20or%20lead%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0AHow%20to%20reach%20them%20%28optional%29%3A%0A%0AMy%20name%20and%20contact%3A%0A"><i class="ph ph-envelope" aria-hidden="true"></i> Nominate by email</a><a class="btn ghost" href="https://wa.me/919400513128?text=Hi%20Sidharth%2C%20I%27d%20like%20to%20nominate%20someone%20for%20People%20of%20Healthcare.%0A%0AName%3A%0ARole%20and%20organisation%3A%0AWhy%20they%20should%20be%20among%20the%2050%3A%0A%0AMy%20name%3A" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right" aria-hidden="true"></i> Nominate on WhatsApp</a><button class="btn ghost" data-share="/people-of-healthcare" data-title="People of Healthcare | A Medinn Initiative"><i class="ph ph-share" aria-hidden="true"></i> Share</button></div>
+ </div>
+</section>
+
+<section class="ch alt" id="form">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="8">Discovery form</p><h2 class="rv">Tell us who we should meet.</h2>
+   <p class="lede rv">Nominate someone, or introduce yourself. It takes two minutes, and every entry is read by Dr. Sidharth Narayanan.</p></div>
+  <form class="fm rv" id="pohform" novalidate>
+   <div class="seg" role="radiogroup" aria-label="Who is this about?">
+    <label><input type="radio" name="type" value="Nominating someone else" checked> Nominating someone else</label>
+    <label><input type="radio" name="type" value="Self-introduction"> Introducing myself</label>
+   </div>
+   <div class="row">
+    <label><span>Name of the person <small>(required)</small></span><input name="nominee" required maxlength="200" autocomplete="off"></label>
+    <label>Role and organisation<input name="role" maxlength="500" autocomplete="off" placeholder="e.g. Founder, a device company in Kochi"></label>
+   </div>
+   <label>Where in the ecosystem?
+    <select name="segment"><option value="">Choose one</option><option>Hospital group or leader</option><option>Medical devices and manufacturing</option><option>Diagnostics</option><option>Biotech and research</option><option>Digital health and technology</option><option>Healthcare entrepreneur or founder</option><option>Investor</option><option>Clinician-builder</option><option>Other</option></select></label>
+   <label>What have they built or do they lead?<textarea name="built" maxlength="1900"></textarea></label>
+   <label>Why should they be among the 50?<textarea name="why" maxlength="1900"></textarea></label>
+   <label><span>How can they be reached? <small>(optional: phone, email or LinkedIn)</small></span><input name="nomineeContact" maxlength="300" autocomplete="off"></label>
+   <div class="row">
+    <label><span>Your name <small>(required)</small></span><input name="by" required maxlength="200" autocomplete="name"></label>
+    <label><span>Your phone or email <small>(required)</small></span><input name="byContact" required maxlength="300" autocomplete="off"></label>
+   </div>
+   <div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+   <div class="msg" id="pohmsg" role="status" aria-live="polite"></div>
+   <div><button class="btn" type="submit" id="pohsubmit"><i class="ph ph-arrow-right" aria-hidden="true"></i> Send to Medinn</button></div>
+  </form>
  </div>
 </section>
 
@@ -205,6 +250,17 @@
 </section>
 </main>
 <footer><div class="wrap"><p>People of Healthcare is an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
+<script>
+(function(){var f=document.getElementById('pohform');if(!f)return;var m=document.getElementById('pohmsg'),b=document.getElementById('pohsubmit');
+f.addEventListener('submit',function(e){e.preventDefault();m.className='msg';m.textContent='';
+ var d={};new FormData(f).forEach(function(v,k){d[k]=v});
+ if(!d.nominee.trim()||!d.by.trim()||!d.byContact.trim()){m.className='msg err';m.textContent='Please fill the name of the person, your name and how to reach you.';return}
+ b.disabled=true;
+ fetch('/api/nominate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j}})})
+ .then(function(x){if(x.ok&&x.j.ok){f.reset();m.className='msg ok';m.textContent='Thank you. This has reached Medinn, and we will be in touch.'}else{throw 0}})
+ .catch(function(){m.className='msg err';m.innerHTML='That did not go through. Please <a href="mailto:medinnnetworking@gmail.com?subject=People%20of%20Healthcare%3A%20nomination">send it by email</a> or <a href="https://wa.me/919400513128">WhatsApp</a> instead.'})
+ .then(function(){b.disabled=false})})})();
+</script>
 <script src="story.js"></script>
 </body>
 </html>
