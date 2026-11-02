@@ -6,7 +6,7 @@ For people who have replied to the poster or the discovery link. Sent in three s
 The intro below uses only facts that are in `internal/PROFILE.md`. These claims from the owner's draft are NOT yet backed there, so they are left out until confirmed:
 - "First generation doctor": not in PROFILE.md. Add it there if true, then it can go in the intro.
 - "5 lakhs in the last month" for the apparel company: PROFILE.md has Rs 2L+ direct sales (2025) and Rs 1.5L+ passive direct sales (2026) with KNYA Medical Apparel. Give the exact figure and period if it should be used.
-- "Kenya": PROFILE.md names the company KNYA Medical Apparel (probably the dictation heard "Kenya"). Confirm.
+- "Kenya": CONFIRMED by owner as a dictation error. The company is KNYA Medical Apparel. Never write "Kenya".
 - "50 lakh plus revenue": PROFILE.md says "Rs 50L+ revenue influenced for brands", led by Cytokine Lectures. The intro says "influenced", matching that.
 
 ## 1. Message 1: introduction (send alone; same text as card 1)

@@ -27,7 +27,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `poster-whatsapp.html` + `qr-form.png` + `render-poster.js` | One WhatsApp poster; QR opens medinn.in/people-of-healthcare#form |
 | `build_docs.py` + `render-docs.js` | `PoH-Brief-for-MVPs.pdf` (2 pp, for invitees) and `PoH-Interview-Guide-and-Leverage-Playbook.pdf` (4 pp, internal) |
 | `og.html` + `render-og.js` | Link-preview image source (output goes to `export/`; copy to `/people-of-healthcare-og.jpg` as a JPG) |
-| `whatsapp-conversation.md` | One-day WhatsApp question kit for people who replied to the poster/link: intro, 8 core questions, close, segment add-ons, fit check. Has a facts-to-confirm list (first-generation doctor, last-month apparel revenue, KNYA vs "Kenya") |
+| `whatsapp-conversation.md` | One-day WhatsApp question kit for people who replied to the poster/link: intro, 8 core questions, close, segment add-ons, fit check. Has a facts-to-confirm list (first-generation doctor, last-month apparel revenue; KNYA vs "Kenya" is settled: it is KNYA) |
 | `chat-cards.html` + `render-cards.js` | 4 WhatsApp conversation cards (1080x1350): intro, about-you prerequisite, the 7 questions, thank-you. Output `export/poh-chat-0N-*.png`. Questions text is in `whatsapp-conversation.md` |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
@@ -41,7 +41,7 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 - Outreach channels: Instagram DMs and WhatsApp. Messages and the ask ladder are in the guide and `announcement.md`.
 
 ## Open / next ideas
-- Owner to confirm the unverified claims listed at the top of `whatsapp-conversation.md` before they are used in any message.
+- KNYA Medical Apparel is the name (not Kenya). Owner to confirm the remaining unverified claims listed at the top of `whatsapp-conversation.md` before they are used in any message.
 - Poster and discovery link are live; some people have shown interest. Next: run the WhatsApp conversations and log them in Notion.
 - Add tracking fields to the Notion database: Date met, Key insight, Problems shared, Introductions offered, Offers (mentor / pilot / internship / funding intro), Profile status, Follow-up date.
 - Build a public "People of Healthcare" profile page template (one per person, approved) and a directory page.
