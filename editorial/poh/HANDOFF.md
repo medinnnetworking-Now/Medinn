@@ -1,0 +1,51 @@
+# People of Healthcare (PoH): handoff
+
+Use this to start a fresh Claude Code session on PoH without losing anything. Also read the root `CLAUDE.md`.
+
+## What PoH is
+A Medinn initiative: **connecting with 50 MVPs of healthcare and MedTech in Kerala before 2026 ends** (hospital founders, CEOs, MedTech/device makers, KOLs, diagnostics leaders, researchers, investors). Aim: understand what they build and the gaps in Kerala's healthcare, publish profiles (with each person's approval), and use the relationships to funnel problems, mentors, pilots and future startups. Doctors are framed as potential builders, not just end users.
+Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's phone/WhatsApp: +91 94005 13128. Email: medinnnetworking@gmail.com.
+
+## What is live (all on main)
+- **/people-of-healthcare**: `people-of-healthcare.html` (cover, ecosystem, "where it comes from", questions, five lenses, who we speak to, why it matters, take part, discovery form, contact). Share image `people-of-healthcare-og.jpg`.
+- **Homepage** (`index.html`): hero pill "Initiative: People of Healthcare", nav item first in the list, `#poh` section, "Discover People of Healthcare" button (replaced "Explore services" in the nav, hero, phone menu and universe panel), PoH card in the Blogs section. Sections run newest first.
+- **/blogs** (`blogs/index.html`): PoH card.
+- **Logo**: `poh-mark.png` (blue), `poh-mark-navy.png`. Built from Bricolage 800, "PoH." with a pale-blue dot.
+- **Discovery form**: shown only when the server is configured. `api/nominate.js` writes to Notion. `GET /api/nominate` returns `{configured:true/false}`; the page reveals the form only if true. WhatsApp and email nomination buttons always work (prefilled messages).
+
+## Notion (the nominations database)
+- Database: "People of Healthcare: Nominations". URL https://app.notion.com/p/5b140e8313a345de87158c76ec6b00a7
+- Database id `5b140e8313a345de87158c76ec6b00a7`; data source `collection://5ffaa309-8f55-4722-a001-9cdddb71abf0`
+- Properties: Nominee (title), Role and organisation, Segment (select), What they have built or lead, Why they belong among the 50, Nominee contact, Submitted by, Submitter contact, Submitter type (select: Nominating someone else / Self-introduction), Status (New, Reviewing, Reached out, Scheduled, Done, Not now), Submitted (created time).
+- Vercel (team `medinn`, project `medinn`) env vars, already set: `NOTION_TOKEN` (secret, never in the repo) and `NOTION_NOMINATIONS_DB`. The Notion connection is named "Medinn website" (API token type, insert access, connected to the database). End-to-end test passed (a test row arrived as "New", then was trashed).
+- Setup instructions kept in `NOTION-SETUP.md`.
+
+## Files in editorial/poh/
+| File | What it makes |
+|---|---|
+| `build_poh.py` + `render.js` | 7-slide announcement carousel (PNGs + LinkedIn PDF) and the logo lockups |
+| `poster-whatsapp.html` + `qr-form.png` + `render-poster.js` | One WhatsApp poster; QR opens medinn.in/people-of-healthcare#form |
+| `build_docs.py` + `render-docs.js` | `PoH-Brief-for-MVPs.pdf` (2 pp, for invitees) and `PoH-Interview-Guide-and-Leverage-Playbook.pdf` (4 pp, internal) |
+| `og.html` + `render-og.js` | Link-preview image source (output goes to `export/`; copy to `/people-of-healthcare-og.jpg` as a JPG) |
+| `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
+| `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
+| `export/` | All rendered PNG/PDF outputs |
+Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_docs.py && export NODE_PATH=$(npm root -g) && node render.js && node render-poster.js && node render-docs.js && python3 package_kit.py`
+
+## Decisions already made (do not reopen without asking)
+- Verb is "connecting with"; conversations are noun. "MVPs" is the owner's term.
+- "Discovery" = the nomination page/form. It is the primary CTA site-wide for now (not "Explore services").
+- Brief and guide say: profiles are sent for approval before publishing; Medinn is a consulting practice (stated openly); no fee to be featured; no promises of funding or outcomes.
+- Outreach channels: Instagram DMs and WhatsApp. Messages and the ask ladder are in the guide and `announcement.md`.
+
+## Open / next ideas
+- Add tracking fields to the Notion database: Date met, Key insight, Problems shared, Introductions offered, Offers (mentor / pilot / internship / funding intro), Profile status, Follow-up date.
+- Build a public "People of Healthcare" profile page template (one per person, approved) and a directory page.
+- Run the outreach and keep a real count (never publish a number that is not true).
+- A one-pager PDF and a WhatsApp/email variant of the brief if asked.
+- Optional: a reads/visit counter for PoH (the series has one wired to Upstash Redis; not yet connected).
+
+## Pitfalls learned
+- Phosphor icon font on the site only has a subset of icons (`story.css` / `index.html`). Check before using a new icon class.
+- The homepage hero animation: first visit per browser session plays the universe burst and folds back; `sessionStorage` key `medinn-intro` (use a private tab to see it again).
+- Vercel previews of branches need a Vercel login; test locally with `python3 -m http.server` plus Playwright instead.
