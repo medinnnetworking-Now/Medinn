@@ -22,4 +22,6 @@ const { chromium } = require('playwright'); const path=require('path'), fs=requi
  await (await hk.$('#hook')).screenshot({path:path.join(out,'bilmc-001-linkedin-hook-1080x1350.png')});
  const lp=await b.newPage({viewport:{width:1080,height:1350}});await lp.goto('file://'+path.join(__dirname,'launch-poster.html'));await lp.evaluate(()=>document.fonts.ready);
  await (await lp.$('#poster')).screenshot({path:path.join(out,'bilmc-001-LAUNCH-poster-1080x1350.png')});
+ const lq=await b.newPage({viewport:{width:1080,height:1350}});await lq.goto('file://'+path.join(__dirname,'launch-poster-photo.html'));await lq.evaluate(()=>document.fonts.ready);
+ await (await lq.$('#poster')).screenshot({path:path.join(out,'bilmc-001-LAUNCH-poster-with-MedX-photo-1080x1350.png')});
  await b.close();})();

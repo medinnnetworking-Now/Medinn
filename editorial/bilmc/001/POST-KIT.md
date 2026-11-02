@@ -161,3 +161,6 @@ Article 001 is out (7-minute read, with sources):
 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
 
 I'd really like your honest take. Did your MBBS feel valued?
+
+## Launch poster WITH the MedX photo: export/bilmc-001-LAUNCH-poster-with-MedX-photo-1080x1350.png
+Your MedX photo, the series name, the premise and a QR code to Article 001. Use it as the first image on Instagram or the WhatsApp Status, or on its own anywhere you would use the plain launch poster.
