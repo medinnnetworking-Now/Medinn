@@ -91,3 +91,29 @@ How valued did your MBBS feel? Tell me below.
 ## Before you post
 - Update "290+ days" in every block.
 - Run the checklist in ../TONE.md.
+
+## Launch poster (WhatsApp, Status, Instagram story): export/bilmc-001-LAUNCH-poster-1080x1350.png
+One image with the series name, the premise and a QR code to Article 001. Send it with the message below.
+
+### WhatsApp launch message (to your connects, with the poster)
+Hi [Name]! 👋
+
+I've launched something I care about: *Before I Leave Medical College*, a series on medical education from a house surgeon's lens.
+
+The premise: MBBS is the foundation of every doctor's career, and right now it feels undervalued. The series is about bringing value back to undergraduate medical education: strengthen what we teach, then (for students who want it) expand what it can enable.
+
+Article 001 is out: *Medical College Is More Than a Training Ground for Doctors* (7-minute read, with sources)
+👉 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
+
+I'd really value your honest take. Did your MBBS feel valued?
+
+You can also get each new article on WhatsApp: https://whatsapp.com/channel/0029VapjEz12975AjbhVk32V
+
+### Shorter, for groups
+📢 *Before I Leave Medical College, Article 001 is out.*
+MBBS is the foundation of every doctor's career, and right now it feels undervalued. My take, from a house surgeon's lens, on bringing value back to undergraduate medical education:
+👉 https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
+Did your MBBS feel valued? Tell me what you think.
+
+### WhatsApp Status text
+Article 001 of Before I Leave Medical College is out: MBBS is the foundation of every doctor's career, and right now it feels undervalued. Scan the QR or read at medinn.in/bilmc/more-than-a-training-ground

@@ -20,4 +20,6 @@ const { chromium } = require('playwright'); const path=require('path'), fs=requi
   const el=await p.$(`#${id} .art svg`)||await p.$(`#${id} .art`);await el.screenshot({path:path.join(fd,name+'.png')});}
  const hk=await b.newPage({viewport:{width:1080,height:1350}});await hk.goto('file://'+path.join(__dirname,'hook.html'));await hk.evaluate(()=>document.fonts.ready);
  await (await hk.$('#hook')).screenshot({path:path.join(out,'bilmc-001-linkedin-hook-1080x1350.png')});
+ const lp=await b.newPage({viewport:{width:1080,height:1350}});await lp.goto('file://'+path.join(__dirname,'launch-poster.html'));await lp.evaluate(()=>document.fonts.ready);
+ await (await lp.$('#poster')).screenshot({path:path.join(out,'bilmc-001-LAUNCH-poster-1080x1350.png')});
  await b.close();})();
