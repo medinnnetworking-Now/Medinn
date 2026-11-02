@@ -117,3 +117,47 @@ Did your MBBS feel valued? Tell me what you think.
 
 ### WhatsApp Status text
 Article 001 of Before I Leave Medical College is out: MBBS is the foundation of every doctor's career, and right now it feels undervalued. Scan the QR or read at medinn.in/bilmc/more-than-a-training-ground
+
+## LAUNCH with the MedX photo (the personal launch: photo + story + link)
+Photos: export/launch-photos/ (photo 1 = speaking, photo 2 = the MedX slide, wide = LinkedIn landscape).
+
+### LinkedIn (attach photo 1 and photo 2 as a two-image post)
+On 25 October, I spoke at MedX Talks, the IMA MSN All Kerala event at GMC Kozhikode, on the pressure to have it all figured out as an MBBS student.
+
+That event made me realise certain things about medical college. [Optional: add one line on the one thing you realised.] And I feel I owe it to my fraternity to write about them.
+
+So I'm starting a series: Before I Leave Medical College.
+
+I'm 290+ days into my internship as a house surgeon at GMC Kozhikode. The premise is simple: MBBS is the foundation of every doctor's career, and right now it feels undervalued. I want to write about bringing value back to undergraduate medical education, from a student's lens. First, strengthening what we already teach. Then, for students who want it, expanding what it can enable. Clinical training stays the core.
+
+Article 001 is out: Medical College Is More Than a Training Ground for Doctors.
+
+Read it here (7 min, with sources):
+https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
+
+Students, interns, doctors, educators: did your MBBS feel valued? I'd like to hear from you.
+
+#MedicalEducation #MBBS #MedicalStudents #BeforeILeaveMedicalCollege
+
+### Instagram (photo 1 first, photo 2 second, as a 2-photo post)
+On 25 October I spoke at MedX Talks (IMA MSN All Kerala, GMC Kozhikode) about the pressure to have it all figured out as an MBBS student.
+
+That event made me realise certain things about medical college, and I feel I owe it to my fraternity to write about them. So I'm starting a series: Before I Leave Medical College.
+
+The premise: MBBS is the foundation of every doctor's career, and right now it feels undervalued.
+
+Article 001 is out. Link in bio, or medinn.in/bilmc/more-than-a-training-ground
+
+Did your MBBS feel valued? Tell me below.
+
+#MedicalEducation #MBBS #NEETPG #MedStudents #HouseSurgeon #BeforeILeaveMedicalCollege
+
+### WhatsApp (send photo 1 with this message)
+Hey! On 25 October I spoke at MedX Talks (IMA MSN All Kerala, GMC Kozhikode), and it made me realise certain things about medical college. I feel I owe it to my fraternity to write about them, so I'm starting a series: *Before I Leave Medical College*.
+
+The premise: MBBS is the foundation of every doctor's career, and right now it feels undervalued.
+
+Article 001 is out (7-minute read, with sources):
+https://medinn.in/before-i-leave-medical-college/more-than-a-training-ground
+
+I'd really like your honest take. Did your MBBS feel valued?
