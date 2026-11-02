@@ -5,7 +5,7 @@ Page: https://medinn.in/people-of-healthcare
 
 ## LinkedIn post (attach poh-launch-carousel.pdf)
 
-I'm giving myself a challenge: find 50 MVPs of healthcare and MedTech in Kerala.
+I'm giving myself a challenge: connect with 50 MVPs of healthcare and MedTech in Kerala.
 
 Healthcare is much bigger than hospitals. It's device manufacturers, diagnostics companies, hospital groups, biotech ventures, technology developers, researchers, investors, and clinicians building services. But how well do we actually know who is building what, right here in Kerala?
 
@@ -28,7 +28,7 @@ or WhatsApp me on +91 94005 13128.
 
 ## Instagram caption (same 7 slides)
 
-Challenge accepted, by me, to me: find 50 MVPs of healthcare and MedTech in Kerala.
+Challenge accepted, by me, to me: connect with 50 MVPs of healthcare and MedTech in Kerala.
 
 People of Healthcare is 50 conversations with the founders, CEOs, key opinion leaders, hospital leaders, manufacturers and researchers building this ecosystem. What they've built, what Kerala can make, what talent is missing, and what it takes to go from an idea to a product.
 
@@ -46,7 +46,7 @@ Hi [name], I'm Dr. Sidharth Narayanan, a house surgeon at GMC Kozhikode and the 
 
 ## One-line bio for the page and profiles
 
-People of Healthcare: meeting the MVPs of healthcare and MedTech in Kerala. A Medinn initiative.
+People of Healthcare: connecting with the MVPs of healthcare and MedTech in Kerala. A Medinn initiative.
 
 ## Check before posting
 - "MVPs" is the framing you chose; the page also says "founders, leaders and builders". Keep both so it reads inclusively.

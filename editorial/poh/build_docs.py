@@ -24,7 +24,7 @@ HEAD='<div class="hd"><img src="../../poh-mark.png" alt=""><div><div class="t">P
 FT='<div class="ft">Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode · Founder, Medinn · medinn.in/people-of-healthcare · +91 94005 13128 · medinnnetworking@gmail.com</div>'
 brief=f'''<!doctype html><html><head><meta charset="utf-8"><title>People of Healthcare: brief</title><style>{CSS}</style></head><body>
 {HEAD}
-<h1>Meeting the people changing healthcare in Kerala.</h1>
+<h1>Connecting with the people changing healthcare in Kerala.</h1>
 <p class="lede">As 2026 ends, healthcare is expanding every day: the rise of AI, a new focus on medical devices, and medicine and engineering working together like never before. I want to understand who is building this change in Kerala, and what is still missing.</p>
 
 <h2>Who I am</h2>
@@ -39,7 +39,7 @@ brief=f'''<!doctype html><html><head><meta charset="utf-8"><title>People of Heal
 
 <h2>Why I&rsquo;m doing this</h2>
 <p>From inside a medical college I see clinical problems up close, and a great deal of capability around us that I can&rsquo;t yet see clearly: who builds, who manufactures, what talent exists, and where good ideas stall on the way from a clinical problem to a product. I&rsquo;m curious about those gaps. I want to understand them properly, and help build a stronger healthcare system in Kerala, from both a business and an innovation point of view.</p>
-<div class="box"><b>The challenge:</b> before 2026 ends, 50 conversations with the hospital founders, CEOs, MedTech and device makers, key opinion leaders, researchers and investors who are shaping healthcare in Kerala.</div>
+<div class="box"><b>The challenge:</b> before 2026 ends, connecting with 50 of the hospital founders, CEOs, MedTech and device makers, key opinion leaders, researchers and investors who are shaping healthcare in Kerala.</div>
 
 <h2>What I&rsquo;d love to understand from you</h2>
 <div class="grid">

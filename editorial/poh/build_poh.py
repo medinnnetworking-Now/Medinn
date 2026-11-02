@@ -6,8 +6,8 @@ S=[]
 S.append(f'''<section class="s" id="s01"><div class="glow"></div>
 <div class="top"><img class="lg" src="../../medinn-logo.png" alt="Medinn"><span class="pg">A Medinn initiative</span></div>
 <div style="margin:auto 0 0;position:relative"><img src="../../poh-mark.png" alt="People of Healthcare" style="width:250px;height:250px;border-radius:50%;box-shadow:0 0 120px rgba(43,114,214,.6);display:block"></div>
-<h1 class="h" style="margin-top:44px;font-size:100px">50 MVPs of healthcare &amp; <em>MedTech</em> in Kerala.</h1>
-<p class="sub">A challenge I’m giving myself: find them, meet them, and map the ecosystem they are building.</p>
+<h1 class="h" style="margin-top:44px;font-size:92px">Connecting with 50 MVPs of healthcare &amp; <em>MedTech</em> in Kerala.</h1>
+<p class="sub">A challenge I’m giving myself: connect with them, learn what they are building, and map the ecosystem.</p>
 <p class="by" style="margin-bottom:96px">Dr. Sidharth Narayanan</p>{foot(1)}</section>''')
 chips=['Hospital groups','Medical device makers','Diagnostics','Healthcare founders','Biotech ventures','Technology developers','Clinicians building services','Distributors','Researchers','Investors','Institutional leaders']
 S.append(f'''<section class="s" id="s02">{top(2)}<p class="k">The ecosystem</p>
@@ -27,7 +27,7 @@ S.append(f'''<section class="s" id="s05">{top(5)}<p class="k">Why it matters for
 <p class="sub">Clinicians are often seen only as end users. They can also be collaborators, product developers, researchers and advisors.</p>
 <p class="sub" style="margin-top:22px;color:#EDF1FA">To take part, they need to know the industry, the people in it, and how ideas become healthcare products.</p>
 <div class="card"><b>People of Healthcare</b> exists to make that knowledge accessible to clinicians and medical students.</div>{foot(5)}</section>''')
-S.append(f'''<section class="s" id="s06">{top(6)}<p class="k">Help me find them</p>
+S.append(f'''<section class="s" id="s06">{top(6)}<p class="k">Help me connect with them</p>
 <h2 class="h">Know an MVP of healthcare or MedTech in Kerala?</h2>
 <p class="sub">Nominate them, or introduce yourself. Three ways:</p>
 <div class="ways"><div><span>WhatsApp</span><b>+91 94005 13128</b></div><div><span>Email</span><b>medinnnetworking@gmail.com</b></div><div class="hl"><span>The discovery page</span><b>medinn.in/people-of-healthcare</b></div></div>{foot(6)}</section>''')
@@ -35,7 +35,7 @@ S.append(f'''<section class="s" id="s07"><div class="glow"></div>
 <div class="top"><img class="lg" src="../../medinn-logo.png" alt="Medinn"><span class="pg">07 / 07</span></div>
 <div style="margin:auto 0 0;position:relative;text-align:left"><img src="../../poh-mark.png" alt="" style="width:240px;height:240px;border-radius:50%;box-shadow:0 0 110px rgba(43,114,214,.55)"></div>
 <h2 class="h" style="margin-top:44px;font-size:104px">People of Healthcare.</h2>
-<p class="sub" style="color:#EDF1FA">Meeting the MVPs of healthcare and MedTech in Kerala.</p>
+<p class="sub" style="color:#EDF1FA">Connecting with the MVPs of healthcare and MedTech in Kerala.</p>
 <div class="cta">medinn.in/people-of-healthcare</div>{foot(7)}</section>''')
 css='''@font-face{font-family:B;src:url(../../bricolage.woff2);font-weight:200 800}
 @font-face{font-family:G;src:url(../../geist.woff2);font-weight:100 900}
