@@ -10,6 +10,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 - **/people-of-healthcare**: `people-of-healthcare.html` (cover, ecosystem, "where it comes from", questions, five lenses, who we speak to, why it matters, take part, discovery form, contact). Share image `people-of-healthcare-og.jpg`.
 - **Homepage** (`index.html`): hero pill "Initiative: People of Healthcare", nav item first in the list, `#poh` section, "Discover People of Healthcare" button (replaced "Explore services" in the nav, hero, phone menu and universe panel), PoH card in the Blogs section. Sections run newest first.
 - **/blogs** (`blogs/index.html`): PoH card.
+- **/people-of-healthcare-questions** (`people-of-healthcare-questions.html`, public, noindex, not in nav): fill-in page for people who replied. Name, venture, one scale number, the 7 questions. They send by WhatsApp (+91 94005 13128) or email, or copy. No server storage; answers only live in their browser until sent. Link it only in messages.
 - **Logo**: `poh-mark.png` (blue), `poh-mark-navy.png`. Built from Bricolage 800, "PoH." with a pale-blue dot.
 - **Discovery form**: shown only when the server is configured. `api/nominate.js` writes to Notion. `GET /api/nominate` returns `{configured:true/false}`; the page reveals the form only if true. WhatsApp and email nomination buttons always work (prefilled messages).
 
@@ -29,6 +30,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `og.html` + `render-og.js` | Link-preview image source (output goes to `export/`; copy to `/people-of-healthcare-og.jpg` as a JPG) |
 | `whatsapp-conversation.md` | One-day WhatsApp question kit for people who replied to the poster/link: intro, 8 core questions, close, segment add-ons, fit check. Has a facts-to-confirm list (first-generation doctor, last-month apparel revenue; KNYA vs "Kenya" is settled: it is KNYA) |
 | `chat-cards.html` + `render-cards.js` | 4 WhatsApp conversation cards (1080x1350): intro, about-you prerequisite, the 7 questions, thank-you. Output `export/poh-chat-0N-*.png`. Questions text is in `whatsapp-conversation.md` |
+| `question-cards.html` + `render-questions.js` | One card per question, `export/poh-q1.png` to `poh-q7.png`, to send one at a time |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |

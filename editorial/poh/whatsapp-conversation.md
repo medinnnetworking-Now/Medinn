@@ -53,3 +53,35 @@ Tick: builds something real in Kerala healthcare or MedTech; open to a profile; 
 - Follow up on the one most specific thing they said.
 - Never quote or publish without approval of the final text.
 - Count only real, completed conversations in any public number.
+
+## 8. Copy-paste blocks with links (WhatsApp)
+Links: Medinn https://medinn.in · People of Healthcare https://medinn.in/people-of-healthcare · MedTech Malabar https://medinn.in/medtech-malabar · Fill-in page https://medinn.in/people-of-healthcare-questions
+
+### Block A: introduction (send with card 01)
+Hello, I would like to understand your work through a few questions.
+
+I am Dr. Sidharth Narayanan, House Surgeon at GMC Kozhikode. I have spent 3+ years in medical edtech, and I am working on MedTech Malabar, bringing healthcare workers, KOLs and MedTech founders in Kerala together: https://medinn.in/medtech-malabar
+
+That is why Medinn started People of Healthcare, connecting with 50 people building things of value in healthcare and MedTech in Kerala: https://medinn.in/people-of-healthcare
+
+Reply here (voice notes welcome) and we can finish today. Or, if you prefer, type your answers here and send them to me: https://medinn.in/people-of-healthcare-questions
+
+You will see the feature before anything is published, there is no fee to be featured, and Medinn is a consulting practice.
+
+### Block B: about you (card 02)
+First, three quick things so I can describe your work properly:
+1. Your name, as you want it written
+2. Your venture or organisation, and your role
+3. One number that shows your scale (revenue, patients served, funding, team size or years running), whatever you are comfortable sharing
+
+### Blocks Q1 to Q7 (one per message, card poh-q1 to poh-q7)
+Q1: What are you building, and what problem made you start?
+Q2: Where does your work get stuck in Kerala most?
+Q3: What is your immediate need right now?
+Q4: Who do you need access to, to build better?
+Q5: Would access to a hospital ecosystem be useful to you?
+Q6: What should we be building next in Kerala?
+Q7: Who should I speak to next? Would you introduce me?
+
+### Block C: thank you (card 04)
+Thank you, [Name]. This is exactly what I hoped to learn. I will write up what you are building and why it matters for Malabar, and send you the draft before anything is published. If anything should stay off the record, tell me and it stays out. If I should have asked something else, just type it here.

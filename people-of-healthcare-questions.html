@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<meta name="robots" content="noindex">
+<title>People of Healthcare | Your answers</title>
+<meta name="description" content="Answer a few light questions for People of Healthcare, a Medinn initiative, and send them by WhatsApp or email.">
+<meta property="og:title" content="People of Healthcare: a few light questions">
+<meta property="og:description" content="Type your answers here and send them to Dr. Sidharth Narayanan by WhatsApp or email. A Medinn initiative.">
+<meta property="og:image" content="https://medinn.in/people-of-healthcare-og.jpg">
+<link rel="icon" href="poh-mark.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="story.css">
+<style>
+.top{padding:clamp(120px,14vw,170px) 0 10px}
+.top .mk{width:72px;height:72px;border-radius:50%;box-shadow:0 0 70px rgba(43,114,214,.55);margin-bottom:22px}
+.top h1{font-size:clamp(40px,6.2vw,84px);letter-spacing:-.05em;line-height:.97;max-width:11em}
+.top h1 em{font-style:normal;color:var(--acc)}
+.top p.lede{margin-top:22px;font-size:clamp(17.5px,1.4vw,19.5px);color:var(--mut);max-width:var(--read)}
+.fm{max-width:46rem;margin:44px 0 0;display:grid;gap:18px;padding-bottom:clamp(80px,9vw,130px)}
+.fm h2{font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em;margin-top:18px}
+.fm .qn{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--acc)}
+.fm label{display:grid;gap:8px;font-size:17px;font-weight:600;color:var(--tx);line-height:1.3}
+.fm label small{font-weight:400;color:var(--mut);font-size:14px}
+.fm input,.fm textarea{width:100%;font:inherit;font-size:16px;font-weight:400;color:var(--tx);background:var(--surf);border:1px solid var(--line2);border-radius:14px;padding:14px 16px}
+.fm textarea{min-height:108px;resize:vertical;line-height:1.5}
+.fm input:focus,.fm textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.fm .q{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:22px 22px 24px;display:grid;gap:12px}
+.fm .q textarea{background:var(--bg2)}
+.fm .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.fm .msg{font-size:15.5px;line-height:1.5;padding:14px 16px;border-radius:14px;display:none;background:var(--acc-soft)}
+.fm .msg.on{display:block}
+.note{color:var(--mut);font-size:15px;line-height:1.55}
+@media (max-width:767px){.fm .row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; People of Healthcare</span></a>
+ <div class="r"><a class="btn ghost" href="/people-of-healthcare">About the initiative</a></div>
+</header>
+<main>
+<section class="top"><div class="wrap">
+ <img class="mk" src="poh-mark.png" alt="" width="144" height="144">
+ <h1>A few <em>light</em> questions.</h1>
+ <p class="lede">Hello, and thank you. I am Dr. Sidharth Narayanan, House Surgeon at GMC Kozhikode, connecting with 50 people building things of value in healthcare and MedTech in Kerala. Type your answers below, short is perfect, and send them to me by WhatsApp or email. Nothing is published without your approval.</p>
+</div></section>
+<section><div class="wrap">
+<form class="fm" id="f" novalidate>
+ <h2>First, about you</h2>
+ <div class="row">
+  <label>Your name, as you want it written<input name="name" autocomplete="name" maxlength="200"></label>
+  <label>Your venture or organisation, and your role<input name="venture" autocomplete="organization" maxlength="300"></label>
+ </div>
+ <label>One number that shows your scale <small>(revenue, patients served, funding, team size or years running, whichever you are comfortable sharing)</small><input name="metric" maxlength="300"></label>
+
+ <h2>The questions</h2>
+ <div class="q"><span class="qn">01</span><label for="q1">What are you building, and what problem made you start?</label><textarea id="q1" name="q1"></textarea></div>
+ <div class="q"><span class="qn">02</span><label for="q2">Where does your work get stuck in Kerala most?</label><textarea id="q2" name="q2"></textarea></div>
+ <div class="q"><span class="qn">03</span><label for="q3">What is your immediate need right now?</label><textarea id="q3" name="q3"></textarea></div>
+ <div class="q"><span class="qn">04</span><label for="q4">Who do you need access to, to build better?</label><textarea id="q4" name="q4"></textarea></div>
+ <div class="q"><span class="qn">05</span><label for="q5">Would access to a hospital ecosystem be useful to you?</label><textarea id="q5" name="q5"></textarea></div>
+ <div class="q"><span class="qn">06</span><label for="q6">What should we be building next in Kerala?</label><textarea id="q6" name="q6"></textarea></div>
+ <div class="q"><span class="qn">07</span><label for="q7">Who should I speak to next? <small>(a name and a way to reach them, if you are happy to introduce me)</small></label><textarea id="q7" name="q7"></textarea></div>
+ <label>Anything off the record, or anything I should have asked? <small>(optional)</small><textarea name="extra"></textarea></label>
+
+ <div class="msg" id="msg" role="status" aria-live="polite"></div>
+ <div class="acts">
+  <button class="btn" type="button" id="wa"><i class="ph ph-arrow-right" aria-hidden="true"></i> Send on WhatsApp</button>
+  <button class="btn ghost" type="button" id="em"><i class="ph ph-envelope" aria-hidden="true"></i> Send by email</button>
+  <button class="btn ghost" type="button" id="cp">Copy my answers</button>
+ </div>
+ <p class="note">Your answers stay in this browser until you send them; this page does not store them on a server. They go to Dr. Sidharth Narayanan only, by the channel you choose. Medinn is a consulting practice, there is no fee to be featured, and a draft is sent to you for approval before anything is published.</p>
+</form>
+</div></section>
+</main>
+<footer><div class="wrap"><p>People of Healthcare is an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
+<script>
+(function(){
+var f=document.getElementById('f'),m=document.getElementById('msg'),KEY='poh-answers';
+var Q=[['q1','1. What are you building, and what problem made you start?'],['q2','2. Where does your work get stuck in Kerala most?'],['q3','3. What is your immediate need right now?'],['q4','4. Who do you need access to, to build better?'],['q5','5. Would access to a hospital ecosystem be useful to you?'],['q6','6. What should we be building next in Kerala?'],['q7','7. Who should I speak to next?'],['extra','Off the record / what I should have asked']];
+function v(n){return (f.elements[n].value||'').trim()}
+try{var s=JSON.parse(localStorage.getItem(KEY)||'{}');Object.keys(s).forEach(function(k){if(f.elements[k])f.elements[k].value=s[k]})}catch(e){}
+f.addEventListener('input',function(){try{var o={};Array.prototype.forEach.call(f.elements,function(e){if(e.name)o[e.name]=e.value});localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}});
+function build(){var t='People of Healthcare: my answers\n\nName: '+(v('name')||'-')+'\nVenture and role: '+(v('venture')||'-')+'\nScale: '+(v('metric')||'-')+'\n';
+ Q.forEach(function(q){t+='\n'+q[1]+'\n'+(v(q[0])||'-')+'\n'});return t.trim()}
+function ok(){if(!v('name')){m.className='msg on';m.textContent='Please add your name first.';f.elements.name.focus();return false}m.className='msg';return true}
+document.getElementById('wa').onclick=function(){if(ok())window.open('https://wa.me/919400513128?text='+encodeURIComponent(build()),'_blank')};
+document.getElementById('em').onclick=function(){if(ok())location.href='mailto:medinnnetworking@gmail.com?subject='+encodeURIComponent('People of Healthcare: answers from '+v('name'))+'&body='+encodeURIComponent(build())};
+document.getElementById('cp').onclick=function(){var t=build();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){m.className='msg on';m.textContent='Copied. Paste it into WhatsApp, email or anywhere you like.'}).catch(function(){m.className='msg on';m.textContent='Could not copy automatically. Please use WhatsApp or email.'})};
+})();
+</script>
+</body>
+</html>
