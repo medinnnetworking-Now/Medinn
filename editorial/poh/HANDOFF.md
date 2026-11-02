@@ -11,6 +11,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 - **Homepage** (`index.html`): hero pill "Initiative: People of Healthcare", nav item first in the list, `#poh` section, "Discover People of Healthcare" button (replaced "Explore services" in the nav, hero, phone menu and universe panel), PoH card in the Blogs section. Sections run newest first.
 - **/blogs** (`blogs/index.html`): PoH card.
 - **/people-of-healthcare-questions** (`people-of-healthcare-questions.html`, public, noindex, not in nav): fill-in page for people who replied. Name, venture, one scale number, the 7 questions. They send by WhatsApp (+91 94005 13128) or email, or copy. No server storage; answers only live in their browser until sent. Link it only in messages.
+- **/people-of-healthcare-share** (`people-of-healthcare-share.html`, public, noindex): second fill-in page with the 8-question set (biggest project; highlights you want the world to know; what are you building; immediate need; who to access; hospital ecosystem; what to build next in Kerala; who to speak to next). Same send options as the first page. Cards and copy blocks for this set are NOT built yet (pending owner OK).
 - **Logo**: `poh-mark.png` (blue), `poh-mark-navy.png`. Built from Bricolage 800, "PoH." with a pale-blue dot.
 - **Discovery form**: shown only when the server is configured. `api/nominate.js` writes to Notion. `GET /api/nominate` returns `{configured:true/false}`; the page reveals the form only if true. WhatsApp and email nomination buttons always work (prefilled messages).
 
