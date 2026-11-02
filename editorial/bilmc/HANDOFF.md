@@ -32,6 +32,9 @@ Assets: author portrait `editorial/assets/author-portrait.jpg`, MedX crops `edit
 - Red slides/posters are for critique only. No photos of the owner's past events except the MedX Talks photos (25 October 2026, IMA MSN All Kerala, GMC Kozhikode, topic: the pressure to have it all figured out as an MBBS student).
 - 13-slide carousel starts with the premise slide. WhatsApp channel (not email) is the subscribe route for now.
 
+## Pipeline of upcoming articles
+See `PIPELINE.md` (the seven themes, the cadence, the owner's drafts found in Drive and Notion, and a proposed order). The order is a proposal awaiting the owner's choice.
+
 ## Open / next
 - **Article title/subtitle**: title "Medical College Is More Than a Training Ground for Doctors" leads with "more than". Recommended: keep the title and change the page subtitle (deck) to carry the premise. Awaiting the owner's choice. If chosen, update the page, share image, slides and posters.
 - **"290+ days into internship"** is a fixed number on the article byline, series page, closing slide and posts. Update on each publish.
