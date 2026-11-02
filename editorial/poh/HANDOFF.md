@@ -28,6 +28,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `build_docs.py` + `render-docs.js` | `PoH-Brief-for-MVPs.pdf` (2 pp, for invitees) and `PoH-Interview-Guide-and-Leverage-Playbook.pdf` (4 pp, internal) |
 | `og.html` + `render-og.js` | Link-preview image source (output goes to `export/`; copy to `/people-of-healthcare-og.jpg` as a JPG) |
 | `whatsapp-conversation.md` | One-day WhatsApp question kit for people who replied to the poster/link: intro, 8 core questions, close, segment add-ons, fit check. Has a facts-to-confirm list (first-generation doctor, last-month apparel revenue, KNYA vs "Kenya") |
+| `chat-cards.html` + `render-cards.js` | 4 WhatsApp conversation cards (1080x1350): intro, about-you prerequisite, the 7 questions, thank-you. Output `export/poh-chat-0N-*.png`. Questions text is in `whatsapp-conversation.md` |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |
@@ -47,6 +48,10 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 - Run the outreach and keep a real count (never publish a number that is not true).
 - A one-pager PDF and a WhatsApp/email variant of the brief if asked.
 - Optional: a reads/visit counter for PoH (the series has one wired to Upstash Redis; not yet connected).
+
+## Conversation question set (owner decision, 2 Nov 2026)
+- Do NOT ask "how could a doctor/house surgeon be useful to you". Instead ask: is access to a hospital ecosystem useful, what is your immediate need, who do you need access to, what should we build next in Kerala.
+- Prerequisite asked first: name, venture name, one value metric (revenue, patients served, funding, team size, years: their choice, only what they are comfortable with and approve). Keep the tone light.
 
 ## Pitfalls learned
 - Phosphor icon font on the site only has a subset of icons (`story.css` / `index.html`). Check before using a new icon class.
