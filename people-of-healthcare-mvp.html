@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<meta name="robots" content="noindex">
+<title>People of Healthcare | MVP feature questions</title>
+<meta name="description" content="Questions for the MVPs and KOLs of healthcare and MedTech featured in People of Healthcare, a Medinn initiative.">
+<meta property="og:title" content="People of Healthcare: your feature">
+<meta property="og:description" content="Fill in your feature questions and send them to Dr. Sidharth Narayanan by WhatsApp or email. A Medinn initiative.">
+<meta property="og:image" content="https://medinn.in/people-of-healthcare-og.jpg">
+<link rel="icon" href="poh-mark.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="story.css">
+<style>
+.top{padding:clamp(120px,14vw,170px) 0 10px}
+.top .mk{width:72px;height:72px;border-radius:50%;box-shadow:0 0 70px rgba(43,114,214,.55);margin-bottom:22px}
+.top h1{font-size:clamp(40px,6.2vw,84px);letter-spacing:-.05em;line-height:.97;max-width:11em}
+.top h1 em{font-style:normal;color:var(--acc)}
+.top p.lede{margin-top:22px;font-size:clamp(17.5px,1.4vw,19.5px);color:var(--mut);max-width:var(--read)}
+.fm{max-width:46rem;margin:44px 0 0;display:grid;gap:18px;padding-bottom:clamp(80px,9vw,130px)}
+.fm h2{font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em;margin-top:18px}
+.fm .qn{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--acc)}
+.fm label{display:grid;gap:8px;font-size:17px;font-weight:600;color:var(--tx);line-height:1.3}
+.fm label small{font-weight:400;color:var(--mut);font-size:14px}
+.fm input,.fm textarea{width:100%;font:inherit;font-size:16px;font-weight:400;color:var(--tx);background:var(--surf);border:1px solid var(--line2);border-radius:14px;padding:14px 16px}
+.fm textarea{min-height:108px;resize:vertical;line-height:1.5}
+.fm input:focus,.fm textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.fm .q{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:22px 22px 24px;display:grid;gap:12px}
+.fm .q textarea{background:var(--bg2)}
+.fm .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.fm .msg{font-size:15.5px;line-height:1.5;padding:14px 16px;border-radius:14px;display:none;background:var(--acc-soft)}
+.fm .msg.on{display:block}
+.note{color:var(--mut);font-size:15px;line-height:1.55}
+@media (max-width:767px){.fm .row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; People of Healthcare</span></a>
+ <div class="r"><a class="btn ghost" href="/people-of-healthcare">About the initiative</a></div>
+</header>
+<main>
+<section class="top"><div class="wrap">
+ <img class="mk" src="poh-mark.png" alt="" width="144" height="144">
+ <h1>Your <em>feature</em>, in your words.</h1>
+ <p class="lede">Through People of Healthcare, Medinn is building bridges and widening adoption and collaboration between startups and hospitals in Kerala. I am Dr. Sidharth Narayanan, House Surgeon at GMC Kozhikode. These questions help me write about what you are building and why it matters. Short answers are perfect, and nothing is published without your approval. Prefer to send voice notes instead? Just message me on WhatsApp.</p>
+</div></section>
+<section><div class="wrap">
+<form class="fm" id="f" novalidate>
+ <h2>First, about you</h2>
+ <div class="row">
+  <label>Your name, as you want it written<input name="name" autocomplete="name" maxlength="200"></label>
+  <label>Your company or organisation<input name="venture" autocomplete="organization" maxlength="300"></label>
+ </div>
+ <div class="row">
+  <label>Your role<input name="role" autocomplete="organization-title" maxlength="200"></label>
+  <label>One number that shows your scale <small>(optional: revenue, patients served, team size, years running)</small><input name="metric" maxlength="300"></label>
+ </div>
+ <p class="note">Please also send a photo of yourself on WhatsApp (+91 94005 13128) so we can add it to your feature.</p>
+ <h2>Your work</h2>
+ <div class="q"><span class="qn">01</span><label for="q1">What are you building or leading?</label><textarea id="q1" name="q1"></textarea></div>
+ <div class="q"><span class="qn">02</span><label for="q2">What is your biggest project, and what highlights do you want the world to know?</label><textarea id="q2" name="q2"></textarea></div>
+ <h2>The ecosystem</h2>
+ <div class="q"><span class="qn">03</span><label for="q3">What are the bottlenecks you face?</label><textarea id="q3" name="q3"></textarea></div>
+ <div class="q"><span class="qn">04</span><label for="q4">What bridges need to be built? <small>(between startups, hospitals, regulators, investors, colleges)</small></label><textarea id="q4" name="q4"></textarea></div>
+ <div class="q"><span class="qn">05</span><label for="q5">How can we increase adoption and discovery?</label><textarea id="q5" name="q5"></textarea></div>
+ <h2>What you need</h2>
+ <div class="q"><span class="qn">06</span><label for="q6">What is your immediate need right now?</label><textarea id="q6" name="q6"></textarea></div>
+ <div class="q"><span class="qn">07</span><label for="q7">Who do you need access to, to build better?</label><textarea id="q7" name="q7"></textarea></div>
+ <h2>The future</h2>
+ <div class="q"><span class="qn">08</span><label for="q8">How do you see the future of healthcare?</label><textarea id="q8" name="q8"></textarea></div>
+ <div class="q"><span class="qn">09</span><label for="q9">What needs to be done?</label><textarea id="q9" name="q9"></textarea></div>
+ <h2>To close</h2>
+ <div class="q"><span class="qn">10</span><label for="q10">Who should I speak to next? Would you introduce me? <small>(a name and a way to reach them)</small></label><textarea id="q10" name="q10"></textarea></div>
+ <div class="q"><span class="qn">11</span><label for="q11">Any comments for Medinn and People of Healthcare? <small>(optional)</small></label><textarea id="q11" name="q11"></textarea></div>
+ <label>Anything off the record? <small>(optional)</small><textarea name="extra"></textarea></label>
+
+ <div class="msg" id="msg" role="status" aria-live="polite"></div>
+ <div class="acts">
+  <button class="btn" type="button" id="wa"><i class="ph ph-arrow-right" aria-hidden="true"></i> Send on WhatsApp</button>
+  <button class="btn ghost" type="button" id="em"><i class="ph ph-envelope" aria-hidden="true"></i> Send by email</button>
+  <button class="btn ghost" type="button" id="cp">Copy my answers</button>
+ </div>
+ <p class="note">Your answers stay in this browser until you send them; this page does not store them on a server. They go to Dr. Sidharth Narayanan only, by the channel you choose. Medinn is a consulting practice, there is no fee to be featured, and a draft is sent to you for approval before anything is published.</p>
+</form>
+</div></section>
+</main>
+<footer><div class="wrap"><p>People of Healthcare is an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
+<script>
+(function(){
+var f=document.getElementById('f'),m=document.getElementById('msg'),KEY='poh-mvp-v1';
+var Q=[['q1','1. What are you building or leading?'],['q2','2. What is your biggest project, and what highlights do you want the world to know?'],['q3','3. What are the bottlenecks you face?'],['q4','4. What bridges need to be built?'],['q5','5. How can we increase adoption and discovery?'],['q6','6. What is your immediate need right now?'],['q7','7. Who do you need access to, to build better?'],['q8','8. How do you see the future of healthcare?'],['q9','9. What needs to be done?'],['q10','10. Who should I speak to next?'],['q11','11. Comments for Medinn and People of Healthcare'],['extra','Off the record']];
+function v(n){return (f.elements[n].value||'').trim()}
+try{var s=JSON.parse(localStorage.getItem(KEY)||'{}');Object.keys(s).forEach(function(k){if(f.elements[k])f.elements[k].value=s[k]})}catch(e){}
+f.addEventListener('input',function(){try{var o={};Array.prototype.forEach.call(f.elements,function(e){if(e.name)o[e.name]=e.value});localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}});
+function build(){var t='People of Healthcare: my feature answers\n\nName: '+(v('name')||'-')+'\nCompany: '+(v('venture')||'-')+'\nRole: '+(v('role')||'-')+'\nScale: '+(v('metric')||'-')+'\n';
+ Q.forEach(function(q){t+='\n'+q[1]+'\n'+(v(q[0])||'-')+'\n'});return t.trim()}
+function ok(){if(!v('name')){m.className='msg on';m.textContent='Please add your name first.';f.elements.name.focus();return false}m.className='msg';return true}
+document.getElementById('wa').onclick=function(){if(ok())window.open('https://wa.me/919400513128?text='+encodeURIComponent(build()),'_blank')};
+document.getElementById('em').onclick=function(){if(ok())location.href='mailto:medinnnetworking@gmail.com?subject='+encodeURIComponent('People of Healthcare: feature answers from '+v('name'))+'&body='+encodeURIComponent(build())};
+document.getElementById('cp').onclick=function(){var t=build();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){m.className='msg on';m.textContent='Copied. Paste it into WhatsApp, email or anywhere you like.'}).catch(function(){m.className='msg on';m.textContent='Could not copy automatically. Please use WhatsApp or email.'})};
+})();
+</script>
+</body>
+</html>
