@@ -64,6 +64,9 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 - **LIVE on main (merged 3 Nov 2026)**: https://medinn.in/people-of-healthcare-asks (not yet linked from the nav; real reply submission still to be tested once and the test row trashed in Notion). `people-of-healthcare-asks.html` (noindex, not linked) plus `api/ask-reply.js`. Layout: "PoH Person 01" glowing masked silhouette, four numbered asks (device kept generic: no syringe pump, no patent, no company), a "Drop your reply" form (ask checkboxes, name, company, how they could help, contact) that writes privately to the Notion nominations DB with Submitter type "Ask reply" (same env vars as nominate.js), plus WhatsApp/email fallback buttons. Form shows only if `/api/ask-reply` GET says configured. To add Person 02: copy the `.pa-person` block, new ask ids (ASK-05...), add checkboxes. 
 - CSS gotcha: `story.css` already defines `.asks`/`.ask`; the Asks page uses `.pa*` classes instead.
 
+## PoH Allies (owner wording, 3 Nov 2026)
+- Solvers who answer asks are called **PoH Allies**. Campaign wording: "People of Healthcare have reached out. From our first submissions, a team of engineers has posted certain asks. Can you solve them?" Plus invitation to more people of healthcare to share challenges via the discovery form (purpose: understand challenges and the bridges to build for healthcare startups and the MedTech ecosystem in Kerala). CDSCO is emphasised in asks 2 and 3. Poster: `export/poh-asks-campaign-poster.png` (silhouette of PoH Person 01 plus the 4 asks plus two QRs).
+
 ## Pitfalls learned
 - Phosphor icon font on the site only has a subset of icons (`story.css` / `index.html`). Check before using a new icon class.
 - The homepage hero animation: first visit per browser session plays the universe burst and folds back; `sessionStorage` key `medinn-intro` (use a private tab to see it again).
