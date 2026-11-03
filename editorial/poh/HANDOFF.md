@@ -60,7 +60,8 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 ## PoH Asks (owner decision, 3 Nov 2026)
 - Purpose: publish needs from featured people without losing leverage. Anonymous cards, private replies only, Medinn brokers every intro with both sides' consent. Never publish names, contacts, patent numbers or off-the-record material.
 - 5 entries expected; entry 1 (a syringe pump engineering team) has cards built, wording still to be approved by that team before posting. Their raw answers are deliberately not stored in the repo.
-- A planned `/people-of-healthcare-asks` page is not built yet.
+- **Built on branch `poh-asks`, NOT merged to main yet**: `people-of-healthcare-asks.html` (noindex, not linked) plus `api/ask-reply.js`. Layout: "PoH Person 01" glowing masked silhouette, four numbered asks (device kept generic: no syringe pump, no patent, no company), a "Drop your reply" form (ask checkboxes, name, company, how they could help, contact) that writes privately to the Notion nominations DB with Submitter type "Ask reply" (same env vars as nominate.js), plus WhatsApp/email fallback buttons. Form shows only if `/api/ask-reply` GET says configured. To add Person 02: copy the `.pa-person` block, new ask ids (ASK-05...), add checkboxes. Merge only after that team approves the wording; after deploy, send one test reply and trash the test row in Notion.
+- CSS gotcha: `story.css` already defines `.asks`/`.ask`; the Asks page uses `.pa*` classes instead.
 
 ## Pitfalls learned
 - Phosphor icon font on the site only has a subset of icons (`story.css` / `index.html`). Check before using a new icon class.
