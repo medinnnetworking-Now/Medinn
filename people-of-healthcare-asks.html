@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070D">
+<meta name="robots" content="noindex">
+<title>PoH Asks | People of Healthcare</title>
+<meta name="description" content="PoH Asks: what people building healthcare and MedTech in Kerala need right now, shared without names. If you can help, reply privately to Medinn.">
+<meta property="og:title" content="PoH Asks: what Kerala's healthcare builders need right now">
+<meta property="og:description" content="Needs shared without names. Reply privately and Medinn makes the introduction when both sides agree.">
+<meta property="og:image" content="https://medinn.in/people-of-healthcare-og.jpg">
+<link rel="icon" href="poh-mark.png">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="story.css">
+<style>
+.hero{padding:clamp(120px,14vw,170px) 0 10px}
+.hero h1{font-size:clamp(42px,6.6vw,92px);letter-spacing:-.05em;line-height:.96;max-width:11em}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero .lede{margin-top:22px;font-size:clamp(17.5px,1.4vw,19.5px);color:var(--mut);max-width:var(--read)}
+.how{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.how span{font-size:15px;font-weight:600;padding:10px 16px;border-radius:999px;background:var(--surf);border:1px solid var(--line2)}
+.pa-person{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(50px,6vw,80px)}
+.pa-who{position:sticky;top:96px}
+.sil{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 50% 38%,#16275f,#080B14 70%);border:1px solid var(--line2)}
+.sil svg{position:absolute;inset:0;width:100%;height:100%}
+.sil .tag{position:absolute;left:20px;bottom:18px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc2)}
+.pa-who h2{font-size:clamp(30px,3.4vw,46px);letter-spacing:-.04em;margin-top:22px}
+.pa-who h2 em{font-style:normal;color:var(--acc)}
+.pa-who p{margin-top:12px;color:var(--mut);font-size:16.5px;line-height:1.55}
+.pa-list{display:grid;gap:14px;margin-top:0}
+.pa{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:24px 26px 26px;display:grid;grid-template-columns:64px 1fr;gap:18px}
+.pa .n{font-family:var(--hd);font-weight:800;font-size:44px;letter-spacing:-.05em;color:var(--acc);line-height:1}
+.pa h3{font-size:clamp(21px,2vw,27px);letter-spacing:-.03em;line-height:1.12}
+.pa p{margin-top:10px;color:var(--mut);font-size:16px;line-height:1.55}
+.pa.f{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}
+.pa.f .n{color:#fff}.pa.f p{color:rgba(237,241,250,.85)}
+.pa .fl{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;background:#fff;color:#05070D;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+.drop{margin-top:clamp(70px,8vw,110px);padding-bottom:clamp(80px,9vw,130px)}
+.drop h2{font-size:clamp(32px,4.4vw,60px);letter-spacing:-.05em;line-height:.98}
+.drop .lede{margin-top:16px;color:var(--mut);max-width:var(--read)}
+.fm{max-width:46rem;margin-top:34px;display:grid;gap:18px}
+.fm label{display:grid;gap:8px;font-size:15px;font-weight:600}
+.fm label small{font-weight:400;color:var(--mut)}
+.fm input[type=text],.fm textarea{width:100%;font:inherit;font-size:16px;font-weight:400;color:var(--tx);background:var(--surf);border:1px solid var(--line2);border-radius:14px;padding:14px 16px}
+.fm textarea{min-height:120px;resize:vertical;line-height:1.5}
+.fm input:focus,.fm textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.fm .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fm .seg{display:flex;flex-wrap:wrap;gap:10px}
+.fm .seg label{display:flex;align-items:center;gap:8px;font-weight:500;padding:11px 16px;border:1px solid var(--line2);border-radius:999px;background:var(--surf);cursor:pointer}
+.fm .seg input{accent-color:#6E95FF}
+.fm .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.fm .msg{font-size:15.5px;line-height:1.5;padding:14px 16px;border-radius:14px;display:none;background:var(--acc-soft)}
+.fm .msg.on{display:block}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.note{color:var(--mut);font-size:15px;line-height:1.55}
+@media (max-width:900px){.pa-person{grid-template-columns:1fr}.pa-who{position:static}.sil{aspect-ratio:16/11}}
+@media (max-width:767px){.fm .row{grid-template-columns:1fr}.pa{grid-template-columns:48px 1fr;padding:20px}}
+</style>
+</head>
+<body>
+<header class="bar">
+ <a class="id" href="/" aria-label="Medinn home"><img src="medinn-logo.png" alt="Medinn"><span><b>Medinn</b> &middot; People of Healthcare</span></a>
+ <div class="r"><a class="btn ghost" href="/people-of-healthcare">About the initiative</a><a class="btn" href="#reply">Reply privately</a></div>
+</header>
+<main>
+<section class="hero"><div class="wrap">
+ <p class="k">People of Healthcare &middot; A Medinn initiative</p>
+ <h1 style="margin-top:16px">PoH <em>Asks.</em></h1>
+ <p class="lede">What the people building healthcare and MedTech in Kerala need right now, shared without names. If you can help, tell Medinn. Medinn checks every offer and introduces you only when both sides agree.</p>
+ <div class="how"><span>1 &middot; Read the asks</span><span>2 &middot; Reply privately</span><span>3 &middot; Medinn introduces, with consent</span></div>
+
+ <div class="pa-person" id="p01">
+  <div class="pa-who">
+   <div class="sil" aria-hidden="true">
+    <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+     <defs>
+      <radialGradient id="g" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#6E95FF" stop-opacity=".9"/><stop offset="1" stop-color="#1C3B9A" stop-opacity="0"/></radialGradient>
+      <linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB8FF"/><stop offset="1" stop-color="#1C3B9A"/></linearGradient>
+      <filter id="bl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+     </defs>
+     <circle cx="200" cy="190" r="190" fill="url(#g)"/>
+     <circle cx="200" cy="215" r="150" fill="none" stroke="#6E95FF" stroke-opacity=".35"/>
+     <circle cx="200" cy="215" r="108" fill="none" stroke="#6E95FF" stroke-opacity=".35" stroke-dasharray="4 7"/>
+     <g filter="url(#bl)" opacity=".9"><circle cx="200" cy="185" r="62" fill="url(#b)"/><path d="M62 470 C62 330 132 282 200 282 C268 282 338 330 338 470 Z" fill="url(#b)"/></g>
+    </svg>
+    <span class="tag">Identity withheld</span>
+   </div>
+   <h2>PoH Person <em>01</em></h2>
+   <p>An early-stage healthcare and MedTech team in Kerala, moving from prototype towards a licensed product. Identity and product withheld by choice. Medinn knows who they are.</p>
+  </div>
+  <div class="pa-list">
+   <article class="pa"><div class="n">1</div><div><h3>Hospitals to host structured usability sessions</h3><p>Biomedical engineers and nurses giving structured feedback on setup, alarms and the display. No real patients are involved until the right permissions are confirmed.</p></div></article>
+   <article class="pa f"><div class="n">2</div><div><span class="fl">Featured ask</span><h3>A regulatory consultant with medical-device experience</h3><p>To confirm the device classification and the licensing route before the design is frozen. The plan is to take the complete system through CDSCO licensing as one product, built with a licensed manufacturing partner.</p></div></article>
+   <article class="pa"><div class="n">3</div><div><h3>Introductions to 2 or 3 CDSCO-licensed manufacturers</h3><p>For an honest technical review of the design and a straight talk on what a partnership would need.</p></div></article>
+   <article class="pa"><div class="n">4</div><div><h3>Experienced MedTech leaders to open the right doors</h3><p>Device company founders, industry leaders and former hospital procurement heads who know what really decides a purchase, and will back a young team with their name and connections.</p></div></article>
+  </div>
+ </div>
+</div></section>
+
+<section class="drop" id="reply"><div class="wrap">
+ <p class="k">Can you help?</p>
+ <h2 style="margin-top:14px">Drop your reply here.</h2>
+ <p class="lede">Your reply goes only to Medinn. It is never shown on this page, and nobody else sees who replied.</p>
+ <form class="fm" id="f" novalidate>
+  <div><p style="font-size:15px;font-weight:600;margin-bottom:10px">Which asks can you help with?</p>
+   <div class="seg"><label><input type="checkbox" name="ask" value="ASK-01"> Ask 1</label><label><input type="checkbox" name="ask" value="ASK-02"> Ask 2</label><label><input type="checkbox" name="ask" value="ASK-03"> Ask 3</label><label><input type="checkbox" name="ask" value="ASK-04"> Ask 4</label></div></div>
+  <div class="row">
+   <label>Your name<input type="text" name="name" autocomplete="name" maxlength="200"></label>
+   <label>Your company or organisation<input type="text" name="company" autocomplete="organization" maxlength="300"></label>
+  </div>
+  <label>How could you address these asks?<textarea name="how" maxlength="1900"></textarea></label>
+  <label>How can Medinn reach you? <small>(phone, WhatsApp or email)</small><input type="text" name="contact" maxlength="300" autocomplete="off"></label>
+  <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+  <div class="msg" id="msg" role="status" aria-live="polite"></div>
+  <div class="acts">
+   <button class="btn" type="submit" id="send" style="display:none"><i class="ph ph-arrow-right" aria-hidden="true"></i> Send privately to Medinn</button>
+   <button class="btn" type="button" id="wa"><i class="ph ph-arrow-right" aria-hidden="true"></i> Reply on WhatsApp</button>
+   <button class="btn ghost" type="button" id="em"><i class="ph ph-envelope" aria-hidden="true"></i> Reply by email</button>
+  </div>
+  <p class="note">Medinn is a consulting practice. Replies are read by Dr. Sidharth Narayanan only. No introduction is made without both sides agreeing, and no promise of funding or outcomes is made.</p>
+ </form>
+</div></section>
+</main>
+<footer><div class="wrap"><p>PoH Asks is part of People of Healthcare, an initiative of Medinn, Healthcare Intelligence &amp; Media, by Dr. Sidharth Narayanan.</p><a href="/">medinn.in</a></div></footer>
+<script>
+(function(){
+var f=document.getElementById('f'),m=document.getElementById('msg'),send=document.getElementById('send');
+function say(t,html){m.className='msg on';if(html)m.innerHTML=t;else m.textContent=t}
+function val(n){return (f.elements[n].value||'').trim()}
+function asks(){return Array.prototype.map.call(f.querySelectorAll('input[name=ask]:checked'),function(e){return e.value})}
+function check(){if(!asks().length){say('Please tick at least one ask.');return false}if(!val('name')||!val('how')||!val('contact')){say('Please add your name, how you could help, and how to reach you.');return false}m.className='msg';return true}
+function body(){return 'PoH Asks reply (PoH Person 01)\n\nAsks: '+asks().join(', ')+'\nName: '+val('name')+'\nOrganisation: '+(val('company')||'-')+'\nHow I can help: '+val('how')+'\nReach me on: '+val('contact')}
+document.getElementById('wa').onclick=function(){if(check())window.open('https://wa.me/919400513128?text='+encodeURIComponent(body()),'_blank')};
+document.getElementById('em').onclick=function(){if(check())location.href='mailto:medinnnetworking@gmail.com?subject='+encodeURIComponent('PoH Asks reply: '+asks().join(', '))+'&body='+encodeURIComponent(body())};
+fetch('/api/ask-reply',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){if(j&&j.configured)send.style.display=''}).catch(function(){});
+f.addEventListener('submit',function(e){e.preventDefault();if(!check())return;send.disabled=true;
+ fetch('/api/ask-reply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:'PoH Person 01',asks:asks(),name:val('name'),company:val('company'),how:val('how'),contact:val('contact'),website:val('website')})})
+ .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j}})})
+ .then(function(x){if(x.ok&&x.j.ok){f.reset();say('Thank you. Your reply has reached Medinn privately. Nothing is shared without your agreement.')}else throw 0})
+ .catch(function(){say('That did not go through. Please use the WhatsApp or email button instead.')})
+ .then(function(){send.disabled=false})});
+})();
+</script>
+</body>
+</html>
