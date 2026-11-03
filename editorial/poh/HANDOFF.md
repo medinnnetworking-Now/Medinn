@@ -32,6 +32,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `whatsapp-conversation.md` | One-day WhatsApp question kit for people who replied to the poster/link: intro, 8 core questions, close, segment add-ons, fit check. Has a facts-to-confirm list (first-generation doctor, last-month apparel revenue; KNYA vs "Kenya" is settled: it is KNYA) |
 | `chat-cards.html` + `render-cards.js` | 4 WhatsApp conversation cards (1080x1350): intro, about-you prerequisite, the 7 questions, thank-you. Output `export/poh-chat-0N-*.png`. Questions text is in `whatsapp-conversation.md` |
 | `question-cards.html` + `render-questions.js` | One card per question, `export/poh-q1.png` to `poh-q7.png`, to send one at a time |
+| `asks-cards.html` + `render-asks.js` | PoH Asks cards (`export/poh-ask-02/01/03/04.png`). ASK-02 is the featured one. Tag "PoH Asks"; source line is only "From an engineering team working on a syringe pump system" (no names, company or patent number). Replies go privately to WhatsApp +91 94005 13128 quoting the ASK id, never public comments |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |
@@ -55,6 +56,11 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 ## Conversation question set (owner decision, 2 Nov 2026)
 - Do NOT ask "how could a doctor/house surgeon be useful to you". Instead ask: is access to a hospital ecosystem useful, what is your immediate need, who do you need access to, what should we build next in Kerala.
 - Prerequisite asked first: name, venture name, one value metric (revenue, patients served, funding, team size, years: their choice, only what they are comfortable with and approve). Keep the tone light.
+
+## PoH Asks (owner decision, 3 Nov 2026)
+- Purpose: publish needs from featured people without losing leverage. Anonymous cards, private replies only, Medinn brokers every intro with both sides' consent. Never publish names, contacts, patent numbers or off-the-record material.
+- 5 entries expected; entry 1 (a syringe pump engineering team) has cards built, wording still to be approved by that team before posting. Their raw answers are deliberately not stored in the repo.
+- A planned `/people-of-healthcare-asks` page is not built yet.
 
 ## Pitfalls learned
 - Phosphor icon font on the site only has a subset of icons (`story.css` / `index.html`). Check before using a new icon class.
