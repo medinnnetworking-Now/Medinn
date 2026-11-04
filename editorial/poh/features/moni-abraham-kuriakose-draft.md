@@ -20,7 +20,7 @@ The hardest part, he says, was adoption of standardised care by tertiary cancer 
 
 What is needed: better adoption of digital health in primary health clinics, and adoption of ABDM in hospitals.
 
-What Karkinos needs next: an anchor comprehensive cancer centre to serve as the hub for its community cancer clinics, and a socially conscious investor to help establish it.
+The vision: a comprehensive cancer centre at the heart of a network of community cancer clinics, taking quality cancer care to every community.
 
 His view of the future: digital adoption in healthcare will keep rising, and AI will help democratise quality cancer care, to the point where a patient can be as knowledgeable as a healthcare provider. What needs to be done: ABDM adoption and better health records. [Confirm wording.]
 
@@ -30,4 +30,4 @@ His view of the future: digital adoption in healthcare will keep rising, and AI 
 Sir, thank you, this is very valuable. Three quick clarifications:
 1. By "improved ability of health records", did you mean availability, or interoperability?
 2. One last question: what would help hospitals and startups discover and adopt platforms like yours?
-3. May I share your need (a comprehensive cancer centre and a socially conscious investor) as an anonymous PoH Ask, or would you like it attributed to you?
+3. (Only for PoH Asks, separate from the feature) May I share your need as an anonymous PoH Ask, or would you like it attributed to you?

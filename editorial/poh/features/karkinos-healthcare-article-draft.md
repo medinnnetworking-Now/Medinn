@@ -14,7 +14,7 @@ Most cancer care in India still begins and ends inside a hospital. Karkinos Heal
 
 **The bridges that need to be built.** Better adoption of digital health in primary health clinics, and adoption of the ABDM (Ayushman Bharat Digital Mission) system in hospitals. These are the connections that let a patient's record, and their care, move between a community clinic and a specialist centre.
 
-**Where it goes next.** Karkinos needs an anchor: a comprehensive cancer centre that serves as the hub for its community cancer clinics. The immediate need is a socially conscious investor who can help establish it.
+**The vision.** At the heart of the model is a comprehensive cancer centre that anchors a network of community cancer clinics, so that quality care reaches people where they live, with a specialist centre behind every clinic.
 
 **The future he sees.** Digital adoption in healthcare will keep increasing, and AI will help democratise quality cancer care, to the point where a patient can be as knowledgeable as a healthcare provider. What it takes: ABDM adoption and better health records. *(Confirm his exact wording.)*
 
