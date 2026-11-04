@@ -33,3 +33,19 @@ Most cancer care in India still begins and ends inside a hospital. Karkinos Heal
 - Karkinos Healthcare launched Advanced Center for Cancer Diagnostics and Research, Indian Pharma Post, 12 June 2022: https://www.indianpharmapost.com/healthcare/lite/karkinos-healthcare-launched-advanced-center-for-cancer-diagnostics-and-research-12479
 - Karkinos profile page (Co-Founder, Medical Director and CEO, Karkinos Kerala): https://www.karkinos.in/?p=14272
 - His answers to the PoH MVP questions, 4 Nov 2026, and a WhatsApp clarification (anchor hospital = comprehensive cancer centre).
+
+---
+## Medinn's perspective (Dr. Sidharth Narayanan's own view, to sit after Dr. Kuriakose's section, clearly labelled as Medinn's)
+Cancer care still has several gaps, and follow-up is always the toughest part. Patients often do not know which centre is the right one for the care they need, and the journey between hospital and home is where many are lost. In my view, much of Indian healthcare delivery is now for-profit and investor-backed, which is why Dr. Kuriakose's call for socially conscious investors stands out, and why I admire it.
+
+*(Keep as clearly an opinion. Do not state "most hospitals are backed by investment bankers" as a fact in print without a source. Do not say comprehensive cancer care is "non-existent" in Kerala: see the note below.)*
+
+### Two questions put to Dr. Kuriakose (answers to be added)
+1. Would setting up the anchor comprehensive cancer centre involve partnering with an existing hospital group in Kerala, or is it envisioned as a new standalone centre?
+2. Kerala already has established government cancer centres, the Regional Cancer Centre in Thiruvananthapuram and the Malabar Cancer Centre in Thalassery, both described as providing comprehensive cancer care. What gap is the anchor centre meant to fill: access, follow-up, integration with community clinics, or something else?
+
+Optional third: How does the Karkinos platform help a patient find the right centre for their care?
+
+### Fact note on "comprehensive cancer care is non-existent in Kerala"
+Not supported. The Regional Cancer Centre, Thiruvananthapuram (founded 1981) and the Malabar Cancer Centre, Thalassery (set up 2001, mandate for comprehensive cancer care, recognised as a Tertiary Cancer Centre in 2012) are both described as comprehensive or tertiary cancer centres (sources below; mixed quality, check official documents before publishing). The fairer framing is the gap in access, follow-up and integration, which is what Dr. Kuriakose's own answers describe. Ask him rather than assert.
+Sources: https://en.wikipedia.org/wiki/Malabar_Cancer_Centre,_Thalassery · https://en.wikipedia.org/wiki/Regional_Cancer_Centres · https://medicaldialogues.in/kerala-to-upgrade-malabar-cancer-centre
