@@ -36,6 +36,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `asks-cards.html` + `render-asks.js` | PoH Asks cards (`export/poh-ask-02/01/03/04.png`). ASK-02 is the featured one. Tag "PoH Asks"; source line is only "From an engineering team working on a syringe pump system" (no names, company or patent number). Replies go privately to WhatsApp +91 94005 13128 quoting the ASK id, never public comments |
 | `asks-campaign-poster.html` + `render-asks-poster.js` + `qr-asks.png` | Campaign poster `export/poh-asks-campaign-poster.png`: "Brave innovators reached out. They have asks." Two QRs: join (discovery form) and solve (asks page). Both QRs decode correctly |
 | `discovery-message-template.md` | LinkedIn/DM discovery message template for cold or warm outreach (use "sir"), with the fact-check list and a log of who was sent it |
+| `features/` | Draft features for approval, one file per MVP. First: `moni-abraham-kuriakose-draft.md` (Karkinos Healthcare). Drafts are never published until the person approves, with their photo |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |
