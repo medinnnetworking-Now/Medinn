@@ -1,5 +1,5 @@
 # Captions for the Dr. Moni Abraham Kuriakose / Karkinos feature (v2, natural tone, with Kerala numbers)
-Post ONLY after Dr. Kuriakose approves the article and photo, and the review banner/noindex are removed. Tag Dr. Moni Abraham Kuriakose and Karkinos Healthcare with their real handles.
+Cleared by Dr. Kuriakose (owner confirmed, 4 Nov 2026); article page is live without the review banner. Tag Dr. Moni Abraham Kuriakose and Karkinos Healthcare with their real handles.
 Links: article https://medinn.in/poh-moni-abraham-kuriakose · share your own story https://medinn.in/people-of-healthcare-mvp · nominate someone https://medinn.in/people-of-healthcare
 
 ## Citations (what was actually checked)
