@@ -16,7 +16,7 @@ Dr. Moni Abraham Kuriakose, Medical Director, Karkinos Healthcare
 
 Karkinos Healthcare is building distributed cancer care. Its technology platform supports a patient from screening and diagnosis through treatment and follow-up, and takes care out of the four walls of the hospital and into the community. The idea behind it: the community as a cancer centre. Karkinos reports serving about 3 million patients (his figure, to be confirmed).
 
-The hardest part, he says, was adoption of standardised care by tertiary cancer centres, and the lack of an incentive to send patients back to community cancer clinics.
+The hardest part, he says, was twofold: tertiary cancer centres were slow to adopt standardised care, and they have little incentive to send patients back to community cancer clinics for follow-up closer to home. [Confirm this reading with him.]
 
 What is needed: better adoption of digital health in primary health clinics, and adoption of ABDM in hospitals.
 
@@ -30,4 +30,5 @@ His view of the future: digital adoption in healthcare will keep rising, and AI 
 Sir, thank you, this is very valuable. Three quick clarifications:
 1. By "improved ability of health records", did you mean availability, or interoperability?
 2. One last question: what would help hospitals and startups discover and adopt platforms like yours?
+4. By "send back patients to the community clinics", do you mean after treatment, for follow-up and continuing care at a clinic near the patient's home? And is the lack of incentive financial, or about referral and reputation?
 3. (Only for PoH Asks, separate from the feature) May I share your need as an anonymous PoH Ask, or would you like it attributed to you?
