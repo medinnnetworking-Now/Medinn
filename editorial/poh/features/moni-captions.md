@@ -12,10 +12,18 @@ NOT VERIFIED, so removed from the captions:
 - "3 million patients" and everything about Karkinos's model are Dr. Kuriakose's own words (PoH answers, 4 Nov 2026), plus one public source for the Kochi lab (Indian Pharma Post, 12 Jun 2022).
 Say "the rise" only for the national figure above; Kerala's own year-by-year rise is not yet verified.
 
-## LinkedIn (redraft, v3)
-Kerala has the highest cancer rate in India. In 2024 it was about 170 new cases per lakh people, against a national average of around 110. That's roughly 61,000 new cases in a single year.
+## LinkedIn (v4, owner's opening integrated)
+NOTE before posting: the owner's figures (about 173 per lakh vs a national average of 110.3; sources ICMR-NCRP, MoHFW 2025, JAMA Network Open 2025) were supplied by the owner and NOT checked by Claude. The checked source (The Week, 17 Dec 2025, citing the Lok Sabha reply of 5 Dec 2025) says about 170 per lakh vs about 110. Confirm 173 and 110.3 in the original ICMR-NCRP / JAMA tables, or use 170 and 110.
 
-I spoke with Dr. Moni Abraham Kuriakose of Karkinos Healthcare about what we do with a number like that. He doesn't start at the big hospital. He starts at the community clinic. His idea is simple: the community itself as a cancer centre.
+How do we deliver quality, comprehensive cancer care to the people of India?
+
+I recently had the opportunity to discuss this question with Dr. Moni Abraham Kuriakose of Karkinos Healthcare.
+
+Kerala recorded an estimated 61,175 new cancer cases in 2024, approximately 173 cases per lakh, against a national average of 110.3.
+
+(Source: ICMR-NCRP; Ministry of Health & Family Welfare, 2025; JAMA Network Open, 2025.)
+
+Our conversation explored an interesting approach: bringing cancer care closer to the community. Dr. Moni doesn't start at the big hospital. He starts at the community clinic. His idea is simple: the community itself as a cancer centre.
 
 We already screen for oral, breast and cervical cancer at primary health centres. The hard part comes after: the referral, the treatment, and above all the follow-up back home. Dr. Moni says large centres have been slow to adopt standardised care, and have little reason to send a patient back to a clinic near home. He sees ABDM and better use of AI as the way to close much of that gap. Karkinos has been building towards it, and he says they've served about 3 million patients.
 
