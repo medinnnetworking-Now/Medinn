@@ -12,8 +12,8 @@ NOT VERIFIED, so removed from the captions:
 - "3 million patients" and everything about Karkinos's model are Dr. Kuriakose's own words (PoH answers, 4 Nov 2026), plus one public source for the Kochi lab (Indian Pharma Post, 12 Jun 2022).
 Say "the rise" only for the national figure above; Kerala's own year-by-year rise is not yet verified.
 
-## LinkedIn (v4, owner's opening integrated)
-NOTE before posting: the owner's figures (about 173 per lakh vs a national average of 110.3; sources ICMR-NCRP, MoHFW 2025, JAMA Network Open 2025) were supplied by the owner and NOT checked by Claude. The checked source (The Week, 17 Dec 2025, citing the Lok Sabha reply of 5 Dec 2025) says about 170 per lakh vs about 110. Confirm 173 and 110.3 in the original ICMR-NCRP / JAMA tables, or use 170 and 110.
+## LinkedIn (v5, owner's hook plus the Karkinos hub-and-spoke model)
+Before posting: 173 per lakh and 110.3 (national) are the owner's figures, not checked by Claude; the checked source says about 170 vs about 110 (The Week, 17 Dec 2025). "Spoke" is Medinn's word for the community clinics; Dr. Kuriakose said "hub for the community cancer clinics". Confirm with him.
 
 How do we deliver quality, comprehensive cancer care to the people of India?
 
@@ -23,19 +23,23 @@ Kerala recorded an estimated 61,175 new cancer cases in 2024, approximately 173 
 
 (Source: ICMR-NCRP; Ministry of Health & Family Welfare, 2025; JAMA Network Open, 2025.)
 
-Our conversation explored an interesting approach: bringing cancer care closer to the community. Dr. Moni doesn't start at the big hospital. He starts at the community clinic. His idea is simple: the community itself as a cancer centre.
+Our conversation explored an interesting approach: bringing cancer care closer to the community.
 
-We already screen for oral, breast and cervical cancer at primary health centres. The hard part comes after: the referral, the treatment, and above all the follow-up back home. Dr. Moni says large centres have been slow to adopt standardised care, and have little reason to send a patient back to a clinic near home. He sees ABDM and better use of AI as the way to close much of that gap. Karkinos has been building towards it, and he says they've served about 3 million patients.
+Karkinos is building what he calls distributed cancer care. A technology platform follows the patient through the whole journey, from screening and diagnosis to treatment and follow-up, and the care itself moves out of the four walls of the hospital and into the community. He says the platform has served about 3 million patients.
 
-People like Dr. Moni should be talked about more, so the rest of us can learn from them and build on their work. That's what People of Healthcare is for.
+The way I understand the model is hub and spoke. The spokes are community cancer clinics, close to where people live, where screening and follow-up happen. The hub is a comprehensive cancer centre behind them, for the complex care. That centre is the vision Dr. Moni is working towards.
 
-If you know someone in healthcare whose work deserves to be seen, send them my way. Or tell me your own story. I'd like to feature it, and help build the bridges between people who should be working together.
+What makes it hard is not the idea but the handoffs. Large cancer centres have been slow to adopt standardised care, and have little reason to send a patient back to a clinic near home once treatment is done. Follow-up is where patients get lost. Two bridges he sees as essential: better digital health in primary clinics, and wider adoption of ABDM in hospitals, so a patient's records move with them. Beyond that, he expects AI to help democratise quality cancer care, to the point where patients are almost as informed as their providers.
+
+For me the takeaway is this. Cancer care will only be addressed if we start at the community clinic and make follow-up and access much easier. It's a model worth studying closely.
+
+People like Dr. Moni should be talked about more, so the rest of us can learn from them and build on their work. That's what People of Healthcare is for. If you know someone in healthcare whose work deserves to be seen, send them my way. Or tell me your own story. I'd like to feature it, and help build the bridges between people who should be working together.
 
 Nominate someone: https://medinn.in/people-of-healthcare
 Share your own story: https://medinn.in/people-of-healthcare-mvp
 Read the full feature: https://medinn.in/poh-moni-abraham-kuriakose
 
-#PeopleOfHealthcare #CancerCare #Healthcare #Kerala #Malabar #MedTech
+#PeopleOfHealthcare #CancerCare #Healthcare #Kerala #Malabar #MedTech #ABDM
 
 ## Instagram / Facebook / X (shorter)
 Kerala has the highest cancer rate in India: about 170 new cases per lakh people in 2024, against a national average of around 110.
