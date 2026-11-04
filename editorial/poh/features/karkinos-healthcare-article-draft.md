@@ -36,9 +36,9 @@ Most cancer care in India still begins and ends inside a hospital. Karkinos Heal
 
 ---
 ## Medinn's perspective (Dr. Sidharth Narayanan's own view, to sit after Dr. Kuriakose's section, clearly labelled as Medinn's)
-Cancer care still has several gaps, and follow-up is always the toughest part. Patients often do not know which centre is the right one for the care they need, and the journey between hospital and home is where many are lost. In my view, much of Indian healthcare delivery is now for-profit and investor-backed, which is why Dr. Kuriakose's call for socially conscious investors stands out, and why I admire it.
+Cancer care still has several gaps, and follow-up is always the toughest part. Patients often do not know which centre is the right one for the care they need, and the journey between hospital and home is where many are lost.
 
-*(Keep as clearly an opinion. Do not state "most hospitals are backed by investment bankers" as a fact in print without a source. Do not say comprehensive cancer care is "non-existent" in Kerala: see the note below.)*
+*(Funding and investor points deliberately left out, per owner. Do not say comprehensive cancer care is "non-existent" in Kerala: see the note below.)*
 
 ### Two questions put to Dr. Kuriakose (answers to be added)
 1. Would setting up the anchor comprehensive cancer centre involve partnering with an existing hospital group in Kerala, or is it envisioned as a new standalone centre?

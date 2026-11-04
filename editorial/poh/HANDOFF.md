@@ -38,6 +38,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `discovery-message-template.md` | LinkedIn/DM discovery message template for cold or warm outreach (use "sir"), with the fact-check list and a log of who was sent it |
 | `features/` | Draft features for approval, one file per MVP. First: `moni-abraham-kuriakose-draft.md` (Karkinos Healthcare). Drafts are never published until the person approves, with their photo |
 | `feature-moni-poster.html`, `asks02-named.html`, `asks02-anon.html`, `render-moni.js` | DRAFT posters for Dr. Moni Abraham Kuriakose: feature poster, and PoH Asks Person 02 (named and anonymous variants) in `export/*-DRAFT.png`. Photo placeholder until he sends one. The FEATURE (poster, article, draft) deliberately leaves out his asks (investor, funding) and presents the comprehensive cancer centre only as his vision; the asks live only in the separate PoH Asks material. NOT posted: waiting for his approval and his answer on named vs anonymous |
+| `features/cancer-care-india-workup-draft.md` | Medinn workup "Cancer care in India: scattered, and still not reaching the community", with cited stats and a verify-before-publishing source list. Funding/investor points excluded per owner |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |
