@@ -98,6 +98,33 @@
    <article class="pa"><div class="n">4</div><div><h3>Experienced MedTech leaders to open the right doors</h3><p>Device company founders, industry leaders and former hospital procurement heads who know what really decides a purchase, and will back a young team with their name and connections.</p></div></article>
   </div>
  </div>
+
+ <div class="pa-person" id="p02">
+  <div class="pa-who">
+   <div class="sil" aria-hidden="true">
+    <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+     <defs>
+      <radialGradient id="g2" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#6E95FF" stop-opacity=".9"/><stop offset="1" stop-color="#1C3B9A" stop-opacity="0"/></radialGradient>
+      <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB8FF"/><stop offset="1" stop-color="#1C3B9A"/></linearGradient>
+      <filter id="bl2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+     </defs>
+     <circle cx="200" cy="190" r="190" fill="url(#g2)"/>
+     <circle cx="200" cy="215" r="150" fill="none" stroke="#6E95FF" stroke-opacity=".35"/>
+     <circle cx="200" cy="215" r="108" fill="none" stroke="#6E95FF" stroke-opacity=".35" stroke-dasharray="4 7"/>
+     <g filter="url(#bl2)" opacity=".9"><circle cx="200" cy="185" r="62" fill="url(#b2)"/><path d="M62 470 C62 330 132 282 200 282 C268 282 338 330 338 470 Z" fill="url(#b2)"/></g>
+    </svg>
+    <span class="tag">Identity withheld</span>
+   </div>
+   <h2>PoH Person <em>02</em></h2>
+   <p>A cancer-care organisation working to take care out of the hospital and into the community. Identity withheld by choice. Medinn knows who they are.</p>
+  </div>
+  <div class="pa-list">
+   <article class="pa"><div class="n">1</div><div><h3>A comprehensive cancer centre to anchor community cancer clinics</h3><p>A hub hospital for the community cancer clinics, so that care can be delivered close to home with a specialist centre behind it.</p></div></article>
+   <article class="pa f"><div class="n">2</div><div><span class="fl">Featured ask</span><h3>A socially conscious investor to help establish it</h3><p>An investor who cares about extending quality cancer care to communities, and can help build the anchor centre.</p></div></article>
+   <article class="pa"><div class="n">3</div><div><h3>Tertiary cancer centres to adopt standardised care</h3><p>And to send patients back to community cancer clinics. Today there is little incentive to do so.</p></div></article>
+   <article class="pa"><div class="n">4</div><div><h3>Primary clinics and hospitals to adopt digital health and ABDM</h3><p>Better adoption of digital health in primary health clinics, and of the ABDM system in hospitals.</p></div></article>
+  </div>
+ </div>
 </div></section>
 
 <section class="drop" id="reply"><div class="wrap">
@@ -106,7 +133,8 @@
  <p class="lede">Your reply goes only to Medinn. It is never shown on this page, and nobody else sees who replied.</p>
  <form class="fm" id="f" novalidate>
   <div><p style="font-size:15px;font-weight:600;margin-bottom:10px">Which asks can you solve?</p>
-   <div class="seg"><label><input type="checkbox" name="ask" value="ASK-01"> Ask 1</label><label><input type="checkbox" name="ask" value="ASK-02"> Ask 2</label><label><input type="checkbox" name="ask" value="ASK-03"> Ask 3</label><label><input type="checkbox" name="ask" value="ASK-04"> Ask 4</label></div></div>
+   <p class="note" style="margin-bottom:8px">PoH Person 01</p><div class="seg"><label><input type="checkbox" name="ask" value="ASK-01"> Ask 1</label><label><input type="checkbox" name="ask" value="ASK-02"> Ask 2</label><label><input type="checkbox" name="ask" value="ASK-03"> Ask 3</label><label><input type="checkbox" name="ask" value="ASK-04"> Ask 4</label></div>
+   <p class="note" style="margin:14px 0 8px">PoH Person 02</p><div class="seg"><label><input type="checkbox" name="ask" value="ASK-05"> Ask 1</label><label><input type="checkbox" name="ask" value="ASK-06"> Ask 2</label><label><input type="checkbox" name="ask" value="ASK-07"> Ask 3</label><label><input type="checkbox" name="ask" value="ASK-08"> Ask 4</label></div></div>
   <div class="row">
    <label>Your name<input type="text" name="name" autocomplete="name" maxlength="200"></label>
    <label>Your company or organisation<input type="text" name="company" autocomplete="organization" maxlength="300"></label>
@@ -132,12 +160,13 @@ function say(t,html){m.className='msg on';if(html)m.innerHTML=t;else m.textConte
 function val(n){return (f.elements[n].value||'').trim()}
 function asks(){return Array.prototype.map.call(f.querySelectorAll('input[name=ask]:checked'),function(e){return e.value})}
 function check(){if(!asks().length){say('Please tick at least one ask.');return false}if(!val('name')||!val('how')||!val('contact')){say('Please add your name, how you could help, and how to reach you.');return false}m.className='msg';return true}
-function body(){return 'PoH Asks reply (PoH Person 01)\n\nAsks: '+asks().join(', ')+'\nName: '+val('name')+'\nOrganisation: '+(val('company')||'-')+'\nHow I can help: '+val('how')+'\nReach me on: '+val('contact')}
+function person(){var a=asks(),p=[];if(a.some(function(x){return +x.slice(4)<=4}))p.push('PoH Person 01');if(a.some(function(x){return +x.slice(4)>4}))p.push('PoH Person 02');return p.join(' and ')}
+function body(){return 'PoH Asks reply ('+person()+')\n\nAsks: '+asks().join(', ')+'\nName: '+val('name')+'\nOrganisation: '+(val('company')||'-')+'\nHow I can help: '+val('how')+'\nReach me on: '+val('contact')}
 document.getElementById('wa').onclick=function(){if(check())window.open('https://wa.me/919400513128?text='+encodeURIComponent(body()),'_blank')};
 document.getElementById('em').onclick=function(){if(check())location.href='mailto:medinnnetworking@gmail.com?subject='+encodeURIComponent('PoH Asks reply: '+asks().join(', '))+'&body='+encodeURIComponent(body())};
 fetch('/api/ask-reply',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){if(j&&j.configured)send.style.display=''}).catch(function(){});
 f.addEventListener('submit',function(e){e.preventDefault();if(!check())return;send.disabled=true;
- fetch('/api/ask-reply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:'PoH Person 01',asks:asks(),name:val('name'),company:val('company'),how:val('how'),contact:val('contact'),website:val('website')})})
+ fetch('/api/ask-reply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:person(),asks:asks(),name:val('name'),company:val('company'),how:val('how'),contact:val('contact'),website:val('website')})})
  .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j}})})
  .then(function(x){if(x.ok&&x.j.ok){f.reset();say('Thank you. Your reply has reached Medinn privately. Nothing is shared without your agreement.')}else throw 0})
  .catch(function(){say('That did not go through. Please use the WhatsApp or email button instead.')})
