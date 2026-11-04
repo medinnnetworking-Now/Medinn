@@ -1,43 +1,35 @@
-# Captions for the Dr. Moni Abraham Kuriakose / Karkinos feature
-Post ONLY after Dr. Kuriakose approves the article and photo, and the review banner/noindex are removed. Tag: Dr. Moni Abraham Kuriakose, Karkinos Healthcare (use their real handles).
-Links: article https://medinn.in/poh-moni-abraham-kuriakose · share your story (MVP form) https://medinn.in/people-of-healthcare-mvp · discovery https://medinn.in/people-of-healthcare
+# Captions for the Dr. Moni Abraham Kuriakose / Karkinos feature (v2, natural tone, with Kerala numbers)
+Post ONLY after Dr. Kuriakose approves the article and photo, and the review banner/noindex are removed. Tag Dr. Moni Abraham Kuriakose and Karkinos Healthcare with their real handles.
+Links: article https://medinn.in/poh-moni-abraham-kuriakose · share your own story https://medinn.in/people-of-healthcare-mvp · nominate someone https://medinn.in/people-of-healthcare
+
+## Numbers used (verify against the original before posting)
+- Kerala new cancer cases: about 39,672 in 2015 and 61,175 in 2024 (Kerala Kaumudi series; the 2024 figure also quoted from a Lok Sabha reply). Counts are mainly from major government centres, so the true number may be higher. https://www.keralakaumudi.com/en/news/around-1000-people-affected-by-cancer-each-year-in-kerala-1666916
+- Kerala's incidence is well above the national average (sources differ: ICMR-NCDIR vs Lok Sabha reply vs older ICMR data), so the caption says "well above" and gives no rate.
+- Experts note better screening partly explains rising counts: https://www.theweek.in/news/health/2025/12/17/does-better-screening-explain-kerala-s-high-cancer-numbers-experts-weigh-in.html
+- "3 million patients" is Dr. Kuriakose's own figure.
 
 ## LinkedIn
-Cancer care doesn't end when treatment ends. So why does follow-up so often stop there?
+Kerala is seeing more cancer every year. The official count went from about 40,000 new cases in 2015 to about 61,000 in 2024, and the rate per lakh people is well above the national average. Some of that is better screening, some of it is lifestyle. Either way, the number isn't going down.
 
-I recently had a conversation with Dr. Moni Abraham Kuriakose, Medical Director at Karkinos Healthcare, for People of Healthcare, and one idea stayed with me: take cancer care out of the four walls of the hospital and into the community.
+I got to talk with Dr. Moni Abraham Kuriakose of Karkinos Healthcare about what that means for care. What stayed with me was how simple his starting point is. Care shouldn't live only inside big hospitals. It should begin at the community clinic, and follow-up should be easy enough that patients actually come back.
 
-What Karkinos is building is a tech-enabled care stack that supports a patient from screening and diagnosis through treatment and follow-up, from the community clinic to the specialist centre and back, as one integrated journey. Dr. Kuriakose says the platform has served about 3 million patients.
+Follow-up is where the system loses people. Big centres have little reason to send a patient back to a clinic near home, and primary clinics don't yet have the digital tools to take that patient on. Dr. Moni sees ABDM and better use of AI as the way to close a lot of that gap. Karkinos has been building towards exactly this, and he says they've served about 3 million patients so far.
 
-The gaps he points to:
-→ Large tertiary cancer centres were slow to adopt standardised care, and have little incentive to send patients back to community clinics for follow-up closer to home
-→ Primary health clinics need better adoption of digital health
-→ ABDM needs wider adoption in hospitals, so a patient's records and care can move with them
+People like Dr. Moni should be talked about more. Not to flatter anyone, but because the rest of us in healthcare can learn from them, support them and build on what they're doing. That's what People of Healthcare is for.
 
-And where he sees it going: digital adoption will keep growing, AI can help democratise quality cancer care, and a comprehensive cancer centre can anchor a network of community clinics.
+So if you know someone whose work deserves to be seen, a founder, a clinician, a hospital leader, send them my way. Or tell me your own story. I'd like to feature it, and help build the bridges between people who should be working together.
 
-My takeaway: cancer can only be addressed if we start from the community clinic and make follow-up and access much easier. It is a model worth studying as a benchmark.
-
-This is why we started People of Healthcare, an initiative of Medinn: to build bridges and widen adoption and collaboration between startups and hospitals in Kerala.
-
-If you are working to improve healthcare, as a startup, a company, a hospital or a clinician, we want to hear your story.
-Share it here: https://medinn.in/people-of-healthcare-mvp
+Nominate someone: https://medinn.in/people-of-healthcare
+Share your own story: https://medinn.in/people-of-healthcare-mvp
 Read the full feature: https://medinn.in/poh-moni-abraham-kuriakose
 
-#PeopleOfHealthcare #CancerCare #Healthcare #MedTech #DigitalHealth #ABDM #Kerala #Malabar
+#PeopleOfHealthcare #CancerCare #Healthcare #Kerala #Malabar #MedTech
 
 ## Instagram / Facebook / X (shorter)
-How far do we still need to go on cancer care? And does follow-up happen the way we want it to?
+Kerala is seeing more cancer every year: about 40,000 new cases in 2015, about 61,000 in 2024.
 
-I spoke with Dr. Moni Abraham Kuriakose of Karkinos Healthcare about taking cancer care out of the hospital and into the community: a tech-enabled care stack from the community clinic to the specialist centre and back.
+I spoke with Dr. Moni Abraham Kuriakose of Karkinos Healthcare about where care goes from here. His answer starts small: at the community clinic, with follow-up that's easy enough for patients to actually come back. ABDM and AI, he says, can close a lot of the gap.
 
-His view: ABDM adoption and AI can fill many gaps, and cancer is only addressed when follow-up and access become much easier.
+People like him deserve to be talked about more. If you know someone in healthcare whose work should be seen, or you want to tell your own story, I'd love to feature it. Link in bio: medinn.in/people-of-healthcare
 
-Working in healthcare? A startup, company, hospital or clinician? Tell us your story: link in bio (medinn.in/people-of-healthcare-mvp)
-
-#PeopleOfHealthcare #CancerCare #MedTech #Kerala
-
-## Alternative hooks (first line)
-- Cancer care doesn't end when treatment ends. So why does follow-up so often stop there?
-- Where does a cancer patient go after the hospital discharges them?
-- The hardest part of cancer care isn't always the treatment.
+#PeopleOfHealthcare #CancerCare #Kerala #MedTech
