@@ -37,6 +37,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 | `asks-campaign-poster.html` + `render-asks-poster.js` + `qr-asks.png` | Campaign poster `export/poh-asks-campaign-poster.png`: "Brave innovators reached out. They have asks." Two QRs: join (discovery form) and solve (asks page). Both QRs decode correctly |
 | `discovery-message-template.md` | LinkedIn/DM discovery message template for cold or warm outreach (use "sir"), with the fact-check list and a log of who was sent it |
 | `features/` | Draft features for approval, one file per MVP. First: `moni-abraham-kuriakose-draft.md` (Karkinos Healthcare). Drafts are never published until the person approves, with their photo |
+| `feature-moni-poster.html`, `asks02-named.html`, `asks02-anon.html`, `render-moni.js` | DRAFT posters for Dr. Moni Abraham Kuriakose: feature poster, and PoH Asks Person 02 (named and anonymous variants) in `export/*-DRAFT.png`. Photo placeholder until he sends one. NOT posted: waiting for his approval and his answer on named vs anonymous |
 | `announcement.md` | LinkedIn, Instagram and WhatsApp writeups, invitation message, bio |
 | `package_kit.py` | Rebuilds the labelled zip into `editorial/dist/` (git-ignored) |
 | `export/` | All rendered PNG/PDF outputs |
@@ -65,6 +66,7 @@ Rebuild everything: `cd editorial/poh && python3 build_poh.py && python3 build_d
 - Purpose: publish needs from featured people without losing leverage. Anonymous cards, private replies only, Medinn brokers every intro with both sides' consent. Never publish names, contacts, patent numbers or off-the-record material.
 - 5 entries expected; entry 1 (a syringe pump engineering team) has cards built, wording still to be approved by that team before posting. Their raw answers are deliberately not stored in the repo.
 - **LIVE on main (merged 3 Nov 2026)**: https://medinn.in/people-of-healthcare-asks (not yet linked from the nav; real reply submission still to be tested once and the test row trashed in Notion). `people-of-healthcare-asks.html` (noindex, not linked) plus `api/ask-reply.js`. Layout: "PoH Person 01" glowing masked silhouette, four numbered asks (device kept generic: no syringe pump, no patent, no company), a "Drop your reply" form (ask checkboxes, name, company, how they could help, contact) that writes privately to the Notion nominations DB with Submitter type "Ask reply" (same env vars as nominate.js), plus WhatsApp/email fallback buttons. Form shows only if `/api/ask-reply` GET says configured. To add Person 02: copy the `.pa-person` block, new ask ids (ASK-05...), add checkboxes. 
+- **Person 02 (Karkinos cancer-care asks, ASK-05 to 08)** is built on branch `poh-asks-02` (page shows it anonymously, reply form supports both persons) and is NOT merged: merge only after Dr. Moni approves the wording and says named or anonymous. Draft article: `features/karkinos-healthcare-article-draft.md`.
 - CSS gotcha: `story.css` already defines `.asks`/`.ask`; the Asks page uses `.pa*` classes instead.
 
 ## PoH Allies (owner wording, 3 Nov 2026)
