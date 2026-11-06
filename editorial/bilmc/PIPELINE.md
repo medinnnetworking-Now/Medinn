@@ -51,3 +51,6 @@ Compiled 2 November 2026 from (a) the series brief the owner gave, (b) the owner
 - The "US patient proxy forms" claim in the patient-education paragraph: needs a source.
 - KAVAL recidivism "13% to 5%": quoted in the electives report; cite the primary source.
 - Never name individuals, faculty or patients.
+
+
+G. Paper (logbooks and records on paper, Kerala): brief in `pipeline/paper-research-brief.md`. Attendance (F) dropped by the author on 6 Nov; bedside teaching being explored.
