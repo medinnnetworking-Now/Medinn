@@ -8,6 +8,7 @@ Tagline: "Connecting with the MVPs of healthcare and MedTech in Kerala." Owner's
 
 ## What is live (all on main)
 - **/people-of-healthcare**: `people-of-healthcare.html` (cover, ecosystem, "where it comes from", questions, five lenses, who we speak to, why it matters, take part, discovery form, contact). Share image `people-of-healthcare-og.jpg`.
+- **/people-of-healthcare now also has two sections right after the cover (4 Nov 2026)**: "Featured" (PoH | Karkinos card, links to the Moni article) and "PoH Asks" (PoH Person 01's four asks, links to /people-of-healthcare-asks). Existing sections renumbered 3 to 10. To add a new feature or Person 02, edit the `#featured` and `#asks` sections. Also fixed a broken `@media` line in that page's CSS (the mobile rules had never closed properly).
 - **Homepage** (`index.html`): hero pill "Initiative: People of Healthcare", nav item first in the list, `#poh` section, "Discover People of Healthcare" button (replaced "Explore services" in the nav, hero, phone menu and universe panel), PoH card in the Blogs section. Sections run newest first.
 - **/blogs** (`blogs/index.html`): PoH card.
 - **/people-of-healthcare-questions** (`people-of-healthcare-questions.html`, public, noindex, not in nav): fill-in page for people who replied. Name, venture, one scale number, the 7 questions. They send by WhatsApp (+91 94005 13128) or email, or copy. No server storage; answers only live in their browser until sent. Link it only in messages.

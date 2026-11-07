@@ -81,7 +81,29 @@
 .join .ph{font-size:26px;color:var(--acc2)}
 .join h3{font-size:20px;letter-spacing:-.02em;margin-top:14px}
 .join p{margin-top:8px;color:var(--mut);font-size:15px;line-height:1.5}
-@media (max-width:1023px){.qs{grid-template-columns:1fr 1fr}.lens{grid-template-columns:1fr 1fr}.who,@media (max-width:767px){.qs,.lens,.join{grid-template-columns:1fr}.cover h1{font-size:clamp(40px,11vw,52px)}.conv span.a{display:none}}
+@media (max-width:1023px){.qs{grid-template-columns:1fr 1fr}.lens{grid-template-columns:1fr 1fr}.who{grid-template-columns:1fr}.join{grid-template-columns:1fr 1fr}}
+@media (max-width:767px){.qs,.lens,.join{grid-template-columns:1fr}.cover h1{font-size:clamp(40px,11vw,52px)}.conv span.a{display:none}}
+
+.feat{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;margin-top:48px;padding:clamp(22px,3vw,34px);background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-radius:var(--r);border:1px solid rgba(190,210,255,.25)}
+.feat img{width:260px;height:260px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid var(--acc);box-shadow:0 0 70px rgba(43,114,214,.5)}
+.feat .lk{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.feat .lk .co{font-family:var(--hd);font-weight:800;font-size:clamp(26px,3vw,38px);letter-spacing:-.04em;color:#fff;line-height:1}
+.feat .lk i{width:2px;height:34px;background:var(--acc2);display:block}
+.feat .lk b{font-family:var(--hd);font-weight:600;font-size:clamp(24px,2.8vw,36px);letter-spacing:-.035em;line-height:1}
+.feat h3{font-size:clamp(24px,2.8vw,38px);letter-spacing:-.04em;line-height:1.05;margin-top:18px}
+.feat p{margin-top:14px;color:rgba(237,241,250,.85);font-size:17px;line-height:1.55;max-width:42rem}
+.feat .by{margin-top:10px;font-size:15px;color:rgba(237,241,250,.7)}
+.pasks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:48px}
+.pasks .card{padding:22px 20px 24px}
+.pasks .n{font-family:var(--hd);font-weight:800;font-size:38px;letter-spacing:-.05em;color:var(--acc);line-height:1}
+.pasks h3{font-size:19px;letter-spacing:-.02em;line-height:1.15;margin-top:12px}
+.pasks p{margin-top:8px;color:var(--mut);font-size:14.5px;line-height:1.5}
+.pasks .card.f{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-color:transparent}.pasks .card.f .n{color:#fff}.pasks .card.f p{color:rgba(237,241,250,.85)}
+.pasks .cd{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:#fff;color:#05070D;padding:2px 9px;border-radius:999px;width:max-content;margin-bottom:8px}
+.silrow{display:flex;align-items:center;gap:14px;margin-top:44px}.silrow .dot{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#9DB8FF,#1C3B9A);box-shadow:0 0 40px rgba(110,149,255,.55);flex:0 0 46px}
+.silrow span{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc2)}
+@media (max-width:1023px){.pasks{grid-template-columns:1fr 1fr}}
+@media (max-width:767px){.feat{grid-template-columns:1fr}.feat img{width:160px;height:160px}.pasks{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-story>
@@ -99,13 +121,45 @@
   <h1 class="rv">People of Healthcare.</h1>
   <p class="sub rv" style="font-size:clamp(22px,2.4vw,32px);color:var(--tx);max-width:17em;line-height:1.25;font-family:var(--hd);font-weight:500;letter-spacing:-.02em">Connecting with the MVPs of healthcare and MedTech in Kerala.</p>
   <p class="sub rv" style="margin-top:14px">Connecting with 50 founders, leaders and builders already shaping Kerala&rsquo;s healthcare ecosystem, to understand what they are building and how we can make healthcare better here.</p>
-  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" id="nomlink" href="#join">Nominate someone</a></div>
+  <div class="acts rv"><a class="btn" href="#questions"><i class="ph ph-arrow-right" aria-hidden="true"></i> The questions we are asking</a><a class="btn ghost" id="nomlink" href="#join">Nominate someone</a><a class="btn ghost" href="#featured">Latest feature</a></div>
+ </div>
+</section>
+
+<section class="ch" id="featured">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="1">Featured</p><h2 class="rv">The first People of Healthcare feature.</h2>
+   <p class="lede rv">A conversation with Dr. Moni Abraham Kuriakose on bringing cancer care closer to the community.</p></div>
+  <div class="feat rv">
+   <img src="moni-abraham-kuriakose.jpg" alt="Dr. Moni Abraham Kuriakose, Medical Director, Karkinos Healthcare" loading="lazy">
+   <div>
+    <div class="lk"><span class="co">PoH</span><i aria-hidden="true"></i><b>Karkinos</b></div>
+    <h3>How do we deliver comprehensive cancer care to the people of Kerala?</h3>
+    <p>Karkinos Healthcare is building distributed cancer care, taking care out of the four walls of the hospital and into the community clinic, with follow-up that is easy enough for patients to actually come back. Dr. Kuriakose on the bottleneck, the bridges that need to be built, and the vision of a comprehensive cancer centre at the heart of a network of community clinics.</p>
+    <p class="by">Dr. Moni Abraham Kuriakose, Medical Director, Karkinos Healthcare</p>
+    <div class="acts" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px"><a class="btn" style="background:#fff;color:#05070D" href="/poh-moni-abraham-kuriakose"><i class="ph ph-arrow-right" aria-hidden="true"></i> Read the feature</a><a class="btn ghost" href="/people-of-healthcare-mvp">Share your own story</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="ch alt" id="asks">
+ <div class="wrap">
+  <div class="ch-h"><p class="k" data-n="2">PoH Asks</p><h2 class="rv">People of Healthcare have reached out. Can you solve these asks?</h2>
+   <p class="lede rv">From our first submissions, a team of engineers has posted certain asks, shared without names. PoH Allies who can help reply privately, and Medinn makes an introduction only when both sides agree.</p></div>
+  <div class="silrow rv"><i class="dot" aria-hidden="true"></i><span>PoH Person 01 &middot; identity withheld</span></div>
+  <div class="pasks" style="margin-top:22px">
+   <div class="card rv"><div class="n">1</div><h3>Hospitals to host structured usability sessions</h3><p>Biomedical engineers and nurses giving structured feedback, with no real patients until permissions are confirmed.</p></div>
+   <div class="card f rv"><div class="n">2</div><span class="cd">Featured ask</span><h3>A regulatory consultant for the CDSCO licensing route</h3><p>Medical-device experience, to confirm the classification and route before the design is frozen.</p></div>
+   <div class="card rv"><div class="n">3</div><h3>Introductions to CDSCO-licensed manufacturers</h3><p>For an honest technical review and a straight talk on what a partnership would need.</p></div>
+   <div class="card rv"><div class="n">4</div><h3>MedTech leaders to open the right doors</h3><p>Founders and former procurement heads who know what really decides a purchase.</p></div>
+  </div>
+  <div class="acts rv" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:36px"><a class="btn" href="/people-of-healthcare-asks"><i class="ph ph-arrow-right" aria-hidden="true"></i> Answer these asks</a><a class="btn ghost" href="#join">Have the same asks? Join the campaign</a></div>
  </div>
 </section>
 
 <section class="ch" id="ecosystem">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="1">The ecosystem</p><h2 class="rv">Healthcare is much bigger than hospitals.</h2>
+  <div class="ch-h"><p class="k" data-n="3">The ecosystem</p><h2 class="rv">Healthcare is much bigger than hospitals.</h2>
    <p class="lede rv">Kerala&rsquo;s healthcare ecosystem is diverse, and each participant contributes a different capability. But these worlds are often explored independently. Clinicians are frequently seen only as end users, when they can also be collaborators, product developers, researchers, advisors and builders.</p></div>
   <div class="chips rv" aria-label="Participants in Kerala's healthcare ecosystem">
    <span>Hospital groups</span><span>Medical device manufacturers</span><span>Diagnostics companies</span><span>Healthcare entrepreneurs</span><span>Biotechnology ventures</span><span>Technology developers</span><span>Clinicians building services</span><span>Distributors</span><span>Researchers</span><span>Investors</span><span>Institutional leaders</span><span class="hl">Clinicians</span>
@@ -115,7 +169,7 @@
 
 <section class="ch alt" id="roots">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="2">Where it comes from</p><h2 class="rv">The conversations have already begun.</h2>
+  <div class="ch-h"><p class="k" data-n="4">Where it comes from</p><h2 class="rv">The conversations have already begun.</h2>
    <p class="lede rv">People of Healthcare grows out of connecting and learning from the people building healthcare, on stage, in sessions and one to one.</p></div>
   <div class="roots">
    <div class="card rv"><img src="medinn-insights-session.jpg" alt="Mr. John Kuriakose, founder of Dentcare Dental Lab, in a Medinn Insights online session" loading="lazy"><div class="c"><span class="status">Medinn Insights</span><h3>A session with Mr. John Kuriakose, founder of Dentcare Dental Lab</h3><p>&ldquo;His journey highlighted the transformative power of resilience, vision, and ethical entrepreneurship.&rdquo; Moderated by Dr. Sidharth Narayanan.</p></div></div>
@@ -126,7 +180,7 @@
 
 <section class="ch" id="questions">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="3">The questions</p><h2 class="rv">How well do we actually understand this ecosystem?</h2></div>
+  <div class="ch-h"><p class="k" data-n="5">The questions</p><h2 class="rv">How well do we actually understand this ecosystem?</h2></div>
   <div class="qs">
    <div class="card rv"><span class="n">01</span><p>Who is manufacturing medical devices in Kerala?</p></div>
    <div class="card rv"><span class="n">02</span><p>Which companies are developing healthcare technologies?</p></div>
@@ -140,7 +194,7 @@
 
 <section class="ch alt" id="lenses">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="4">50 conversations, five lenses</p><h2 class="rv">More than founder profiles.</h2>
+  <div class="ch-h"><p class="k" data-n="6">50 conversations, five lenses</p><h2 class="rv">More than founder profiles.</h2>
    <p class="lede rv">Each conversation is a profile of one person. Together, the 50 are meant to build an understanding of the whole ecosystem: its people, capabilities, limitations, opportunities and potential.</p></div>
   <div class="lens">
    <div class="card rv"><span class="n">01</span><h3>People</h3><p>Who is shaping healthcare in Kerala, and what have they built?</p></div>
@@ -154,7 +208,7 @@
 
 <section class="ch" id="who">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="5">Who we will speak to</p><h2 class="rv">Not only MedTech founders.</h2></div>
+  <div class="ch-h"><p class="k" data-n="7">Who we will speak to</p><h2 class="rv">Not only MedTech founders.</h2></div>
   <div class="who">
    <ul class="rv">
     <li><span>Entrepreneurs and CEOs</span></li>
@@ -172,7 +226,7 @@
 
 <section class="ch alt" id="together">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="6">Why it matters</p><h2 class="rv">From knowledge to opportunity.</h2>
+  <div class="ch-h"><p class="k" data-n="8">Why it matters</p><h2 class="rv">From knowledge to opportunity.</h2>
    <p class="lede rv">Knowing who is building what is the first step. When knowledge about an ecosystem becomes accessible, its people can find one another: a medical student can discover a manufacturer, a founder can reach clinical insight, and a hospital can meet the people working on its problems.</p></div>
   <div class="conv rv" aria-label="Observation, knowledge, awareness, connection, collaboration, opportunity">
    <span class="s">Observation</span><span class="a">&rarr;</span><span class="s">Knowledge</span><span class="a">&rarr;</span><span class="s">Awareness</span><span class="a">&rarr;</span><span class="s">Connection</span><span class="a">&rarr;</span><span class="s">Collaboration</span><span class="a">&rarr;</span><span class="s">Opportunity</span>
@@ -183,7 +237,7 @@
 
 <section class="ch" id="join">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="7">Take part</p><h2 class="rv">Know someone who should be among the 50?</h2>
+  <div class="ch-h"><p class="k" data-n="9">Take part</p><h2 class="rv">Know someone who should be among the 50?</h2>
    <p class="lede rv">Healthcare becomes stronger when the people who understand its problems are connected to the people who have the capabilities to solve them.</p></div>
   <div class="join">
    <div class="card rv"><i class="ph ph-sparkle" aria-hidden="true"></i><h3>Nominate someone</h3><p>A founder, leader, manufacturer or clinician-builder in Kerala&rsquo;s healthcare ecosystem whose work deserves to be understood.</p></div>
@@ -197,7 +251,7 @@
 
 <section class="ch alt" id="form" style="display:none">
  <div class="wrap">
-  <div class="ch-h"><p class="k" data-n="8">Discovery form</p><h2 class="rv">Tell us who we should connect with.</h2>
+  <div class="ch-h"><p class="k" data-n="10">Discovery form</p><h2 class="rv">Tell us who we should connect with.</h2>
    <p class="lede rv">Nominate someone, or introduce yourself. It takes two minutes, and every entry is read by Dr. Sidharth Narayanan.</p></div>
   <form class="fm rv" id="pohform" novalidate>
    <div class="seg" role="radiogroup" aria-label="Who is this about?">
