@@ -41,6 +41,6 @@ Medical learning is recorded on paper nobody can search, analyse or learn from. 
 5. (question) How many pages of paper did your MBBS ask you to sign?
 
 ## Cautions
-- Name no college, faculty or department.
+- Author's decision (7 Nov): name the college as is, Calicut Medical College (Government Medical College, Kozhikode). Still name no faculty, department or individual. Write it as the author's own experience ("at Calicut Medical College, my logbooks are on paper"), not as a claim about every record the college holds; the author should be able to point to the actual logbooks if asked.
 - Keep carbon honest; do not oversell.
 - Aim critique at the format and habit, not at logbooks as a principle.
