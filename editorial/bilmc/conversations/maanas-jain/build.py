@@ -1,65 +1,75 @@
-# Builds slides.html for the Maanas Jain / Quintubate conversation (BILMC x PoH). Run: python3 build.py && NODE_PATH=$(npm root -g) node render.js
-A='../../../assets/quintubate/'
-def run(tag,label,color=''): return f'<div class="run" style="{color}"><span>Before I Leave Medical College · A conversation</span><span class="tag {tag}">{label}</span></div>'
-def foot(color=''): return f'<div class="foot" style="{color}"><div><b>Dr. Sidharth Narayanan</b> <span>· House Surgeon, GMC Kozhikode</span></div><div class="n">@@N@@</div></div>'
+# v3: Article 002 carousel. Slides 1-2 in the Ledger series look, 3-12 in the PoH (Medinn dark blue) look.
+A='../../../assets/quintubate/'; P='../../../assets/'
+def run(label,dark=False,tag='insight'):
+    c='color:#EDF1FA' if dark else ''
+    return f'<div class="run" style="{c}"><span>{"People of Healthcare" if dark else "Before I Leave Medical College · 002"}</span><span class="tag {tag}" style="{c}">{label}</span></div>'
+def foot(dark=False):
+    c='color:#EDF1FA' if dark else ''
+    return f'<div class="foot" style="{c}"><div><b>Dr. Sidharth Narayanan</b> <span>· House Surgeon, GMC Kozhikode</span></div><div class="n">@@N@@</div></div>'
+def poh(i,label,inner,tag='insight'):
+    return f'''<section class="slide poh" id="s{i:02d}">{run(label,True,tag)}<div class="glow"></div><div style="position:relative;display:flex;flex-direction:column;flex:1">{inner}</div>{foot(True)}</section>'''
+def quote(q,a,size=42):
+    return f'<p class="pq">{q}</p><div class="pa" style="font-size:{size}px">{a}</div>'
 S=[]
-S.append(f'''<section class="slide" id="s01">{run("insight","Conversation 01")}
-<img src="{A}uveal-cover.jpg" style="position:absolute;left:0;top:130px;width:1080px">
-<div style="position:absolute;left:88px;right:88px;top:790px"><p class="lab" style="color:var(--grey);margin-bottom:16px">On medical education, from a house surgeon’s lens</p><h1 class="h" style="font-size:92px">A conversation with Dr. Maanas Jain.</h1><p class="sub" style="font-size:38px;margin-top:20px">The story of Quintubate.</p></div>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s02">{run("insight","The premise")}
-<h2 class="h" style="font-size:88px;margin-top:6px">MBBS is the foundation of every doctor’s career. Right now, it feels <span class="r">undervalued.</span></h2>
+# 1 COVER (series look): hook + both photos
+S.append(f'''<section class="slide" id="s01">{run("Article 002")}
+<h1 class="h" style="font-size:90px;margin-top:4px">Before I leave medical college, I want to tell you about <span class="r">Quintubate.</span></h1>
+<p class="sub" style="font-size:38px;margin-top:22px;margin-bottom:36px;font-weight:500">A video-laryngoscope costs lakhs. A doctor’s idea brings it to thousands.</p>
+<div style="margin-top:auto;margin-bottom:104px;display:flex;gap:36px;align-items:flex-end">
+ <div style="flex:1"><img src="{P}author-portrait.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border:4px solid var(--black);display:block"><p class="lab" style="margin-top:12px;font-size:20px"><b>Dr. Sidharth Narayanan</b><br><span style="color:var(--grey)">House Surgeon, GMC Kozhikode</span></p></div>
+ <div style="flex:1"><img src="{A}maanas-portrait.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:4px solid var(--blue);display:block"><p class="lab" style="margin-top:12px;font-size:20px"><b>Dr. Maanas Jain</b><br><span style="color:var(--blue)">Founder and CTO, Quintubate</span></p></div></div>{foot()}</section>''')
+# 2 PREMISE
+S.append(f'''<section class="slide" id="s02">{run("The premise")}
+<h2 class="h" style="font-size:92px;margin-top:6px">MBBS is the foundation of every doctor’s career. Right now, it feels <span class="r">undervalued.</span></h2>
 <p class="sub">This series is about bringing that value back, and about what the foundation can lead to.</p>
-<p class="sub" style="margin-top:40px;font-weight:600">This one sits between the series and People of Healthcare: a doctor who set out to build.</p>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s03">{run("insight","Meet")}
-<h2 class="h" style="margin-top:6px;font-size:110px">Dr. Maanas Jain</h2>
-<div style="margin-top:44px;display:grid;gap:0;font-family:var(--serif);font-size:48px;line-height:1.15;font-weight:600">
- <div style="padding:26px 0;border-top:3px solid var(--black)">Founder and CTO, Quintubate Pvt Ltd</div>
- <div style="padding:26px 0;border-top:3px solid var(--black)">MBBS, AIIMS Jodhpur</div>
- <div style="padding:26px 0;border-top:3px solid var(--black);border-bottom:3px solid var(--black)">Internal Medicine, Rutgers University, USA</div></div>
-<p class="src" style="margin-top:20px">Sources: Dr. Jain’s Instagram profile (@quintubate); his answers to People of Healthcare.</p>
-<p class="sub" style="margin-top:auto;margin-bottom:100px;font-size:38px">Before starting residency, he set out to build Quintubate.</p>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s04">{run("critique","The gap")}
-<h2 class="h" style="margin-top:6px;font-size:84px">A laryngoscope costs ₹1,000 to 2,000. A video-laryngoscope costs <span class="r">lakhs.</span></h2>
-<div class="art"><img src="{A}price-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)">
-<p class="src">Source: figures as shown in Dr. Jain’s own video. ₹2,00,000 to ₹3,00,000 for a video-laryngoscope.</p></div>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s05">{run("evidence","The device")}
-<h2 class="h" style="margin-top:6px;font-size:96px">UVEAL: turning the laryngoscope a hospital already has into a video-laryngoscope.</h2>
-<p class="sub" style="font-size:38px">A universal video-enabling attachment that sends the view to a smartphone.</p>
-<div class="art"><p class="src" style="font-size:22px;margin-top:0">Source: quintubate.com. The company describes UVEAL as smartphone-powered, compatible with existing laryngoscopes, and starting under ₹10,000; the video-laryngoscope comparison is the company’s own. The device is described by the company as CDSCO certified.</p></div>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s06">{run("evidence","In use")}
-<h2 class="h" style="margin-top:6px;font-size:84px">A real intubation, at a government hospital.</h2>
-<div class="art"><img src="{A}real-intubation-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)">
-<p class="src">Source: Dr. Jain’s video, captioned “A real intubation with UVEAL at Civil Hospital, Gandhinagar”.</p></div>{foot()}</section>''')
-
-def qa(i,tag,kind,q,ans,color='var(--black)',size=44):
-    return f'''<section class="slide" id="q{i}">{run(kind,tag)}
-<p class="lab" style="margin-top:6px;color:var(--grey)">I asked</p>
-<h2 class="h" style="font-size:66px;margin-top:14px">{q}</h2>
-<div class="art"><p class="lab" style="color:var(--blue);margin-bottom:16px">Dr. Maanas Jain</p>
-<div style="border-left:10px solid {color};padding:6px 0 6px 36px;font-family:var(--serif);font-size:{size}px;line-height:1.22;font-weight:500">{ans}</div></div>{foot()}</section>'''
-S.append(f'''<section class="slide" id="s07">{run("question","In conversation")}
-<h2 class="h" style="margin-top:6px;font-size:88px">I asked him ten questions about building in Indian healthcare.</h2>
-<div class="art"><img src="{A}conversation-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)"><p class="cap">His answers, in his words, for People of Healthcare.</p></div>{foot()}</section>''')
-S.append(qa(1,"What he is building","insight","What are you building?","“Quintubate is an initiative focussed on democratizing access to high-tech, expensive medical devices… at a sustainable cost for Indian healthcare.”"))
-S.append(qa(2,"His flagship","evidence","What is your biggest project?","“UVEAL attaches to existing laryngoscopes and transforms them into cost-effective videolaryngoscopes… brings down the cost of videolaryngoscopy from the lakhs to the thousands. In a span of 6 months since commercialization, UVEAL is being used by 250+ doctors across India and 12 other countries.”","var(--blue)",40).replace("</div></div>{foot()}","</div><p class=\"src\">The 250+ doctors and 12 countries are Dr. Jain’s own figures.</p></div>{foot()}") if False else qa(2,"His flagship","evidence","What is your biggest project?","“UVEAL attaches to existing laryngoscopes and transforms them into cost-effective videolaryngoscopes… brings down the cost of videolaryngoscopy from the lakhs to the thousands. In a span of 6 months since commercialization, UVEAL is being used by 250+ doctors across India and 12 other countries.”","var(--blue)",40))
-S.append(qa(3,"The bottleneck","critique","What are the bottlenecks you face?","“The medical device ecosystem is largely limited to a select few companies, all based internationally, and hence healthcare in India is not supportive of made-in-India devices. Clinicians are not aware, and are skeptical of Indian medical device startups.”","var(--red)",40))
-S.append(qa(4,"The bridges","insight","What bridges need to be built?","“There needs to be an ecosystem for hospitals to learn about new licensed products developed by medical device startups as well as an incentive to adopt such indigenously designed devices. Regulators and medical colleges need to be on the lookout and supportive to push for the adoption of such devices to promote a culture of development.”","var(--black)",40))
-S.append(qa(5,"Adoption","insight","How can we increase adoption and discovery?","“Fostering dialogue between medical device startups and existing hospitals, and having the opportunity to present the work to them would greatly enhance the chances of adoption.”","var(--black)",46))
-S.append(qa(6,"The future","critique","How do you see the future of healthcare?","“The trend of medical devices is towards consolidation of all high-tech products in a select few companies, none of which are based in India. If Indian [doctors and hospitals] do not push for development and adoption of indigenous devices, medical device innovation in India will inevitably stagnate.”","var(--red)",40))
-S.append(qa(7,"The opportunity","insight","What needs to be done?","“There is a big opportunity. Since very few medical devices are actually made in India, there is a huge scope for founders to pitch in and innovate to fill that large gap.”","var(--black)",46))
-S.append(f'''<section class="slide" id="ask">{run("question","What he needs")}
-<h2 class="h" style="margin-top:6px;font-size:84px">What he needs right now.</h2>
-<div class="art" style="display:grid;gap:0;font-family:var(--serif);font-size:44px;line-height:1.15;font-weight:600">
- <div style="padding:30px 0;border-top:3px solid var(--black)">Meetings with hospitals and administrators, to explain the device and how it can be procured.</div>
- <div style="padding:30px 0;border-top:3px solid var(--black)">Access to grants for new prototype development.</div>
- <div style="padding:30px 0;border-top:3px solid var(--black);border-bottom:3px solid var(--black)">An introduction to hospital administrators and government healthcare officials.</div></div>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s11" style="background:#05070D;color:#EDF1FA">
-<div style="position:absolute;right:-280px;top:-280px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(66,110,230,.34),transparent 66%)"></div>
-{run("insight","People of Healthcare","color:#EDF1FA").replace("tag insight","tag insight\" style=\"color:#EDF1FA")}
-<h2 style="font-family:Bricolage,Helvetica,sans-serif;font-weight:800;font-size:104px;line-height:1.0;margin-top:6px;position:relative">Some doctors don’t wait. <span style="color:#6E95FF">They build.</span></h2>
-<p style="font-size:42px;line-height:1.3;margin-top:36px;max-width:860px;position:relative;font-family:Inter,sans-serif">I am connecting with 50 healthcare and MedTech leaders and builders in Kerala before 2026 ends, through People of Healthcare.</p>
-<div style="margin:auto 0 100px;background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-radius:30px;padding:34px 40px;position:relative"><p class="lab" style="opacity:.8">Know someone building in healthcare?</p><p style="font-family:var(--mono);font-size:32px;font-weight:700;margin-top:10px">medinn.in/people-of-healthcare</p></div>{foot("color:#EDF1FA")}</section>''')
+<p class="sub" style="margin-top:44px;font-weight:600">So I asked someone who built on it.</p>
+<p class="cap" style="margin-top:auto;margin-bottom:100px;font-size:24px;color:var(--black)">Next: People of Healthcare →</p>{foot()}</section>''')
+# 3 SHIFT TO PoH
+S.append(poh(3,"Meet",f'''<p class="lab" style="color:#6E95FF;margin-top:6px">People of Healthcare</p>
+<p style="font-size:38px;line-height:1.3;margin-top:18px;max-width:880px">I am connecting with 50 healthcare and MedTech leaders and builders before 2026 ends. This is one of them.</p>
+<div style="margin-top:46px;display:flex;gap:40px;align-items:center"><img src="{A}maanas-portrait.jpg" style="width:300px;height:300px;object-fit:cover;border-radius:28px;border:2px solid rgba(190,210,255,.3)">
+<div><h2 class="ph">Dr. Maanas Jain</h2><p style="font-size:30px;line-height:1.35;margin-top:14px">Founder and CTO, Quintubate Pvt. Ltd.</p></div></div>
+<div class="card" style="margin-top:44px"><p style="font-size:28px;line-height:1.4">MBBS, AIIMS Jodhpur<br>Internal Medicine, Rutgers University, USA<br>Before starting residency, he set out to build Quintubate.</p></div>
+<p class="srcd" style="margin-top:18px">Sources: Dr. Jain’s Instagram profile (@quintubate); his answers to People of Healthcare.</p>'''))
+# 4 GAP
+S.append(poh(4,"The gap",f'''<h2 class="ph" style="font-size:84px">A laryngoscope costs ₹1,000 to 2,000. A video-laryngoscope costs <span class="pb">lakhs.</span></h2>
+<div style="margin-top:auto;margin-bottom:96px"><img src="{A}price-frame.jpg" style="width:100%;border-radius:24px;border:1px solid rgba(190,210,255,.25);display:block"><p class="srcd">Source: figures as shown in Dr. Jain’s own video: ₹2,00,000 to ₹3,00,000 for a video-laryngoscope.</p></div>'''))
+# 5 UVEAL
+S.append(poh(5,"UVEAL",f'''<h2 class="ph" style="font-size:78px">UVEAL turns the laryngoscope a hospital already has into a video-laryngoscope.</h2>
+<div style="margin-top:auto;margin-bottom:96px"><img src="{A}real-intubation-frame.jpg" style="width:100%;border-radius:24px;display:block"><p class="srcd">A real intubation with UVEAL at Civil Hospital, Gandhinagar (Dr. Jain’s video). The company states the device is CDSCO certified. Dr. Jain says 250+ doctors across India and 12 other countries use UVEAL.</p></div>'''))
+# 6 Q1 Q2
+S.append(poh(6,"In his words",quote("What are you building, and what do you want the world to know?","“Quintubate is an initiative focussed on democratizing access to high-tech, expensive medical devices… at a sustainable cost for Indian healthcare.” <br><br>“UVEAL brings down the cost of videolaryngoscopy from the lakhs to the thousands. In a span of 6 months since commercialization, UVEAL is being used by 250+ doctors across India and 12 other countries.”",36),'question'))
+# 7 Q3
+S.append(poh(7,"The bottleneck",quote("What are the bottlenecks you face?","“The medical device ecosystem is largely limited to a select few companies, all based internationally, and hence healthcare in India is not supportive of made-in-India devices. Clinicians are not aware, and are skeptical of Indian medical device startups.”",44)))
+# 8 Q4 Q5
+S.append(poh(8,"The bridges",quote("What bridges need to be built, and how do we increase adoption?","“There needs to be an ecosystem for hospitals to learn about new licensed products developed by medical device startups as well as an incentive to adopt such indigenously designed devices. Regulators and medical colleges need to be on the lookout and supportive.” <br><br>“Fostering dialogue between medical device startups and existing hospitals would greatly enhance the chances of adoption.”",34)))
+# 9 Q8 Q9
+S.append(poh(9,"The future",quote("How do you see the future of healthcare, and what needs to be done?","“If Indian [doctors and hospitals] do not push for development and adoption of indigenous devices, medical device innovation in India will inevitably stagnate.” <br><br>“There is a big opportunity. Since very few medical devices are actually made in India, there is a huge scope for founders to pitch in and innovate to fill that large gap.”",36)))
+# 10 ASK
+S.append(poh(10,"What he needs",f'''<h2 class="ph" style="font-size:88px">What he needs <span class="pb">right now.</span></h2>
+<div style="margin-top:auto;margin-bottom:96px;display:grid;gap:18px">
+ <div class="card"><p style="font-size:34px;line-height:1.3">Meetings with hospitals and administrators, to explain the device and how it can be procured.</p></div>
+ <div class="card"><p style="font-size:34px;line-height:1.3">Access to grants for new prototype development.</p></div>
+ <div class="card"><p style="font-size:34px;line-height:1.3">Introductions to hospital administrators and government healthcare officials.</p></div></div>''','question'))
+# 11 MY TAKE
+S.append(poh(11,"Why this matters",f'''<h2 class="ph" style="font-size:78px">A doctor sees a problem at the bedside. What happens next depends on whether anyone makes room for the solution.</h2>
+<p style="font-size:36px;line-height:1.35;margin-top:44px;max-width:880px;opacity:.92">MBBS is where doctors learn to see what needs fixing. The next step needs hospitals willing to look, grants, and a culture that adopts what is built here.</p>
+<div style="margin-top:auto;margin-bottom:96px;display:flex;gap:26px;align-items:center"><img src="{A}conversation-frame.jpg" style="width:300px;height:170px;object-fit:cover;border-radius:18px"><p class="srcd" style="margin:0">The conversation with Dr. Jain.</p></div>'''))
+# 12 CLOSE
+S.append(poh(12,"Your turn",f'''<h2 class="ph" style="font-size:104px">Some doctors don’t wait. <span class="pb">They build.</span></h2>
+<p style="font-size:40px;line-height:1.3;margin-top:36px;max-width:860px">Do you know a hospital administrator who should meet Dr. Jain?</p>
+<div class="box" style="margin-top:auto;margin-bottom:96px"><p class="lab" style="opacity:.8">People of Healthcare</p><p style="font-family:var(--mono);font-size:32px;font-weight:700;margin-top:10px">medinn.in/people-of-healthcare</p>
+<p class="lab" style="opacity:.8;margin-top:22px">The series</p><p style="font-family:var(--mono);font-size:28px;font-weight:700;margin-top:8px">medinn.in/before-i-leave-medical-college</p></div>'''))
 body='\n'.join(S); parts=body.split('@@N@@'); total=len(parts)-1
 body=''.join(p+(f'{i+1:02d} / {total:02d}' if i<total else '') for i,p in enumerate(parts))
-open('slides.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BILMC x PoH: Maanas Jain</title><link rel="stylesheet" href="../../../system/ledger.css"><style>@font-face{font-family:Bricolage;src:url(../../../../bricolage.woff2);font-weight:200 800}</style></head><body>\n'+body+'\n</body></html>')
+css='''@font-face{font-family:Bricolage;src:url(../../../../bricolage.woff2);font-weight:200 800}
+.poh{background:#05070D;color:#EDF1FA}.poh .glow{position:absolute;right:-280px;top:-280px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(66,110,230,.34),transparent 66%)}
+.poh .run,.poh .foot{color:#EDF1FA}.poh .tag{border-color:#EDF1FA}.poh .tag.question{background:#6E95FF;color:#05070D;border-color:#6E95FF}
+.ph{font-family:Bricolage,Helvetica,sans-serif;font-weight:800;font-size:96px;line-height:1.02;letter-spacing:-.01em}.pb{color:#6E95FF}
+.pq{font-family:Bricolage,Helvetica,sans-serif;font-weight:700;font-size:56px;line-height:1.08;margin-top:4px}
+.pa{margin-top:auto;margin-bottom:96px;background:#0D1220;border:1px solid rgba(190,210,255,.2);border-left:8px solid #6E95FF;border-radius:22px;padding:34px 38px;font-family:Inter,sans-serif;line-height:1.32;font-weight:500}
+.card{background:#0D1220;border:1px solid rgba(190,210,255,.2);border-radius:24px;padding:26px 32px}
+.box{background:linear-gradient(150deg,#1C3B9A,#0F1E52);border-radius:30px;padding:30px 38px}
+.srcd{font-family:var(--mono);font-size:20px;line-height:1.45;color:#8E9AB3;margin-top:14px}'''
+open('slides.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BILMC 002 x PoH: Maanas Jain</title><link rel="stylesheet" href="../../../system/ledger.css"><style>'+css+'</style></head><body>\n'+body+'\n</body></html>')
 print(len(S),'slides')
