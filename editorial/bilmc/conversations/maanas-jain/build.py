@@ -13,11 +13,11 @@ S.append(f'''<section class="slide" id="s02">{run("insight","The premise")}
 S.append(f'''<section class="slide" id="s03">{run("insight","Meet")}
 <h2 class="h" style="margin-top:6px;font-size:110px">Dr. Maanas Jain</h2>
 <div style="margin-top:44px;display:grid;gap:0;font-family:var(--serif);font-size:48px;line-height:1.15;font-weight:600">
- <div style="padding:26px 0;border-top:3px solid var(--black)">Founder, Quintubate Pvt Ltd</div>
+ <div style="padding:26px 0;border-top:3px solid var(--black)">Founder and CTO, Quintubate Pvt Ltd</div>
  <div style="padding:26px 0;border-top:3px solid var(--black)">MBBS, AIIMS Jodhpur</div>
  <div style="padding:26px 0;border-top:3px solid var(--black);border-bottom:3px solid var(--black)">Internal Medicine, Rutgers University, USA</div></div>
-<p class="src" style="margin-top:20px">Source: Dr. Jain’s Instagram profile (@quintubate).</p>
-<p class="sub" style="margin-top:auto;margin-bottom:100px;font-size:40px">Before starting residency, he set out to build Quintubate.</p>{foot()}</section>''')
+<p class="src" style="margin-top:20px">Sources: Dr. Jain’s Instagram profile (@quintubate); his answers to People of Healthcare.</p>
+<p class="sub" style="margin-top:auto;margin-bottom:100px;font-size:38px">Before starting residency, he set out to build Quintubate.</p>{foot()}</section>''')
 S.append(f'''<section class="slide" id="s04">{run("critique","The gap")}
 <h2 class="h" style="margin-top:6px;font-size:84px">A laryngoscope costs ₹1,000 to 2,000. A video-laryngoscope costs <span class="r">lakhs.</span></h2>
 <div class="art"><img src="{A}price-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)">
@@ -30,18 +30,29 @@ S.append(f'''<section class="slide" id="s06">{run("evidence","In use")}
 <h2 class="h" style="margin-top:6px;font-size:84px">A real intubation, at a government hospital.</h2>
 <div class="art"><img src="{A}real-intubation-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)">
 <p class="src">Source: Dr. Jain’s video, captioned “A real intubation with UVEAL at Civil Hospital, Gandhinagar”.</p></div>{foot()}</section>''')
-S.append(f'''<section class="slide" id="s07">{run("question","In conversation")}
-<h2 class="h" style="margin-top:6px;font-size:88px">I asked him how a medical student starts building.</h2>
-<div class="art"><img src="{A}conversation-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)"><p class="cap">The conversation.</p></div>{foot()}</section>''')
-def qa(i,q,tag):
-    return f'''<section class="slide" id="s0{i}">{run("question",tag)}
+
+def qa(i,tag,kind,q,ans,color='var(--black)',size=44):
+    return f'''<section class="slide" id="q{i}">{run(kind,tag)}
 <p class="lab" style="margin-top:6px;color:var(--grey)">I asked</p>
-<h2 class="h" style="font-size:78px;margin-top:14px">{q}</h2>
-<div class="art"><p class="lab" style="color:var(--blue);margin-bottom:14px">Dr. Jain</p>
-<div style="border:4px dashed var(--blue);padding:44px;min-height:380px;font-family:var(--serif);font-size:40px;line-height:1.25;color:var(--blue)">[DRAFT: add his answer from your conversation, verbatim or lightly edited. Nothing is quoted until he approves.]</div></div>{foot()}</section>'''
-S.append(qa(8,'What did you see in practice that made you want to build this?','Question 1'))
-S.append(qa(9,'What stopped you, and what helped you start?','Question 2'))
-S.append(qa(10,'What would you tell a student who has a problem and no idea where to begin?','Question 3'))
+<h2 class="h" style="font-size:66px;margin-top:14px">{q}</h2>
+<div class="art"><p class="lab" style="color:var(--blue);margin-bottom:16px">Dr. Maanas Jain</p>
+<div style="border-left:10px solid {color};padding:6px 0 6px 36px;font-family:var(--serif);font-size:{size}px;line-height:1.22;font-weight:500">{ans}</div></div>{foot()}</section>'''
+S.append(f'''<section class="slide" id="s07">{run("question","In conversation")}
+<h2 class="h" style="margin-top:6px;font-size:88px">I asked him ten questions about building in Indian healthcare.</h2>
+<div class="art"><img src="{A}conversation-frame.jpg" style="width:100%;display:block;border:4px solid var(--black)"><p class="cap">His answers, in his words, for People of Healthcare.</p></div>{foot()}</section>''')
+S.append(qa(1,"What he is building","insight","What are you building?","“Quintubate is an initiative focussed on democratizing access to high-tech, expensive medical devices… at a sustainable cost for Indian healthcare.”"))
+S.append(qa(2,"His flagship","evidence","What is your biggest project?","“UVEAL attaches to existing laryngoscopes and transforms them into cost-effective videolaryngoscopes… brings down the cost of videolaryngoscopy from the lakhs to the thousands. In a span of 6 months since commercialization, UVEAL is being used by 250+ doctors across India and 12 other countries.”","var(--blue)",40).replace("</div></div>{foot()}","</div><p class=\"src\">The 250+ doctors and 12 countries are Dr. Jain’s own figures.</p></div>{foot()}") if False else qa(2,"His flagship","evidence","What is your biggest project?","“UVEAL attaches to existing laryngoscopes and transforms them into cost-effective videolaryngoscopes… brings down the cost of videolaryngoscopy from the lakhs to the thousands. In a span of 6 months since commercialization, UVEAL is being used by 250+ doctors across India and 12 other countries.”","var(--blue)",40))
+S.append(qa(3,"The bottleneck","critique","What are the bottlenecks you face?","“The medical device ecosystem is largely limited to a select few companies, all based internationally, and hence healthcare in India is not supportive of made-in-India devices. Clinicians are not aware, and are skeptical of Indian medical device startups.”","var(--red)",40))
+S.append(qa(4,"The bridges","insight","What bridges need to be built?","“There needs to be an ecosystem for hospitals to learn about new licensed products developed by medical device startups as well as an incentive to adopt such indigenously designed devices. Regulators and medical colleges need to be on the lookout and supportive to push for the adoption of such devices to promote a culture of development.”","var(--black)",40))
+S.append(qa(5,"Adoption","insight","How can we increase adoption and discovery?","“Fostering dialogue between medical device startups and existing hospitals, and having the opportunity to present the work to them would greatly enhance the chances of adoption.”","var(--black)",46))
+S.append(qa(6,"The future","critique","How do you see the future of healthcare?","“The trend of medical devices is towards consolidation of all high-tech products in a select few companies, none of which are based in India. If Indian [doctors and hospitals] do not push for development and adoption of indigenous devices, medical device innovation in India will inevitably stagnate.”","var(--red)",40))
+S.append(qa(7,"The opportunity","insight","What needs to be done?","“There is a big opportunity. Since very few medical devices are actually made in India, there is a huge scope for founders to pitch in and innovate to fill that large gap.”","var(--black)",46))
+S.append(f'''<section class="slide" id="ask">{run("question","What he needs")}
+<h2 class="h" style="margin-top:6px;font-size:84px">What he needs right now.</h2>
+<div class="art" style="display:grid;gap:0;font-family:var(--serif);font-size:44px;line-height:1.15;font-weight:600">
+ <div style="padding:30px 0;border-top:3px solid var(--black)">Meetings with hospitals and administrators, to explain the device and how it can be procured.</div>
+ <div style="padding:30px 0;border-top:3px solid var(--black)">Access to grants for new prototype development.</div>
+ <div style="padding:30px 0;border-top:3px solid var(--black);border-bottom:3px solid var(--black)">An introduction to hospital administrators and government healthcare officials.</div></div>{foot()}</section>''')
 S.append(f'''<section class="slide" id="s11" style="background:#05070D;color:#EDF1FA">
 <div style="position:absolute;right:-280px;top:-280px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(66,110,230,.34),transparent 66%)"></div>
 {run("insight","People of Healthcare","color:#EDF1FA").replace("tag insight","tag insight\" style=\"color:#EDF1FA")}
