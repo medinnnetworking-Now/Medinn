@@ -2,6 +2,16 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/before-i-leave-medical-college/some-doctors-dont-wait",
+      "destination": "/poh-maanas-jain",
+      "permanent": false
+    },
+    {
+      "source": "/bilmc/some-doctors-dont-wait",
+      "destination": "/poh-maanas-jain",
+      "permanent": false
+    },
+    {
       "source": "/bmh",
       "destination": "/medtech-malabar",
       "permanent": false

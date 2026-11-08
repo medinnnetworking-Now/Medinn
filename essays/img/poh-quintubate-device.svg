@@ -1,0 +1,15 @@
+<svg viewBox="0 0 904 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A laryngoscope with a UVEAL attachment on the blade, a cable running to a smartphone that shows the airway view">
+<g fill="none" stroke="#EDF1FA" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+ <rect x="230" y="190" width="70" height="210" rx="8" fill="#05070D"/>
+ <g stroke-width="2.5" opacity=".6"><line x1="236" y1="230" x2="294" y2="230"/><line x1="236" y1="256" x2="294" y2="256"/><line x1="236" y1="282" x2="294" y2="282"/><line x1="236" y1="308" x2="294" y2="308"/><line x1="236" y1="334" x2="294" y2="334"/></g>
+ <rect x="226" y="168" width="78" height="30" rx="5" fill="#05070D"/>
+ <path d="M300 168 L 520 168 C 590 168, 626 146, 640 96 L 616 90 C 606 126, 580 140, 520 140 L 300 140 Z" fill="#05070D"/></g>
+<g fill="#6E95FF" stroke="#6E95FF" stroke-width="3"><rect x="400" y="116" width="96" height="46" rx="6"/></g>
+<g fill="none" stroke="#6E95FF" stroke-width="5" stroke-linecap="round"><path d="M496 132 C 560 120, 600 190, 720 190 L 735 200" stroke-dasharray="1 0"/></g>
+<g fill="#05070D" stroke="#EDF1FA" stroke-width="5"><rect x="640" y="200" width="190" height="210" rx="22"/></g>
+<rect x="656" y="226" width="158" height="140" rx="8" fill="#6E95FF" opacity=".25"/>
+<circle cx="735" cy="296" r="38" fill="none" stroke="#6E95FF" stroke-width="5"/><circle cx="735" cy="296" r="14" fill="#6E95FF"/>
+<g font-family="JetBrains Mono,monospace" font-size="21" font-weight="700" fill="#EDF1FA"><text x="0" y="300">EXISTING</text><text x="0" y="326">LARYNGOSCOPE</text>
+<text x="330" y="236" fill="#6E95FF"></text><text x="380" y="70" fill="#6E95FF">UVEAL ATTACHMENT</text><text x="640" y="436">SMARTPHONE VIEW</text></g>
+<path d="M150 296 L 222 296" stroke="#EDF1FA" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+<path d="M448 78 L 448 112" stroke="#6E95FF" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/></svg>

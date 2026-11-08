@@ -54,3 +54,5 @@ Compiled 2 November 2026 from (a) the series brief the owner gave, (b) the owner
 
 
 G. Paper (logbooks and records on paper, Kerala): brief in `pipeline/paper-research-brief.md`. Attendance (F) dropped by the author on 6 Nov; bedside teaching being explored.
+
+Note 8 Nov: the Maanas Jain / Quintubate conversation is a People of Healthcare feature, not a series article (moved to editorial/poh/features/maanas-jain). The next series article is still to be chosen; the paper/logbooks draft is `editorial/bilmc/002/article-draft.md` (numbering free again).

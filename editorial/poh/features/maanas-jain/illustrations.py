@@ -42,8 +42,7 @@ def bridge(ink,acc,bg,uid='b'):
 <g stroke="{ink}" stroke-width="8"><line x1="330" y1="96" x2="330" y2="300"/><line x1="452" y1="96" x2="452" y2="300"/><line x1="574" y1="96" x2="574" y2="300"/></g>
 <g font-family="JetBrains Mono,monospace" font-weight="700" font-size="19" fill="{ink}" text-anchor="middle"><text x="330" y="336">REGULATORS</text><text x="452" y="336">MEDICAL</text><text x="452" y="360">COLLEGES</text><text x="574" y="336">GRANTS</text></g></svg>'''
 if __name__=='__main__':
-    import os
     d='/home/user/Medinn/essays/img'
-    for n,f in [('quintubate-cost',cost),('quintubate-device',device),('quintubate-bridge',bridge)]:
-        open(f'{d}/{n}.svg','w').write(f('#0B0B0B','#0A47C2','#FFFFFF',n[-4:]))
+    for n,f in [('poh-quintubate-cost',cost),('poh-quintubate-device',device),('poh-quintubate-bridge',bridge)]:
+        open(f'{d}/{n}.svg','w').write(f('#EDF1FA','#6E95FF','#05070D',n[-4:]))
     print('ok')
