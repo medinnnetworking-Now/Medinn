@@ -19,6 +19,7 @@
 <link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="geist.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dr. Sidharth Narayanan","jobTitle":"Edtech and MedTech ecosystem builder","email":"medinnnetworking@gmail.com","url":"https://www.linkedin.com/in/dr-sidharth-narayanan-7013281b8","image":"https://medinn.in/sidharth-2026.jpg","worksFor":{"@type":"Organization","name":"Medinn"},"alumniOf":"Government Medical College, Kozhikode"}</script>
+<script>try{if(/[?&]motion=on/.test(location.search))localStorage.setItem("motion","on");if(/[?&]motion=off/.test(location.search))localStorage.removeItem("motion");if(localStorage.getItem("motion")==="on")document.documentElement.classList.add("motion-on")}catch(e){}</script>
 <style>
 /* Design read: cinematic practitioner portfolio for edtech and MedTech partners. A dark "universe" language
    (the brief asks for cinematic, so the page commits to one dark theme), GSAP choreography, canvas starfield.
@@ -541,11 +542,13 @@ footer a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;col
  .srow .ic{width:46px;height:46px;font-size:21px}.srow .go{width:40px;height:40px}
 }
 @media (prefers-reduced-motion:reduce){
- .mq-in{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.mq{mask-image:none}
- .mq-in .tile[aria-hidden]{display:none}
- .halo,.comet,.face::after,.hint .ph,.viz i.o{animation:none}
- .statement .sw{opacity:1}
+ html:not(.motion-on) .mq-in{animation:none;flex-wrap:wrap;width:auto;justify-content:center}html:not(.motion-on) .mq{mask-image:none}
+ html:not(.motion-on) .mq-in .tile[aria-hidden]{display:none}
+ html:not(.motion-on) :is(.halo,.comet,.face::after,.hint .ph,.viz i.o){animation:none}
+ html:not(.motion-on) .statement .sw{opacity:1}
 }
+.motion-pill{position:fixed;left:50%;bottom:20px;translate:-50% 0;z-index:95;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--surf);border:1px solid var(--line2);color:var(--tx);font:500 14px/1 var(--bd);box-shadow:0 18px 40px -16px rgba(0,0,0,.8);cursor:pointer}
+.motion-pill b{color:var(--acc);font-weight:600}
 </style>
 <link rel="stylesheet" href="/essays/series-card.css">
 <style>
@@ -872,7 +875,16 @@ const linksHtml = ls => (ls || []).map(l => `<a class="lnk" href="${esc(l.url)}"
 const isLg = u => /logo-|mark-/.test(u || '');
 /* photos are shown whole over a blurred copy of themselves; logos sit on a light tile */
 const frame = (src, alt = '') => !src ? '' : isLg(src) ? `<img class="lg" src="${esc(src)}" alt="${esc(alt)}" loading="lazy">` : `<div class="fr" style="--bgimg:url('${esc(src)}')"><img src="${esc(src)}" alt="${esc(alt)}" loading="lazy"></div>`;
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const osReduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reduce = osReduce && !document.documentElement.classList.contains('motion-on');
+/* The page is built around motion. If the device asks for reduced motion, keep it calm but offer a one-tap way to play the full experience. */
+if (reduce) {
+  const pill = document.createElement('button');
+  pill.className = 'motion-pill'; pill.type = 'button';
+  pill.innerHTML = 'Animations are paused on this device <b>Play them</b>';
+  pill.addEventListener('click', () => { try { localStorage.setItem('motion', 'on'); } catch (e) {} location.reload(); });
+  document.body.appendChild(pill);
+}
 const hasG = typeof gsap !== 'undefined';
 if (hasG && typeof ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
 const anim = hasG && !reduce;
