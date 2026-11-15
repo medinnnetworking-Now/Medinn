@@ -6,8 +6,10 @@ e=html.escape
 NAV,ACC,RED='#20558A','#2F6FA8','#B3261E'
 SER='Before I Leave Med School · Research'
 CSS=f'''*{{box-sizing:border-box;margin:0;padding:0}}body{{background:#777}}
-.s{{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:24px;display:flex;flex-direction:column;background:#fff;color:#1d2125;font-family:Arial,Helvetica,sans-serif;padding:0 84px}}
-.hd{{display:flex;justify-content:space-between;align-items:center;padding:52px 0 18px;border-bottom:1.5px solid #cfd9e6;font-size:20px;letter-spacing:.05em;color:{NAV};font-weight:700}}.hd i{{font-style:normal;font-weight:400;color:#8896a6}}
+.s{{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:24px;display:flex;flex-direction:column;background:#fff;background-image:radial-gradient(circle at 92% 6%,rgba(47,111,168,.16),transparent 38%),linear-gradient(rgba(32,85,138,.055) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(32,85,138,.055) 1.5px,transparent 1.5px);background-size:auto,54px 54px,54px 54px;color:#1d2125;font-family:Arial,Helvetica,sans-serif;padding:0 84px}}
+.ghost{{position:absolute;right:50px;top:128px;font:700 330px/1 Arial;color:rgba(47,111,168,.05);letter-spacing:-.05em;pointer-events:none}}
+.s>*{{position:relative}}.s>.ghost{{position:absolute}}.s>.ft{{position:absolute}}
+.hd{{display:flex;justify-content:space-between;align-items:center;padding:52px 0 18px;border-bottom:2px solid {NAV};font-size:20px;letter-spacing:.05em;color:{NAV};font-weight:700}}.hd i{{font-style:normal;font-weight:400;color:#8896a6}}
 .kick{{margin-top:60px;color:{ACC};font-size:25px;letter-spacing:.06em;font-weight:700}}
 h1{{font-weight:300;font-size:88px;line-height:1.06;margin-top:26px;letter-spacing:-.02em}}h1 b,h2 b{{font-weight:700;color:{NAV}}}
 h2{{font-weight:300;font-size:78px;line-height:1.08;margin-top:24px;letter-spacing:-.015em}}
@@ -20,6 +22,14 @@ h2{{font-weight:300;font-size:78px;line-height:1.08;margin-top:24px;letter-spaci
 .steps{{margin-top:44px}}.st{{display:grid;grid-template-columns:100px 1fr;gap:18px;padding:30px 0;border-top:1.5px solid #dde5ef}}.st:last-child{{border-bottom:1.5px solid #dde5ef}}
 .st .n{{font-size:56px;font-weight:300;color:{ACC};line-height:1}}.st b{{font-size:40px;color:{NAV}}}.st span{{display:block;font-family:'Times New Roman',Times,serif;font-size:38px;margin-top:6px;color:#3a4552;line-height:1.28}}
 .note{{margin-top:30px;font-size:28px;color:{RED};font-weight:700}}.src{{margin-top:20px;font-size:20px;color:#8896a6;letter-spacing:.03em}}
+
+.big{{display:flex;align-items:flex-end;gap:26px;margin-top:30px}}.big .n{{font:700 250px/0.8 Arial;color:{NAV};letter-spacing:-.06em}}.big .t{{font-size:50px;line-height:1.08;font-weight:300;padding-bottom:14px}}.big .t b{{font-weight:700;color:{NAV}}}
+.dots{{display:flex;gap:22px;align-items:center;margin-top:34px}}.dots i{{width:58px;height:58px;border-radius:50%;display:block}}.dots .p{{background:{ACC}}}.dots .u{{border:5px dashed #D9534F;background:#fff}}.dots .g{{border:5px solid #E0A500;background:#fff}}
+.leg{{display:flex;gap:30px;font-size:24px;margin-top:16px;color:#3a4552}}.leg b{{color:{NAV}}}
+.hookline{{font-family:'Times New Roman',Times,serif;font-size:44px;line-height:1.25;margin-top:26px;color:#2b3440}}
+.path{{position:relative;margin-top:36px}}.path:before{{content:'';position:absolute;left:34px;top:30px;bottom:30px;border-left:4px dotted #b9c9dc}}
+.pn{{display:grid;grid-template-columns:70px 1fr;gap:26px;align-items:center;padding:25px 0;position:relative}}.pn .c{{width:70px;height:70px;border-radius:50%;background:#fff;border:3px solid {ACC};color:{NAV};font:700 24px/64px Arial;text-align:center}}.pn.on .c{{background:{NAV};color:#fff;border-color:{NAV}}}
+.pn b{{font-size:40px;color:{NAV};display:block}}.pn span{{font-family:'Times New Roman',Times,serif;font-size:34px;color:#3a4552;display:block;line-height:1.22}}.pn em{{font-style:normal;font-size:20px;font-weight:700;color:{RED};letter-spacing:.05em;margin-left:12px}}
 table{{border-collapse:collapse;margin-top:34px;width:100%;font-size:22px}}th{{text-align:left;padding:12px 10px;font-size:18px;letter-spacing:.05em;color:{NAV};background:#eef4fa;border-bottom:2px solid #cfd9e6}}td{{padding:14px 10px;border-bottom:1.5px solid #e3eaf2;vertical-align:top}}tr.hl td{{background:#FFF7D1}}
 .chip{{font-weight:700;font-size:16px;padding:4px 12px;border-radius:999px;white-space:nowrap}}.ok{{background:#e1eefa;color:#1f5a8a}}.bad{{background:#fde5e2;color:#9c241b}}.mid{{background:#fff0c4;color:#7a5200}}'''
 def hd(art,i,n): return f'<div class="hd"><span>{SER.upper()}</span><i>{art["id"]} · {i}/{n}</i></div>'
@@ -65,12 +75,18 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='How Do Yo
  ('THE MISTAKE',H2('We spread <b>ourselves too thin.</b>')+P('Too much data. Far too much data. Unsegmented, without the tools or the team to understand it, structure it properly or even publish it.')),
  ('THE OUTCOME',H2('An award, and <b>no paper.</b>')+P('We presented a report at national forums and undergraduate conferences. The project earned me the KUHS UG Research Award.')+table('1')+'<div class="note" style="font-size:26px">I was never able to publish it.</div>'),
  ('DO IT BETTER',H2('If I did it again:')+steps([('One question','Not every risk factor at once.'),('Fewer variables','Only what you will analyse.'),('Analysis plan first','Empty tables before data.'),('A mentor who has published','Before you collect, not after.')])+'<div class="note">Next: R03. How to do research on real patients.</div>')])
+HOOK1="""<div class="kick">UNDERGRADUATE RESEARCH · A DATA STORY</div><div class="big"><div class="n">6</div><div class="t">research projects<br>in <b>medical college.</b></div></div>
+<div class="dots"><i class="p"></i><i class="p"></i><i class="p"></i><i class="u"></i><i class="u"></i><i class="g"></i></div><div class="leg"><span><b>3</b> published</span><span><b style="color:#B3261E">2</b> never were</span><span><b style="color:#9a6b00">1</b> in progress</span></div>
+<div class="hookline">Here is every one of them, and what each taught me about doing research.</div>"""+table('1').replace('<table>','<table style="margin-top:26px;font-size:20px">')
+JOURNEY=H2('Step by step. <b>Seven articles.</b>')+'<div class="p" style="font-size:38px;margin-top:20px">Why I got into research, every project so far, and what you could learn from me.</div><div class="path">'+''.join(f'<div class="pn {"on" if i==0 else ""}"><div class="c">R0{i+1}</div><div><b>{a}{"<em>YOU ARE HERE</em>" if i==0 else ""}</b><span>{b}</span></div></div>' for i,(a,b) in enumerate([('Why I got into research','Choose a question you will still care about'),('The NCD project','Run a cross-sectional study'),('The electives','Research on real patients'),('From research to innovation','When finding the problem is not enough'),('Case reports and meta-analysis','Other formats, and getting them published'),('Bio-entrepreneurship','Where research can lead'),('The undergraduate guide','What I wish I had known')]))+'</div>'
+R01['slides']=[('HOOK',HOOK1),('THE JOURNEY',JOURNEY)]+R01['slides']
 def carousel(art):
     n=len(art['slides']);out=''
     for i,(kick,inner) in enumerate(art['slides'],1):
         if inner is None:
             inner=f'<h1>{art["title_html"]}</h1><div class="sub">{e(art["sub"])}</div><div class="au">Sidharth Narayanan, MBBS <span class="id">iD</span></div><div class="pills"><span class="f">Cite</span><span>Save</span><span>Share</span><span>Swipe →</span></div>'
-        out+=f'<section class="s" id="s{i}">{hd(art,i,n)}<div class="kick">{kick}</div>{inner}{ft(i,n)}</section>'
+        kk='' if kick in ('HOOK',) else f'<div class="kick">{kick}</div>'
+        out+=f'<section class="s" id="s{i}">'+('' if kick=="HOOK" else f'<div class="ghost">{i:02d}</div>')+f'{hd(art,i,n)}{kk}{inner}{ft(i,n)}</section>'
     return f'<!doctype html><meta charset="utf-8"><style>{CSS}</style>{out}'
 R01['title_html']='How do you choose a <b>research question</b> you will still care about in a year?'
 R02['title_html']='How do you run a <b>cross-sectional study</b> on NCD risk factors?'
