@@ -31,3 +31,13 @@ table{border-collapse:collapse;width:100%;margin-top:10px;font-size:13.5px}th{te
 .body ol li:nth-child(1) b{color:#2F6FA8}.body ol li:nth-child(2) b{color:#1A9A8F}.body ol li:nth-child(3) b{color:#D2603F}.body ol li:nth-child(4) b{color:#B98900}.body ol li:nth-child(5) b{color:#7B5CC4}
 .body em{border-radius:4px;padding:0 3px;background:linear-gradient(transparent 58%,#FFEA8A 58%)}
 .fig .card{background:#fff;border:2px solid #d3e1f0;border-radius:22px;overflow:hidden;box-shadow:0 5px 0 rgba(47,111,168,.08);margin-top:10px}.fig table{margin-top:0}.fig th{background:#20558A;color:#fff;border-bottom:0}
+
+/* v6: classic journal, marker highlights */
+body{background:#fff!important;background-image:none!important}.ruler{display:none}
+.bar{font-family:'JetBrains Mono','Courier New',monospace;font-weight:400;border-bottom:3px double #20558A}
+.kick{font-family:'JetBrains Mono','Courier New',monospace;color:#B3261E;font-weight:500}
+h1,.body h2{font-family:'Bricolage Grotesque',Arial,sans-serif;font-weight:800;letter-spacing:-.03em;color:#111}h1 b,.body h2 b{font-weight:800;color:inherit;background:linear-gradient(transparent 22%,#FFE14D 22%,#FFE14D 92%,transparent 92%);padding:0 .1em}
+.body em{background:linear-gradient(transparent 20%,#FFE14D 20%,#FFE14D 90%,transparent 90%);padding:0 .12em}
+.body li{border-radius:0;box-shadow:none;border:0;border-bottom:1px solid #aaa;background:transparent;padding:12px 0}.body ol,.body ul{gap:0}
+.brief{border-radius:0;box-shadow:none;border:0;border-top:3px solid #111;border-bottom:1px solid #111;background:transparent}
+.fig .card{border-radius:0;box-shadow:none;border:0;border-top:3px solid #111;border-bottom:3px solid #111}.fig th{background:transparent;color:#111;border-bottom:1.5px solid #111}
