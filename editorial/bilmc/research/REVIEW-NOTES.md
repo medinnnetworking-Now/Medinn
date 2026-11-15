@@ -19,3 +19,7 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 ## v5 (16 Nov 2026)
 - Ledger row 8 added: Peer review of "Artificial Intelligence in Healthcare: 2023 Year in Review (Preprint)", JMIRx Med, 19 Sep 2024, DOI 10.2196/65151. LinkedIn entry says "the result of a virtual collaborative live review discussion organized and..." (truncated; author to supply the rest). Author calls it "an amusing start to getting my name on something that's published", his first published credit. Hook now reads "8 research projects so far": 4 published, 2 never, 2 in progress.
 - Candidate for R05 (other forms of research) and a light line in R01.
+
+## 16 Nov decisions
+- Depression and medication sentence: restored as dictated. NCD (not LCD) confirmed. Names Dr. Asma Rahim, Dr. Ashik Refeek, Dr. Sanudev confirmed. Award wording confirmed. Case-report consent advice confirmed.
+- R01 pushed to main (noindex kept). R02 still in progress on branch research-series.

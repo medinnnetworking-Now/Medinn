@@ -1,5 +1,5 @@
 # Source text for R01 and R02, taken from the author's dictated manuscript (13 Nov 2026) with minimal transcription fixes.
-# FLAGS: [F1] depression/medication sentence removed pending author's decision; [F2] "first recipient ... Quest Future Research Award" replaced by "KUHS UG Research Award" (author's correction; "first recipient" unconfirmed).
+# FLAGS: [F1] depression/medication sentence RESTORED as dictated (author, 16 Nov 2026); [F2] "first recipient ... Quest Future Research Award" replaced by "KUHS UG Research Award" (author's correction; "first recipient" unconfirmed).
 SER='Before I Leave Med School · Research'
 ROWS=[('1','WHO STEPS 1 & 2 risk-factor survey (NCD)','KUHS UG Research Award; presented at national forums and UG conferences','NOT PUBLISHED','bad'),
 ('2','Nutritional assessment of cancer patients','Indian J Med Paediatr Oncol, Mar 2026 (2nd author)','PUBLISHED','ok'),
@@ -71,7 +71,7 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='The First
  'I took this very project to my Medical Oncology professor, Dr. Sanudev. He told me we could do it, and then I let go of that project for a while.',
  ('h','The NCD project'),
  'It was third year. The academic pressure was getting to me. The conventional academic pressure. And I was never always just studying. I was always doing a couple of things at the same time, getting into politics, literature and everything that consumed me whole.',
- 'Nearing third year, due to several setbacks, it was a difficult stretch. But yet, I saw an opportunity manifest before my eyes.',
+ 'Nearing third year, due to several setbacks, I was in a bout of depression, on medication and so forth. But yet, I saw an opportunity manifest before my eyes.',
  'It was an initiative by the then College Union to run a health camp.',
  'A lot of things came back to me, and I started thinking: a lot of data would come in, a lot of tests would be done. Why waste it if we could assess the health metrics and risk factors of all the students on campus?',
  'And that was how we drafted a protocol based on the WHO STEPS 1 and 2 programme, where we assess the risk factors for NCDs.',
