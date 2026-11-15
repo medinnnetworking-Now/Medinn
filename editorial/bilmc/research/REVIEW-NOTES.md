@@ -15,3 +15,7 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - Not in the ledger (author said he never got to them for lack of time): nutrition in ERAS (enhanced recovery after surgery), and one more in the pipeline that is now closed. Titles and number of these ideas to confirm.
 - R01 now asks "How do you actually get into research?" with the answer "You see a problem. Then you go after it." and adds the author's real reason: he loved reading, building on it and building a narrative; later markets, domains and market research.
 - "LCD project" in the author's message is assumed to mean the NCD project; to confirm.
+
+## v5 (16 Nov 2026)
+- Ledger row 8 added: Peer review of "Artificial Intelligence in Healthcare: 2023 Year in Review (Preprint)", JMIRx Med, 19 Sep 2024, DOI 10.2196/65151. LinkedIn entry says "the result of a virtual collaborative live review discussion organized and..." (truncated; author to supply the rest). Author calls it "an amusing start to getting my name on something that's published", his first published credit. Hook now reads "8 research projects so far": 4 published, 2 never, 2 in progress.
+- Candidate for R05 (other forms of research) and a light line in R01.

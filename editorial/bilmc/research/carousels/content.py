@@ -7,7 +7,8 @@ ROWS=[('1','WHO STEPS 1 & 2 risk-factor survey (NCD)','KUHS UG Research Award; p
 ('4','Juvenile justice and recidivism (elective)','Report and forums; not pushed for publication','NOT PUBLISHED','bad'),
 ('5','Obesity-driven cardiac mortality, US adults 15 to 44','JAHA, Oct 2026 (4th author)','PUBLISHED','ok'),
 ('6','Retrosternal goitre case series','Ongoing','IN PROGRESS','mid'),
-('7','AI-enabled dataset creation','Working on it now','IN PROGRESS','mid')]
+('7','AI-enabled dataset creation','Working on it now','IN PROGRESS','mid'),
+('8','Peer review: AI in Healthcare, 2023 Year in Review (preprint)','JMIRx Med, Sep 2024 (collaborative live review); my first published credit','PUBLISHED','ok')]
 R01=dict(id='R01',slug='how-i-got-into-research',title='I Want to Tell You How I Got Into Research',
  hook='Most people do undergraduate research for a portfolio. I did it for a different reason.',
  abstract=[('BACKGROUND','A lot of people get into undergraduate research for the sole purpose of building a portfolio. But I saw it from a different perspective.'),
