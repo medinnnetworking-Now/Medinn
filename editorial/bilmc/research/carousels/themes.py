@@ -43,7 +43,7 @@ table{border-collapse:collapse;width:100%;font:400 18px Arial;margin-top:18px;bo
 .pills{margin-top:auto;margin-bottom:96px;display:flex;gap:14px}.pills span{font:700 22px Arial;border:1.5px solid #20558A;color:#20558A;padding:10px 24px}.pills .f{background:#20558A;color:#fff}
 .ft{position:absolute;left:96px;right:96px;bottom:36px;display:flex;justify-content:space-between;font:400 18px Arial;color:#666;border-top:1px solid #999;padding-top:12px}'''
 def hd_q(art,i,n): return f'<div class="hud"><span>PLAYER 1 · DR. SIDHARTH</span><span>{art["id"]} · {i}/{n}</span></div>'
-def hd_j(art,i,n): return f'<div class="hd"><span>{SER.upper()}</span><i>{art["id"]} · {i}/{n}</i></div>'
+def hd_j(art,i,n): return f'<div class="hd"><span>{SER.upper()}</span><i>PART {art["id"][-1]} · {i}/{n}</i></div>'
 def ft(i,n): return f'<div class="ft"><span>Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode</span><span>{i:02d} / {n:02d}</span></div>'
 def hook_quest():
     lab={'ok':'CLEARED','bad':'NO PAPER','mid':'LOADING...'}
