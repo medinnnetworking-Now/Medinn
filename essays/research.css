@@ -1,6 +1,6 @@
 /* Before I Leave Med School · Research: journal-article look, palette 2 (PubMed blue), soft version. */
 :root{--nav:#20558A;--acc:#2F6FA8;--red:#B3261E;--hl:#FFF7D1;--ink:#1d2125;--grey:#7a8798;--line:#dde5ef}
-*{box-sizing:border-box;margin:0;padding:0}body{background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#fdfefe;background-image:repeating-linear-gradient(transparent 0 31px,rgba(47,111,168,.12) 31px 33px);background-attachment:local;color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
 .bar{padding:16px 20px;display:flex;justify-content:space-between;font-size:12.5px;letter-spacing:.05em;font-weight:700;text-transform:uppercase;color:var(--nav);border-bottom:1.5px solid #cfd9e6;max-width:720px;margin:0 auto}.bar a{color:var(--nav);text-decoration:none}.bar i{font-style:normal;font-weight:400;color:var(--grey)}
 .wrap{max-width:720px;margin:0 auto;padding:0 20px 80px}
 .kick{color:var(--acc);font-size:13px;letter-spacing:.06em;font-weight:700;margin-top:36px}
@@ -23,3 +23,11 @@ table{border-collapse:collapse;width:100%;margin-top:10px;font-size:13.5px}th{te
 .refs{margin-top:40px;font-size:14px}.refs h3{font-size:12.5px;letter-spacing:.06em;color:var(--acc)}.refs li{margin:8px 0 0 18px;line-height:1.5}.refs a{color:var(--acc)}
 .nav{margin-top:44px;display:flex;justify-content:space-between;gap:12px;font-size:14px}.nav a{color:var(--nav);font-weight:700;text-decoration:none;border:1.5px solid #b9c9dc;padding:10px 18px;border-radius:999px}
 .foot{margin-top:50px;font-size:13px;color:var(--grey);border-top:1.5px solid var(--line);padding-top:12px}.foot a{color:var(--nav)}
+
+.ruler{max-width:720px;margin:0 auto;height:18px;background:repeating-linear-gradient(90deg,#7f98b3 0 1.5px,transparent 1.5px 11px) bottom/100% 6px no-repeat,repeating-linear-gradient(90deg,#4d6d8f 0 1.5px,transparent 1.5px 44px) bottom/100% 11px no-repeat}
+.wrap{background:linear-gradient(90deg,transparent 0,transparent 0)}
+.pills a,.pills button{border-radius:999px}.brief{background:#fff;border:2px solid #d3e1f0;border-radius:22px;padding:18px 22px;box-shadow:0 5px 0 rgba(47,111,168,.08)}
+.body ol,.body ul{border-top:0;display:grid;gap:12px}.body li{background:#fff;border:2px solid #d8e4f1;border-radius:20px;padding:14px 18px;box-shadow:0 4px 0 rgba(47,111,168,.07)}
+.body ol li:nth-child(1) b{color:#2F6FA8}.body ol li:nth-child(2) b{color:#1A9A8F}.body ol li:nth-child(3) b{color:#D2603F}.body ol li:nth-child(4) b{color:#B98900}.body ol li:nth-child(5) b{color:#7B5CC4}
+.body em{border-radius:4px;padding:0 3px;background:linear-gradient(transparent 58%,#FFEA8A 58%)}
+.fig .card{background:#fff;border:2px solid #d3e1f0;border-radius:22px;overflow:hidden;box-shadow:0 5px 0 rgba(47,111,168,.08);margin-top:10px}.fig table{margin-top:0}.fig th{background:#20558A;color:#fff;border-bottom:0}

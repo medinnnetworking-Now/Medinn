@@ -1,12 +1,13 @@
 # Source text for R01 and R02, taken from the author's dictated manuscript (13 Nov 2026) with minimal transcription fixes.
 # FLAGS: [F1] depression/medication sentence removed pending author's decision; [F2] "first recipient ... Quest Future Research Award" replaced by "KUHS UG Research Award" (author's correction; "first recipient" unconfirmed).
 SER='Before I Leave Med School · Research'
-ROWS=[('1','WHO STEPS 1 & 2 risk-factor survey (NCD)','Presented at national forums and UG conferences','NOT PUBLISHED','bad'),
+ROWS=[('1','WHO STEPS 1 & 2 risk-factor survey (NCD)','KUHS UG Research Award; presented at national forums and UG conferences','NOT PUBLISHED','bad'),
 ('2','Nutritional assessment of cancer patients','Indian J Med Paediatr Oncol, Mar 2026 (2nd author)','PUBLISHED','ok'),
 ('3','Metastatic solitary fibrous tumour, parapharyngeal region','Indian J Med Paediatr Oncol, Apr 2025 (6th author)','PUBLISHED','ok'),
 ('4','Juvenile justice and recidivism (elective)','Report and forums; not pushed for publication','NOT PUBLISHED','bad'),
 ('5','Obesity-driven cardiac mortality, US adults 15 to 44','JAHA, Oct 2026 (4th author)','PUBLISHED','ok'),
-('6','Retrosternal goitre case series','Ongoing','IN PROGRESS','mid')]
+('6','Retrosternal goitre case series','Ongoing','IN PROGRESS','mid'),
+('7','AI-enabled dataset creation','Working on it now','IN PROGRESS','mid')]
 R01=dict(id='R01',slug='how-i-got-into-research',title='I Want to Tell You How I Got Into Research',
  hook='Most people do undergraduate research for a portfolio. I did it for a different reason.',
  abstract=[('BACKGROUND','A lot of people get into undergraduate research for the sole purpose of building a portfolio. But I saw it from a different perspective.'),
@@ -46,7 +47,7 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='The First
  hook='I won a research award for a project I could never publish.',
  abstract=[('BACKGROUND','In second year, I went department by department, ward by ward, trying to understand oncology and nutrition and what was being done.'),
  ('METHODS','With Institutional Research Committee and Ethics Committee approval, we drafted a protocol based on the WHO STEPS 1 and 2 programme to assess risk factors for non-communicable diseases on campus.'),
- ('RESULTS','We prepared a report and presented it at national forums and undergraduate conferences. The project earned me the KUHS UG Research Award.'),
+ ('RESULTS','We prepared a report and presented it at national forums and undergraduate conferences. The project earned me the KUHS UG Research Award, one of the first from my college.'),
  ('CONCLUSIONS','We could never get around to publishing it. Far too much data.')],
  keywords='nutrition; oncology; non-communicable diseases; WHO STEPS; undergraduate research',
  highlight='1',

@@ -7,3 +7,11 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - Names: Dr. Asma Rahim (spelling to confirm), Dr. Ashik Refeek, Dr. Sanudev.
 - Pages are noindex on branch research-series; nothing is live.
 - Open for R03: the nutrition tool name ("PGCCS" unclear; PG-SGA?), patient numbers, sampling, consent and questions asked.
+
+## v4 (15 Nov 2026): notebook look and the author's new details
+- Look: ruled notebook lines with a red margin and spiral holes, a ruler under the header, rounded cards with soft shadows, colour-coded step badges (blue, teal, coral, amber, violet), highlighter marks. PubMed fonts and blue kept.
+- NCD project: KUHS UG Research Award, "one of the first from my college" (author's words, to confirm exact wording).
+- Ledger now has 7 rows: added "AI-enabled dataset creation" (in progress, working on it now). Hook reads "7 research projects so far": 3 published, 2 never published, 2 in progress.
+- Not in the ledger (author said he never got to them for lack of time): nutrition in ERAS (enhanced recovery after surgery), and one more in the pipeline that is now closed. Titles and number of these ideas to confirm.
+- R01 now asks "How do you actually get into research?" with the answer "You see a problem. Then you go after it." and adds the author's real reason: he loved reading, building on it and building a narrative; later markets, domains and market research.
+- "LCD project" in the author's message is assumed to mean the NCD project; to confirm.
