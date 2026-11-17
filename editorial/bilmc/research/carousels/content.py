@@ -86,4 +86,8 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='The First
  'The project eventually earned me the KUHS UG Research Award.',
  'But to my dismay, I was never able to publish it.',
  'That is something that will always bother me. And it is something that I will owe the people who made it possible, and the campus, for a while.',
+ ('h','The case report'),
+ 'During my time in Medical Oncology, we also focused on writing case reports. I believe this is something that undergraduates should do from the very beginning.',
+ 'We see cases on an everyday basis. There are always rare cases in wards. These cases have unique aspects that need to be covered, need to be presented in international forums and need to be published for there to be original papers in the world.',
+ 'We partook in a case report on a metastatic solitary fibrous tumour of the parapharyngeal region, with a review of literature. It took about one and a half years to get published.',
  ])

@@ -23,3 +23,7 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 ## 16 Nov decisions
 - Depression and medication sentence: restored as dictated. NCD (not LCD) confirmed. Names Dr. Asma Rahim, Dr. Ashik Refeek, Dr. Sanudev confirmed. Award wording confirmed. Case-report consent advice confirmed.
 - R01 pushed to main (noindex kept). R02 still in progress on branch research-series.
+
+## 17 Nov: Part 2 (case reports and cross-sectional studies, what worked)
+- Carousel 12 slides + page built on branch research-series; NOT live. Guide content drafted by the assistant: CARE guidelines, STROBE checklist, protocol elements, informed consent. Story from the author's manuscript. Case-report tumour named as 'metastatic solitary fibrous tumour of the parapharyngeal region' (dictation said 'metastatic solid tumours'): author to confirm.
+- Page header/nav now say Part 1 / Part 2 (no R-codes). R01 page live still uses the older shorter story; regenerate and push when approved.
