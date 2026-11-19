@@ -34,3 +34,10 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - WHO STEPS: dictation says the protocol needed anthropometric AND biochemical data; the ledger and earlier notes say 'STEPS 1 & 2'. Author to confirm which steps were actually done.
 - Journal: dictation said 'Indian Pediatric Oncology'; page uses Indian Journal of Medical and Paediatric Oncology (matches the journal record). First submission was rejected (author's account).
 - Consent for the case report: obtained from the patient at follow-up (author's account).
+
+## 19 Nov (later): Part 2 narrowed to the cross-sectional study, co-written with Jerin James
+- Case report and oncology nutrition parked for Part 3 (electives): editorial/bilmc/research/part3-electives-source.md. Parts 3, 4 and 5 to cover the rest.
+- Cover has placeholders: CMC Analytica logo (drop into editorial/assets/cmc-analytica-logo.png) and Jerin James photo (editorial/assets/jerin-james.jpg), then rerun themes2.py and render_themes.js.
+- Credit: 'Jerin James and I spent the most time on it and he is one of the reasons we could submit the report for the KUHS UG Research Award.' Spelling confirmed J-E-R-I-N. Title (Dr.?) unknown. Tell him before publishing.
+- Not yet on the page: logo and photo (page waits for the files).
+- Promise on last slide and page: free guide from CMC Analytica (PDF) is coming. Build the PDF, then set the comment keyword.

@@ -1,0 +1,35 @@
+# Parked for Part 3 (electives): case report + oncology nutrition. Author's account of 19 Nov 2026, from the old Part 2 body.
+
+- ('h', 'Cross-sectional study: narrow the topic first')
+- For the cross-sectional study, the work was in narrowing down the research topic. Who we were studying, how we were going to study them, what guidelines or parent studies already existed, and finding an appropriate tool we could administer to get the data we needed.
+- I decided that I was going to study non-communicable diseases. So I started searching for templates that had the questionnaires and everything one might need to conduct the study.
+- ('g', [('Who', 'Define the population: which people, where, and how will you select them?'), ('How', 'Choose the design and the setting.'), ('Parent studies and guidelines', 'Find existing surveys and frameworks to build on, so you do not start from zero.'), ('A tool', 'A validated questionnaire or instrument you can actually administer.')])
+- ('h', 'Finding WHO STEPS')
+- That is how I stumbled upon the WHO STEPS protocol, and I started making the questionnaire. I prepared the research protocol, and I was clueless as to how to collect the data, because WHO STEPS requires both biochemical data and anthropometric data.
+- ('g', [('WHO STEPS', 'The WHO STEPwise approach to NCD risk factor surveillance: a questionnaire, physical measurements and biochemical tests.'), ('Anthropometry', 'Height, weight, waist circumference.'), ('Biochemical data', 'Blood tests, which you cannot collect from a questionnaire alone.')])
+- ('h', 'Then, by coincidence, a health camp')
+- Nearing third year, due to several setbacks, I was in a bout of depression, on medication and so forth. But yet, I saw an opportunity manifest before my eyes.
+- Very coincidentally, the then College Union had decided to run a health camp. A lot of data would come in, a lot of tests would be done. Why waste it if we could assess the health metrics and risk factors of all the students on campus?
+- ('h', 'The Institutional Research Committee')
+- We submitted our protocol to the IRC, the Institutional Research Committee. The committee reviews it, and the head of the IRC gave me corrections. I did the corrections, and after certain periodic reviews we were cleared for the IEC.
+- ('g', [('Submit the protocol', 'Full protocol to the Institutional Research Committee.'), ('Take the corrections', 'The reviewer sends comments. Answer each one.'), ('Periodic review', 'Resubmit until you are cleared.'), ('Cleared for the IEC', 'Only then do you go to the ethics committee.')])
+- ('h', 'The Institutional Ethics Committee')
+- We took a lot of printouts and submitted a request to the IEC. Then I went to the Institutional Ethics Committee meeting, where all the people on the committee reviewed the proposal, and our paper was ready for the Institutional Ethics Committee.
+- ('h', 'The study, and the mountain of data')
+- So we did the study, and we were sitting on a mountain of data. We would go to each health camp, guide students through the camp, collect the data and measure their physical parameters, and we had the help of the whole college in doing so.
+- ('h', 'The analysis we were not ready for')
+- We were unprepared as to how to analyse the data. We did not have ChatGPT or Claude at the time, so we worked manually, with SPSS, Excel and Google Sheets. We were very clueless, and depended heavily on Dr. Ashik, who taught us SPSS at every point.
+- It took another one and a half years for me to get into the data, understand it and learn how to process it using SPSS and Excel formulas to break it down set by set. That took a lot of my time in the final year, particularly the eighth semester.
+- We eventually managed to prepare a report and present it at national forums and undergraduate conferences in college. But we could never get around to publishing it because of the vast amount of data and the lack of mentorship and guidance on how to go about handling it.
+- ('c', 'To this day, I believe we spread ourselves too thin.')
+- ('c', 'Too much data. Far too much data. Unsegmented, without the necessary tools or the team to understand the data, structure it properly or even publish it.')
+- The project eventually earned me the KUHS UG Research Award, one of the first from my college. But to my dismay, I was never able to publish it. That is something that will always bother me, and something I will owe the people who made it possible, and the campus, for a while.
+- ('h', 'Case report: fairly easier')
+- As for the case report, it was fairly easier. There are always rare cases in a big tertiary care hospital such as ours. Our guide, Dr. Sanudev, told us about an interesting case.
+- We collected the histopathological slide images and radiology images from the patient as they came for follow-up. By talking to the patient, we got consent, and we got the old patient records. It was mostly done retrospectively, not prospectively. Most case reports are done retrospectively: collecting data that already exists, getting consent through follow-ups, the necessary imaging data and pathology slide blocks, and then having a review done. We also had next-generation sequencing (NGS) done.
+- ('g', [('Find the case', 'A guide who knows an interesting case.'), ('Consent', 'Talk to the patient and take consent, usually at follow-up.'), ('Collect what exists', 'Old records, histopathology slides and blocks, radiology images.'), ('Add what you need', 'In our case, next-generation sequencing (NGS).')])
+- ('h', 'Writing it, and the rejection')
+- Then we tabulated the data and put it all together. We did a review of the existing cases, and looked at how this case is different, what makes it stand out. I did a lot of writes and rewrites.
+- We sent it to the Indian Journal of Medical and Paediatric Oncology. The first time around it got rejected. There were a few corrections, and we made them and sent it again. A lot of reviewer comments came back, and we answered them one by one. It took almost a year to be published.
+- ('g', [('Review of the literature', 'Compare with existing cases. What makes yours stand out?'), ('Write, rewrite', 'Expect several drafts.'), ('Submit', 'Pick a journal that publishes case reports.'), ('Rejection is normal', 'Make the corrections and send it again.'), ('Answer every reviewer comment', 'One by one, with a response.')])
+- Safe to say, if done properly, with all the tools that exist now, case reports are fairly easy to work on.

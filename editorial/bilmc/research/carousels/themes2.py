@@ -39,6 +39,16 @@ h1,h2,.st b,.pn b,.big .t{{font-family:Aurore,cursive;font-weight:400;color:#162
 .hand{{display:block;font:400 50px Aurore,cursive;color:#9b1c1c;transform:rotate(-2deg);margin-top:18px}}'''
 BP+=""".big{margin-top:12px}.big .n{font-size:190px}.hookline{margin-top:8px}.tbl{margin-top:12px}.hand{margin-top:6px}.path{margin-top:12px}.pn{padding:8px 0}.st{padding:12px 0}.steps{margin-top:18px;gap:2px}.p{margin-top:22px}.hookline{{font-size:46px}}.hand{{font-size:42px}}.pn b{{font-size:40px}}.pn span{{font-size:34px}}.st span{{font-size:42px}}.st b{{font-size:46px}}""".replace('{{','{').replace('}}','}')
 FP+=""".big{margin-top:12px}.big .n{font-size:190px}.hookline{margin-top:8px}.tbl{margin-top:12px}.hand{margin-top:6px}.path{margin-top:12px}.pn{padding:8px 0}.st{padding:12px 0}.steps{margin-top:18px;gap:2px}.p{margin-top:22px}.hookline{{font-size:40px}}.hand{{font-size:38px}}.pn b{{font-size:32px}}.pn span{{font-size:26px}}.pn{{padding:4px 0}}.st span{{font-size:36px}}.st b{{font-size:42px}}.p{{font-size:56px}}.h2{{}}""".replace('{{','{').replace('}}','}')
+import os
+LOGO='../../../assets/cmc-analytica-logo.png'; JJ='../../../assets/jerin-james.jpg'
+def logo_html():
+    return (f'<img src="{LOGO}" style="height:96px">' if os.path.exists(LOGO) else '<div style="height:84px;padding:0 24px;border:3px dashed #20558A;color:#20558A;font:500 22px Mono,monospace;display:flex;align-items:center;letter-spacing:.08em">CMC ANALYTICA<br>[LOGO HERE]</div>')
+def photo_html(src,name,role,ph):
+    img=(f'<img src="{src}" style="width:170px;height:170px;border-radius:50%;object-fit:cover;border:4px solid #111">' if os.path.exists(src) else f'<div style="width:170px;height:170px;border-radius:50%;border:3px dashed #aaa;display:flex;align-items:center;justify-content:center;font:400 16px Mono,monospace;color:#888;text-align:center">{ph}</div>')
+    return f'<div style="display:flex;align-items:center;gap:22px">{img}<div><div style="font:800 38px Bricolage,Arial">{name}</div><div style="font:400 20px Mono,monospace;color:#555;margin-top:6px">{role}</div></div></div>'
+def cover2(art):
+    return f'<div style="margin-top:34px">{logo_html()}</div><h1 style="font-size:84px">{art["title_html"]}</h1><div class="sub" style="font-size:36px;margin-top:20px">{e(art["sub"])}</div><div style="margin-top:auto;margin-bottom:96px;display:grid;gap:26px">{photo_html("../../../assets/author-portrait.jpg","Sidharth Narayanan","House Surgeon, GMC Kozhikode","")}{photo_html(JJ,"Jerin James","Co-author · NCD study","[PHOTO]")}</div>'
+def ft2(i,n,art): return f'<div class="ft"><span>Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode{" · with Jerin James" if art["id"]=="R02" else ""}</span><span>{i:02d} / {n:02d}</span></div>'
 def hook(art,hand):
     t=soft.table('1')
     return f'<div class="kick">UNDERGRADUATE RESEARCH · A DATA STORY</div><div class="big"><div class="n">8</div><div class="t">research projects<br><b>so far.</b></div></div><div class="hookline">Most people get into research for a portfolio. I got into it purely because I loved reading, building on it and building a narrative.</div><div class="tbl">TABLE 1 · THE RESEARCH LEDGER</div>'+t+(f'<div class="hand">↑ #1 won an award. It never got published.</div>' if hand else '')
@@ -49,7 +59,8 @@ def build(art,theme,name,css,hand):
             inner=f'<h1>{art["title_html"]}</h1><div class="sub">{e(art["sub"])}</div><div class="au">Sidharth Narayanan, MBBS <span class="id">iD</span></div><div class="pills"><span class="f">Cite</span><span>Save</span><span>Share</span><span>Swipe →</span></div>'
         kk=f'<div class="kick">{kick}</div>'
         if kick=='HOOK': inner=hook(art,hand); kk=''
-        out+=f'<section class="s" id="s{i}">{hd_j(art,i,n)}{kk}{inner}{ft(i,n)}</section>'
+        if art['id']=='R02' and inner.startswith('<h1>'): inner=cover2(art)
+        out+=f'<section class="s" id="s{i}">{hd_j(art,i,n)}{kk}{inner}{ft2(i,n,art)}</section>'
     open(f'{name}.html','w').write(f'<!doctype html><meta charset="utf-8"><style>{BASE}{css}</style>{out}')
 for a,nm in ((R01,'r01'),(R02,'r02')):
     build(a,'m',f'{nm}-marker','',False); build(a,'b',f'{nm}-ballpoint',BP,True); build(a,'f',f'{nm}-fountain',FP,True)
