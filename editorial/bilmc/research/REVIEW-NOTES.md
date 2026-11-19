@@ -52,3 +52,8 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - Logo replaced with the white-background version (editorial/assets/cmc-analytica-logo.png); shown directly on white, no tile. Photos dropped. Cover shows both names on one line: 'Dr. Sidharth Narayanan and Dr. Jerin James', 2020 MBBS batch, Calicut Medical College.
 - Added the forum idea: 'we were two hungry undergrads who knew nothing'; 'this study is why we realised we needed a forum to understand research and actually learn the basics. That is the idea behind CMC Analytica.' (carousel slide 14, page closing section). Author to confirm the CMC Analytica link wording.
 - Carousel now 15 slides.
+
+## 19 Nov (late): credentials/footers and the guide PDF
+- Part 2 cover credentials: 'Dr. Sidharth Narayanan · 2020 MBBS batch' and 'Dr. Jerin James · 2020 MBBS batch'. Part 2 footer (slides and page): 'CMC Analytica · Calicut Medical College · College Union · 2026–2027'.
+- Guide PDF built: editorial/bilmc/research/guide/export/CMC-Analytica-Guide-Cross-Sectional-and-Case-Reports.pdf (12 A4 pages). Own words; CARE (Gagnier et al. 2013), STROBE (von Elm et al. 2007), WHO STEPS, ICMR 2017 cited, official checklists linked not copied. STROBE authors hold the copyright (per strobe-statement.org). Contains the case-report story that is also planned for Part 3.
+- To confirm: 'College Union' in the footer; guide facts about our case report (consent at follow-up, retrospective, NGS, almost a year, rejected once); WHO STEPS steps actually run; ICMR link wording; comment keyword not yet set up.
