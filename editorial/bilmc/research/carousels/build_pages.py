@@ -28,7 +28,7 @@ def page(art,C,prev,nxt,refs):
 <link rel="canonical" href="{url}"><meta property="og:title" content="{e(art["title"])}"><meta property="og:description" content="{e(art["sub"])}"><meta property="og:image" content="https://medinn.in/research-{art["id"].lower()}-og.jpg"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/medinn-logo.png"><link rel="stylesheet" href="/essays/research.css"></head><body>
 <div class="bar"><a href="/before-i-leave-medical-college">&larr; {SER}</a><i>PART {art["id"][-1]}</i></div><div class="ruler"></div>
-<div class="wrap">{'<img src="/essays/img/cmc-analytica-logo.png" alt="CMC Analytica" style="height:64px;border-radius:10px;margin-top:26px;display:block">' if art["id"]=="R02" else ""}<div class="kick">UNDERGRADUATE RESEARCH · HOW TO</div>
+<div class="wrap">{'<img src="/essays/img/cmc-analytica-logo.png" alt="CMC Analytica" style="height:76px;margin-top:26px;display:block">' if art["id"]=="R02" else ""}<div class="kick">UNDERGRADUATE RESEARCH · HOW TO</div>
 <h1>{art["title_html"]}</h1><div class="sub">{e(art["sub"])}</div><div class="au">{"Dr. Sidharth Narayanan" if art["id"]=="R02" else "Sidharth Narayanan, MBBS"} <span class="id">iD</span>{" and Dr. Jerin James" if art["id"]=="R02" else ""}</div><div class="aff">Government Medical College, Kozhikode</div>
 <div class="pills"><button class="f" id="cite" type="button" data-cite="{e(cite)}">Cite</button><a href="#table1">Table 1</a><button id="share" type="button">Share</button></div>
 <div class="brief"><h3>IN BRIEF</h3><ul>{brief}</ul></div>

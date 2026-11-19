@@ -50,7 +50,7 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='How Do Yo
  highlight='1',
  body=[
  ('h','Why we did it'),
- 'Dr. Jerin James and I put a lot of time into working on this study. We did it because we felt it was a worthy enough research topic and it deserved our attention. And because the opportunity presented itself in the form of a health camp, where we would not otherwise get the data.',
+ 'We were two hungry undergrads who knew nothing. Dr. Jerin James and I put a lot of time into working on this study. We did it because we felt it was a worthy enough research topic and it deserved our attention. And because the opportunity presented itself in the form of a health camp, where we would not otherwise get the data.',
  'We went through every step: the protocol, the study design, collecting a humongous amount of data, and then trying to analyse it. We could not crunch a paper out of it. It took a lot of our time in college, and we did not give an initial orientation, even to our guide, on how to go about structuring a research paper.',
  ('h','Narrow the topic first'),
  'For the cross-sectional study, the work was in narrowing down the research topic. Who we were studying, how we were going to study them, what guidelines or parent studies already existed, and finding an appropriate tool we could administer to get the data we needed.',
@@ -76,4 +76,6 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='How Do Yo
  ('c','To this day, I believe we spread ourselves too thin.'),
  ('c','Too much data. Far too much data. Unsegmented, without the necessary tools or the team to understand the data, structure it properly or even publish it.'),
  'The project eventually earned me the KUHS UG Research Award, one of the first from my college. Dr. Jerin James and I spent the most time on it, and he is one of the reasons we were able to submit the report for the KUHS UG Research Award. But to my dismay, we were never able to publish it. That is something that will always bother me, and something I owe the people who made it possible, and the campus, for a while.',
+  ('h','Why we realised we needed a forum'),
+ 'This study is why we realised we needed a forum to understand research and actually learn the basics. We were two hungry undergrads who knew nothing. That is the idea behind CMC Analytica.',
  ])

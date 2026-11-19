@@ -47,3 +47,8 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - CMC Analytica logo: file still not received. Put it at editorial/assets/cmc-analytica-logo.png and rerun themes2.py + render_themes.js; it then appears on the cover and the header of every Part 2 slide.
 
 - 19 Nov: CMC Analytica logo received (black background JPEG). Saved at editorial/assets/cmc-analytica-logo.png (original: -original.jpg). Shown as a black rounded tile on the Part 2 cover, header of slides 2 to 14, and the Part 2 page (essays/img/cmc-analytica-logo.png). Jerin James photo still pending.
+
+## 19 Nov (night): white-background logo, no photos, forum story
+- Logo replaced with the white-background version (editorial/assets/cmc-analytica-logo.png); shown directly on white, no tile. Photos dropped. Cover shows both names on one line: 'Dr. Sidharth Narayanan and Dr. Jerin James', 2020 MBBS batch, Calicut Medical College.
+- Added the forum idea: 'we were two hungry undergrads who knew nothing'; 'this study is why we realised we needed a forum to understand research and actually learn the basics. That is the idea behind CMC Analytica.' (carousel slide 14, page closing section). Author to confirm the CMC Analytica link wording.
+- Carousel now 15 slides.
