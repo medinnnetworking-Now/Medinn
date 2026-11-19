@@ -42,15 +42,15 @@ FP+=""".big{margin-top:12px}.big .n{font-size:190px}.hookline{margin-top:8px}.tb
 import os
 LOGO='../../../assets/cmc-analytica-logo.png'; JJ='../../../assets/jerin-james.jpg'
 def logo_html():
-    return (f'<img src="{LOGO}" style="height:96px">' if os.path.exists(LOGO) else '<div style="height:84px;padding:0 24px;border:3px dashed #20558A;color:#20558A;font:500 22px Mono,monospace;display:flex;align-items:center;letter-spacing:.08em">CMC ANALYTICA<br>[LOGO HERE]</div>')
+    return (f'<img src="{LOGO}" style="height:150px;width:auto;flex:none;object-fit:contain;border-radius:18px;display:block">' if os.path.exists(LOGO) else '<div style="height:84px;padding:0 24px;border:3px dashed #20558A;color:#20558A;font:500 22px Mono,monospace;display:flex;align-items:center;letter-spacing:.08em">CMC ANALYTICA<br>[LOGO HERE]</div>')
 def photo_html(src,name,role,ph):
-    img=(f'<img src="{src}" style="width:170px;height:170px;border-radius:50%;object-fit:cover;border:4px solid #111">' if os.path.exists(src) else f'<div style="width:170px;height:170px;border-radius:50%;border:3px dashed #aaa;display:flex;align-items:center;justify-content:center;font:400 16px Mono,monospace;color:#888;text-align:center">{ph}</div>')
+    img=(f'<img src="{src}" style="width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid #111">' if os.path.exists(src) else f'<div style="width:140px;height:140px;border-radius:50%;border:3px dashed #aaa;display:flex;align-items:center;justify-content:center;font:400 16px Mono,monospace;color:#888;text-align:center">{ph}</div>')
     return f'<div style="display:flex;align-items:center;gap:22px">{img}<div><div style="font:800 38px Bricolage,Arial">{name}</div><div style="font:400 20px Mono,monospace;color:#555;margin-top:6px">{role}</div></div></div>'
 def cover2(art):
-    return f'<div style="margin-top:34px">{logo_html()}</div><h1 style="font-size:84px">{art["title_html"]}</h1><div class="sub" style="font-size:36px;margin-top:20px">{e(art["sub"])}</div><div style="margin-top:auto;margin-bottom:96px;display:grid;gap:26px">{photo_html("../../../assets/author-portrait.jpg","Dr. Sidharth Narayanan","2020 MBBS batch · Calicut Medical College","")}{photo_html(JJ,"Dr. Jerin James","2020 MBBS batch · Calicut Medical College","[PHOTO]")}</div>'
+    return f'<div style="margin-top:28px">{logo_html()}</div><h1 style="font-size:74px;margin-top:16px">{art["title_html"]}</h1><div class="sub" style="font-size:34px;margin-top:14px">{e(art["sub"])}</div><div style="margin-top:auto;margin-bottom:84px;display:grid;gap:14px">{photo_html("../../../assets/author-portrait.jpg","Dr. Sidharth Narayanan","2020 MBBS batch · Calicut Medical College","")}{photo_html(JJ,"Dr. Jerin James","2020 MBBS batch · Calicut Medical College","[PHOTO]")}</div>'
 def ft2(i,n,art): return f'<div class="ft"><span>{"2020 MBBS batch · Calicut Medical College" if art["id"]=="R02" else "Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode"}</span><span>{i:02d} / {n:02d}</span></div>'
 def hd_j2(art,i,n):
-    lg=f'<img src="{LOGO}" style="height:34px;margin:0 18px">' if os.path.exists(LOGO) and art['id']=='R02' else ''
+    lg=f'<img src="{LOGO}" style="height:40px;width:auto;flex:none;object-fit:contain;border-radius:8px;margin:0 18px">' if os.path.exists(LOGO) and art['id']=='R02' and i>1 else ''
     return f'<div class="hd"><span>{SER.upper()}</span>{lg}<i>PART {art["id"][-1]} · {i}/{n}</i></div>'
 def hook(art,hand):
     t=soft.table('1')

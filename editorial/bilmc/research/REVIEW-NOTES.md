@@ -45,3 +45,5 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 ## 19 Nov (evening) edits
 - Names now 'Dr. Sidharth Narayanan' and 'Dr. Jerin James'. Footer on Part 2 = '2020 MBBS batch · Calicut Medical College' (no personal names). Guide point corrected: they had a guide who had published, but did not orient the project with them well enough (slides, page, ledger lesson, source text edited accordingly).
 - CMC Analytica logo: file still not received. Put it at editorial/assets/cmc-analytica-logo.png and rerun themes2.py + render_themes.js; it then appears on the cover and the header of every Part 2 slide.
+
+- 19 Nov: CMC Analytica logo received (black background JPEG). Saved at editorial/assets/cmc-analytica-logo.png (original: -original.jpg). Shown as a black rounded tile on the Part 2 cover, header of slides 2 to 14, and the Part 2 page (essays/img/cmc-analytica-logo.png). Jerin James photo still pending.
