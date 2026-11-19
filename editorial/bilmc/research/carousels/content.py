@@ -50,8 +50,8 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='How Do Yo
  highlight='1',
  body=[
  ('h','Why we did it'),
- 'Jerin James and I put a lot of time into working on this study. We did it because we felt it was a worthy enough research topic and it deserved our attention. And because the opportunity presented itself in the form of a health camp, where we would not otherwise get the data.',
- 'We went through every step: the protocol, the study design, collecting a humongous amount of data, and then trying to analyse it. We could not crunch a paper out of it. It took a lot of our time in college, and we had no initial orientation on how to go about structuring a research paper.',
+ 'Dr. Jerin James and I put a lot of time into working on this study. We did it because we felt it was a worthy enough research topic and it deserved our attention. And because the opportunity presented itself in the form of a health camp, where we would not otherwise get the data.',
+ 'We went through every step: the protocol, the study design, collecting a humongous amount of data, and then trying to analyse it. We could not crunch a paper out of it. It took a lot of our time in college, and we did not give an initial orientation, even to our guide, on how to go about structuring a research paper.',
  ('h','Narrow the topic first'),
  'For the cross-sectional study, the work was in narrowing down the research topic. Who we were studying, how we were going to study them, what guidelines or parent studies already existed, and finding an appropriate tool we could administer to get the data we needed.',
  ('g',[('Who','Define the population: which people, where, and how will you select them?'),('How','Choose the design and the setting.'),('Parent studies and guidelines','Find existing surveys and frameworks to build on, so you do not start from zero.'),('A tool','A validated questionnaire or instrument you can actually administer.')]),
@@ -72,8 +72,8 @@ R02=dict(id='R02',slug='nutrition-oncology-and-the-ncd-project',title='How Do Yo
  ('h','The analysis we were not ready for'),
  'We were unprepared as to how to analyse the data. We did not have ChatGPT or Claude at the time, so we worked manually, with SPSS, Excel and Google Sheets. We were very clueless, and depended heavily on Dr. Ashik, who taught us SPSS at every point.',
  'It took another one and a half years to get into the data, understand it and learn how to process it using SPSS and Excel formulas to break it down set by set. That took a lot of our time in the final year, particularly the eighth semester.',
- 'We eventually managed to prepare a report and present it at national forums and undergraduate conferences in college. But we could never get around to publishing it because of the vast amount of data and the lack of mentorship and guidance on how to go about handling it.',
+ 'We eventually managed to prepare a report and present it at national forums and undergraduate conferences in college. But we could never get around to publishing it because of the vast amount of data. We did have a guide who had published, but we did not orient the project with them well enough on how to go about structuring and handling it.',
  ('c','To this day, I believe we spread ourselves too thin.'),
  ('c','Too much data. Far too much data. Unsegmented, without the necessary tools or the team to understand the data, structure it properly or even publish it.'),
- 'The project eventually earned me the KUHS UG Research Award, one of the first from my college. Jerin James and I spent the most time on it, and he is one of the reasons we were able to submit the report for the KUHS UG Research Award. But to my dismay, we were never able to publish it. That is something that will always bother me, and something I owe the people who made it possible, and the campus, for a while.',
+ 'The project eventually earned me the KUHS UG Research Award, one of the first from my college. Dr. Jerin James and I spent the most time on it, and he is one of the reasons we were able to submit the report for the KUHS UG Research Award. But to my dismay, we were never able to publish it. That is something that will always bother me, and something I owe the people who made it possible, and the campus, for a while.',
  ])

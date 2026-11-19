@@ -47,8 +47,11 @@ def photo_html(src,name,role,ph):
     img=(f'<img src="{src}" style="width:170px;height:170px;border-radius:50%;object-fit:cover;border:4px solid #111">' if os.path.exists(src) else f'<div style="width:170px;height:170px;border-radius:50%;border:3px dashed #aaa;display:flex;align-items:center;justify-content:center;font:400 16px Mono,monospace;color:#888;text-align:center">{ph}</div>')
     return f'<div style="display:flex;align-items:center;gap:22px">{img}<div><div style="font:800 38px Bricolage,Arial">{name}</div><div style="font:400 20px Mono,monospace;color:#555;margin-top:6px">{role}</div></div></div>'
 def cover2(art):
-    return f'<div style="margin-top:34px">{logo_html()}</div><h1 style="font-size:84px">{art["title_html"]}</h1><div class="sub" style="font-size:36px;margin-top:20px">{e(art["sub"])}</div><div style="margin-top:auto;margin-bottom:96px;display:grid;gap:26px">{photo_html("../../../assets/author-portrait.jpg","Sidharth Narayanan","House Surgeon, GMC Kozhikode","")}{photo_html(JJ,"Jerin James","Co-author · NCD study","[PHOTO]")}</div>'
-def ft2(i,n,art): return f'<div class="ft"><span>Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode{" · with Jerin James" if art["id"]=="R02" else ""}</span><span>{i:02d} / {n:02d}</span></div>'
+    return f'<div style="margin-top:34px">{logo_html()}</div><h1 style="font-size:84px">{art["title_html"]}</h1><div class="sub" style="font-size:36px;margin-top:20px">{e(art["sub"])}</div><div style="margin-top:auto;margin-bottom:96px;display:grid;gap:26px">{photo_html("../../../assets/author-portrait.jpg","Dr. Sidharth Narayanan","2020 MBBS batch · Calicut Medical College","")}{photo_html(JJ,"Dr. Jerin James","2020 MBBS batch · Calicut Medical College","[PHOTO]")}</div>'
+def ft2(i,n,art): return f'<div class="ft"><span>{"2020 MBBS batch · Calicut Medical College" if art["id"]=="R02" else "Dr. Sidharth Narayanan · House Surgeon, GMC Kozhikode"}</span><span>{i:02d} / {n:02d}</span></div>'
+def hd_j2(art,i,n):
+    lg=f'<img src="{LOGO}" style="height:34px;margin:0 18px">' if os.path.exists(LOGO) and art['id']=='R02' else ''
+    return f'<div class="hd"><span>{SER.upper()}</span>{lg}<i>PART {art["id"][-1]} · {i}/{n}</i></div>'
 def hook(art,hand):
     t=soft.table('1')
     return f'<div class="kick">UNDERGRADUATE RESEARCH · A DATA STORY</div><div class="big"><div class="n">8</div><div class="t">research projects<br><b>so far.</b></div></div><div class="hookline">Most people get into research for a portfolio. I got into it purely because I loved reading, building on it and building a narrative.</div><div class="tbl">TABLE 1 · THE RESEARCH LEDGER</div>'+t+(f'<div class="hand">↑ #1 won an award. It never got published.</div>' if hand else '')
@@ -60,7 +63,7 @@ def build(art,theme,name,css,hand):
         kk=f'<div class="kick">{kick}</div>'
         if kick=='HOOK': inner=hook(art,hand); kk=''
         if art['id']=='R02' and inner.startswith('<h1>'): inner=cover2(art)
-        out+=f'<section class="s" id="s{i}">{hd_j(art,i,n)}{kk}{inner}{ft2(i,n,art)}</section>'
+        out+=f'<section class="s" id="s{i}">{hd_j2(art,i,n)}{kk}{inner}{ft2(i,n,art)}</section>'
     open(f'{name}.html','w').write(f'<!doctype html><meta charset="utf-8"><style>{BASE}{css}</style>{out}')
 for a,nm in ((R01,'r01'),(R02,'r02')):
     build(a,'m',f'{nm}-marker','',False); build(a,'b',f'{nm}-ballpoint',BP,True); build(a,'f',f'{nm}-fountain',FP,True)

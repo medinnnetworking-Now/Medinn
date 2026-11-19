@@ -41,3 +41,7 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 - Credit: 'Jerin James and I spent the most time on it and he is one of the reasons we could submit the report for the KUHS UG Research Award.' Spelling confirmed J-E-R-I-N. Title (Dr.?) unknown. Tell him before publishing.
 - Not yet on the page: logo and photo (page waits for the files).
 - Promise on last slide and page: free guide from CMC Analytica (PDF) is coming. Build the PDF, then set the comment keyword.
+
+## 19 Nov (evening) edits
+- Names now 'Dr. Sidharth Narayanan' and 'Dr. Jerin James'. Footer on Part 2 = '2020 MBBS batch · Calicut Medical College' (no personal names). Guide point corrected: they had a guide who had published, but did not orient the project with them well enough (slides, page, ledger lesson, source text edited accordingly).
+- CMC Analytica logo: file still not received. Put it at editorial/assets/cmc-analytica-logo.png and rerun themes2.py + render_themes.js; it then appears on the cover and the header of every Part 2 slide.
