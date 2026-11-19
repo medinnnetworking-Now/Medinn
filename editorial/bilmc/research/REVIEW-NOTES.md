@@ -27,3 +27,10 @@ Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-
 ## 17 Nov: Part 2 (case reports and cross-sectional studies, what worked)
 - Carousel 12 slides + page built on branch research-series; NOT live. Guide content drafted by the assistant: CARE guidelines, STROBE checklist, protocol elements, informed consent. Story from the author's manuscript. Case-report tumour named as 'metastatic solitary fibrous tumour of the parapharyngeal region' (dictation said 'metastatic solid tumours'): author to confirm.
 - Page header/nav now say Part 1 / Part 2 (no R-codes). R01 page live still uses the older shorter story; regenerate and push when approved.
+
+## 19 Nov: Part 2 rebuilt from the author's detailed account
+- Carousel now 16 slides (8 cross-sectional steps, outcome, 4 case-report steps, CTA to the full article); page ~1,500 words, story in the author's words with a guide beside each step.
+- Case-report time to publish: dictation now says 'almost a year' (earlier notes said about one and a half years). Used 'almost a year'. Author to confirm.
+- WHO STEPS: dictation says the protocol needed anthropometric AND biochemical data; the ledger and earlier notes say 'STEPS 1 & 2'. Author to confirm which steps were actually done.
+- Journal: dictation said 'Indian Pediatric Oncology'; page uses Indian Journal of Medical and Paediatric Oncology (matches the journal record). First submission was rejected (author's account).
+- Consent for the case report: obtained from the patient at follow-up (author's account).
