@@ -2,6 +2,16 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/research/electives",
+      "destination": "/before-i-leave-medical-college/research/electives-juvenile-justice-oncology-and-nutrition",
+      "permanent": false
+    },
+    {
+      "source": "/research/ug-guide",
+      "destination": "/before-i-leave-medical-college/research/undergrads-guide-to-ug-research",
+      "permanent": false
+    },
+    {
       "source": "/research/cross-sectional",
       "destination": "/before-i-leave-medical-college/research/nutrition-oncology-and-the-ncd-project",
       "permanent": false
