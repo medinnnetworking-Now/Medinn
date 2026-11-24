@@ -106,4 +106,7 @@ R03=dict(id='R03',slug='electives-juvenile-justice-oncology-and-nutrition',title
  ('h','The case report from the same posting'),
  'During the same period, we also worked on a case report with a review of literature on a metastatic solitary fibrous tumour of the parapharyngeal region. Our guide, Dr. Sanudev, told us about an interesting case. It was mostly retrospective. We got consent from the patient at follow-up, collected the old records, the histopathology slides and the imaging, and had next-generation sequencing done. The first submission was rejected. We made the corrections and sent it again, and answered the reviewers one by one. It took almost a year to be published.',
  'The step-by-step for the case report is in our guide, which is coming from CMC Analytica.',
+ ('h','The people who made it possible'),
+ 'None of this was a solo effort. For the Medical Oncology elective, my collaborators were Dr. Varun, Dr. Punya and Dr. Shadi, with our guide, Dr. Sanudev. For the juvenile justice project, they were Dr. Varsha, Raniya, Shana and Sreelakshmi S.',
+ ('g',[('Share the work','The co-investigators started working on the project together.'),('Cover each other','Different people bring different strengths.'),('Credit everyone','Say who did what, and say it publicly.')]),
  ])
