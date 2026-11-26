@@ -54,6 +54,8 @@ CMC Analytica is officially launched.
 
 The CMC Alumni Association and the Yuga College Union 2026 of Calicut Medical College launched CMC Analytica to bring academic and higher research to the front of our college, and to help students understand the dynamics of research.
 
+It is open to UGs and PGs: everyone who is here to research, or trying to start out. We hope to collaborate more and more, across years, departments and projects.
+
 How it works:
 1. Express your interest. We want to understand you and the domains you care about.
 2. Get matched with prospective guides, postgraduates and teams, so you can work together on joint projects.
@@ -64,16 +66,18 @@ Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan
 Founding members: Dr. Faizal U. (Assistant Professor, Department of Medicine, GMC Kozhikode), Dr. Noufira P (Assistant Professor, Department of Pharmacology) and Dr. Sidharth Narayanan (House Surgeon).
 Union representatives: Nayan Menon (Chairperson) and Benjamin Thomas (Vice Chairperson).
 
-#CMCAnalytica #UndergraduateResearch #MedicalStudents #CalicutMedicalCollege #MBBS #ResearchMatters
+#CMCAnalytica #UndergraduateResearch #PostgraduateResearch #MedicalStudents #CalicutMedicalCollege #ResearchMatters
 
 ## EOI poster caption (post with the EOI poster)
 Wondering how to start in research?
 
-CMC Analytica is here to help you understand the basics and work towards residency or future research. We want to know your questions, your queries and your preferences. Got a topic or domain in mind? Tell us, and we will build with you.
+CMC Analytica is open to UGs and PGs. Whether you are just starting out or already researching, we want to understand your questions, your queries and your preferences, and to collaborate with you more and more.
+
+Got a topic or domain in mind? Tell us, and we will build with you.
 
 Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan the QR)
 
 Launched by the CMC Alumni Association and the Yuga College Union 2026.
 CMC Analytica · Calicut Medical College
 
-#CMCAnalytica #UndergraduateResearch #MedicalStudents #CalicutMedicalCollege #MBBS
+#CMCAnalytica #UndergraduateResearch #PostgraduateResearch #MedicalStudents #CalicutMedicalCollege
