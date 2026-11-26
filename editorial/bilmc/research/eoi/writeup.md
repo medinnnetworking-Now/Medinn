@@ -6,7 +6,7 @@ CMC Analytica: Expression of Interest (Research)
 ## Form description (paste under the title)
 Wondering how to start in research?
 
-How do you understand the basics, and work towards residency or future research? CMC Analytica is here to understand you: your questions, your queries and your preferences.
+CMC Analytica is open to UGs and PGs: everyone who is here to research, or trying to start out. How do you understand the basics, and work towards residency or future research? CMC Analytica is here to understand you: your questions, your queries and your preferences.
 
 If you have topics or domains you want to work on, tell us, and we will build with you.
 
