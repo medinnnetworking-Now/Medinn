@@ -40,27 +40,40 @@ CMC Analytica is here to help you understand the basics and work towards residen
 
 Got a topic or domain in mind? Tell us, and we will build with you.
 
-Express your interest: [FORM LINK] (link in bio, or scan the QR)
+Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan the QR)
 
 CMC Analytica · Calicut Medical College
 
 #UndergraduateResearch #MedicalStudents #MBBS #CMCAnalytica #CalicutMedicalCollege
 
 ## WhatsApp / LinkedIn short version
-Wondering how to start in research? CMC Analytica, from Calicut Medical College, wants to understand your questions and the topics you care about. Two minutes, free: [FORM LINK]
+Wondering how to start in research? CMC Analytica, from Calicut Medical College, wants to understand your questions and the topics you care about. Two minutes, free: https://forms.gle/jCB1dBETjMWiza6K7
 
-## Launch announcement caption (26 Nov 2026; use with the launch poster; add the logos and form link first)
+## Launch announcement caption (post with the launch collage poster)
 CMC Analytica is officially launched.
 
-The CMC Alumni Association and the College Union of Calicut Medical College launched CMC Analytica to bring academic and higher research to the front of our college, and to help students understand the dynamics of research.
+The CMC Alumni Association and the Yuga College Union 2026 of Calicut Medical College launched CMC Analytica to bring academic and higher research to the front of our college, and to help students understand the dynamics of research.
 
 How it works:
 1. Express your interest. We want to understand you and the domains you care about.
 2. Get matched with prospective guides, postgraduates and teams, so you can work together on joint projects.
 3. Attend workshops and evaluation sessions that deepen your understanding and build the framework and foundation for your research journey.
 
-Express your interest: [FORM LINK] (link in bio, or scan the QR)
+Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan the QR on the next poster)
 
-CMC Analytica · Calicut Medical College · College Union · 2026–2027
+Founding members: Dr. Faizal U. (Assistant Professor, Department of Medicine, GMC Kozhikode), Dr. Noufira P (Assistant Professor, Department of Pharmacology) and Dr. Sidharth Narayanan (House Surgeon).
+Union representatives: Nayan Menon (Chairperson) and Benjamin Thomas (Vice Chairperson).
 
 #CMCAnalytica #UndergraduateResearch #MedicalStudents #CalicutMedicalCollege #MBBS #ResearchMatters
+
+## EOI poster caption (post with the EOI poster)
+Wondering how to start in research?
+
+CMC Analytica is here to help you understand the basics and work towards residency or future research. We want to know your questions, your queries and your preferences. Got a topic or domain in mind? Tell us, and we will build with you.
+
+Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan the QR)
+
+Launched by the CMC Alumni Association and the Yuga College Union 2026.
+CMC Analytica · Calicut Medical College
+
+#CMCAnalytica #UndergraduateResearch #MedicalStudents #CalicutMedicalCollege #MBBS
