@@ -6,7 +6,7 @@ CMC Analytica: Expression of Interest (Research)
 ## Form description (paste under the title)
 Wondering how to start in research?
 
-CMC Analytica is open to UGs and PGs: everyone who is here to research, or trying to start out. How do you understand the basics, and work towards residency or future research? CMC Analytica is here to understand you: your questions, your queries and your preferences.
+CMC Analytica is open to all students of medicine, UGs and PGs, whether you are just starting out or already researching. Students come first, and faculty and guides are welcome too. How do you understand the basics, and work towards residency or future research? CMC Analytica is here to understand you: your questions, your queries and your preferences.
 
 If you have topics or domains you want to work on, tell us, and we will build with you.
 
@@ -54,7 +54,7 @@ CMC Analytica is officially launched.
 
 The CMC Alumni Association and the Yuga College Union 2026 of Calicut Medical College launched CMC Analytica to bring academic and higher research to the front of our college, and to help students understand the dynamics of research.
 
-It is open to UGs and PGs: everyone who is here to research, or trying to start out. We hope to collaborate more and more, across years, departments and projects.
+It is open to all students of medicine, UGs and PGs, everyone who is here to research or trying to start out. Students come first, and faculty and guides are welcome too. We hope to collaborate more and more, across years, departments and projects.
 
 How it works:
 1. Express your interest. We want to understand you and the domains you care about.
@@ -71,7 +71,7 @@ Union representatives: Nayan Menon (Chairperson) and Benjamin Thomas (Vice Chair
 ## EOI poster caption (post with the EOI poster)
 Wondering how to start in research?
 
-CMC Analytica is open to UGs and PGs. Whether you are just starting out or already researching, we want to understand your questions, your queries and your preferences, and to collaborate with you more and more.
+CMC Analytica is open to all students of medicine, UGs and PGs. Students come first, and faculty and guides are welcome too. Whether you are just starting out or already researching, we want to understand your questions, your queries and your preferences, and to collaborate with you more and more.
 
 Got a topic or domain in mind? Tell us, and we will build with you.
 
