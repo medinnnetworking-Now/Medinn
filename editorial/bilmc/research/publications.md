@@ -19,3 +19,6 @@ Author: Sidharth Narayanan. ORCID 0009-0004-6361-5050. Author positions below ar
 
 ## Still to confirm
 - DOI of publication 1; year and project of the KUHS UG Research Award; juvenile justice study title; Johns Hopkins course; the earlier-conceived initiative to revive.
+
+## Note 16 Nov
+The JMIRx Med peer review (row 4 above) is the author's first published credit, a collaborative live review of a preprint, per his LinkedIn entry.

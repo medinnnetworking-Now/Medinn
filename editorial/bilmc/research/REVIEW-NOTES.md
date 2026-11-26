@@ -1,0 +1,66 @@
+# R01 and R02 draft v2: soft look, insight-first (14 Nov 2026)
+Palette 2, lighter version of design A. Each article opens with a how-to, then the author's story (manuscript text, minimal fixes), then "do it better", then Table 1.
+Drafted by the assistant, for the author to edit: all how-to text (R01 slides 2-3 and 10; R02 slides 2-6 and 12, page "How to" and "If I did it again"). Story slides use the author's own words.
+- R02 how-to content (cross-sectional = snapshot, WHO STEPS 3 steps, protocol sections) is standard methods guidance; WHO STEPS Steps 1 and 2 as the author ran them.
+- [F1] depression/medication sentence replaced by "a difficult stretch". [F2] award line now "KUHS UG Research Award"; "first recipient" removed pending confirmation.
+- R01 now opens with the research ledger as the hook (6 projects: 3 published, 2 never, 1 in progress) and a journey slide; design upgraded with data-grid background and ghost numerals.
+- Names: Dr. Asma Rahim (spelling to confirm), Dr. Ashik Refeek, Dr. Sanudev.
+- Pages are noindex on branch research-series; nothing is live.
+- Open for R03: the nutrition tool name ("PGCCS" unclear; PG-SGA?), patient numbers, sampling, consent and questions asked.
+
+## v4 (15 Nov 2026): notebook look and the author's new details
+- Look: ruled notebook lines with a red margin and spiral holes, a ruler under the header, rounded cards with soft shadows, colour-coded step badges (blue, teal, coral, amber, violet), highlighter marks. PubMed fonts and blue kept.
+- NCD project: KUHS UG Research Award, "one of the first from my college" (author's words, to confirm exact wording).
+- Ledger now has 7 rows: added "AI-enabled dataset creation" (in progress, working on it now). Hook reads "7 research projects so far": 3 published, 2 never published, 2 in progress.
+- Not in the ledger (author said he never got to them for lack of time): nutrition in ERAS (enhanced recovery after surgery), and one more in the pipeline that is now closed. Titles and number of these ideas to confirm.
+- R01 now asks "How do you actually get into research?" with the answer "You see a problem. Then you go after it." and adds the author's real reason: he loved reading, building on it and building a narrative; later markets, domains and market research.
+- "LCD project" in the author's message is assumed to mean the NCD project; to confirm.
+
+## v5 (16 Nov 2026)
+- Ledger row 8 added: Peer review of "Artificial Intelligence in Healthcare: 2023 Year in Review (Preprint)", JMIRx Med, 19 Sep 2024, DOI 10.2196/65151. LinkedIn entry says "the result of a virtual collaborative live review discussion organized and..." (truncated; author to supply the rest). Author calls it "an amusing start to getting my name on something that's published", his first published credit. Hook now reads "8 research projects so far": 4 published, 2 never, 2 in progress.
+- Candidate for R05 (other forms of research) and a light line in R01.
+
+## 16 Nov decisions
+- Depression and medication sentence: restored as dictated. NCD (not LCD) confirmed. Names Dr. Asma Rahim, Dr. Ashik Refeek, Dr. Sanudev confirmed. Award wording confirmed. Case-report consent advice confirmed.
+- R01 pushed to main (noindex kept). R02 still in progress on branch research-series.
+
+## 17 Nov: Part 2 (case reports and cross-sectional studies, what worked)
+- Carousel 12 slides + page built on branch research-series; NOT live. Guide content drafted by the assistant: CARE guidelines, STROBE checklist, protocol elements, informed consent. Story from the author's manuscript. Case-report tumour named as 'metastatic solitary fibrous tumour of the parapharyngeal region' (dictation said 'metastatic solid tumours'): author to confirm.
+- Page header/nav now say Part 1 / Part 2 (no R-codes). R01 page live still uses the older shorter story; regenerate and push when approved.
+
+## 19 Nov: Part 2 rebuilt from the author's detailed account
+- Carousel now 16 slides (8 cross-sectional steps, outcome, 4 case-report steps, CTA to the full article); page ~1,500 words, story in the author's words with a guide beside each step.
+- Case-report time to publish: dictation now says 'almost a year' (earlier notes said about one and a half years). Used 'almost a year'. Author to confirm.
+- WHO STEPS: dictation says the protocol needed anthropometric AND biochemical data; the ledger and earlier notes say 'STEPS 1 & 2'. Author to confirm which steps were actually done.
+- Journal: dictation said 'Indian Pediatric Oncology'; page uses Indian Journal of Medical and Paediatric Oncology (matches the journal record). First submission was rejected (author's account).
+- Consent for the case report: obtained from the patient at follow-up (author's account).
+
+## 19 Nov (later): Part 2 narrowed to the cross-sectional study, co-written with Jerin James
+- Case report and oncology nutrition parked for Part 3 (electives): editorial/bilmc/research/part3-electives-source.md. Parts 3, 4 and 5 to cover the rest.
+- Cover has placeholders: CMC Analytica logo (drop into editorial/assets/cmc-analytica-logo.png) and Jerin James photo (editorial/assets/jerin-james.jpg), then rerun themes2.py and render_themes.js.
+- Credit: 'Jerin James and I spent the most time on it and he is one of the reasons we could submit the report for the KUHS UG Research Award.' Spelling confirmed J-E-R-I-N. Title (Dr.?) unknown. Tell him before publishing.
+- Not yet on the page: logo and photo (page waits for the files).
+- Promise on last slide and page: free guide from CMC Analytica (PDF) is coming. Build the PDF, then set the comment keyword.
+
+## 19 Nov (evening) edits
+- Names now 'Dr. Sidharth Narayanan' and 'Dr. Jerin James'. Footer on Part 2 = '2020 MBBS batch · Calicut Medical College' (no personal names). Guide point corrected: they had a guide who had published, but did not orient the project with them well enough (slides, page, ledger lesson, source text edited accordingly).
+- CMC Analytica logo: file still not received. Put it at editorial/assets/cmc-analytica-logo.png and rerun themes2.py + render_themes.js; it then appears on the cover and the header of every Part 2 slide.
+
+- 19 Nov: CMC Analytica logo received (black background JPEG). Saved at editorial/assets/cmc-analytica-logo.png (original: -original.jpg). Shown as a black rounded tile on the Part 2 cover, header of slides 2 to 14, and the Part 2 page (essays/img/cmc-analytica-logo.png). Jerin James photo still pending.
+
+## 19 Nov (night): white-background logo, no photos, forum story
+- Logo replaced with the white-background version (editorial/assets/cmc-analytica-logo.png); shown directly on white, no tile. Photos dropped. Cover shows both names on one line: 'Dr. Sidharth Narayanan and Dr. Jerin James', 2020 MBBS batch, Calicut Medical College.
+- Added the forum idea: 'we were two hungry undergrads who knew nothing'; 'this study is why we realised we needed a forum to understand research and actually learn the basics. That is the idea behind CMC Analytica.' (carousel slide 14, page closing section). Author to confirm the CMC Analytica link wording.
+- Carousel now 15 slides.
+
+## 19 Nov (late): credentials/footers and the guide PDF
+- Part 2 cover credentials: 'Dr. Sidharth Narayanan · 2020 MBBS batch' and 'Dr. Jerin James · 2020 MBBS batch'. Part 2 footer (slides and page): 'CMC Analytica · Calicut Medical College · College Union · 2026–2027'.
+- Guide PDF built: editorial/bilmc/research/guide/export/CMC-Analytica-Guide-Cross-Sectional-and-Case-Reports.pdf (12 A4 pages). Own words; CARE (Gagnier et al. 2013), STROBE (von Elm et al. 2007), WHO STEPS, ICMR 2017 cited, official checklists linked not copied. STROBE authors hold the copyright (per strobe-statement.org). Contains the case-report story that is also planned for Part 3.
+- To confirm: 'College Union' in the footer; guide facts about our case report (consent at follow-up, retrospective, NGS, almost a year, rejected once); WHO STEPS steps actually run; ICMR link wording; comment keyword not yet set up.
+
+## 24 Nov: Part 3 (the electives) drafted on the branch, NOT live
+- Carousel 14 slides + page (~1,000 words). Source: author's manuscript Article 3 (electives), the 19 Nov case-report account, publications.md. Logo and CMC Analytica footer as Part 2; cover credits Dr. Sidharth Narayanan only (co-author to confirm).
+- Before publishing: add redirect /research/electives -> /before-i-leave-medical-college/research/electives-juvenile-justice-oncology-and-nutrition in vercel.json (QR on slide 14 points to medinn.in/research/electives); update Part 2 page nav 'Next: Part 3'.
+- Open facts: nutrition tool name (author wrote 'PGCCS', unverified, so the slides say 'nutritional assessment tools'); Community Medicine HOD/preceptor not named; Kaval programme as the author called it; 'almost one and a half years' for the nutrition paper and 'almost a year' for the case report are the author's figures; juvenile justice kept free of case details because the data involved children.
+
+- 24 Nov: collaborators credited in Part 3 (slides 13 and 14, page section 'The people who made it possible'). Medical Oncology: Dr. Varun, Dr. Punya, Dr. Shadi, with guide Dr. Sanudev. Juvenile justice: Dr. Varsha, Raniya, Shana, Sreelakshmi S. Names as the author gave them. They likely match co-authors on the published papers (Varun K., Punya Janardhanan, Shadi Hamza): confirm full names before using them. Slide 14 'why collaborators matter' wording is the assistant's draft; the author may add a personal line.
