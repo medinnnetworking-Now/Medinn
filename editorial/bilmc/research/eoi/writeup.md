@@ -63,7 +63,8 @@ How it works:
 
 Express your interest: https://forms.gle/jCB1dBETjMWiza6K7 (link in bio, or scan the QR on the next poster)
 
-Founding members: Dr. Faizal U. (Assistant Professor, Department of Medicine, GMC Kozhikode), Dr. Noufira P (Assistant Professor, Department of Pharmacology) and Dr. Sidharth Narayanan (House Surgeon).
+Chief Patron: Dr. KG Sajeeth Kumar (Principal, GMC Kozhikode).
+Founding members: Dr. Ashraf TP (Vice Principal and President, Alumni Association), Dr. Faizal U. (Secretary, Alumni Association; Assistant Professor, Department of Medicine), Dr. Noufira P (Assistant Professor, Department of Pharmacology) and Dr. Sidharth Narayanan (House Surgeon).
 Union representatives: Nayan Menon (Chairperson) and Benjamin Thomas (Vice Chairperson).
 
 #CMCAnalytica #UndergraduateResearch #PostgraduateResearch #MedicalStudents #CalicutMedicalCollege #ResearchMatters
