@@ -1,5 +1,0 @@
-# CMC Analytica EOI (26 Nov 2026)
-- Page: cmc-analytica-eoi.html (short link /eoi). WhatsApp (+91 94005 13128) and email buttons always work. The "Send my interest" button appears only when /api/eoi reports configured.
-- To store submissions in Notion: create a private database "CMC Analytica: Expressions of Interest" with properties Name (title), Contact, College, Topics or domains of interest, Question or query, Heard about us (text), Stage (select: MBBS 1st year, MBBS 2nd year, MBBS 3rd year, Final year, Intern, Post-intern, Other), Looking for (multi-select: Learn the basics, Find a guide, Join a project, Prepare for PG or residency, Get ready for future research), Experience (select: None yet, A little, I have a project or paper), Status (select: New, Contacted, Matched, Closed). Connect the "Medinn website" connection, then set NOTION_EOI_DB in Vercel and redeploy. (Auto-creation was declined by the author on 26 Nov.)
-- Poster: poster.html -> cmc-analytica-eoi-poster-1080x1350.png (QR decodes to https://medinn.in/eoi).
-- Wording adapted from the author's dictated text ("TMC/ICM/prudency" read as CMC Analytica, residency/PG).
