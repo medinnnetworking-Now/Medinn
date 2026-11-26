@@ -48,3 +48,19 @@ CMC Analytica · Calicut Medical College
 
 ## WhatsApp / LinkedIn short version
 Wondering how to start in research? CMC Analytica, from Calicut Medical College, wants to understand your questions and the topics you care about. Two minutes, free: [FORM LINK]
+
+## Launch announcement caption (26 Nov 2026; use with the launch poster; add the logos and form link first)
+CMC Analytica is officially launched.
+
+The CMC Alumni Association and the College Union of Calicut Medical College launched CMC Analytica to bring academic and higher research to the front of our college, and to help students understand the dynamics of research.
+
+How it works:
+1. Express your interest. We want to understand you and the domains you care about.
+2. Get matched with prospective guides, postgraduates and teams, so you can work together on joint projects.
+3. Attend workshops and evaluation sessions that deepen your understanding and build the framework and foundation for your research journey.
+
+Express your interest: [FORM LINK] (link in bio, or scan the QR)
+
+CMC Analytica · Calicut Medical College · College Union · 2026–2027
+
+#CMCAnalytica #UndergraduateResearch #MedicalStudents #CalicutMedicalCollege #MBBS #ResearchMatters
