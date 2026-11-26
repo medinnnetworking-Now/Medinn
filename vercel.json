@@ -2,11 +2,6 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/eoi",
-      "destination": "/cmc-analytica-eoi",
-      "permanent": false
-    },
-    {
       "source": "/research/electives",
       "destination": "/before-i-leave-medical-college/research/electives-juvenile-justice-oncology-and-nutrition",
       "permanent": false
